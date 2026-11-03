@@ -1,0 +1,376 @@
+{
+  "date": "2026-11-03",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows",
+    "packages": {
+      "numpy": "2.3.5",
+      "matplotlib": "3.11.2",
+      "pillow": "12.3.0",
+      "pypdf": "6.10.0"
+    }
+  },
+  "legacy_doa": {
+    "status": "PASS",
+    "scope": "Raw SMQ -> covariance -> weak-label calibration -> background/rotor/persistence gates -> paired per-window DOA. Archived inference is used only for final comparison.",
+    "cases": [
+      {
+        "record_id": 2,
+        "raw_sha256": "6d76b840b8221802917608906ee1d132b7516f22c7a8d046cbccfde5dc933db6",
+        "windows": 61,
+        "valid_windows": 53,
+        "baseline_median_deg": 5.344929350458066,
+        "improved_median_deg": 3.7041173459446948,
+        "archived_valid_windows": 53,
+        "archived_baseline_median_deg": 5.344929350458066,
+        "archived_improved_median_deg": 3.7041173459446948,
+        "matches_archive": true
+      },
+      {
+        "record_id": 26,
+        "raw_sha256": "c45a1b24e671d32f7e8f9100ef78d14e8e94598dcbd72c63eb0789b03e1cf7a7",
+        "windows": 64,
+        "valid_windows": 41,
+        "baseline_median_deg": 5.107963029338989,
+        "improved_median_deg": 3.223274218830827,
+        "archived_valid_windows": 41,
+        "archived_baseline_median_deg": 5.107963029338989,
+        "archived_improved_median_deg": 3.223274218830827,
+        "matches_archive": true
+      },
+      {
+        "record_id": 9,
+        "raw_sha256": "b06fd4e3056acfbcc355d3e3ec97e4e8f4b721e0fe01f6dd4f70c4a71a9b3122",
+        "windows": 66,
+        "valid_windows": 47,
+        "baseline_median_deg": 9.438956122524981,
+        "improved_median_deg": 2.07579547724712,
+        "archived_valid_windows": 47,
+        "archived_baseline_median_deg": 9.438956122524981,
+        "archived_improved_median_deg": 2.07579547724712,
+        "matches_archive": true
+      }
+    ]
+  },
+  "localization_statistics": {
+    "source_pdf_sha256": "638ed39dd4e6821eeda444b3f2cf63886a1a961d117d8eb86ea9ba5437540cc0",
+    "n": 360,
+    "position_mean": 0.5149078316452732,
+    "position_median": 0.4068777988390473,
+    "position_p95": 1.1145280238961923,
+    "angle_median": 2.1882629188242513,
+    "height_mae": 0.32455555555555554,
+    "height_group_min": 0.056923076923076965,
+    "height_group_max": 0.7792307692307693,
+    "q1": 0.24056937343660525,
+    "q3": 0.6578748946553034,
+    "fence": 1.2838331764833506,
+    "marked_ids": [
+      5,
+      250,
+      255,
+      257,
+      277,
+      296,
+      318,
+      347,
+      351,
+      353,
+      354,
+      360
+    ],
+    "distance_bins": [
+      {
+        "lo": 0,
+        "hi": 2,
+        "n": 9,
+        "mean_distance": 1.5324329973304638,
+        "angle_median": 0.9512455280155396,
+        "angle_q1": 0.440551950131939,
+        "angle_q3": 1.5102687856369756,
+        "position_median": 0.05656854249492385
+      },
+      {
+        "lo": 2,
+        "hi": 4,
+        "n": 22,
+        "mean_distance": 3.33196830191156,
+        "angle_median": 1.211974180139514,
+        "angle_q1": 0.6449854509145438,
+        "angle_q3": 2.0323712507724525,
+        "position_median": 0.13999954445693585
+      },
+      {
+        "lo": 4,
+        "hi": 6,
+        "n": 48,
+        "mean_distance": 5.113274788485156,
+        "angle_median": 1.9399827268317986,
+        "angle_q1": 1.5079130262427773,
+        "angle_q3": 2.345100020197047,
+        "position_median": 0.21333406788654058
+      },
+      {
+        "lo": 6,
+        "hi": 8,
+        "n": 68,
+        "mean_distance": 7.132418244116546,
+        "angle_median": 2.166598504719375,
+        "angle_q1": 1.4094651689124948,
+        "angle_q3": 3.167893956848647,
+        "position_median": 0.34222109196152306
+      },
+      {
+        "lo": 8,
+        "hi": 10,
+        "n": 84,
+        "mean_distance": 9.115820130198767,
+        "angle_median": 2.1257529329238993,
+        "angle_q1": 1.487691573056298,
+        "angle_q3": 3.4098967193915066,
+        "position_median": 0.426536803158886
+      },
+      {
+        "lo": 10,
+        "hi": 12,
+        "n": 81,
+        "mean_distance": 11.03275740166015,
+        "angle_median": 3.276471839117433,
+        "angle_q1": 1.9700453049886102,
+        "angle_q3": 4.157474176244759,
+        "position_median": 0.6406246951218787
+      },
+      {
+        "lo": 12,
+        "hi": 14,
+        "n": 39,
+        "mean_distance": 12.792254396138413,
+        "angle_median": 3.116925598987738,
+        "angle_q1": 2.17165337611961,
+        "angle_q3": 3.8870792635777596,
+        "position_median": 0.7737570678190921
+      },
+      {
+        "lo": 14,
+        "hi": 16,
+        "n": 9,
+        "mean_distance": 14.669777931098102,
+        "angle_median": 2.509076737983278,
+        "angle_q1": 1.787506328250991,
+        "angle_q3": 2.569815742752981,
+        "position_median": 0.6444377394287214
+      }
+    ],
+    "height_groups": [
+      {
+        "radius": 1,
+        "lo": 1,
+        "hi": 3,
+        "n": 13,
+        "mae": 0.056923076923076965
+      },
+      {
+        "radius": 3,
+        "lo": 1,
+        "hi": 3,
+        "n": 14,
+        "mae": 0.10785714285714283
+      },
+      {
+        "radius": 5,
+        "lo": 1,
+        "hi": 3,
+        "n": 15,
+        "mae": 0.1873333333333333
+      },
+      {
+        "radius": 7,
+        "lo": 1,
+        "hi": 3,
+        "n": 12,
+        "mae": 0.33666666666666667
+      },
+      {
+        "radius": 9,
+        "lo": 1,
+        "hi": 3,
+        "n": 14,
+        "mae": 0.4792857142857142
+      },
+      {
+        "radius": 11,
+        "lo": 1,
+        "hi": 3,
+        "n": 13,
+        "mae": 0.7792307692307693
+      },
+      {
+        "radius": 1,
+        "lo": 3,
+        "hi": 5,
+        "n": 13,
+        "mae": 0.14461538461538465
+      },
+      {
+        "radius": 3,
+        "lo": 3,
+        "hi": 5,
+        "n": 12,
+        "mae": 0.1516666666666666
+      },
+      {
+        "radius": 5,
+        "lo": 3,
+        "hi": 5,
+        "n": 15,
+        "mae": 0.264
+      },
+      {
+        "radius": 7,
+        "lo": 3,
+        "hi": 5,
+        "n": 14,
+        "mae": 0.25357142857142856
+      },
+      {
+        "radius": 9,
+        "lo": 3,
+        "hi": 5,
+        "n": 10,
+        "mae": 0.32900000000000007
+      },
+      {
+        "radius": 11,
+        "lo": 3,
+        "hi": 5,
+        "n": 16,
+        "mae": 0.5800000000000001
+      },
+      {
+        "radius": 1,
+        "lo": 5,
+        "hi": 7,
+        "n": 14,
+        "mae": 0.16285714285714287
+      },
+      {
+        "radius": 3,
+        "lo": 5,
+        "hi": 7,
+        "n": 15,
+        "mae": 0.1926666666666667
+      },
+      {
+        "radius": 5,
+        "lo": 5,
+        "hi": 7,
+        "n": 11,
+        "mae": 0.19909090909090896
+      },
+      {
+        "radius": 7,
+        "lo": 5,
+        "hi": 7,
+        "n": 14,
+        "mae": 0.24999999999999986
+      },
+      {
+        "radius": 9,
+        "lo": 5,
+        "hi": 7,
+        "n": 17,
+        "mae": 0.5005882352941178
+      },
+      {
+        "radius": 11,
+        "lo": 5,
+        "hi": 7,
+        "n": 13,
+        "mae": 0.5784615384615385
+      },
+      {
+        "radius": 1,
+        "lo": 7,
+        "hi": 10,
+        "n": 20,
+        "mae": 0.20649999999999996
+      },
+      {
+        "radius": 3,
+        "lo": 7,
+        "hi": 10,
+        "n": 19,
+        "mae": 0.20736842105263165
+      },
+      {
+        "radius": 5,
+        "lo": 7,
+        "hi": 10,
+        "n": 19,
+        "mae": 0.31421052631578955
+      },
+      {
+        "radius": 7,
+        "lo": 7,
+        "hi": 10,
+        "n": 20,
+        "mae": 0.3330000000000001
+      },
+      {
+        "radius": 9,
+        "lo": 7,
+        "hi": 10,
+        "n": 19,
+        "mae": 0.4694736842105262
+      },
+      {
+        "radius": 11,
+        "lo": 7,
+        "hi": 10,
+        "n": 18,
+        "mae": 0.5894444444444443
+      }
+    ]
+  },
+  "figures": {
+    "fig37.png": {
+      "sha256": "35a74c749d0a4c253c5582d48460f122047045ff93a07a5c5744f8e065809f51",
+      "matches_report_image": true
+    },
+    "fig38.png": {
+      "sha256": "3c0b39c9091485c91fd3489f2997fd1a8ea52d4bed1ace1511c062afa485aadb",
+      "matches_report_image": true
+    },
+    "fig39.png": {
+      "sha256": "c94f4c4caefd815c74b6b67f9e7c55d78adf647cd1b9f3fe3293e6636e168652",
+      "matches_report_image": true
+    },
+    "fig40.png": {
+      "sha256": "069fe23e9ee47b84a0cdf37c7e7f4606d8ef2e81f7293d07a37fd8cfa73c200b",
+      "matches_report_image": true
+    },
+    "fig41.png": {
+      "sha256": "0e85faddddfb48ad064c85b7f2c32dd0294f026e9b20917570ce5eac0dcb035a",
+      "matches_report_image": true
+    },
+    "fig42.png": {
+      "sha256": "3f07695a2e9910132d483af14774ab28959cdf0239733dd3e4ba4b2a58450ffb",
+      "matches_report_image": true
+    },
+    "fig43.png": {
+      "sha256": "d4300af1787cec6a8bb0643f466e4f7a48a3014d524270cb9c31ed6971ac800d",
+      "matches_report_image": true
+    },
+    "fig44.png": {
+      "sha256": "08aae8e6e6c917171b14ee0e77ff435bbc713eb9470568a0627c1d62ed319e25",
+      "matches_report_image": true
+    },
+    "fig45.png": {
+      "sha256": "6886c9fc39c82308cace8f74a95d8e64372ecb1a0b8d9c72e8ed159ca89ab1b4",
+      "matches_report_image": true
+    }
+  },
+  "unified_check_status": "PASS",
+  "scope_note": "Raw-audio DOA rerun verified for paper records 2,26,9; all 360 PDF coordinate rows and all nine figures regenerated. Does not implement 120 m raw-audio classification or FPGA execution."
+}

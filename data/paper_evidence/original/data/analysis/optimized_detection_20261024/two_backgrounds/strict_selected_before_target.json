@@ -1,0 +1,470 @@
+{
+  "base": "spectrum__boost__aug0",
+  "smooth": 3.0,
+  "high_recall": 0.2841540576536629,
+  "overall_recall": 0.5305704524108823,
+  "details": [
+    {
+      "id": 8,
+      "file": "0，0，0.5.smq",
+      "height": 0.5,
+      "fold": 0,
+      "hits": [
+        0,
+        0
+      ],
+      "windows": 104,
+      "recall": 0.0,
+      "joint_hits": 0,
+      "threshold": 4.219100109078136
+    },
+    {
+      "id": 15,
+      "file": "0，0，40.smq",
+      "height": 40.0,
+      "fold": 0,
+      "hits": [
+        19,
+        40
+      ],
+      "windows": 97,
+      "recall": 0.30412371134020616,
+      "joint_hits": 2,
+      "threshold": 4.219100109078136
+    },
+    {
+      "id": 19,
+      "file": "0，0，80.smq",
+      "height": 80.0,
+      "fold": 0,
+      "hits": [
+        0,
+        65
+      ],
+      "windows": 99,
+      "recall": 0.3282828282828283,
+      "joint_hits": 0,
+      "threshold": 4.219100109078136
+    },
+    {
+      "id": 28,
+      "file": "200，-200，1.smq",
+      "height": 1.0,
+      "fold": 0,
+      "hits": [
+        97,
+        92
+      ],
+      "windows": 117,
+      "recall": 0.8076923076923077,
+      "joint_hits": 91,
+      "threshold": 4.219100109078136
+    },
+    {
+      "id": 29,
+      "file": "200，-200，2.smq",
+      "height": 2.0,
+      "fold": 0,
+      "hits": [
+        29,
+        31
+      ],
+      "windows": 98,
+      "recall": 0.30612244897959184,
+      "joint_hits": 29,
+      "threshold": 4.219100109078136
+    },
+    {
+      "id": 30,
+      "file": "200，-200，3.smq",
+      "height": 3.0,
+      "fold": 0,
+      "hits": [
+        98,
+        98
+      ],
+      "windows": 98,
+      "recall": 1.0,
+      "joint_hits": 98,
+      "threshold": 4.219100109078136
+    },
+    {
+      "id": 31,
+      "file": "200，-200，5.smq",
+      "height": 5.0,
+      "fold": 0,
+      "hits": [
+        121,
+        121
+      ],
+      "windows": 121,
+      "recall": 1.0,
+      "joint_hits": 121,
+      "threshold": 4.219100109078136
+    },
+    {
+      "id": 0,
+      "file": "-200，200，1.smq",
+      "height": 1.0,
+      "fold": 1,
+      "hits": [
+        107,
+        107
+      ],
+      "windows": 107,
+      "recall": 1.0,
+      "joint_hits": 107,
+      "threshold": 4.128862895627159
+    },
+    {
+      "id": 2,
+      "file": "-200，200，3.smq",
+      "height": 3.0,
+      "fold": 1,
+      "hits": [
+        97,
+        97
+      ],
+      "windows": 97,
+      "recall": 1.0,
+      "joint_hits": 97,
+      "threshold": 4.128862895627159
+    },
+    {
+      "id": 3,
+      "file": "-200，200，5.smq",
+      "height": 5.0,
+      "fold": 1,
+      "hits": [
+        96,
+        96
+      ],
+      "windows": 96,
+      "recall": 1.0,
+      "joint_hits": 96,
+      "threshold": 4.128862895627159
+    },
+    {
+      "id": 9,
+      "file": "0，0，10.smq",
+      "height": 10.0,
+      "fold": 1,
+      "hits": [
+        65,
+        84
+      ],
+      "windows": 104,
+      "recall": 0.7163461538461539,
+      "joint_hits": 49,
+      "threshold": 4.128862895627159
+    },
+    {
+      "id": 16,
+      "file": "0，0，50.smq",
+      "height": 50.0,
+      "fold": 1,
+      "hits": [
+        25,
+        12
+      ],
+      "windows": 98,
+      "recall": 0.18877551020408162,
+      "joint_hits": 5,
+      "threshold": 4.128862895627159
+    },
+    {
+      "id": 20,
+      "file": "0，0，90.smq",
+      "height": 90.0,
+      "fold": 1,
+      "hits": [
+        18,
+        6
+      ],
+      "windows": 94,
+      "recall": 0.1276595744680851,
+      "joint_hits": 0,
+      "threshold": 4.128862895627159
+    },
+    {
+      "id": 34,
+      "file": "（0，200，1）.smq",
+      "height": 1.0,
+      "fold": 1,
+      "hits": [
+        103,
+        103
+      ],
+      "windows": 103,
+      "recall": 1.0,
+      "joint_hits": 103,
+      "threshold": 4.128862895627159
+    },
+    {
+      "id": 1,
+      "file": "-200，200，2.smq",
+      "height": 2.0,
+      "fold": 2,
+      "hits": [
+        92,
+        92
+      ],
+      "windows": 101,
+      "recall": 0.9108910891089109,
+      "joint_hits": 92,
+      "threshold": 4.2208855684001225
+    },
+    {
+      "id": 4,
+      "file": "0，-200，1.smq",
+      "height": 1.0,
+      "fold": 2,
+      "hits": [
+        47,
+        35
+      ],
+      "windows": 102,
+      "recall": 0.4019607843137255,
+      "joint_hits": 35,
+      "threshold": 4.2208855684001225
+    },
+    {
+      "id": 6,
+      "file": "0，-200，3.smq",
+      "height": 3.0,
+      "fold": 2,
+      "hits": [
+        104,
+        102
+      ],
+      "windows": 104,
+      "recall": 0.9903846153846154,
+      "joint_hits": 102,
+      "threshold": 4.2208855684001225
+    },
+    {
+      "id": 7,
+      "file": "0，-200，5.smq",
+      "height": 5.0,
+      "fold": 2,
+      "hits": [
+        34,
+        36
+      ],
+      "windows": 94,
+      "recall": 0.3723404255319149,
+      "joint_hits": 33,
+      "threshold": 4.2208855684001225
+    },
+    {
+      "id": 10,
+      "file": "0，0，100.smq",
+      "height": 100.0,
+      "fold": 2,
+      "hits": [
+        4,
+        28
+      ],
+      "windows": 96,
+      "recall": 0.16666666666666666,
+      "joint_hits": 0,
+      "threshold": 4.2208855684001225
+    },
+    {
+      "id": 12,
+      "file": "0，0，15.smq",
+      "height": 15.0,
+      "fold": 2,
+      "hits": [
+        7,
+        4
+      ],
+      "windows": 101,
+      "recall": 0.054455445544554455,
+      "joint_hits": 0,
+      "threshold": 4.2208855684001225
+    },
+    {
+      "id": 17,
+      "file": "0，0，60.smq",
+      "height": 60.0,
+      "fold": 2,
+      "hits": [
+        10,
+        17
+      ],
+      "windows": 107,
+      "recall": 0.1261682242990654,
+      "joint_hits": 0,
+      "threshold": 4.2208855684001225
+    },
+    {
+      "id": 5,
+      "file": "0，-200，2.smq",
+      "height": 2.0,
+      "fold": 3,
+      "hits": [
+        97,
+        97
+      ],
+      "windows": 97,
+      "recall": 1.0,
+      "joint_hits": 97,
+      "threshold": 4.004850909741436
+    },
+    {
+      "id": 13,
+      "file": "0，0，20.smq",
+      "height": 20.0,
+      "fold": 3,
+      "hits": [
+        15,
+        73
+      ],
+      "windows": 97,
+      "recall": 0.4536082474226804,
+      "joint_hits": 15,
+      "threshold": 4.004850909741436
+    },
+    {
+      "id": 21,
+      "file": "0，1000，1.smq",
+      "height": 1.0,
+      "fold": 3,
+      "hits": [
+        1,
+        0
+      ],
+      "windows": 97,
+      "recall": 0.005154639175257732,
+      "joint_hits": 0,
+      "threshold": 4.004850909741436
+    },
+    {
+      "id": 22,
+      "file": "0，1000，3.smq",
+      "height": 3.0,
+      "fold": 3,
+      "hits": [
+        0,
+        0
+      ],
+      "windows": 97,
+      "recall": 0.0,
+      "joint_hits": 0,
+      "threshold": 4.004850909741436
+    },
+    {
+      "id": 23,
+      "file": "0，1000，5.smq",
+      "height": 5.0,
+      "fold": 3,
+      "hits": [
+        12,
+        0
+      ],
+      "windows": 97,
+      "recall": 0.061855670103092786,
+      "joint_hits": 0,
+      "threshold": 4.004850909741436
+    },
+    {
+      "id": 32,
+      "file": "未知，未知，60.smq",
+      "height": 60.0,
+      "fold": 3,
+      "hits": [
+        31,
+        6
+      ],
+      "windows": 81,
+      "recall": 0.22839506172839505,
+      "joint_hits": 6,
+      "threshold": 4.004850909741436
+    },
+    {
+      "id": 14,
+      "file": "0，0，30.smq",
+      "height": 30.0,
+      "fold": 4,
+      "hits": [
+        36,
+        39
+      ],
+      "windows": 96,
+      "recall": 0.390625,
+      "joint_hits": 29,
+      "threshold": 4.240079353922833
+    },
+    {
+      "id": 18,
+      "file": "0，0，70.smq",
+      "height": 70.0,
+      "fold": 4,
+      "hits": [
+        4,
+        59
+      ],
+      "windows": 97,
+      "recall": 0.3247422680412371,
+      "joint_hits": 4,
+      "threshold": 4.240079353922833
+    },
+    {
+      "id": 24,
+      "file": "0，200，2.smq",
+      "height": 2.0,
+      "fold": 4,
+      "hits": [
+        94,
+        94
+      ],
+      "windows": 94,
+      "recall": 1.0,
+      "joint_hits": 94,
+      "threshold": 4.240079353922833
+    },
+    {
+      "id": 25,
+      "file": "0，200，3.smq",
+      "height": 3.0,
+      "fold": 4,
+      "hits": [
+        0,
+        96
+      ],
+      "windows": 96,
+      "recall": 0.5,
+      "joint_hits": 0,
+      "threshold": 4.240079353922833
+    },
+    {
+      "id": 26,
+      "file": "0，200，5.smq",
+      "height": 5.0,
+      "fold": 4,
+      "hits": [
+        73,
+        95
+      ],
+      "windows": 101,
+      "recall": 0.8316831683168316,
+      "joint_hits": 73,
+      "threshold": 4.240079353922833
+    },
+    {
+      "id": 27,
+      "file": "0，700，1.smq",
+      "height": 1.0,
+      "fold": 4,
+      "hits": [
+        89,
+        95
+      ],
+      "windows": 101,
+      "recall": 0.9108910891089109,
+      "joint_hits": 83,
+      "threshold": 4.240079353922833
+    }
+  ]
+}

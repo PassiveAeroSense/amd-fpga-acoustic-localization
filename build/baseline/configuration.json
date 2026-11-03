@@ -1,0 +1,20 @@
+{
+  "id": 4,
+  "name": "04_precision_H20_Z20_B2",
+  "horizontal_mm": 20000,
+  "vertical_mm": 20000,
+  "baseline_mm": 2000,
+  "fast": false,
+  "frames": 8,
+  "display_range_m": "auto",
+  "ring_step_m": "auto",
+  "grid_points": 25002,
+  "display_ranges_m": [
+    2,
+    5,
+    10,
+    15,
+    20
+  ],
+  "release": "R20"
+}

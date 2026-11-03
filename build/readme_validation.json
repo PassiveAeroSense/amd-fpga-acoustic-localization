@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-03T18:35:07.741718",
+  "status": "PASS",
+  "environment": {
+    "vivado": "2024.2 Build 5239630",
+    "vitis": "2024.2",
+    "python": "3.12.14"
+  },
+  "rtl": {
+    "status": "PASS",
+    "cases": [
+      "r27_key",
+      "r27_pages",
+      "live_detection",
+      "r20_radar",
+      "r24_control",
+      "r19_grid_interface"
+    ],
+    "configured_tracker_domain_mm": [
+      11000,
+      10000
+    ],
+    "record": "sim/validation_record.json",
+    "scope": "Six RTL module/interface/display regressions. No microphone-to-position end-to-end acoustic accuracy claim."
+  },
+  "search_domain_csim": {
+    "status": "PASS",
+    "log": "sim/results/test_search_domain_csim.log",
+    "scope": "C simulation of search algorithm domain; not whole-system accuracy"
+  },
+  "skill_tests": {
+    "basic": 10,
+    "extensions": 26,
+    "status": "PASS",
+    "hardware_pynq_execution": false
+  },
+  "frozen_evidence": {
+    "status": "PASS",
+    "record": "sim/results/frozen_evidence_check.json",
+    "scope": "Stored JSON/NPZ consistency only"
+  },
+  "board_build": {
+    "status": "PASS",
+    "method": "Executed build/build_board.ps1 in an isolated ASCII-path copy of src and build.",
+    "report_directory": "build/readme_rebuild",
+    "generated_bit_sha256": "8e7eb996dabfdc54155bf51835ce88465438608454e4df1a3f9fd018e5325dbd",
+    "reference_bit_unchanged": true
+  },
+  "raw_recording_files_verified": 74,
+  "functional_rtl_rom_xdc_hls_unchanged": true,
+  "board_programming_this_revision": false,
+  "optional_full_hls_regeneration": "Not rerun in this repair; supplied HLS exports retain their existing C/RTL validation records. Default board build and search-domain C simulation were rerun.",
+  "design_report_unchanged": true,
+  "collaboration": {
+    "date": "2026-11-03",
+    "cases_with_original_dialogue": 12,
+    "dialogue_pairs": 16,
+    "source": "local response_item message records",
+    "unmatched_cases_unchanged": true
+  },
+  "manifest_note": "Frozen after these artifacts. Run build/verify_submission.py before new tests or builds. Git metadata and Python caches are excluded."
+}

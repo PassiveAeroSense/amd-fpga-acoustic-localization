@@ -1,0 +1,12 @@
+[
+  "fft4096_hls",
+  "fir_loc_hls",
+  "fir_det_hls",
+  "sqrt_hls",
+  "divide_hls",
+  "cordic_hls",
+  "power_db_hls",
+  "covariance_hls",
+  "detector_hls",
+  "joint_search_hls"
+]

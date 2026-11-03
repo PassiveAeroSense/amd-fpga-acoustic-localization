@@ -1,0 +1,315 @@
+
+
+================================================================
+== Synthesis Summary Report of 'detector_hls'
+================================================================
++ General Information: 
+    * Date:           Fri Oct 30 23:08:36 2026
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        core
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a200t-fbg484-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+---------+------------+-----------+-----+
+    |                          Modules                         | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |         |         |            |           |     |
+    |                          & Loops                         | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   |   DSP   |     FF     |    LUT    | URAM|
+    +----------------------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+---------+------------+-----------+-----+
+    |+ detector_hls                                            |     -|   0.35|    23301|  4.660e+05|         -|    23302|     -|        no|  27 (3%)|  7 (~0%)|  2379 (~0%)|  3286 (2%)|    -|
+    | + detector_hls_Pipeline_VITIS_LOOP_22_1                  |     -|   7.72|       99|  1.980e+03|         -|       99|     -|        no|        -|        -|    72 (~0%)|  137 (~0%)|    -|
+    |  o VITIS_LOOP_22_1                                       |     -|  14.60|       97|  1.940e+03|         2|        1|    97|       yes|        -|        -|           -|          -|    -|
+    | + udiv                                                   |     -|   7.60|       66|  1.320e+03|         -|       66|     -|        no|        -|        -|   206 (~0%)|  421 (~0%)|    -|
+    |  o VITIS_LOOP_19_1                                       |     -|  14.60|       64|  1.280e+03|         1|        1|    64|       yes|        -|        -|           -|          -|    -|
+    | + detector_hls_Pipeline_VITIS_LOOP_32_4_VITIS_LOOP_33_5  |     -|   0.35|     2334|  4.668e+04|         -|     2334|     -|        no|   8 (1%)|  7 (~0%)|   529 (~0%)|  708 (~0%)|    -|
+    |  o VITIS_LOOP_32_4_VITIS_LOOP_33_5                       |     -|  14.60|     2332|  4.664e+04|         6|        1|  2328|       yes|        -|        -|           -|          -|    -|
+    | o VITIS_LOOP_27_2                                        |     -|  14.60|     7954|  1.591e+05|        82|        -|    97|        no|        -|        -|           -|          -|    -|
+    |  + detector_hls_Pipeline_VITIS_LOOP_28_3                 |     -|   5.57|       11|    220.000|         -|       11|     -|        no|        -|        -|    59 (~0%)|  175 (~0%)|    -|
+    |   o VITIS_LOOP_28_3                                      |     -|  14.60|        9|    180.000|         2|        1|     9|       yes|        -|        -|           -|          -|    -|
+    | o VITIS_LOOP_40_6                                        |     -|  14.60|    12840|  2.568e+05|       107|        -|   120|        no|        -|        -|           -|          -|    -|
+    |  + detector_hls_Pipeline_VITIS_LOOP_42_7                 |     -|   3.50|      102|  2.040e+03|         -|      102|     -|        no|  11 (1%)|        -|   101 (~0%)|  169 (~0%)|    -|
+    |   o VITIS_LOOP_42_7                                      |    II|  14.60|       99|  1.980e+03|         4|        3|    32|       yes|        -|        -|           -|          -|    -|
+    +----------------------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+---------+------------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++----------------+-----------+----------+
+| Port           | Direction | Bitwidth |
++----------------+-----------+----------+
+| bands_address0 | out       | 7        |
+| bands_q0       | in        | 48       |
++----------------+-----------+----------+
+
+* Other Ports
++--------------+---------+-----------+----------+
+| Port         | Mode    | Direction | Bitwidth |
++--------------+---------+-----------+----------+
+| array_id     | ap_none | in        | 1        |
+| new_sequence | ap_none | in        | 1        |
+| result       | ap_none | out       | 104      |
+| valid        | ap_none | in        | 1        |
++--------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst_n  | reset      | ap_rst_n                          |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++--------------+-----------+--------------------+
+| Argument     | Direction | Datatype           |
++--------------+-----------+--------------------+
+| bands        | in        | ap_int<48> const * |
+| valid        | in        | ap_uint<1>         |
+| new_sequence | in        | ap_uint<1>         |
+| array_id     | in        | ap_uint<1>         |
+| result       | out       | ap_uint<104>&      |
++--------------+-----------+--------------------+
+
+* SW-to-HW Mapping
++--------------+----------------+---------+----------+
+| Argument     | HW Interface   | HW Type | HW Usage |
++--------------+----------------+---------+----------+
+| bands        | bands_address0 | port    | offset   |
+| bands        | bands_ce0      | port    |          |
+| bands        | bands_q0       | port    |          |
+| valid        | valid          | port    |          |
+| new_sequence | new_sequence   | port    |          |
+| array_id     | array_id       | port    |          |
+| result       | result         | port    |          |
++--------------+----------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------------------------------------------------------------+-----+--------+-----------------------------------------------------------------------------+-----------+------------------------+---------+
+| Name                                                                                     | DSP | Pragma | Variable                                                                    | Op        | Impl                   | Latency |
++------------------------------------------------------------------------------------------+-----+--------+-----------------------------------------------------------------------------+-----------+------------------------+---------+
+| + detector_hls                                                                           | 7   |        |                                                                             |           |                        |         |
+|   xor_ln19_fu_624_p2                                                                     |     |        | xor_ln19                                                                    | xor       | auto                   | 0       |
+|   or_ln19_fu_630_p2                                                                      |     |        | or_ln19                                                                     | or        | auto                   | 0       |
+|   xor_ln19_1_fu_660_p2                                                                   |     |        | xor_ln19_1                                                                  | xor       | auto                   | 0       |
+|   select_ln19_fu_666_p3                                                                  |     |        | select_ln19                                                                 | select    | auto_sel               | 0       |
+|   select_ln19_1_fu_674_p3                                                                |     |        | select_ln19_1                                                               | select    | auto_sel               | 0       |
+|   select_ln19_2_fu_682_p3                                                                |     |        | select_ln19_2                                                               | select    | auto_sel               | 0       |
+|   select_ln19_3_fu_690_p3                                                                |     |        | select_ln19_3                                                               | select    | auto_sel               | 0       |
+|   select_ln19_4_fu_698_p3                                                                |     |        | select_ln19_4                                                               | select    | auto_sel               | 0       |
+|   select_ln19_5_fu_706_p3                                                                |     |        | select_ln19_5                                                               | select    | auto_sel               | 0       |
+|   detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_104_counts_flag_fu_714_p2    |     |        | detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_104_counts_flag   | and       | auto                   | 0       |
+|   detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_104_counts_loc_fu_720_p3     |     |        | detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_104_counts_loc    | select    | auto_sel               | 0       |
+|   detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_1_ap_uint_104_sums_loc_fu_728_p3     |     |        | detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_1_ap_uint_104_sums_loc    | select    | auto_sel               | 0       |
+|   detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_1_ap_uint_104_ptr_loc_fu_736_p3      |     |        | detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_1_ap_uint_104_ptr_loc     | select    | auto_sel               | 0       |
+|   detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_counts_2_flag_fu_744_p2      |     |        | detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_counts_2_flag     | and       | auto                   | 0       |
+|   detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_counts_2_loc_fu_750_p3       |     |        | detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_counts_2_loc      | select    | auto_sel               | 0       |
+|   detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_104_sums_1_loc_fu_758_p3     |     |        | detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_104_sums_1_loc    | select    | auto_sel               | 0       |
+|   detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_104_ptr_3_loc_fu_766_p3      |     |        | detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_104_ptr_3_loc     | select    | auto_sel               | 0       |
+|   sub_ln26_fu_790_p2                                                                     |     |        | sub_ln26                                                                    | sub       | fabric                 | 0       |
+|   grp_fu_614_p2                                                                          |     |        | mean                                                                        | sub       | fabric                 | 0       |
+|   icmp_ln27_fu_806_p2                                                                    |     |        | icmp_ln27                                                                   | seteq     | auto                   | 0       |
+|   add_ln27_fu_812_p2                                                                     |     |        | add_ln27                                                                    | add       | fabric                 | 0       |
+|   sub_ln29_fu_854_p2                                                                     |     |        | sub_ln29                                                                    | sub       | fabric                 | 0       |
+|   grp_fu_614_p2                                                                          |     |        | m                                                                           | sub       | fabric                 | 0       |
+|   sub_ln29_2_fu_869_p2                                                                   |     |        | sub_ln29_2                                                                  | sub       | fabric                 | 0       |
+|   add_ln29_fu_876_p2                                                                     |     |        | add_ln29                                                                    | add       | fabric                 | 0       |
+|   icmp_ln40_fu_889_p2                                                                    |     |        | icmp_ln40                                                                   | seteq     | auto                   | 0       |
+|   add_ln40_fu_895_p2                                                                     |     |        | add_ln40                                                                    | add       | fabric                 | 0       |
+|   score_1_fu_1198_p2                                                                     |     |        | score_1                                                                     | add       | fabric                 | 0       |
+|   add_ln50_fu_909_p2                                                                     |     |        | add_ln50                                                                    | add       | fabric                 | 0       |
+|   icmp_ln50_fu_925_p2                                                                    |     |        | icmp_ln50                                                                   | setne     | auto                   | 0       |
+|   or_ln50_fu_931_p2                                                                      |     |        | or_ln50                                                                     | or        | auto                   | 0       |
+|   select_ln51_fu_937_p3                                                                  |     |        | select_ln51                                                                 | select    | auto_sel               | 0       |
+|   select_ln51_1_fu_948_p3                                                                |     |        | select_ln51_1                                                               | select    | auto_sel               | 0       |
+|   icmp_ln51_fu_953_p2                                                                    |     |        | icmp_ln51                                                                   | seteq     | auto                   | 0       |
+|   select_ln52_1_fu_959_p3                                                                |     |        | select_ln52_1                                                               | select    | auto_sel               | 0       |
+|   icmp_ln52_fu_968_p2                                                                    |     |        | icmp_ln52                                                                   | seteq     | auto                   | 0       |
+|   add_ln52_fu_974_p2                                                                     |     |        | add_ln52                                                                    | add       | fabric                 | 0       |
+|   select_ln52_fu_980_p3                                                                  |     |        | select_ln52                                                                 | select    | auto_sel               | 0       |
+|   select_ln52_2_fu_988_p3                                                                |     |        | select_ln52_2                                                               | select    | auto_sel               | 0       |
+|   select_ln52_3_fu_995_p3                                                                |     |        | select_ln52_3                                                               | select    | auto_sel               | 0       |
+|   sparsemux_7_2_32_1_1_U31                                                               |     |        | tmp_4                                                                       | sparsemux | onehotencoding_realdef | 0       |
+|   sparsemux_7_2_32_1_1_U32                                                               |     |        | tmp_5                                                                       | sparsemux | onehotencoding_realdef | 0       |
+|   select_ln51_2_fu_1066_p3                                                               |     |        | select_ln51_2                                                               | select    | auto_sel               | 0       |
+|   add_ln52_1_fu_1073_p2                                                                  |     |        | add_ln52_1                                                                  | add       | fabric                 | 0       |
+|   select_ln52_4_fu_1079_p3                                                               |     |        | select_ln52_4                                                               | select    | auto_sel               | 0       |
+|   detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_104_counts_flag_1_fu_1086_p3 |     |        | detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_104_counts_flag_1 | select    | auto_sel               | 0       |
+|   empty_fu_1092_p2                                                                       |     |        | empty                                                                       | or        | auto                   | 0       |
+|   detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_104_counts_new_fu_1097_p3    |     |        | detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_104_counts_new    | select    | auto_sel               | 0       |
+|   detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_counts_2_flag_1_fu_1105_p3   |     |        | detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_counts_2_flag_1   | select    | auto_sel               | 0       |
+|   detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_counts_2_new_fu_1111_p3      |     |        | detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_ap_uint_counts_2_new      | select    | auto_sel               | 0       |
+|   ref_tmp227_085_fu_1119_p3                                                              |     |        | ref_tmp227_085                                                              | select    | auto_sel               | 0       |
+|   empty_16_fu_1131_p3                                                                    |     |        | empty_16                                                                    | select    | auto_sel               | 0       |
+|   sub_ln53_fu_1234_p2                                                                    |     |        | sub_ln53                                                                    | sub       | fabric                 | 0       |
+|   icmp_ln53_fu_1244_p2                                                                   |     |        | icmp_ln53                                                                   | setlt     | auto                   | 0       |
+|  + detector_hls_Pipeline_VITIS_LOOP_22_1                                                 | 0   |        |                                                                             |           |                        |         |
+|    icmp_ln22_fu_119_p2                                                                   |     |        | icmp_ln22                                                                   | seteq     | auto                   | 0       |
+|    add_ln22_fu_125_p2                                                                    |     |        | add_ln22                                                                    | add       | fabric                 | 0       |
+|    sum_1_fu_148_p2                                                                       |     |        | sum_1                                                                       | add       | fabric                 | 0       |
+|  + udiv                                                                                  | 0   |        |                                                                             |           |                        |         |
+|    bitselect_1ns_64ns_32ns_1_1_1_U5                                                      |     |        | tmp_1                                                                       | bitselect | auto                   | 0       |
+|    icmp_ln21_fu_147_p2                                                                   |     |        | icmp_ln21                                                                   | setlt     | auto                   | 0       |
+|    rem_3_fu_152_p2                                                                       |     |        | rem_3                                                                       | sub       | fabric                 | 0       |
+|    bitset_64ns_64ns_32ns_1s_64_1_1_U6                                                    |     |        | q_2                                                                         | bitset    | auto                   | 0       |
+|    rem_1_fu_167_p3                                                                       |     |        | rem_1                                                                       | select    | auto_sel               | 0       |
+|    q_1_fu_175_p3                                                                         |     |        | q_1                                                                         | select    | auto_sel               | 0       |
+|    i_3_fu_183_p2                                                                         |     |        | i_3                                                                         | add       | fabric                 | 0       |
+|  + detector_hls_Pipeline_VITIS_LOOP_28_3                                                 | 0   |        |                                                                             |           |                        |         |
+|    icmp_ln28_fu_97_p2                                                                    |     |        | icmp_ln28                                                                   | seteq     | auto                   | 0       |
+|    at_fu_107_p2                                                                          |     |        | at                                                                          | add       | fabric                 | 0       |
+|    at_1_fu_125_p3                                                                        |     |        | at_1                                                                        | select    | auto_sel               | 0       |
+|    icmp_ln28_1_fu_133_p2                                                                 |     |        | icmp_ln28_1                                                                 | setgt     | auto                   | 0       |
+|    at_2_fu_139_p3                                                                        |     |        | at_2                                                                        | select    | auto_sel               | 0       |
+|    s_1_fu_170_p2                                                                         |     |        | s_1                                                                         | add       | fabric                 | 0       |
+|    j_3_fu_152_p2                                                                         |     |        | j_3                                                                         | add       | fabric                 | 0       |
+|  + detector_hls_Pipeline_VITIS_LOOP_32_4_VITIS_LOOP_33_5                                 | 7   |        |                                                                             |           |                        |         |
+|    icmp_ln32_fu_176_p2                                                                   |     |        | icmp_ln32                                                                   | seteq     | auto                   | 0       |
+|    add_ln32_fu_182_p2                                                                    |     |        | add_ln32                                                                    | add       | fabric                 | 0       |
+|    icmp_ln33_fu_194_p2                                                                   |     |        | icmp_ln33                                                                   | seteq     | auto                   | 0       |
+|    select_ln32_fu_200_p3                                                                 |     |        | select_ln32                                                                 | select    | auto_sel               | 0       |
+|    select_ln32_1_fu_286_p3                                                               |     |        | select_ln32_1                                                               | select    | auto_sel               | 0       |
+|    add_ln32_1_fu_208_p2                                                                  |     |        | add_ln32_1                                                                  | add       | fabric                 | 0       |
+|    select_ln32_2_fu_214_p3                                                               |     |        | select_ln32_2                                                               | select    | auto_sel               | 0       |
+|    select_ln32_3_fu_293_p3                                                               |     |        | select_ln32_3                                                               | select    | auto_sel               | 0       |
+|    mac_muladd_7ns_5ns_7ns_12_4_1_U15                                                     | 1   |        | empty                                                                       | mul       | dsp_slice              | 3       |
+|    x_fu_264_p2                                                                           |     |        | x                                                                           | sub       | fabric                 | 0       |
+|    mac_muladd_7ns_5ns_7ns_12_4_1_U15                                                     | 1   |        | add_ln35                                                                    | add       | dsp_slice              | 3       |
+|    mul_48s_29s_76_1_1_U14                                                                | 6   |        | prod                                                                        | mul       | auto                   | 0       |
+|    acc_1_fu_306_p2                                                                       |     |        | acc_1                                                                       | add       | fabric                 | 0       |
+|    add_ln33_fu_226_p2                                                                    |     |        | add_ln33                                                                    | add       | fabric                 | 0       |
+|    icmp_ln33_1_fu_232_p2                                                                 |     |        | icmp_ln33_1                                                                 | seteq     | auto                   | 0       |
+|    icmp_ln37_fu_332_p2                                                                   |     |        | icmp_ln37                                                                   | setgt     | auto                   | 0       |
+|    icmp_ln37_1_fu_338_p2                                                                 |     |        | icmp_ln37_1                                                                 | setlt     | auto                   | 0       |
+|    or_ln37_fu_344_p2                                                                     |     |        | or_ln37                                                                     | or        | auto                   | 0       |
+|    invalid_1_fu_350_p2                                                                   |     |        | invalid_1                                                                   | or        | auto                   | 0       |
+|    add_ln37_fu_367_p2                                                                    |     |        | add_ln37                                                                    | add       | fabric                 | 0       |
+|  + detector_hls_Pipeline_VITIS_LOOP_42_7                                                 | 0   |        |                                                                             |           |                        |         |
+|    icmp_ln46_fu_220_p2                                                                   |     |        | icmp_ln46                                                                   | setlt     | auto                   | 0       |
+|    xor_ln46_fu_226_p2                                                                    |     |        | xor_ln46                                                                    | xor       | auto                   | 0       |
+|    select_ln46_fu_232_p3                                                                 |     |        | select_ln46                                                                 | select    | auto_sel               | 0       |
+|    depth_1_fu_194_p2                                                                     |     |        | depth_1                                                                     | add       | fabric                 | 0       |
++------------------------------------------------------------------------------------------+-----+--------+-----------------------------------------------------------------------------+-----------+------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++----------------------------------------------------------+--------------+------+------+------+--------+----------------+------+---------+------------------+
+| Name                                                     | Usage        | Type | BRAM | URAM | Pragma | Variable       | Impl | Latency | Bitwidth, Depth, |
+|                                                          |              |      |      |      |        |                |      |         | Banks            |
++----------------------------------------------------------+--------------+------+------+------+--------+----------------+------+---------+------------------+
+| + detector_hls                                           |              |      | 27   | 0    |        |                |      |         |                  |
+|   raw_U                                                  | ram_1p array |      | 2    |      |        | raw            | auto | 1       | 48, 97, 1        |
+|   features_U                                             | ram_1p array |      | 2    |      |        | features       | auto | 1       | 48, 218, 1       |
+|   r18_ROOTS_U                                            | rom_1p       |      | 1    |      |        | r18_ROOTS      | auto | 1       | 11, 120, 1       |
+|   r18_NODE_VALUE_U                                       | rom_1p       |      | 3    |      |        | r18_NODE_VALUE | auto | 1       | 23, 1560, 1      |
+|  + detector_hls_Pipeline_VITIS_LOOP_32_4_VITIS_LOOP_33_5 |              |      | 8    | 0    |        |                |      |         |                  |
+|    r18_DCT_U                                             | rom_1p       |      | 8    |      |        | r18_DCT        | auto | 1       | 29, 2328, 1      |
+|  + detector_hls_Pipeline_VITIS_LOOP_42_7                 |              |      | 11   | 0    |        |                |      |         |                  |
+|    r18_NODE_LEAF_U                                       | rom_1p       |      | 1    |      |        | r18_NODE_LEAF  | auto | 1       | 1, 1560, 1       |
+|    r18_NODE_FEAT_U                                       | rom_1p       |      | 1    |      |        | r18_NODE_FEAT  | auto | 1       | 8, 1560, 1       |
+|    r18_NODE_LEFT_U                                       | rom_1p       |      | 2    |      |        | r18_NODE_LEFT  | auto | 1       | 11, 1560, 1      |
+|    r18_NODE_RIGHT_U                                      | rom_1p       |      | 2    |      |        | r18_NODE_RIGHT | auto | 1       | 11, 1560, 1      |
+|    r18_NODE_THR_U                                        | rom_1p       |      | 5    |      |        | r18_NODE_THR   | auto | 1       | 38, 1560, 1      |
++----------------------------------------------------------+--------------+------+------+------+--------+----------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+---------------------------------------------------------+---------------------------------------------------------+
+| Type            | Options                                                 | Location                                                |
++-----------------+---------------------------------------------------------+---------------------------------------------------------+
+| interface       | ap_memory port=bands storage_type=rom_1p latency=1      | src/detector.cpp:5 in detector_hls, bands               |
+| interface       | ap_none port=valid                                      | src/detector.cpp:6 in detector_hls, valid               |
+| interface       | ap_none port=new_sequence                               | src/detector.cpp:7 in detector_hls, new_sequence        |
+| interface       | ap_none port=array_id                                   | src/detector.cpp:8 in detector_hls, array_id            |
+| interface       | ap_none port=result                                     | src/detector.cpp:9 in detector_hls, result              |
+| array_partition | variable=history complete                               | src/detector.cpp:11 in detector_hls, history            |
+| array_partition | variable=sums complete                                  | src/detector.cpp:12 in detector_hls, sums               |
+| array_partition | variable=counts complete                                | src/detector.cpp:13 in detector_hls, counts             |
+| array_partition | variable=ptr complete                                   | src/detector.cpp:14 in detector_hls, ptr                |
+| reset           | variable=counts                                         | src/detector.cpp:15 in detector_hls, counts             |
+| reset           | variable=sums                                           | src/detector.cpp:16 in detector_hls, sums               |
+| reset           | variable=ptr                                            | src/detector.cpp:17 in detector_hls, ptr                |
+| pipeline        | II=1                                                    | src/detector.cpp:23 in detector_hls                     |
+| pipeline        | II=1                                                    | src/detector.cpp:34 in detector_hls                     |
+| inline          | off                                                     | src/joint_search.cpp:6 in candidate_score               |
+| array_partition | variable=distance complete                              | src/joint_search.cpp:8 in candidate_score, distance     |
+| array_partition | variable=real complete                                  | src/joint_search.cpp:15 in candidate_score, real        |
+| array_partition | variable=imag complete                                  | src/joint_search.cpp:16 in candidate_score, imag        |
+| unroll          |                                                         | src/joint_search.cpp:18 in candidate_score              |
+| loop_tripcount  | min=24 max=1440 avg=1200                                | src/joint_search.cpp:22 in candidate_score              |
+| pipeline        | II=1                                                    | src/joint_search.cpp:23 in candidate_score              |
+| interface       | ap_memory port=covariance storage_type=rom_1p latency=2 | src/joint_search.cpp:35 in joint_search_hls, covariance |
+| interface       | ap_none port=result                                     | src/joint_search.cpp:36 in joint_search_hls, result     |
+| aggregate       | variable=obs compact=bit                                | src/joint_search.cpp:39 in joint_search_hls, obs        |
+| bind_storage    | variable=obs type=ram_1p impl=bram                      | src/joint_search.cpp:40 in joint_search_hls, obs        |
+| pipeline        | II=1                                                    | src/joint_search.cpp:44 in joint_search_hls             |
+| pipeline        | II=1                                                    | src/joint_search.cpp:55 in joint_search_hls             |
+| loop_tripcount  | min=343 max=11025 avg=2123                              | src/joint_search.cpp:86 in joint_search_hls             |
+| interface       | ap_memory port=data storage_type=ram_t2p latency=1      | src/kernels.cpp:6 in fft4096_hls, data                  |
+| interface       | ap_none port=overflow                                   | src/kernels.cpp:7 in fft4096_hls, overflow              |
+| pipeline        | II=2                                                    | src/kernels.cpp:12 in fft4096_hls                       |
+| dependence      | variable=data inter false                               | src/kernels.cpp:13 in fft4096_hls, data                 |
+| inline          |                                                         | src/kernels.cpp:29 in fir                               |
+| bind_storage    | variable=history type=ram_s2p impl=bram                 | src/kernels.cpp:31 in fir, history                      |
+| reset           | variable=wr                                             | src/kernels.cpp:33 in fir, wr                           |
+| reset           | variable=count                                          | src/kernels.cpp:34 in fir, count                        |
+| reset           | variable=next                                           | src/kernels.cpp:35 in fir, next                         |
+| reset           | variable=phase                                          | src/kernels.cpp:36 in fir, phase                        |
+| array_partition | variable=acc complete                                   | src/kernels.cpp:40 in fir, acc                          |
+| unroll          |                                                         | src/kernels.cpp:42 in fir                               |
+| pipeline        | II=1                                                    | src/kernels.cpp:46 in fir                               |
+| unroll          |                                                         | src/kernels.cpp:49 in fir                               |
+| unroll          |                                                         | src/kernels.cpp:54 in fir                               |
+| interface       | ap_none port=samples                                    | src/kernels.cpp:63 in fir_loc_hls, samples              |
+| interface       | ap_none port=result                                     | src/kernels.cpp:64 in fir_loc_hls, result               |
+| interface       | ap_none port=samples                                    | src/kernels.cpp:68 in fir_det_hls, samples              |
+| interface       | ap_none port=result                                     | src/kernels.cpp:69 in fir_det_hls, result               |
+| interface       | ap_none port=value                                      | src/kernels.cpp:73 in sqrt_hls, value                   |
+| interface       | ap_none port=result                                     | src/kernels.cpp:74 in sqrt_hls, result                  |
+| interface       | ap_none port=num                                        | src/kernels.cpp:78 in divide_hls, num                   |
+| interface       | ap_none port=den                                        | src/kernels.cpp:79 in divide_hls, den                   |
+| interface       | ap_none port=result                                     | src/kernels.cpp:80 in divide_hls, result                |
+| interface       | ap_none port=mode                                       | src/kernels.cpp:84 in cordic_hls, mode                  |
+| interface       | ap_none port=vx                                         | src/kernels.cpp:85 in cordic_hls, vx                    |
+| interface       | ap_none port=vy                                         | src/kernels.cpp:86 in cordic_hls, vy                    |
+| interface       | ap_none port=angle                                      | src/kernels.cpp:87 in cordic_hls, angle                 |
+| interface       | ap_none port=result                                     | src/kernels.cpp:88 in cordic_hls, result                |
+| interface       | ap_none port=value                                      | src/kernels.cpp:92 in power_db_hls, value               |
+| interface       | ap_none port=exponent                                   | src/kernels.cpp:93 in power_db_hls, exponent            |
+| interface       | ap_none port=result                                     | src/kernels.cpp:94 in power_db_hls, result              |
+| interface       | ap_none port=ar                                         | src/kernels.cpp:98 in covariance_hls, ar                |
+| interface       | ap_none port=ai                                         | src/kernels.cpp:99 in covariance_hls, ai                |
+| interface       | ap_none port=br                                         | src/kernels.cpp:100 in covariance_hls, br               |
+| interface       | ap_none port=bi                                         | src/kernels.cpp:101 in covariance_hls, bi               |
+| interface       | ap_none port=oldr                                       | src/kernels.cpp:102 in covariance_hls, oldr             |
+| interface       | ap_none port=oldi                                       | src/kernels.cpp:103 in covariance_hls, oldi             |
+| interface       | ap_none port=shift_old                                  | src/kernels.cpp:104 in covariance_hls, shift_old        |
+| interface       | ap_none port=next_exp                                   | src/kernels.cpp:105 in covariance_hls, next_exp         |
+| interface       | ap_none port=result                                     | src/kernels.cpp:106 in covariance_hls, result           |
+| inline          | off                                                     | src/numeric.hpp:5 in isqrt                              |
+| pipeline        | II=1                                                    | src/numeric.hpp:8 in isqrt                              |
+| inline          | off                                                     | src/numeric.hpp:16 in udiv                              |
+| pipeline        | II=1                                                    | src/numeric.hpp:20 in udiv                              |
+| inline          | off                                                     | src/numeric.hpp:26 in cordic                            |
+| pipeline        | II=1                                                    | src/numeric.hpp:32 in cordic                            |
+| inline          | off                                                     | src/numeric.hpp:43 in power_db                          |
++-----------------+---------------------------------------------------------+---------------------------------------------------------+
+
+

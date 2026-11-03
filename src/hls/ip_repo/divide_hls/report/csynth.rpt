@@ -1,0 +1,183 @@
+
+
+================================================================
+== Synthesis Summary Report of 'divide_hls'
+================================================================
++ General Information: 
+    * Date:           Fri Oct 30 23:09:02 2026
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        core
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a200t-fbg484-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------+------+-------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |       Modules       | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |      |         |           |           |     |
+    |       & Loops       | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +---------------------+------+-------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ divide_hls         |     -|   1.15|       68|  1.360e+03|         -|       69|     -|        no|     -|  10 (1%)|  399 (~0%)|  636 (~0%)|    -|
+    | + udiv              |     -|   7.60|       66|  1.320e+03|         -|       66|     -|        no|     -|        -|  202 (~0%)|  421 (~0%)|    -|
+    |  o VITIS_LOOP_19_1  |     -|  14.60|       64|  1.280e+03|         1|        1|    64|       yes|     -|        -|          -|          -|    -|
+    +---------------------+------+-------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++--------+---------+-----------+----------+
+| Port   | Mode    | Direction | Bitwidth |
++--------+---------+-----------+----------+
+| den    | ap_none | in        | 64       |
+| num    | ap_none | in        | 64       |
+| result | ap_none | out       | 129      |
++--------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst_n  | reset      | ap_rst_n                          |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------+
+| Argument | Direction | Datatype      |
++----------+-----------+---------------+
+| num      | in        | ap_uint<64>   |
+| den      | in        | ap_uint<64>   |
+| result   | out       | ap_uint<129>& |
++----------+-----------+---------------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| num      | num          | port    |
+| den      | den          | port    |
+| result   | result       | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------------+-----+--------+-----------+-----------+----------+---------+
+| Name                                  | DSP | Pragma | Variable  | Op        | Impl     | Latency |
++---------------------------------------+-----+--------+-----------+-----------+----------+---------+
+| + divide_hls                          | 10  |        |           |           |          |         |
+|   icmp_ln81_fu_77_p2                  |     |        | icmp_ln81 | seteq     | auto     | 0       |
+|   mul_64s_64s_64_1_1_U7               | 10  |        | mul_ln81  | mul       | auto     | 0       |
+|   sub_ln81_fu_83_p2                   |     |        | sub_ln81  | sub       | fabric   | 0       |
+|  + udiv                               | 0   |        |           |           |          |         |
+|    bitselect_1ns_64ns_32ns_1_1_1_U1   |     |        | tmp_1     | bitselect | auto     | 0       |
+|    icmp_ln21_fu_133_p2                |     |        | icmp_ln21 | setlt     | auto     | 0       |
+|    rem_3_fu_138_p2                    |     |        | rem_3     | sub       | fabric   | 0       |
+|    bitset_64ns_64ns_32ns_1s_64_1_1_U2 |     |        | q_2       | bitset    | auto     | 0       |
+|    rem_1_fu_153_p3                    |     |        | rem_1     | select    | auto_sel | 0       |
+|    q_1_fu_161_p3                      |     |        | q_1       | select    | auto_sel | 0       |
+|    i_3_fu_169_p2                      |     |        | i_3       | add       | fabric   | 0       |
++---------------------------------------+-----+--------+-----------+-----------+----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+---------------------------------------------------------+---------------------------------------------------------+
+| Type            | Options                                                 | Location                                                |
++-----------------+---------------------------------------------------------+---------------------------------------------------------+
+| interface       | ap_memory port=bands storage_type=rom_1p latency=1      | src/detector.cpp:5 in detector_hls, bands               |
+| interface       | ap_none port=valid                                      | src/detector.cpp:6 in detector_hls, valid               |
+| interface       | ap_none port=new_sequence                               | src/detector.cpp:7 in detector_hls, new_sequence        |
+| interface       | ap_none port=array_id                                   | src/detector.cpp:8 in detector_hls, array_id            |
+| interface       | ap_none port=result                                     | src/detector.cpp:9 in detector_hls, result              |
+| array_partition | variable=history complete                               | src/detector.cpp:11 in detector_hls, history            |
+| array_partition | variable=sums complete                                  | src/detector.cpp:12 in detector_hls, sums               |
+| array_partition | variable=counts complete                                | src/detector.cpp:13 in detector_hls, counts             |
+| array_partition | variable=ptr complete                                   | src/detector.cpp:14 in detector_hls, ptr                |
+| reset           | variable=counts                                         | src/detector.cpp:15 in detector_hls, counts             |
+| reset           | variable=sums                                           | src/detector.cpp:16 in detector_hls, sums               |
+| reset           | variable=ptr                                            | src/detector.cpp:17 in detector_hls, ptr                |
+| pipeline        | II=1                                                    | src/detector.cpp:23 in detector_hls                     |
+| pipeline        | II=1                                                    | src/detector.cpp:34 in detector_hls                     |
+| inline          | off                                                     | src/joint_search.cpp:6 in candidate_score               |
+| array_partition | variable=distance complete                              | src/joint_search.cpp:8 in candidate_score, distance     |
+| array_partition | variable=real complete                                  | src/joint_search.cpp:15 in candidate_score, real        |
+| array_partition | variable=imag complete                                  | src/joint_search.cpp:16 in candidate_score, imag        |
+| unroll          |                                                         | src/joint_search.cpp:18 in candidate_score              |
+| loop_tripcount  | min=24 max=1440 avg=1200                                | src/joint_search.cpp:22 in candidate_score              |
+| pipeline        | II=1                                                    | src/joint_search.cpp:23 in candidate_score              |
+| interface       | ap_memory port=covariance storage_type=rom_1p latency=2 | src/joint_search.cpp:35 in joint_search_hls, covariance |
+| interface       | ap_none port=result                                     | src/joint_search.cpp:36 in joint_search_hls, result     |
+| aggregate       | variable=obs compact=bit                                | src/joint_search.cpp:39 in joint_search_hls, obs        |
+| bind_storage    | variable=obs type=ram_1p impl=bram                      | src/joint_search.cpp:40 in joint_search_hls, obs        |
+| pipeline        | II=1                                                    | src/joint_search.cpp:44 in joint_search_hls             |
+| pipeline        | II=1                                                    | src/joint_search.cpp:55 in joint_search_hls             |
+| loop_tripcount  | min=343 max=11025 avg=2123                              | src/joint_search.cpp:86 in joint_search_hls             |
+| interface       | ap_memory port=data storage_type=ram_t2p latency=1      | src/kernels.cpp:6 in fft4096_hls, data                  |
+| interface       | ap_none port=overflow                                   | src/kernels.cpp:7 in fft4096_hls, overflow              |
+| pipeline        | II=2                                                    | src/kernels.cpp:12 in fft4096_hls                       |
+| dependence      | variable=data inter false                               | src/kernels.cpp:13 in fft4096_hls, data                 |
+| inline          |                                                         | src/kernels.cpp:29 in fir                               |
+| bind_storage    | variable=history type=ram_s2p impl=bram                 | src/kernels.cpp:31 in fir, history                      |
+| reset           | variable=wr                                             | src/kernels.cpp:33 in fir, wr                           |
+| reset           | variable=count                                          | src/kernels.cpp:34 in fir, count                        |
+| reset           | variable=next                                           | src/kernels.cpp:35 in fir, next                         |
+| reset           | variable=phase                                          | src/kernels.cpp:36 in fir, phase                        |
+| array_partition | variable=acc complete                                   | src/kernels.cpp:40 in fir, acc                          |
+| unroll          |                                                         | src/kernels.cpp:42 in fir                               |
+| pipeline        | II=1                                                    | src/kernels.cpp:46 in fir                               |
+| unroll          |                                                         | src/kernels.cpp:49 in fir                               |
+| unroll          |                                                         | src/kernels.cpp:54 in fir                               |
+| interface       | ap_none port=samples                                    | src/kernels.cpp:63 in fir_loc_hls, samples              |
+| interface       | ap_none port=result                                     | src/kernels.cpp:64 in fir_loc_hls, result               |
+| interface       | ap_none port=samples                                    | src/kernels.cpp:68 in fir_det_hls, samples              |
+| interface       | ap_none port=result                                     | src/kernels.cpp:69 in fir_det_hls, result               |
+| interface       | ap_none port=value                                      | src/kernels.cpp:73 in sqrt_hls, value                   |
+| interface       | ap_none port=result                                     | src/kernels.cpp:74 in sqrt_hls, result                  |
+| interface       | ap_none port=num                                        | src/kernels.cpp:78 in divide_hls, num                   |
+| interface       | ap_none port=den                                        | src/kernels.cpp:79 in divide_hls, den                   |
+| interface       | ap_none port=result                                     | src/kernels.cpp:80 in divide_hls, result                |
+| interface       | ap_none port=mode                                       | src/kernels.cpp:84 in cordic_hls, mode                  |
+| interface       | ap_none port=vx                                         | src/kernels.cpp:85 in cordic_hls, vx                    |
+| interface       | ap_none port=vy                                         | src/kernels.cpp:86 in cordic_hls, vy                    |
+| interface       | ap_none port=angle                                      | src/kernels.cpp:87 in cordic_hls, angle                 |
+| interface       | ap_none port=result                                     | src/kernels.cpp:88 in cordic_hls, result                |
+| interface       | ap_none port=value                                      | src/kernels.cpp:92 in power_db_hls, value               |
+| interface       | ap_none port=exponent                                   | src/kernels.cpp:93 in power_db_hls, exponent            |
+| interface       | ap_none port=result                                     | src/kernels.cpp:94 in power_db_hls, result              |
+| interface       | ap_none port=ar                                         | src/kernels.cpp:98 in covariance_hls, ar                |
+| interface       | ap_none port=ai                                         | src/kernels.cpp:99 in covariance_hls, ai                |
+| interface       | ap_none port=br                                         | src/kernels.cpp:100 in covariance_hls, br               |
+| interface       | ap_none port=bi                                         | src/kernels.cpp:101 in covariance_hls, bi               |
+| interface       | ap_none port=oldr                                       | src/kernels.cpp:102 in covariance_hls, oldr             |
+| interface       | ap_none port=oldi                                       | src/kernels.cpp:103 in covariance_hls, oldi             |
+| interface       | ap_none port=shift_old                                  | src/kernels.cpp:104 in covariance_hls, shift_old        |
+| interface       | ap_none port=next_exp                                   | src/kernels.cpp:105 in covariance_hls, next_exp         |
+| interface       | ap_none port=result                                     | src/kernels.cpp:106 in covariance_hls, result           |
+| inline          | off                                                     | src/numeric.hpp:5 in isqrt                              |
+| pipeline        | II=1                                                    | src/numeric.hpp:8 in isqrt                              |
+| inline          | off                                                     | src/numeric.hpp:16 in udiv                              |
+| pipeline        | II=1                                                    | src/numeric.hpp:20 in udiv                              |
+| inline          | off                                                     | src/numeric.hpp:26 in cordic                            |
+| pipeline        | II=1                                                    | src/numeric.hpp:32 in cordic                            |
+| inline          | off                                                     | src/numeric.hpp:43 in power_db                          |
++-----------------+---------------------------------------------------------+---------------------------------------------------------+
+
+

@@ -1,0 +1,288 @@
+
+****** vitis-run v2024.2 (64-bit)
+  **** SW Build 5238363 on 2024-11-10-08:15:25
+  **** Start of session at: Fri Oct 30 22:56:07 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2024.2 5238294
+Sourcing Tcl script 'D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/build.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset core 
+INFO: [HLS 200-10] Creating and opening project 'D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core'.
+INFO: [HLS 200-1510] Running: set_top fft4096_hls 
+INFO: [HLS 200-1510] Running: add_files src/kernels.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding design file 'src/kernels.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb test_fft.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding test bench file 'test_fft.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7a200tfbg484-2 
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-fbg484-2'
+INFO: [HLS 200-1510] Running: create_clock -period 20 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1510] Running: config_rtl -reset_level low -reset control 
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../test_fft.cpp in debug mode
+   Compiling ../../../../src/kernels.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../test_fft.cpp:1:
+In file included from ../../../../src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../src/kernels.cpp:1:
+In file included from ../../../.././src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+FFT4096 HLS PASS: zero, impulse, tones, complex broadband vs independent double DFT
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:18; Allocated memory: 1.016 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 259.660 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/kernels.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.351 seconds; current allocated memory: 262.688 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 3,174 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 191 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 141 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 130 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 105 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 105 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 105 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 105 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 107 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 107 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 105 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 105 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 105 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 108 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 116 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'r18::sat32(ap_int<66>)' into 'fft4096_hls(ap_uint<64>*, ap_uint<1>&)' (src/kernels.cpp:5:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.866 seconds; current allocated memory: 264.262 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 264.262 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 269.730 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 271.719 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'fft4096_hls' (src/kernels.cpp:5:26)...5 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 293.605 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_9_1'(src/kernels.cpp:9:21) and 'VITIS_LOOP_11_2'(src/kernels.cpp:11:26) in function 'fft4096_hls' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_9_1' (src/kernels.cpp:9:21) in function 'fft4096_hls'.
+WARNING: [HLS 200-1946] Dependence pragma (src/kernels.cpp:13:9) in loop 'VITIS_LOOP_11_2' may become invalid because the loop was flattened with the outer loop 'VITIS_LOOP_9_1'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'data'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'data'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.125 seconds; current allocated memory: 293.762 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fft4096_hls' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft4096_hls' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_9_1_VITIS_LOOP_11_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 8, loop 'VITIS_LOOP_9_1_VITIS_LOOP_11_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.469 seconds; current allocated memory: 293.762 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.106 seconds; current allocated memory: 294.258 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft4096_hls' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'fft4096_hls/data' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fft4096_hls/overflow' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'overflow' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fft4096_hls' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fft4096_hls' pipeline 'VITIS_LOOP_9_1_VITIS_LOOP_11_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_31s_32s_63_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_62_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft4096_hls'.
+INFO: [RTMG 210-279] Implementing memory 'fft4096_hls_r18_TW_R_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fft4096_hls_r18_TW_I_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.159 seconds; current allocated memory: 296.984 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.788 seconds; current allocated memory: 301.887 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.453 seconds; current allocated memory: 305.055 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fft4096_hls.
+INFO: [VLOG 209-307] Generating Verilog RTL for fft4096_hls.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 79.20 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:24; Allocated memory: 46.062 MB.
+INFO: [HLS 200-1510] Running: cosim_design -rtl verilog -tool xsim 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling apatb_fft4096_hls.cpp
+   Compiling test_fft.cpp_pre.cpp.tb.cpp
+   Compiling kernels.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fft4096_hls_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+FFT4096 HLS PASS: zero, impulse, tones, complex broadband vs independent double DFT
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+D:\xiaobao\2026\fpga_board_work\r18_hls_fft4096_hls_20261030_225602\core\solution1\sim\verilog>set PATH= 
+
+D:\xiaobao\2026\fpga_board_work\r18_hls_fft4096_hls_20261030_225602\core\solution1\sim\verilog>call C:/Xilinx/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_fft4096_hls_top glbl -Oenable_linking_all_libraries  -prj fft4096_hls.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s fft4096_hls  
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_fft4096_hls_top glbl -Oenable_linking_all_libraries -prj fft4096_hls.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s fft4096_hls 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/sim/verilog/AESL_automem_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/sim/verilog/fft4096_hls.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_fft4096_hls_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/sim/verilog/fft4096_hls.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft4096_hls
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/sim/verilog/fft4096_hls_flow_control_loop_delay_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft4096_hls_flow_control_loop_delay_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/sim/verilog/fft4096_hls_mul_31s_32s_63_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft4096_hls_mul_31s_32s_63_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/sim/verilog/fft4096_hls_mul_32s_32s_62_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft4096_hls_mul_32s_32s_62_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/sim/verilog/fft4096_hls_r18_TW_I_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft4096_hls_r18_TW_I_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/sim/verilog/fft4096_hls_r18_TW_R_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft4096_hls_r18_TW_R_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.fft4096_hls_r18_TW_R_ROM_AUTO_1R
+Compiling module xil_defaultlib.fft4096_hls_r18_TW_I_ROM_AUTO_1R
+Compiling module xil_defaultlib.fft4096_hls_mul_31s_32s_63_1_1(N...
+Compiling module xil_defaultlib.fft4096_hls_mul_32s_32s_62_1_1(N...
+Compiling module xil_defaultlib.fft4096_hls_flow_control_loop_de...
+Compiling module xil_defaultlib.fft4096_hls
+Compiling module xil_defaultlib.AESL_automem_data
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.upc_loop_intf_default
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_fft4096_hls_top
+Compiling module work.glbl
+Built simulation snapshot fft4096_hls
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Oct 30 22:57:38 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/fft4096_hls/xsim_script.tcl
+# xsim {fft4096_hls} -autoloadwcfg -tclbatch {fft4096_hls.tcl}
+Time resolution is 1 ps
+source fft4096_hls.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 4 [0.00%] @ "150000"
+// RTL Simulation : 1 / 4 [100.00%] @ "983330000"
+// RTL Simulation : 2 / 4 [100.00%] @ "1966490000"
+// RTL Simulation : 3 / 4 [100.00%] @ "2949650000"
+// RTL Simulation : 4 / 4 [100.00%] @ "3932810000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 3932930 ns : File "D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/sim/verilog/fft4096_hls.autotb.v" Line 299
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 22:57:42 2026...
+INFO: [COSIM 212-316] Starting C post checking ...
+FFT4096 HLS PASS: zero, impulse, tones, complex broadband vs independent double DFT
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:00:45; Allocated memory: 12.004 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -rtl verilog -vendor drone.self -library compute -version 1.0 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+WARNING: C:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Oct 30 22:57:49 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at 'C'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/solution1_data.json outdir=D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/impl/ip srcdir=D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1 sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/impl/ip/misc
+INFO: Copied 8 verilog file(s) to D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/impl/ip/hdl/verilog
+INFO: Copied 6 vhdl file(s) to D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/impl/ip/hdl/vhdl
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+INFO: Import ports from HDL: D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/impl/ip/hdl/vhdl/fft4096_hls.vhd (fft4096_hls)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Add data interface data_address0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: Add data interface data_d0
+INFO: Add data interface data_q0
+INFO: Add data interface data_address1
+INFO: Add data interface data_d1
+INFO: Add data interface data_q1
+INFO: Add data interface overflow
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/impl/ip/component.xml
+INFO: Created IP archive D:/xiaobao/2026/fpga_board_work/r18_hls_fft4096_hls_20261030_225602/core/solution1/impl/ip/drone_self_compute_fft4096_hls_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 22:57:52 2026...
+INFO: [HLS 200-802] Generated output file core/solution1/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:05; Allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 103.98 seconds; peak allocated memory: 317.297 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 45s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Oct 30 23:52:26 2026
+# Process ID         : 10644
+# Current directory  : D:/xiaobao/2026/fpga_board_work/verify_r18_hls_20261030_235135_914
+# Command line       : xsim.exe -log test_stft16_schedule.log -mode tcl -source {xsim.dir/test_stft16_schedule/xsim_script.tcl}
+# Log file           : D:/xiaobao/2026/fpga_board_work/verify_r18_hls_20261030_235135_914/test_stft16_schedule.log
+# Journal file       : D:/xiaobao/2026/fpga_board_work/verify_r18_hls_20261030_235135_914\xsim.jou
+# Running On         : DESKTOP-QOSKA1C
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) 7 240H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 68405 MB
+# Swap memory        : 10850 MB
+# Total Virtual      : 79256 MB
+# Available Virtual  : 41851 MB
+#-----------------------------------------------------------
+source xsim.dir/test_stft16_schedule/xsim_script.tcl
+# xsim {test_stft16_schedule} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+STFT16 PASS all4256 outputs; FFT cycles1323664 total budget1685456 vs3200000
+$finish called at time : 13236680 ns : File "D:/xiaobao/2026/fpga_board_work/verify_r18_hls_20261030_235135_914/tb_stft16_schedule.sv" Line 16
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 196.535 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 23:52:34 2026...

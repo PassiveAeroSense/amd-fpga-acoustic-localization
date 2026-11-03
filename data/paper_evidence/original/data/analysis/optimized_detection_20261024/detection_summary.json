@@ -1,0 +1,281 @@
+{
+  "first_round_candidates": 477,
+  "second_round_candidates": 261,
+  "conservative_profiles": 87,
+  "selected": {
+    "base": "spectrum__boost__aug0",
+    "smooth": 3.0,
+    "high_recall": 0.2841540576536629,
+    "overall_recall": 0.5305704524108823
+  },
+  "heights": [
+    {
+      "id": 8,
+      "file": "0，0，0.5.smq",
+      "height": 0.5,
+      "fold": 0,
+      "hits": [
+        0,
+        0
+      ],
+      "windows": 104,
+      "recall": 0.0,
+      "joint_hits": 0,
+      "threshold": 4.219100109078136,
+      "previous_hits": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "file": "0，0，10.smq",
+      "height": 10.0,
+      "fold": 1,
+      "hits": [
+        65,
+        84
+      ],
+      "windows": 104,
+      "recall": 0.7163461538461539,
+      "joint_hits": 49,
+      "threshold": 4.128862895627159,
+      "previous_hits": [
+        4,
+        6
+      ]
+    },
+    {
+      "id": 12,
+      "file": "0，0，15.smq",
+      "height": 15.0,
+      "fold": 2,
+      "hits": [
+        7,
+        4
+      ],
+      "windows": 101,
+      "recall": 0.054455445544554455,
+      "joint_hits": 0,
+      "threshold": 4.2208855684001225,
+      "previous_hits": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 13,
+      "file": "0，0，20.smq",
+      "height": 20.0,
+      "fold": 3,
+      "hits": [
+        15,
+        73
+      ],
+      "windows": 97,
+      "recall": 0.4536082474226804,
+      "joint_hits": 15,
+      "threshold": 4.004850909741436,
+      "previous_hits": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": 14,
+      "file": "0，0，30.smq",
+      "height": 30.0,
+      "fold": 4,
+      "hits": [
+        36,
+        39
+      ],
+      "windows": 96,
+      "recall": 0.390625,
+      "joint_hits": 29,
+      "threshold": 4.240079353922833,
+      "previous_hits": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 15,
+      "file": "0，0，40.smq",
+      "height": 40.0,
+      "fold": 0,
+      "hits": [
+        19,
+        40
+      ],
+      "windows": 97,
+      "recall": 0.30412371134020616,
+      "joint_hits": 2,
+      "threshold": 4.219100109078136,
+      "previous_hits": [
+        0,
+        14
+      ]
+    },
+    {
+      "id": 16,
+      "file": "0，0，50.smq",
+      "height": 50.0,
+      "fold": 1,
+      "hits": [
+        25,
+        12
+      ],
+      "windows": 98,
+      "recall": 0.18877551020408162,
+      "joint_hits": 5,
+      "threshold": 4.128862895627159,
+      "previous_hits": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 17,
+      "file": "0，0，60.smq",
+      "height": 60.0,
+      "fold": 2,
+      "hits": [
+        10,
+        17
+      ],
+      "windows": 107,
+      "recall": 0.1261682242990654,
+      "joint_hits": 0,
+      "threshold": 4.2208855684001225,
+      "previous_hits": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": 18,
+      "file": "0，0，70.smq",
+      "height": 70.0,
+      "fold": 4,
+      "hits": [
+        4,
+        59
+      ],
+      "windows": 97,
+      "recall": 0.3247422680412371,
+      "joint_hits": 4,
+      "threshold": 4.240079353922833,
+      "previous_hits": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": 19,
+      "file": "0，0，80.smq",
+      "height": 80.0,
+      "fold": 0,
+      "hits": [
+        0,
+        65
+      ],
+      "windows": 99,
+      "recall": 0.3282828282828283,
+      "joint_hits": 0,
+      "threshold": 4.219100109078136,
+      "previous_hits": [
+        0,
+        10
+      ]
+    },
+    {
+      "id": 20,
+      "file": "0，0，90.smq",
+      "height": 90.0,
+      "fold": 1,
+      "hits": [
+        18,
+        6
+      ],
+      "windows": 94,
+      "recall": 0.1276595744680851,
+      "joint_hits": 0,
+      "threshold": 4.128862895627159,
+      "previous_hits": [
+        0,
+        17
+      ]
+    },
+    {
+      "id": 10,
+      "file": "0，0，100.smq",
+      "height": 100.0,
+      "fold": 2,
+      "hits": [
+        4,
+        28
+      ],
+      "windows": 96,
+      "recall": 0.16666666666666666,
+      "joint_hits": 0,
+      "threshold": 4.2208855684001225,
+      "previous_hits": [
+        6,
+        7
+      ]
+    },
+    {
+      "height": 120,
+      "hits": [
+        0,
+        34
+      ],
+      "windows": 124,
+      "joint_hits": 0,
+      "previous_hits": [
+        0,
+        3
+      ]
+    }
+  ],
+  "background_calibration": [
+    {
+      "id": 33,
+      "file": "环境噪音.smq",
+      "windows": 226,
+      "hits": [
+        0,
+        0
+      ],
+      "role": "calibration"
+    },
+    {
+      "id": 100,
+      "file": "独立单阵列环境音",
+      "windows": 99,
+      "hits": [
+        0
+      ],
+      "role": "calibration"
+    }
+  ],
+  "first_round_independent_noise_false_alarms": {
+    "file": "独立单阵列环境音",
+    "id": 100,
+    "duration_s": 16.8,
+    "windows": 99,
+    "hits": [
+      38
+    ],
+    "rates": [
+      0.3838383838383838
+    ],
+    "joint_hits": null,
+    "median_scores": [
+      2.9854258487099097
+    ],
+    "threshold": 3.072666658200329
+  },
+  "claim": "Best measured conservative profile among evaluated candidates on available development data, not proven globally best or independently validated."
+}

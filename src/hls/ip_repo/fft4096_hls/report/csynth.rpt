@@ -1,0 +1,227 @@
+
+
+================================================================
+== Synthesis Summary Report of 'fft4096_hls'
+================================================================
++ General Information: 
+    * Date:           Fri Oct 30 22:57:00 2026
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        core
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a200t-fbg484-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------------------+------+-------+---------+-----------+----------+---------+-------+----------+--------+--------+-----------+-----------+-----+
+    |              Modules              | Issue|       | Latency |  Latency  | Iteration|         |  Trip |          |        |        |           |           |     |
+    |              & Loops              | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|  BRAM  |   DSP  |     FF    |    LUT    | URAM|
+    +-----------------------------------+------+-------+---------+-----------+----------+---------+-------+----------+--------+--------+-----------+-----------+-----+
+    |+ fft4096_hls                      |    II|   1.97|    49159|  9.832e+05|         -|    49152|      -|    rewind|  8 (1%)|  8 (1%)|  650 (~0%)|  1605 (1%)|    -|
+    | o VITIS_LOOP_9_1_VITIS_LOOP_11_2  |     -|  14.60|    49157|  9.831e+05|         8|        2|  24576|       yes|       -|       -|          -|          -|    -|
+    +-----------------------------------+------+-------+---------+-----------+----------+---------+-------+----------+--------+--------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++---------------+-----------+----------+
+| Port          | Direction | Bitwidth |
++---------------+-----------+----------+
+| data_address0 | out       | 12       |
+| data_address1 | out       | 12       |
+| data_d0       | out       | 64       |
+| data_d1       | out       | 64       |
+| data_q0       | in        | 64       |
+| data_q1       | in        | 64       |
++---------------+-----------+----------+
+
+* Other Ports
++----------+---------+-----------+----------+
+| Port     | Mode    | Direction | Bitwidth |
++----------+---------+-----------+----------+
+| overflow | ap_none | out       | 1        |
++----------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst_n  | reset      | ap_rst_n                          |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------+
+| Argument | Direction | Datatype     |
++----------+-----------+--------------+
+| data     | inout     | ap_uint<64>* |
+| overflow | out       | ap_uint<1>&  |
++----------+-----------+--------------+
+
+* SW-to-HW Mapping
++----------+---------------+---------+----------+
+| Argument | HW Interface  | HW Type | HW Usage |
++----------+---------------+---------+----------+
+| data     | data_address0 | port    | offset   |
+| data     | data_ce0      | port    |          |
+| data     | data_we0      | port    |          |
+| data     | data_d0       | port    |          |
+| data     | data_q0       | port    |          |
+| data     | data_address1 | port    | offset   |
+| data     | data_ce1      | port    |          |
+| data     | data_we1      | port    |          |
+| data     | data_d1       | port    |          |
+| data     | data_q1       | port    |          |
+| overflow | overflow      | port    |          |
++----------+---------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------+-----+--------+---------------+--------+-----------+---------+
+| Name                      | DSP | Pragma | Variable      | Op     | Impl      | Latency |
++---------------------------+-----+--------+---------------+--------+-----------+---------+
+| + fft4096_hls             | 8   |        |               |        |           |         |
+|   select_ln9_fu_243_p3    |     |        | select_ln9    | select | auto_sel  | 0       |
+|   stage_1_mid1_fu_339_p2  |     |        | stage_1_mid1  | add    | fabric    | 0       |
+|   select_ln9_1_fu_344_p3  |     |        | select_ln9_1  | select | auto_sel  | 0       |
+|   stage_2_fu_251_p3       |     |        | stage_2       | select | auto_sel  | 0       |
+|   half_fu_267_p2          |     |        | half          | shl    | auto_pipe | 0       |
+|   sub_fu_277_p2           |     |        | sub           | add    | fabric    | 0       |
+|   sub8_fu_355_p2          |     |        | sub8          | sub    | fabric    | 0       |
+|   j_fu_291_p2             |     |        | j             | and    | auto      | 0       |
+|   lshr_ln14_fu_297_p2     |     |        | lshr_ln14     | lshr   | auto_pipe | 0       |
+|   shl_ln14_fu_367_p2      |     |        | shl_ln14      | shl    | auto_pipe | 0       |
+|   a_fu_376_p2             |     |        | a             | add    | fabric    | 0       |
+|   b_fu_382_p2             |     |        | b             | add    | fabric    | 0       |
+|   t_fu_387_p2             |     |        | t             | shl    | auto_pipe | 0       |
+|   mul_32s_32s_62_1_1_U2   | 4   |        | p0            | mul    | auto      | 0       |
+|   mul_31s_32s_63_1_1_U1   | 4   |        | p1            | mul    | auto      | 0       |
+|   mul_31s_32s_63_1_1_U1   | 4   |        | p2            | mul    | auto      | 0       |
+|   mul_32s_32s_62_1_1_U2   | 4   |        | p3            | mul    | auto      | 0       |
+|   tr_fu_474_p2            |     |        | tr            | sub    | fabric    | 0       |
+|   ti_fu_502_p2            |     |        | ti            | add    | fabric    | 0       |
+|   add_ln19_fu_524_p2      |     |        | add_ln19      | add    | fabric    | 0       |
+|   add_ln19_1_fu_550_p2    |     |        | add_ln19_1    | add    | fabric    | 0       |
+|   sub_ln20_fu_570_p2      |     |        | sub_ln20      | sub    | fabric    | 0       |
+|   sub_ln20_1_fu_590_p2    |     |        | sub_ln20_1    | sub    | fabric    | 0       |
+|   add_ln21_fu_606_p2      |     |        | add_ln21      | add    | fabric    | 0       |
+|   icmp_ln21_fu_622_p2     |     |        | icmp_ln21     | setne  | auto      | 0       |
+|   add_ln21_1_fu_628_p2    |     |        | add_ln21_1    | add    | fabric    | 0       |
+|   icmp_ln21_1_fu_644_p2   |     |        | icmp_ln21_1   | setne  | auto      | 0       |
+|   add_ln21_2_fu_650_p2    |     |        | add_ln21_2    | add    | fabric    | 0       |
+|   icmp_ln21_2_fu_666_p2   |     |        | icmp_ln21_2   | setne  | auto      | 0       |
+|   icmp_ln21_3_fu_682_p2   |     |        | icmp_ln21_3   | seteq  | auto      | 0       |
+|   icmp_ln21_4_fu_688_p2   |     |        | icmp_ln21_4   | setlt  | auto      | 0       |
+|   or_ln21_fu_694_p2       |     |        | or_ln21       | or     | auto      | 0       |
+|   or_ln21_1_fu_700_p2     |     |        | or_ln21_1     | or     | auto      | 0       |
+|   or_ln21_2_fu_706_p2     |     |        | or_ln21_2     | or     | auto      | 0       |
+|   or_ln21_3_fu_712_p2     |     |        | or_ln21_3     | or     | auto      | 0       |
+|   ov_fu_718_p2            |     |        | ov            | or     | auto      | 0       |
+|   icmp_ln41_fu_734_p2     |     |        | icmp_ln41     | seteq  | auto      | 0       |
+|   icmp_ln41_1_fu_740_p2   |     |        | icmp_ln41_1   | setlt  | auto      | 0       |
+|   select_ln41_fu_756_p3   |     |        | select_ln41   | select | auto_sel  | 0       |
+|   or_ln41_fu_764_p2       |     |        | or_ln41       | or     | auto      | 0       |
+|   select_ln41_1_fu_770_p3 |     |        | select_ln41_1 | select | auto_sel  | 0       |
+|   icmp_ln41_2_fu_788_p2   |     |        | icmp_ln41_2   | seteq  | auto      | 0       |
+|   icmp_ln41_3_fu_794_p2   |     |        | icmp_ln41_3   | setlt  | auto      | 0       |
+|   select_ln41_2_fu_810_p3 |     |        | select_ln41_2 | select | auto_sel  | 0       |
+|   or_ln41_1_fu_818_p2     |     |        | or_ln41_1     | or     | auto      | 0       |
+|   select_ln41_3_fu_824_p3 |     |        | select_ln41_3 | select | auto_sel  | 0       |
+|   icmp_ln41_4_fu_851_p2   |     |        | icmp_ln41_4   | seteq  | auto      | 0       |
+|   icmp_ln41_5_fu_857_p2   |     |        | icmp_ln41_5   | setlt  | auto      | 0       |
+|   select_ln41_4_fu_873_p3 |     |        | select_ln41_4 | select | auto_sel  | 0       |
+|   or_ln41_2_fu_881_p2     |     |        | or_ln41_2     | or     | auto      | 0       |
+|   select_ln41_5_fu_887_p3 |     |        | select_ln41_5 | select | auto_sel  | 0       |
+|   select_ln41_6_fu_905_p3 |     |        | select_ln41_6 | select | auto_sel  | 0       |
+|   or_ln41_3_fu_913_p2     |     |        | or_ln41_3     | or     | auto      | 0       |
+|   select_ln41_7_fu_919_p3 |     |        | select_ln41_7 | select | auto_sel  | 0       |
+|   k_fu_303_p2             |     |        | k             | add    | fabric    | 0       |
+|   add_ln9_fu_409_p2       |     |        | add_ln9       | add    | fabric    | 0       |
+|   stage_fu_309_p2         |     |        | stage         | add    | fabric    | 0       |
+|   icmp_ln11_fu_315_p2     |     |        | icmp_ln11     | seteq  | auto      | 0       |
+|   icmp_ln9_fu_415_p2      |     |        | icmp_ln9      | seteq  | auto      | 0       |
++---------------------------+-----+--------+---------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++---------------+--------+------+------+------+--------+----------+------+---------+------------------+
+| Name          | Usage  | Type | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|               |        |      |      |      |        |          |      |         | Banks            |
++---------------+--------+------+------+------+--------+----------+------+---------+------------------+
+| + fft4096_hls |        |      | 8    | 0    |        |          |      |         |                  |
+|   r18_TW_R_U  | rom_1p |      | 4    |      |        | r18_TW_R | auto | 1       | 32, 2048, 1      |
+|   r18_TW_I_U  | rom_1p |      | 4    |      |        | r18_TW_I | auto | 1       | 31, 2048, 1      |
++---------------+--------+------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+----------------------------------------------------+--------------------------------------------------+
+| Type            | Options                                            | Location                                         |
++-----------------+----------------------------------------------------+--------------------------------------------------+
+| interface       | ap_memory port=data storage_type=ram_t2p latency=1 | src/kernels.cpp:6 in fft4096_hls, data           |
+| interface       | ap_none port=overflow                              | src/kernels.cpp:7 in fft4096_hls, overflow       |
+| pipeline        | II=2                                               | src/kernels.cpp:12 in fft4096_hls                |
+| dependence      | variable=data inter false                          | src/kernels.cpp:13 in fft4096_hls, data          |
+| inline          |                                                    | src/kernels.cpp:29 in fir                        |
+| bind_storage    | variable=history type=ram_s2p impl=bram            | src/kernels.cpp:31 in fir, history               |
+| reset           | variable=wr                                        | src/kernels.cpp:33 in fir, wr                    |
+| reset           | variable=count                                     | src/kernels.cpp:34 in fir, count                 |
+| reset           | variable=next                                      | src/kernels.cpp:35 in fir, next                  |
+| reset           | variable=phase                                     | src/kernels.cpp:36 in fir, phase                 |
+| array_partition | variable=acc complete                              | src/kernels.cpp:40 in fir, acc                   |
+| unroll          |                                                    | src/kernels.cpp:42 in fir                        |
+| pipeline        | II=1                                               | src/kernels.cpp:46 in fir                        |
+| unroll          |                                                    | src/kernels.cpp:49 in fir                        |
+| unroll          |                                                    | src/kernels.cpp:54 in fir                        |
+| interface       | ap_none port=samples                               | src/kernels.cpp:63 in fir_loc_hls, samples       |
+| interface       | ap_none port=result                                | src/kernels.cpp:64 in fir_loc_hls, result        |
+| interface       | ap_none port=samples                               | src/kernels.cpp:68 in fir_det_hls, samples       |
+| interface       | ap_none port=result                                | src/kernels.cpp:69 in fir_det_hls, result        |
+| interface       | ap_none port=value                                 | src/kernels.cpp:73 in sqrt_hls, value            |
+| interface       | ap_none port=result                                | src/kernels.cpp:74 in sqrt_hls, result           |
+| interface       | ap_none port=num                                   | src/kernels.cpp:78 in divide_hls, num            |
+| interface       | ap_none port=den                                   | src/kernels.cpp:79 in divide_hls, den            |
+| interface       | ap_none port=result                                | src/kernels.cpp:80 in divide_hls, result         |
+| interface       | ap_none port=mode                                  | src/kernels.cpp:84 in cordic_hls, mode           |
+| interface       | ap_none port=vx                                    | src/kernels.cpp:85 in cordic_hls, vx             |
+| interface       | ap_none port=vy                                    | src/kernels.cpp:86 in cordic_hls, vy             |
+| interface       | ap_none port=angle                                 | src/kernels.cpp:87 in cordic_hls, angle          |
+| interface       | ap_none port=result                                | src/kernels.cpp:88 in cordic_hls, result         |
+| interface       | ap_none port=value                                 | src/kernels.cpp:92 in power_db_hls, value        |
+| interface       | ap_none port=exponent                              | src/kernels.cpp:93 in power_db_hls, exponent     |
+| interface       | ap_none port=result                                | src/kernels.cpp:94 in power_db_hls, result       |
+| interface       | ap_none port=ar                                    | src/kernels.cpp:98 in covariance_hls, ar         |
+| interface       | ap_none port=ai                                    | src/kernels.cpp:99 in covariance_hls, ai         |
+| interface       | ap_none port=br                                    | src/kernels.cpp:100 in covariance_hls, br        |
+| interface       | ap_none port=bi                                    | src/kernels.cpp:101 in covariance_hls, bi        |
+| interface       | ap_none port=oldr                                  | src/kernels.cpp:102 in covariance_hls, oldr      |
+| interface       | ap_none port=oldi                                  | src/kernels.cpp:103 in covariance_hls, oldi      |
+| interface       | ap_none port=shift_old                             | src/kernels.cpp:104 in covariance_hls, shift_old |
+| interface       | ap_none port=next_exp                              | src/kernels.cpp:105 in covariance_hls, next_exp  |
+| interface       | ap_none port=result                                | src/kernels.cpp:106 in covariance_hls, result    |
+| inline          | off                                                | src/numeric.hpp:5 in isqrt                       |
+| pipeline        | II=1                                               | src/numeric.hpp:8 in isqrt                       |
+| inline          | off                                                | src/numeric.hpp:16 in udiv                       |
+| pipeline        | II=1                                               | src/numeric.hpp:20 in udiv                       |
+| inline          | off                                                | src/numeric.hpp:26 in cordic                     |
+| pipeline        | II=1                                               | src/numeric.hpp:32 in cordic                     |
+| inline          | off                                                | src/numeric.hpp:43 in power_db                   |
++-----------------+----------------------------------------------------+--------------------------------------------------+
+
+

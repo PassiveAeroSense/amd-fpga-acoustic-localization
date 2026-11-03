@@ -1,0 +1,1681 @@
+﻿{
+    "work":  "C:\\fpga_work\\submission_repair\\verify_TingKong_DualArray_20261103_182902_412",
+    "files":  [
+                  {
+                      "name":  "acoustic_clocks.sv",
+                      "sha256":  "1471405322011A39C66E23E70D66703EB2881CF2FEF5DFB009DB1DA48741C7C0"
+                  },
+                  {
+                      "name":  "acoustic_dashboard.sv",
+                      "sha256":  "8D2D803006C76D8A93BC8F6F0F0F01BEDE764B4FFBCCDAD91EC3531CBB17EA31"
+                  },
+                  {
+                      "name":  "acoustic_top.sv",
+                      "sha256":  "1DBD999A727351E212FCF28FCE04510AC3A15F5A64E9DFB67014ACC73806C287"
+                  },
+                  {
+                      "name":  "ad7606_dual_fast.sv",
+                      "sha256":  "D69D4A1B02DFB7C06A7E6BC6C81733B67A9CD8B9929FAC237D9654DF40019201"
+                  },
+                  {
+                      "name":  "adc_frame_repair.sv",
+                      "sha256":  "98CE0CE73A2D31B32CC9EF6E4379201933DAA0FD1BCE629A01E5C382AADC2C51"
+                  },
+                  {
+                      "name":  "audio_level_meter16.sv",
+                      "sha256":  "8AAADE6A7746CE64275B03383CCA194FEAA9B720602BF3CD78DCD30156A81110"
+                  },
+                  {
+                      "name":  "audio_rate_bridge.sv",
+                      "sha256":  "39319A9757EE13C37DC4A287ED46DB99C1494A52B61248E5447614ADFF6699D0"
+                  },
+                  {
+                      "name":  "banked_sdp_ram.sv",
+                      "sha256":  "E40EAC8DC5CD06BA4713F5CF03DCB5AB573B3455E915FB9CAD67817A3A289CC6"
+                  },
+                  {
+                      "name":  "binary_bcd.sv",
+                      "sha256":  "8F8A4683B9C8EBA8C51A1BABF4BE1B6355F263ECF2C5F7BE60D161DF878224E6"
+                  },
+                  {
+                      "name":  "cdc_mailbox.sv",
+                      "sha256":  "7E006FF340E2516DD696E76D8D7BFCCCBBB1BC7FDDF320194BC426F51F74E2E2"
+                  },
+                  {
+                      "name":  "continuous_results.sv",
+                      "sha256":  "F0E07E956A0AFCA4A20E671D3D20B92A2C914D743C7F21A2AED0DD9CAAD6B6A8"
+                  },
+                  {
+                      "name":  "cordic_atan.mem",
+                      "sha256":  "07B6E4BE03BC21E6F33E0A4CB0ABE77FFAD47D5C21B69936C0E5D3B7285F84BC"
+                  },
+                  {
+                      "name":  "cordic_hls.v",
+                      "sha256":  "1D074960C4DE54A0F2E510B2AF265867B0CAD1FD89D4F0CE34AF340309C68021"
+                  },
+                  {
+                      "name":  "cordic_hls_cordic.v",
+                      "sha256":  "B8F0AA5CA086BCD657D18E098A2BDEB858928BF2FB1E4B7DF104421499912DB6"
+                  },
+                  {
+                      "name":  "cordic_hls_cordic_pipeline_vitis_loop_31_1.v",
+                      "sha256":  "7CE43ECDAE07C34602013F69AB4D8ADEF6E11DDC0B31862A54087C489368400D"
+                  },
+                  {
+                      "name":  "cordic_hls_cordic_pipeline_vitis_loop_31_1_r18_cordic_atan_rom_auto_1r.dat",
+                      "sha256":  "C66E7F39D227A89DC54CF39F328E71094FCF57F44DAE32E9CA1642EDAFB23DAD"
+                  },
+                  {
+                      "name":  "cordic_hls_cordic_pipeline_vitis_loop_31_1_r18_cordic_atan_rom_auto_1r.v",
+                      "sha256":  "C44ACD7E8A9D6FFC77A83F9F9604F2B9FAA68CE002998B72227F154E4A97C08B"
+                  },
+                  {
+                      "name":  "cordic_hls_flow_control_loop_pipe_sequential_init.v",
+                      "sha256":  "07670CBD0F4FF53631D9FB43801AE930231585CE47F173DBD086A63DB42C35F8"
+                  },
+                  {
+                      "name":  "cordic_hls_mul_44s_31ns_70_1_1.v",
+                      "sha256":  "7655A6BDE96B47BC7F5D876295E80DF905D11B6665671B7BF65027D50169A055"
+                  },
+                  {
+                      "name":  "cordic_hls_sparsemux_7_2_41_1_1.v",
+                      "sha256":  "100A0B3FD2DA21820F25D7718DF9AC8C164115CD58EC7749D514FD305380F082"
+                  },
+                  {
+                      "name":  "cordic_hls_sparsemux_9_3_32_1_1.v",
+                      "sha256":  "B55432E95766C788F29F453112C5048AD3CC225DF53D11FA3A0D3B66FCBEBA8B"
+                  },
+                  {
+                      "name":  "cordic_hls_sparsemux_9_3_33_1_1.v",
+                      "sha256":  "3273015B1D821B4E3E5938513E61C28A90E68FCAE9967C385F56FB0702DF2E89"
+                  },
+                  {
+                      "name":  "cordic_hls_sparsemux_9_3_41_1_1.v",
+                      "sha256":  "ABAF374C15DA7DED8F2E83E3FBD982E463FA7F4D6A53232061BA12413C0256E8"
+                  },
+                  {
+                      "name":  "cordic_hls_sparsemux_9_3_44_1_1.v",
+                      "sha256":  "5D82F9008C0BFADCADEB67C17CDD1C9B60F42840FC57945959FEFE8FA27F92A8"
+                  },
+                  {
+                      "name":  "covariance_hls.v",
+                      "sha256":  "CF6350DE77E7D2C1307E965F4D9D7A6C5971D0FBA9795A0258F59189CD9B6970"
+                  },
+                  {
+                      "name":  "covariance_hls_mul_32s_32s_64_1_1.v",
+                      "sha256":  "B6AE36B45EA6991FCB823949C0D909277343A38E83328642780DAA502EDD0ED7"
+                  },
+                  {
+                      "name":  "cov_im.mem",
+                      "sha256":  "0FC8B8BD0D5F0C2A90B42E6ABB66E263D406838452A09CE86A08EC0AD2B22C7F"
+                  },
+                  {
+                      "name":  "cov_re.mem",
+                      "sha256":  "4BA18B283DD0EAC43AB0CBD095EC5E1DBE687B06D332EBDDFC261DF7A273162E"
+                  },
+                  {
+                      "name":  "decim_200k_50k.mem",
+                      "sha256":  "98F4790EDDB50094719D7460677EF23F107B95275023373A01F57B4116667273"
+                  },
+                  {
+                      "name":  "detection_event_hold.sv",
+                      "sha256":  "2BCA5B311EE42673D223B229E76D46EA573D13A6B9BE84E9CD4C61BF845BEFA9"
+                  },
+                  {
+                      "name":  "detector_audio_frontend.sv",
+                      "sha256":  "17496B0CC1AD63B0E7A626AF6BE7BD0C9EB4CA1DC75506395CEE3BEAD49F4124"
+                  },
+                  {
+                      "name":  "detector_bandmap.mem",
+                      "sha256":  "990A81CD6CF3D2094DD96709F0D62FA40D6243B671F3D4C8E79D5F2EA589EE83"
+                  },
+                  {
+                      "name":  "detector_config.vh",
+                      "sha256":  "4C8D385B2F5A94B5D2382AF238429811CEB00DD99904E16205F4C43FEB0968F2"
+                  },
+                  {
+                      "name":  "detector_dct.mem",
+                      "sha256":  "0F70E29CEA3C9C9A9073C07A28E929819D83C05C8C658E2F1D29793EF7BF1919"
+                  },
+                  {
+                      "name":  "detector_features.sv",
+                      "sha256":  "D1D93BD1690D0D68DE870BBB9BE12267ED0795C752467D56D556BA321C0DCB46"
+                  },
+                  {
+                      "name":  "detector_frontend_config.vh",
+                      "sha256":  "4D7B82D5E0F10FE89C37E42214EBF85808799D33D5997128A669CE8992BED4C2"
+                  },
+                  {
+                      "name":  "detector_hann4096.mem",
+                      "sha256":  "942BFD24F53929BBC258086FF38142859C17F984DC3EA89E49D8BF60B510245E"
+                  },
+                  {
+                      "name":  "detector_hls.v",
+                      "sha256":  "569D34EFBCC1ECC6EF371F169F53ABE147C4B83A80792359672C433B7F4094FB"
+                  },
+                  {
+                      "name":  "detector_hls_bitselect_1ns_64ns_32ns_1_1_1.v",
+                      "sha256":  "333F39F0352549B85EF05645CC871DBEDE2276B81EA74455BF7ABAF3EEAD2AFB"
+                  },
+                  {
+                      "name":  "detector_hls_bitset_64ns_64ns_32ns_1s_64_1_1.v",
+                      "sha256":  "C1607E78EF6F29A22B638FC63D993B42B7848E04C0FDBB71244A3DE5A8F4AC78"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_22_1.v",
+                      "sha256":  "10FA3AFC7D3879391A8577EB997027BFC7965F1BC523D61AA54E8273D15CA73E"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_28_3.v",
+                      "sha256":  "7DF600E62D7D8B0C2C6B3740ED294D5E251686F71CF62FDE839A484732CEC575"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_32_4_vitis_loop_33_5.v",
+                      "sha256":  "1E564032909E84D007DA7D61FE8558B686038B1E692F1D74EA2180B026132A99"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_32_4_vitis_loop_33_5_r18_dct_rom_auto_1r.dat",
+                      "sha256":  "BB3CDEA69F99657089923CE54417F8C45E7C8958382B782B02A9661C7D02D168"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_32_4_vitis_loop_33_5_r18_dct_rom_auto_1r.v",
+                      "sha256":  "B899201C608422CDDE024914FDF14682D69C0E9D1A73B20EE4292F8FDD36F394"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_42_7.v",
+                      "sha256":  "2ED1983B827116F9820DD4192092D4BB1CAF259D98116CD8CC50AA61B4031D3D"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_42_7_r18_node_feat_rom_auto_1r.dat",
+                      "sha256":  "AADB79DB6CDA4A10288B481980539BF3DA97AE78AE01F579473C1FE22929D092"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_42_7_r18_node_feat_rom_auto_1r.v",
+                      "sha256":  "973D0FFE3E3F8F6BA3A4AEF4D9406A533B91709FEE866C7A976219A065E629F0"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_42_7_r18_node_leaf_rom_auto_1r.dat",
+                      "sha256":  "BB470B76669823EE4B09FBAD5DBE8537D2993E5D4724F01C667557C8A4ECD39D"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_42_7_r18_node_leaf_rom_auto_1r.v",
+                      "sha256":  "CC36A5DA737B829F78AE56AC700318741E714A017D556659E8988B70AC161DA1"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_42_7_r18_node_left_rom_auto_1r.dat",
+                      "sha256":  "475B271B6160505EB539D4FC078D594FC8C2297C162AC5B79DC4DAC777FC294A"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_42_7_r18_node_left_rom_auto_1r.v",
+                      "sha256":  "E5A81062EC8CE70C0EA70A2F433FF201AEE05EECCFB8B1C752FE69EC99370C77"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_42_7_r18_node_right_rom_auto_1r.dat",
+                      "sha256":  "6716AAFCBA04EFC154F0F80597D44FF6CE2DC8A992003D25AC414D1BB2FB56FC"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_42_7_r18_node_right_rom_auto_1r.v",
+                      "sha256":  "AD2A893ADBC5AB37757CAAE59EEED85081D5D62C622AC017F28950F79EC731A5"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_42_7_r18_node_thr_rom_auto_1r.dat",
+                      "sha256":  "28250524F669A031F3B560B1DF85EA5F1B88589B604470269FE452B32C61B24F"
+                  },
+                  {
+                      "name":  "detector_hls_detector_hls_pipeline_vitis_loop_42_7_r18_node_thr_rom_auto_1r.v",
+                      "sha256":  "C1825D8D043EF3C258A1C0BB43F0B6A9C55FDA2ADDF8401D2C869C8CC903FD1B"
+                  },
+                  {
+                      "name":  "detector_hls_features_ram_auto_1r1w.v",
+                      "sha256":  "44F3FEA88F6709A25019D00A969BF63443552842E193E0849718CCDE94F5FAD2"
+                  },
+                  {
+                      "name":  "detector_hls_flow_control_loop_pipe_sequential_init.v",
+                      "sha256":  "A3853B86F6CB0CDFA99CDD6363A684B7FC6A0F7EA13BC68C5B8F29116959F0AB"
+                  },
+                  {
+                      "name":  "detector_hls_mac_muladd_7ns_5ns_7ns_12_4_1.v",
+                      "sha256":  "57B7251BA6841E5F9535701D4C3F59B7E42D85E09263161AE35E2D5A2D594026"
+                  },
+                  {
+                      "name":  "detector_hls_mul_48s_29s_76_1_1.v",
+                      "sha256":  "DABF6EF56216C4B1BD5D8538F8B3E7E837D88F9F097E5455C69BCA4688A3798F"
+                  },
+                  {
+                      "name":  "detector_hls_r18_node_value_rom_auto_1r.dat",
+                      "sha256":  "194F275546A71F2F0C3835686E69209968D4A6B505CE36416E52FF693F79325B"
+                  },
+                  {
+                      "name":  "detector_hls_r18_node_value_rom_auto_1r.v",
+                      "sha256":  "67054112A596FB63E5EBB00871D61DDBF6D78FA73F5CDA4DBBAD065A186BEB8E"
+                  },
+                  {
+                      "name":  "detector_hls_r18_roots_rom_auto_1r.dat",
+                      "sha256":  "A3F46A0B30CDF3C22592794AF021F7822E92F3B1C8F4F6CB4A2A3D1D4E9314FB"
+                  },
+                  {
+                      "name":  "detector_hls_r18_roots_rom_auto_1r.v",
+                      "sha256":  "8638CB871111DFDD1302D78BFED0ADEAD14B2898199DFC7E7BF53E6C759D2F24"
+                  },
+                  {
+                      "name":  "detector_hls_raw_ram_auto_1r1w.v",
+                      "sha256":  "8716F8E0E34F2DA827E72C2C14191BBD53F9314FFF50741E9DD1B95B0882521E"
+                  },
+                  {
+                      "name":  "detector_hls_sparsemux_7_2_32_1_1.v",
+                      "sha256":  "633CF7C57D97B64E85E3A9DC18EBC70782216BA306EFD667A136743FBD89E47C"
+                  },
+                  {
+                      "name":  "detector_hls_udiv.v",
+                      "sha256":  "9F9ED6D001259B32AA1F616EBAC1BABFBCEFE144CCBA7202924B52455593EE92"
+                  },
+                  {
+                      "name":  "detector_nodes.mem",
+                      "sha256":  "518ECD24F3F41B6D2E12D22B8CB419B95447CBCCCE576F7A5CFC7ED9AAAB1F1C"
+                  },
+                  {
+                      "name":  "detector_roots.mem",
+                      "sha256":  "1AB3DA86760981170E989CF2EBBB96D73599A030D777BCE1396BE2CD1E7BC895"
+                  },
+                  {
+                      "name":  "detector_stft_frame.sv",
+                      "sha256":  "1FE4F05EF85295608F472EEFC74E961F6671A262676147B421E1F9449F78FA08"
+                  },
+                  {
+                      "name":  "detector_stft_frame_r8.sv",
+                      "sha256":  "BA0A0A65EC8BD28C4989460E5FB27C78BA8FBAB1D615040B8336470F8FC5D54B"
+                  },
+                  {
+                      "name":  "detector_test_count.vh",
+                      "sha256":  "99C50BCADEF8768A65E983A06DFFC93071044CF5EC3BC08FBC7D621A4AA25359"
+                  },
+                  {
+                      "name":  "detector_test_features.mem",
+                      "sha256":  "DE2F26F2EBF43A872BE46E8E2092715DADCEFEFFC19C9A62955A34FB85498D2C"
+                  },
+                  {
+                      "name":  "detector_test_hits.mem",
+                      "sha256":  "EC22A7E4934A7F20E4783E6E02B4268E363DA944E2D066CC9FF2B3BDD0A6CC4C"
+                  },
+                  {
+                      "name":  "detector_test_new_sequence.mem",
+                      "sha256":  "9F770AFEEB38F65288121BD4FB1127447D92CB2911F601D3F423C8DC0A1ACE82"
+                  },
+                  {
+                      "name":  "detector_test_scores.mem",
+                      "sha256":  "007172494F92C9451200453320ADC87C823F907FBD8F5297C41C1782AB66C51D"
+                  },
+                  {
+                      "name":  "direction_angles.sv",
+                      "sha256":  "E758200C5CFEBAA2B286980C49E1558101C64BA72F25A4DC1315B133F07166A6"
+                  },
+                  {
+                      "name":  "direction_consistency.sv",
+                      "sha256":  "CF7A9223A9F9D989AC64F283A05988F4C84D61823F7BEA3290C35CD6E29B1D1B"
+                  },
+                  {
+                      "name":  "direction_tracker.sv",
+                      "sha256":  "3DFF4DCFB0A9EC01B66347BB57291FE97875BAF1EB68724F7259053AB406B7DA"
+                  },
+                  {
+                      "name":  "divide_hls.v",
+                      "sha256":  "8B3F386DA41D75084B0428B29DBDCFBC6969CB07C4953453BDE3B0E934A757A3"
+                  },
+                  {
+                      "name":  "divide_hls_bitselect_1ns_64ns_32ns_1_1_1.v",
+                      "sha256":  "68E5D28746BDC34775D30156BC6E33F711BF38F5662FB821171B0398F8DDA198"
+                  },
+                  {
+                      "name":  "divide_hls_bitset_64ns_64ns_32ns_1s_64_1_1.v",
+                      "sha256":  "F3E8A995571F64BE12D64EEE80DC5E922E4C36A9921BCF10B39815109D09DB77"
+                  },
+                  {
+                      "name":  "divide_hls_flow_control_loop_pipe_sequential_init.v",
+                      "sha256":  "FDB26E7CC7E7923E6982C478C48439081FD73A598D877562DFDA79A7C7C7934B"
+                  },
+                  {
+                      "name":  "divide_hls_mul_64s_64s_64_1_1.v",
+                      "sha256":  "034A2D4E0860BBD175061ADE0AF25FB6FDD774C29C62367272EE7965153BBC4B"
+                  },
+                  {
+                      "name":  "divide_hls_udiv.v",
+                      "sha256":  "6A0211E6342E7A50B11E9544E26F103EBF4033396FA8BEBE8CDC9A0C39C90BAC"
+                  },
+                  {
+                      "name":  "drone_tree_detector.sv",
+                      "sha256":  "923DDA07AA7C4182D36436A6ACC87EA3C91BAB5D754FC39D363E396AC133D49C"
+                  },
+                  {
+                      "name":  "dual_detector_backend.sv",
+                      "sha256":  "C98975B42E927EFBE34AF9C8B6E4F8EE2D5891A5200EEA34B65A2472E011EBA2"
+                  },
+                  {
+                      "name":  "eig0_im.mem",
+                      "sha256":  "68DA2C0DD8A2D6667E7622A109A4D7A6DAC8311488909FF8286CC0250BA3658A"
+                  },
+                  {
+                      "name":  "eig0_re.mem",
+                      "sha256":  "70EE0FFF99929113DF994141A100AAB9812094E56B6DC4D4E5FE559FCFF0F692"
+                  },
+                  {
+                      "name":  "eig1_im.mem",
+                      "sha256":  "D7D3E910A8DAB057DFD555AC35E7916FC478249346626CFF644C3A0343E7D556"
+                  },
+                  {
+                      "name":  "eig1_re.mem",
+                      "sha256":  "E4F011B783A28942186D8A5ACF3C90A06BDEAC0564C0FFF480A4CF1C8B25AFB1"
+                  },
+                  {
+                      "name":  "eig2_im.mem",
+                      "sha256":  "F68F5E5F50156488B1929838F9C11D990272C317E02C7F6FE28CE85C93726C6D"
+                  },
+                  {
+                      "name":  "eig2_re.mem",
+                      "sha256":  "BAF515ECDE85A39629D392BD55919A819853BBCD09BFD3F1DD7BBE6B9A8AEFC4"
+                  },
+                  {
+                      "name":  "feature_test_bands.mem",
+                      "sha256":  "5A739EE332B47AB8108D384A1CE1BC189AB53DB578AAA59F6B6B1937CCF5B827"
+                  },
+                  {
+                      "name":  "fft0_im.mem",
+                      "sha256":  "303B7699A9A92CFC3AD5330395D5A9B5A7EF7773F09141027F46F15F45C40501"
+                  },
+                  {
+                      "name":  "fft0_re.mem",
+                      "sha256":  "C3CF980A2F51A366CBF94A17338646C8DC8B621D17BD9279EC059C4585AC1E4A"
+                  },
+                  {
+                      "name":  "fft1_im.mem",
+                      "sha256":  "7DCCD70179D79398042EC4AD88C99A21C24311C132F1B36F0C749EB33474AC88"
+                  },
+                  {
+                      "name":  "fft1_re.mem",
+                      "sha256":  "52A38E2EFD304F5E5DB70F6567EA5B53CCB3A176551A27C4FFE890616F54F7D0"
+                  },
+                  {
+                      "name":  "fft2048.sv",
+                      "sha256":  "9689B6302ECB279AAABD2F50364FC88B4E10EB654141C046B869296E86F37CD1"
+                  },
+                  {
+                      "name":  "fft2_im.mem",
+                      "sha256":  "48B0EF7AFF408401C8BF983CD4E1643D698BF168BD1745E9581DC2E819801E7E"
+                  },
+                  {
+                      "name":  "fft2_re.mem",
+                      "sha256":  "D7DCEF807A7482F2FF0FFB13285DC870EB7AB8A812E3EF7199E0A79CCE283BA3"
+                  },
+                  {
+                      "name":  "fft4096_hls.v",
+                      "sha256":  "E9082FB669766A20D4DDAB97A32135D1C1226900092CEA2061994D8AAF83E060"
+                  },
+                  {
+                      "name":  "fft4096_hls_flow_control_loop_delay_pipe.v",
+                      "sha256":  "87D41ACAA4C92E240C708904AD1E225EB45D070F83092764D4A16F2B1E5D1254"
+                  },
+                  {
+                      "name":  "fft4096_hls_mul_31s_32s_63_1_1.v",
+                      "sha256":  "AB0DEE70AD8A2271B951D9FBE6BF71ACACF63CB2DE0CD4785B5D36BEB40E656B"
+                  },
+                  {
+                      "name":  "fft4096_hls_mul_32s_32s_62_1_1.v",
+                      "sha256":  "A86F70A993E610A2C9C930CDA6074B7F8D7B901ECC2A2EE6D321AABCD328434A"
+                  },
+                  {
+                      "name":  "fft4096_hls_r18_tw_i_rom_auto_1r.dat",
+                      "sha256":  "73B38D94414ECF7FD79A5D1702B685B0C11FBAFB3392DBBA04CD6A31EDC90C44"
+                  },
+                  {
+                      "name":  "fft4096_hls_r18_tw_i_rom_auto_1r.v",
+                      "sha256":  "4AEDAF89A3FF569FAAD37CC39964AE85D355CA36456E4E35B900A9D39143D545"
+                  },
+                  {
+                      "name":  "fft4096_hls_r18_tw_r_rom_auto_1r.dat",
+                      "sha256":  "E0DCD3AA42ECD7E4CEAEC91B520FCFCA73C6A27AD88E3DCA8D88795F6579345B"
+                  },
+                  {
+                      "name":  "fft4096_hls_r18_tw_r_rom_auto_1r.v",
+                      "sha256":  "1F98DCE8CF2818954CC8E3146E2F5B179DF0D8B2C2366878542724A6F95AE684"
+                  },
+                  {
+                      "name":  "fft4096_tw_im.mem",
+                      "sha256":  "ED04A00782CBC3C480060231AEA91BC14910B4B33FE7475AC3F666CAAB5C6BEC"
+                  },
+                  {
+                      "name":  "fft4096_tw_re.mem",
+                      "sha256":  "10F68AED16FC66DA791C1B9DBC847F65109A3C607AB607343E6228ADC8852C4D"
+                  },
+                  {
+                      "name":  "fft_tw_im.mem",
+                      "sha256":  "B7FD95D5FB05118C2FEAC521382E3AA145759E78BACADBCF70BDDE1D24CA000B"
+                  },
+                  {
+                      "name":  "fft_tw_re.mem",
+                      "sha256":  "DB4BA0E5778CB2266A0CC5B3BA8CF95E3E31150610E324856FE28ABB5FF7D3AA"
+                  },
+                  {
+                      "name":  "fir_det_hls.v",
+                      "sha256":  "C8B2FCA4687DE5A0458FE4E1289961F57C83DA8728BF0E9F1310EAB12AD4783A"
+                  },
+                  {
+                      "name":  "fir_det_hls_fir_det_hls_pipeline_vitis_loop_45_2.v",
+                      "sha256":  "64FF1B2033229778D03274AEC05DACC52D812AEE8A99BC0EAD4116A4D216997D"
+                  },
+                  {
+                      "name":  "fir_det_hls_fir_det_hls_pipeline_vitis_loop_45_2_r18_det_fir_rom_auto_1r.dat",
+                      "sha256":  "3F149BFCF9962DB0D64E395BEC0AE809D3DE41A8188233DF092A62E6845904FB"
+                  },
+                  {
+                      "name":  "fir_det_hls_fir_det_hls_pipeline_vitis_loop_45_2_r18_det_fir_rom_auto_1r.v",
+                      "sha256":  "506744F92AC55A325A8DB445FC8733DF90DE6F6C1B14E858060A527B6B531E2E"
+                  },
+                  {
+                      "name":  "fir_det_hls_flow_control_loop_pipe_sequential_init.v",
+                      "sha256":  "E2E6FAB6BC4A61BCBBE8216C05B2488646D37D5A50B308696FC4D2FE0D536A28"
+                  },
+                  {
+                      "name":  "fir_det_hls_history_ram_s2p_bram_1r1w.dat",
+                      "sha256":  "1D4CC10B1B05A5299A031AE8D0F6EA63AB377FBF85C45521FBEAA059786D0A75"
+                  },
+                  {
+                      "name":  "fir_det_hls_history_ram_s2p_bram_1r1w.v",
+                      "sha256":  "74FD3ABE4C9F4E21FB83513B48100846150961628D59146BFDD4963DE522812B"
+                  },
+                  {
+                      "name":  "fir_det_hls_mul_24s_22s_46_1_1.v",
+                      "sha256":  "ABC724ED78A267F8D4CFA9E0A17D2CE7FB6840C5C5A6CA3DF50C968773C3D99F"
+                  },
+                  {
+                      "name":  "fir_det_hls_mul_5ns_7ns_11_1_1.v",
+                      "sha256":  "A887086A50A4BB09AFA9FF7F05BABC50795159C3222A1FD2C365B3C5150191E4"
+                  },
+                  {
+                      "name":  "fir_det_hls_urem_5ns_4ns_3_9_seq_1.v",
+                      "sha256":  "69B15F5952CB7366B3F47442857DF51CCFF84D8C5B1909CB6077F7BDE6F53310"
+                  },
+                  {
+                      "name":  "fir_loc_hls.v",
+                      "sha256":  "789A590EE7C289B075BD7526EFA4218512A2EAAAF711E122856A4D483F188BA7"
+                  },
+                  {
+                      "name":  "fir_loc_hls_fir_loc_hls_pipeline_vitis_loop_45_2.v",
+                      "sha256":  "72A50C5534E8319827E7B0F8B43828AA66F640C8250968EEFF6B4E9CD5F37746"
+                  },
+                  {
+                      "name":  "fir_loc_hls_fir_loc_hls_pipeline_vitis_loop_45_2_r18_loc_fir_rom_auto_1r.dat",
+                      "sha256":  "63A0C5BC673A37A0282FA21D7F4B06F8DDD318209B25A817512B0008E2F8D3A3"
+                  },
+                  {
+                      "name":  "fir_loc_hls_fir_loc_hls_pipeline_vitis_loop_45_2_r18_loc_fir_rom_auto_1r.v",
+                      "sha256":  "6585B7AF93F3E7125810550E1BECCF623EBBCE6546A69AD395878EF52D598053"
+                  },
+                  {
+                      "name":  "fir_loc_hls_flow_control_loop_pipe_sequential_init.v",
+                      "sha256":  "E4AD2F271E1D13FC89320ADF344019D4E0CBE5A8907C8325A365830945FD994D"
+                  },
+                  {
+                      "name":  "fir_loc_hls_history_ram_s2p_bram_1r1w.dat",
+                      "sha256":  "1D4CC10B1B05A5299A031AE8D0F6EA63AB377FBF85C45521FBEAA059786D0A75"
+                  },
+                  {
+                      "name":  "fir_loc_hls_history_ram_s2p_bram_1r1w.v",
+                      "sha256":  "4AE8E09E29BA1BCB6BA53579519F98A5E5A909BC08C0A8F1512FEE97784A1E2B"
+                  },
+                  {
+                      "name":  "fir_loc_hls_mul_24s_21s_45_1_1.v",
+                      "sha256":  "85A062774E5154626C889F6AF872538515197D51BC9F65DB01C24FB168B2D804"
+                  },
+                  {
+                      "name":  "fir_resampler16.sv",
+                      "sha256":  "6483CA908E136702DE9B0FA5B8BD1539D46D7AAD2B40091CC34AF0A30984E48C"
+                  },
+                  {
+                      "name":  "frontend_audio.mem",
+                      "sha256":  "33F4F8391D962CF27FD9F53842DC9BD5B73DBF2DCE7EE37854AE526B00475CC5"
+                  },
+                  {
+                      "name":  "fullsearch_px.mem",
+                      "sha256":  "F9ABAFEF8D6B0B99B4B23AE479EEF24E35A5B1F1DD752D8EB31637EE2041B57B"
+                  },
+                  {
+                      "name":  "fullsearch_py.mem",
+                      "sha256":  "350DC307349CCBA5041E5C15889ECEE866F6727446CE4B076A57B4D402553190"
+                  },
+                  {
+                      "name":  "fullsearch_vi.mem",
+                      "sha256":  "C747D1CC2C43635930157B4BAAFC78FA16F8330C0209E7BF77394E1DFF5526E0"
+                  },
+                  {
+                      "name":  "fullsearch_vr.mem",
+                      "sha256":  "4648BE47D482F9DA880C0F28B4EE7B3E8E90A162A4BA3921E8C6DD75813BD839"
+                  },
+                  {
+                      "name":  "fx_cordic.sv",
+                      "sha256":  "A0A10A4AAED650EF65CB02421E1872103CEFD2F66E9EBDA661264C164D21CCEB"
+                  },
+                  {
+                      "name":  "fx_div.sv",
+                      "sha256":  "BF40063DD3F558B4C8BAD193C68CE2AB037EC6E0C077C2EF1A512151B54D4E7B"
+                  },
+                  {
+                      "name":  "fx_neglog.sv",
+                      "sha256":  "2E9AD984627D80C843C185CAC334692D63D532B4BCDB131FD680BB1E5A872124"
+                  },
+                  {
+                      "name":  "fx_sqrt.sv",
+                      "sha256":  "BFD56231A9B8CBAD2B2C3CD91851D8788C1869ECBDAC09DB4D6F69B442BC8220"
+                  },
+                  {
+                      "name":  "hann.mem",
+                      "sha256":  "FD0F1EFE86FA94433E1B10831D7E1FC37D74620A15DF49FEB60ED05D52A1D29E"
+                  },
+                  {
+                      "name":  "hemisphere_count.vh",
+                      "sha256":  "D720A934183539B1358E5499E95E4298BDF7624D057897CFFB9CB366B1FB5331"
+                  },
+                  {
+                      "name":  "hemisphere_fit.sv",
+                      "sha256":  "4580F8AE8FE305AF0D5BD12AB7192C4B51A897582487D1902549BF5FD9C56B7E"
+                  },
+                  {
+                      "name":  "hemisphere_vectors.mem",
+                      "sha256":  "14D55058B270F5868A7CA4DFCF10D8CE0C571556F5C9D9CC65FEF24D3522747C"
+                  },
+                  {
+                      "name":  "hover_consensus.sv",
+                      "sha256":  "18FD5A6A586DA2FD0155A5004DDF7080BB075898DADFC6C9CE14B14A561BF318"
+                  },
+                  {
+                      "name":  "innovation_measured.mem",
+                      "sha256":  "6D9D0225E6629B3163FAD9002F0A085F364950A1A189D3AC23BE462505F0DA51"
+                  },
+                  {
+                      "name":  "joint15_capture.sv",
+                      "sha256":  "6B356B98F5B9C9E9041C56B41F785FA283007D6DEE1FF1E7FBB51B03632E0159"
+                  },
+                  {
+                      "name":  "joint15_cos.mem",
+                      "sha256":  "EB1F6038F8364937B4FC4ADC76D8D74D4C6E5D995044C76EB57675B423B016E7"
+                  },
+                  {
+                      "name":  "joint15_fixture_cov.mem",
+                      "sha256":  "D12A3A8B93121D461A30447C9B994D45461E6D28641FF156BDA01316CACEA1B5"
+                  },
+                  {
+                      "name":  "joint15_grid.mem",
+                      "sha256":  "705DF471BAAB50399CCF0A54FECA173A794CB6F5B8DEF42DF38E17E653AC18E1"
+                  },
+                  {
+                      "name":  "joint15_localizer.sv",
+                      "sha256":  "99039F469D8505285EB508663C15CFF60769DE4625F04049CC96AF1B52CE430A"
+                  },
+                  {
+                      "name":  "joint15_mic.mem",
+                      "sha256":  "BDA16B588F8BFF8AC780B4FB03CEB18E4BAEB42180764287B59BA5F2A56AA04B"
+                  },
+                  {
+                      "name":  "joint15_pair.mem",
+                      "sha256":  "2FA69BA6E43CC03B6413E080B24F2DB39D4713EA7E8323724AB674D3723FCC54"
+                  },
+                  {
+                      "name":  "joint15_phase_mm.mem",
+                      "sha256":  "413369C7E5B90F4CCEB9AB4F102A849FC5002AC6AA10E5D4C3EEF4246CA3BED7"
+                  },
+                  {
+                      "name":  "joint15_stft_frame.sv",
+                      "sha256":  "001035A324191E747D603C77D23670EFC1F0109CB9EB3FF4AF2D74E9C75BAAC2"
+                  },
+                  {
+                      "name":  "joint_search_hls.v",
+                      "sha256":  "2E7DBC81890D39CD836F0908F7FD45D4F4BCEA61C57445AE96BD0A6F4B1625AC"
+                  },
+                  {
+                      "name":  "joint_search_hls_bitselect_1ns_12ns_32ns_1_1_1.v",
+                      "sha256":  "178E879FFC765A6C0DDD917874E6AE3AF248161742A24345C01218957208EE61"
+                  },
+                  {
+                      "name":  "joint_search_hls_bitselect_1ns_64ns_32ns_1_1_1.v",
+                      "sha256":  "1194AC874660F7E788CD3E792A22676824C3EE1DFE3B19FD55DEC09B1284998F"
+                  },
+                  {
+                      "name":  "joint_search_hls_bitset_12ns_12ns_32ns_1s_12_1_1.v",
+                      "sha256":  "ECD650897B50FF55DCC0E43A723BD46F72C2332E573EEC3EB00FF050F9602048"
+                  },
+                  {
+                      "name":  "joint_search_hls_bitset_64ns_64ns_32ns_1s_64_1_1.v",
+                      "sha256":  "DFC02E172A61EA3F7358CE51E7EDA8EAB73AFC7E5CF6B4A55B136DBF3825DE00"
+                  },
+                  {
+                      "name":  "joint_search_hls_blocked_ram_auto_1r1w.v",
+                      "sha256":  "12134D44D79857E560E5B47B08384CCC8BFEB7309BF36CD9FC909237A0914608"
+                  },
+                  {
+                      "name":  "joint_search_hls_candidate_score.v",
+                      "sha256":  "2069179BCF906104A9B74A65730EF0CD64AC7A04FC987FA002A30F6461DB5DC9"
+                  },
+                  {
+                      "name":  "joint_search_hls_candidate_score_pipeline_vitis_loop_26_3.v",
+                      "sha256":  "03383F1935F4CD94DC3EF50E2FEA07214C521EF8CFEC2EDC40B1E24A7DB6433C"
+                  },
+                  {
+                      "name":  "joint_search_hls_candidate_score_pipeline_vitis_loop_26_3_r18_pairs_rom_auto_1r.dat",
+                      "sha256":  "5F4E76078F10294CA1EBEB23F8ADF8DFFC4EBA31528E60D5EDA79263DE57BBB1"
+                  },
+                  {
+                      "name":  "joint_search_hls_candidate_score_pipeline_vitis_loop_26_3_r18_pairs_rom_auto_1r.v",
+                      "sha256":  "66D2A90B7F50DB3289288E070DCC3447570D10ABF10FBB3A3A89034E33AF6360"
+                  },
+                  {
+                      "name":  "joint_search_hls_candidate_score_pipeline_vitis_loop_26_3_search_cos_rom_auto_1r.dat",
+                      "sha256":  "51D45A4B993D2014C2547A18D0B0B3BE69434FDC0E33F2AA084FE8FFBF18CBFF"
+                  },
+                  {
+                      "name":  "joint_search_hls_candidate_score_pipeline_vitis_loop_26_3_search_cos_rom_auto_1r.v",
+                      "sha256":  "E1A31A1D7EBC9371FFE74F59D532FE03FCFCB42072484A30BDB9E4A022D08840"
+                  },
+                  {
+                      "name":  "joint_search_hls_candidate_score_r18_mic_rom_auto_1r.dat",
+                      "sha256":  "70AA922A77BAFA87C4DB1809F540E0F5497B9517AD3A7B4E508F742A1A2A45D6"
+                  },
+                  {
+                      "name":  "joint_search_hls_candidate_score_r18_mic_rom_auto_1r.v",
+                      "sha256":  "085ABAE422F0057BBE1D8CEE87B2FB57D051F16F5C779CDE62AF5F20FADEAAA2"
+                  },
+                  {
+                      "name":  "joint_search_hls_chosen_ram_auto_1r1w.v",
+                      "sha256":  "4A7A7C97A4DCC185E020D5A3C29FAA2D9683A2356E2F10D03CB60E5B0D0D51A9"
+                  },
+                  {
+                      "name":  "joint_search_hls_cordic.v",
+                      "sha256":  "E0B64AFB69A260A5069990C89028EA61CF6AC69DE5FC8232F4848C43E1724C7E"
+                  },
+                  {
+                      "name":  "joint_search_hls_cordic_pipeline_vitis_loop_31_1.v",
+                      "sha256":  "D80A1B8A04BD8DEB18ACF0029AE17EC33BFB0E0857C442E54EF5F5D0B5A1BD9D"
+                  },
+                  {
+                      "name":  "joint_search_hls_cordic_pipeline_vitis_loop_31_1_r18_cordic_atan_rom_auto_1r.dat",
+                      "sha256":  "C66E7F39D227A89DC54CF39F328E71094FCF57F44DAE32E9CA1642EDAFB23DAD"
+                  },
+                  {
+                      "name":  "joint_search_hls_cordic_pipeline_vitis_loop_31_1_r18_cordic_atan_rom_auto_1r.v",
+                      "sha256":  "83E3A464D0961B8032C65B8FB0E385BDE72B84ABE44F67A6E2248CA724DBC401"
+                  },
+                  {
+                      "name":  "joint_search_hls_evaluate.v",
+                      "sha256":  "D305DCFC2BF3E4BDA6C301EB2F9787E30035A1621939BC38BC71E2B84A311E3E"
+                  },
+                  {
+                      "name":  "joint_search_hls_flow_control_loop_pipe_sequential_init.v",
+                      "sha256":  "7EEDF09222A67F6D156322B3263AA983AAD6214355A59ABCC5A5B1D44A452A27"
+                  },
+                  {
+                      "name":  "joint_search_hls_isqrt.v",
+                      "sha256":  "2A95100281A219A810AA8C2449734B742DBEE662D3E2DFF9D4450BA8C20217E6"
+                  },
+                  {
+                      "name":  "joint_search_hls_joint_search_hls_outline_vitis_loop_79_3.v",
+                      "sha256":  "F2FA0308C2726419AF7072CFB7202E28DFED6DDE248A2E12EDC79BF31A9B92CD"
+                  },
+                  {
+                      "name":  "joint_search_hls_joint_search_hls_outline_vitis_loop_83_4.v",
+                      "sha256":  "87307E4292B19C5CF6827C0BB5F3638FBAD4C99EFF79375AB4DD98D7397CD733"
+                  },
+                  {
+                      "name":  "joint_search_hls_joint_search_hls_pipeline_1.v",
+                      "sha256":  "ECC3334D9D650C04EC851BF6EB85C92F60FBD713934C256B9E75EE1464DA11FE"
+                  },
+                  {
+                      "name":  "joint_search_hls_joint_search_hls_pipeline_vitis_loop_105_8.v",
+                      "sha256":  "F1A72C51E1DDFC5E6B8A7B535188CA5EB0069441CBDBF9D2EA863D51154B35BC"
+                  },
+                  {
+                      "name":  "joint_search_hls_joint_search_hls_pipeline_vitis_loop_120_12.v",
+                      "sha256":  "BC2086A0FEBDEBBFB340594A7C7AD3CB2E1B790245F6125661D436D31DB7BB5D"
+                  },
+                  {
+                      "name":  "joint_search_hls_joint_search_hls_pipeline_vitis_loop_134_14.v",
+                      "sha256":  "48660F8A5EF7E4D45B6054B85D9AA9561CB3C8CEE1F5016D66ACDF4A4400CC3A"
+                  },
+                  {
+                      "name":  "joint_search_hls_joint_search_hls_pipeline_vitis_loop_150_17.v",
+                      "sha256":  "BDE843D62BC55B71B4A10C5767EAB9A3D03CAACCA2D82EE5D71A62BD467A2601"
+                  },
+                  {
+                      "name":  "joint_search_hls_joint_search_hls_pipeline_vitis_loop_166_20.v",
+                      "sha256":  "AC2B0942BAE2C117D031CA83C9033A5386E99A4D51B489C1987AD80D04592D82"
+                  },
+                  {
+                      "name":  "joint_search_hls_joint_search_hls_pipeline_vitis_loop_72_1_vitis_loop_73_2.v",
+                      "sha256":  "CCF906E0FC80B5649990EBF9DF58A884E8E6A007457955330C7F4D9776DA16F8"
+                  },
+                  {
+                      "name":  "joint_search_hls_joint_search_hls_pipeline_vitis_loop_84_5.v",
+                      "sha256":  "30460A68ED68FC80BA6877E74A817DE2EBEE233FC8930254EABED3AA8D16C7D7"
+                  },
+                  {
+                      "name":  "joint_search_hls_mac_muladd_11ns_3s_32s_32_4_1.v",
+                      "sha256":  "E854FFE86014CC0DC4F57E76FECE37F1080B5D88DB724B9979E43A1606974476"
+                  },
+                  {
+                      "name":  "joint_search_hls_mac_muladd_11ns_5s_32s_32_4_1.v",
+                      "sha256":  "92817852738B1D1782E25D1E3CD74DC33AD4A0D81DC4BAFECB9E8ACEF128D430"
+                  },
+                  {
+                      "name":  "joint_search_hls_mac_muladd_7ns_6s_14s_14_4_1.v",
+                      "sha256":  "397DC5178D616261D3A6F16259E4EEF9565CE9B28D553168A894BBE4F3A10671"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_12ns_32s_44_1_1.v",
+                      "sha256":  "646F1A7627A54B66E3385BFE9287318C32ADDEB8AA1DBAED34852730F2D323BE"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_14ns_32s_46_1_1.v",
+                      "sha256":  "2E26CD9821759880BD0E3ACA41B44F828F4B93103FCA5A87264D69167CAC8BB9"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_16s_16s_32_1_1.v",
+                      "sha256":  "A9AA28FAFF457EE6CD8F64F984D276025C3BD979D9B48BEB0670B5A94F7483CB"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_20ns_22ns_41_1_1.v",
+                      "sha256":  "01F5C74BAC3FF70E0147834F2DC95262096DFC5C1D63778369DCF9A8AE04F60B"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_21ns_21ns_42_1_1.v",
+                      "sha256":  "061333BBEEE540789099794F5F466B66C5C4B95FE77EFA4DF8A0A70E954516AA"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_21ns_32s_52_1_1.v",
+                      "sha256":  "A63964104E535E747AFD924F200BD2DE7295B41C739506E1C3C4D1EA6F44FDA1"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_31ns_31ns_62_1_1.v",
+                      "sha256":  "1E0495A8E5F08E25B95FB8EB94487828A38F3E55048B9297928C6F43EB98ED9F"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_32ns_32ns_64_1_1.v",
+                      "sha256":  "A9F3819C0076B01A24665CFBDAD2F154494E59E4A0BCC140B6969D7D54D4A2E4"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_32s_32ns_48_1_1.v",
+                      "sha256":  "C488CE5C0AC20DA5524ABFD0DE9B649C8EC416408D7A113581A77F299F5C3EE0"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_32s_32ns_62_1_1.v",
+                      "sha256":  "B7CF6890B0B13ECCFE110B777603BA7022DD5B8E370F0C5A0D14C0E60EB217D7"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_32s_32s_32_1_1.v",
+                      "sha256":  "3C0D36BBD10413AC33BF656239A9EBB61A0C93EBEDD14BC8C961624FC28B25DB"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_32s_32s_64_1_1.v",
+                      "sha256":  "DD67C4CEDCCB6B709141E8DEE1102F022C238E8659563433602A237D2ED8D0BD"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_46s_48ns_93_1_1.v",
+                      "sha256":  "23F25C27461C19B881B025E5095CAC95DC5B4CA351F95E1F29AC01C15A74B51E"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_58s_58s_64_1_1.v",
+                      "sha256":  "4EB721B814A1BA6A124C5A823AC7C63C77E45AB84910B4EBCA9A9A98F48DBEF7"
+                  },
+                  {
+                      "name":  "joint_search_hls_mul_64s_32ns_64_1_1.v",
+                      "sha256":  "403EF37CC83E6C707DBAB7AF3576ABB78CA7BDEFC8B86446BA4E76335EC6FB2B"
+                  },
+                  {
+                      "name":  "joint_search_hls_obs_ram_1p_bram_1r1w.v",
+                      "sha256":  "D55E33CBBB4B23BA3187B2ED93A10E5038CA0D882FD7F0D8065EFFC246B6A7A9"
+                  },
+                  {
+                      "name":  "joint_search_hls_r18_phase_mm_rom_auto_1r.dat",
+                      "sha256":  "A82294176A4A6E7C4714F0CDE514CAFC6B33843B4713287FAF8A5C3BB6008463"
+                  },
+                  {
+                      "name":  "joint_search_hls_r18_phase_mm_rom_auto_1r.v",
+                      "sha256":  "C7E4DDAAC9AC3A056987C455F08328153CC5D2460DF377194AA6AED3770F025B"
+                  },
+                  {
+                      "name":  "joint_search_hls_sparsemux_25_4_64_1_1.v",
+                      "sha256":  "78CC062905537CE398354399B73E050E4D9849E773D1F9555E13E18101978AD1"
+                  },
+                  {
+                      "name":  "joint_search_hls_sparsemux_31_4_32_1_1.v",
+                      "sha256":  "FF8F5831E6BF1FD5310E0F477374DADE29F3502F49A8A0811A0FC156C7204E70"
+                  },
+                  {
+                      "name":  "joint_search_hls_sparsemux_33_4_32_1_1.v",
+                      "sha256":  "F08E5552A4599CFA41AE0827E6D29E97097F4CFBB854C3D9A8EE4FC915BB2F6A"
+                  },
+                  {
+                      "name":  "joint_search_hls_sparsemux_7_2_32_1_1.v",
+                      "sha256":  "4C40021CA14F251CD9D05FA022DE2AE0EA10EBB658D78CBD2F4F6E6288053E9B"
+                  },
+                  {
+                      "name":  "joint_search_hls_sparsemux_7_2_64_1_1.v",
+                      "sha256":  "8A6F3250A1DB4F99FE6CD19D9A2FCEDFC3B5A511DDA51AADD897CAD58453A464"
+                  },
+                  {
+                      "name":  "joint_search_hls_trace_ram_auto_1r1w.v",
+                      "sha256":  "F9BB42267FAEB6536E1183FCB9D3B4A879A0E8AE7BC99F753771326CAFD54F14"
+                  },
+                  {
+                      "name":  "joint_search_hls_udiv.v",
+                      "sha256":  "409CC5DE501AFCA0B901D00343576F67A7A31253972D90372F9621D8F3D612E7"
+                  },
+                  {
+                      "name":  "joint_search_hls_udiv_pipeline_vitis_loop_19_1.v",
+                      "sha256":  "50F31212096B48830788548B4B66633F2F9EBA8370623825D4BE2855AD8E78E6"
+                  },
+                  {
+                      "name":  "joint_search_hls_urem_6ns_4ns_3_10_seq_1.v",
+                      "sha256":  "52AB7A845759D5B92EAF35FF671ADAA2E0035EDAAE158C9F97AF11B5B0E86558"
+                  },
+                  {
+                      "name":  "joint_search_hls_urem_7ns_4ns_3_11_seq_1.v",
+                      "sha256":  "2940A39D0EE27F785881ED3C954C8AE8807952E99F254FCB81D252D117BE94B6"
+                  },
+                  {
+                      "name":  "joint_search_hls_weights_ram_auto_1r1w.v",
+                      "sha256":  "F3B1810C107B603B49A9B101F144FE12CF770C6CE9D42F26386F306C85FB18B4"
+                  },
+                  {
+                      "name":  "lcd_ascii.mem",
+                      "sha256":  "A0A57AAE939850EB70D04906B695869271701D4E26AADE3CBFE62E9EBE0ECA62"
+                  },
+                  {
+                      "name":  "lcd_chinese.mem",
+                      "sha256":  "6306EA085A19526222A6E729C3730039739F52255F754C840C59BFD4146C6CD9"
+                  },
+                  {
+                      "name":  "lcd_text.vh",
+                      "sha256":  "14BD8BE691FDCAE6595380C93601D24A55D0DF75A5BED0103E0B56C99BBE3C6F"
+                  },
+                  {
+                      "name":  "lcd_timing.sv",
+                      "sha256":  "A7CD464F6A05FC8909328D252703DCFE1A633E4A8ADD3A6DDD8084AB01ADACEE"
+                  },
+                  {
+                      "name":  "light_bad_pairs.mem",
+                      "sha256":  "D3280389DDA6932F7125484CD1C00672E7B2F0F265ABB3E2391A26846FC6B292"
+                  },
+                  {
+                      "name":  "light_bg.mem",
+                      "sha256":  "294F96B40B132902CB4FDACE031CA44679721E1C4B52B4533B31873FC6AFE132"
+                  },
+                  {
+                      "name":  "light_far.mem",
+                      "sha256":  "4B509095885B59ED4456F66CD1E36C77BA843AF7B377F11B437F8E20ECB116D5"
+                  },
+                  {
+                      "name":  "light_harmonic.mem",
+                      "sha256":  "3F1476A2E1615141DBEB3DCB464C87254675108C95CE4A0D3199450C0F5C9E46"
+                  },
+                  {
+                      "name":  "light_localizer.sv",
+                      "sha256":  "A16E1F177B346334C5B6F81DA2D55A9465D8A94BA4F7C10F7790960479C561F5"
+                  },
+                  {
+                      "name":  "light_near.mem",
+                      "sha256":  "B14604B87A61EBAE13B65D7F31C1918A6239C4C5C43A225B425C4C147E7D68DC"
+                  },
+                  {
+                      "name":  "light_noise.mem",
+                      "sha256":  "76C6A51D4FEDB0AA470994380B6EB7B11FD3C14C8D804A0576C3BCEDF4344ECC"
+                  },
+                  {
+                      "name":  "light_offband.mem",
+                      "sha256":  "518EEE731CE495B596A66CFABE13D377FE97903616122EA226840A785F212D61"
+                  },
+                  {
+                      "name":  "light_pair_capture.sv",
+                      "sha256":  "26A90C72560228A3A1528BF9FCFE8CD108FDD11740EC1155499F07ED67035310"
+                  },
+                  {
+                      "name":  "light_phase_scale.mem",
+                      "sha256":  "42C45CEFA44B7233AA209411B82914B2BE8DEA17BFDEDF71B0AC88148C5B724B"
+                  },
+                  {
+                      "name":  "light_split_conflict.mem",
+                      "sha256":  "2CA31F66CF3E0795571ED0A35E66E7E25B78B083AA2DBB7837B63C10E2802980"
+                  },
+                  {
+                      "name":  "light_zenith.mem",
+                      "sha256":  "C5EABB71A54BE0E82F4ED886A5901EBCEA4E7D786E13C0B16A49EF37F78FF7D7"
+                  },
+                  {
+                      "name":  "live_detection_status.sv",
+                      "sha256":  "DEA236C20BB302C34FC92F37F068A5CD80473A19B3F8D21D25E3E3240EA5CF80"
+                  },
+                  {
+                      "name":  "ln_mantissa.mem",
+                      "sha256":  "7C776550084E11E205D4143E8694B80860C7F7150A2770CE5A2A77534AF980D9"
+                  },
+                  {
+                      "name":  "ln_mantissa_4096.mem",
+                      "sha256":  "30952C5C5135237B34CBBC7A77817E692DA8EF33BD4E5683AA6E2FE4ED5D5ED8"
+                  },
+                  {
+                      "name":  "localization_results.sv",
+                      "sha256":  "6D78610221039BF6D507E57A6C9989ADAD49CAF0A5A2412E05ADE25BB43FCBD7"
+                  },
+                  {
+                      "name":  "localizer_bg.mem",
+                      "sha256":  "19A396831EE541670446C27CD8B7826F9D11DB601C0953199B04F7A8F774B173"
+                  },
+                  {
+                      "name":  "localizer_sig.mem",
+                      "sha256":  "9F8F63746041FD7B456809FA56605E2E0F37F0B92F9C8DF29A7159F3BA3E75D0"
+                  },
+                  {
+                      "name":  "loc_bandpass48.mem",
+                      "sha256":  "26C7FD2C5EB289E6386686816854342A56FC70D0CFF627D0C454601AD9101FF4"
+                  },
+                  {
+                      "name":  "mat_a_im.mem",
+                      "sha256":  "4A94E4DC6FCA8845325F55CA28CF5784B3917DE22B66E2F6D287E9CDFD9BB10A"
+                  },
+                  {
+                      "name":  "mat_a_re.mem",
+                      "sha256":  "24CB73BFDCDDC242423A385E178C9C7C211D93024C73D34EE9B4EF0968F8ABA5"
+                  },
+                  {
+                      "name":  "mat_b_im.mem",
+                      "sha256":  "9E7DCA3BBB99994934F4F8C91EE4AB84952EE42974908EDD5BA755A92395ED54"
+                  },
+                  {
+                      "name":  "mat_b_re.mem",
+                      "sha256":  "7DD7AE27D8B02E3548828B9A006867408A93DE470B0FF308A49AB8482F7E6E4F"
+                  },
+                  {
+                      "name":  "model_bg.mem",
+                      "sha256":  "AD982386A2FD6F7B5C5686915A30DF577162A057E2DA3BA5787614585A7FD39B"
+                  },
+                  {
+                      "name":  "model_sig.mem",
+                      "sha256":  "0387D931C6D62E83E200AAC16D7300506990089BD0183418371BD535D3B6BA04"
+                  },
+                  {
+                      "name":  "music_stft_frame.sv",
+                      "sha256":  "76AB285BB123719B37951AA150A333210E20EF8F78E3E7FAE5EF3472C443D763"
+                  },
+                  {
+                      "name":  "noise_im.mem",
+                      "sha256":  "6A58E97D5592AFA946F8FB08517117D98615C0043187480DE1190BCB75707849"
+                  },
+                  {
+                      "name":  "noise_re.mem",
+                      "sha256":  "74125F5AEB70BFD03F9B77240C47DEDE6AB7FD01ADD4D6035D0F57956D5BE371"
+                  },
+                  {
+                      "name":  "output_gate.sv",
+                      "sha256":  "B0341932D86BF0D26762C85850F71A2410EBC70042D0897C52D20AB50B1190DD"
+                  },
+                  {
+                      "name":  "position_check_0.mem",
+                      "sha256":  "CCFB67233BB5F5F5233D3874885A323883F5C4CF60AF08D935D8B2AF191BCCD7"
+                  },
+                  {
+                      "name":  "position_check_1.mem",
+                      "sha256":  "9D8A3B36E99AA9998D1C4CD8B02F8CF4DCC12B56509A8697014D868B7F3758EB"
+                  },
+                  {
+                      "name":  "position_tracker.sv",
+                      "sha256":  "6959C3270C7688F23BA90D5412AD95B9299FE073C06C3705DC5B187C4325E30F"
+                  },
+                  {
+                      "name":  "power_db_hls.v",
+                      "sha256":  "B927F0E30A998A1A6B71FBB00FD70F15A1CC0F2BF128F4468482055E08F3A49B"
+                  },
+                  {
+                      "name":  "power_db_hls_bitselect_1ns_32ns_32ns_1_1_1.v",
+                      "sha256":  "09F14AD8C91DE58AF591DC540416E58BC32FD1189EB11549DD53BAF357117C69"
+                  },
+                  {
+                      "name":  "power_db_hls_bitselect_1ns_64ns_32ns_1_1_1.v",
+                      "sha256":  "142309EA377ED2F949D7DCAD9E598A7F73D0F5A8D08B197475D39C1B40587244"
+                  },
+                  {
+                      "name":  "power_db_hls_flow_control_loop_pipe_sequential_init.v",
+                      "sha256":  "035EBBCE8A96E25C700B1A8EA82A2ADE899DD8B9F6C51D022DF2FAF3ED9F2393"
+                  },
+                  {
+                      "name":  "power_db_hls_mul_32ns_19ns_51_1_1.v",
+                      "sha256":  "8F1E87A886B9E0C2D009609369B5B605DC674AFD95A6C37B5A47C1951910C971"
+                  },
+                  {
+                      "name":  "power_db_hls_mul_32s_25ns_32_1_1.v",
+                      "sha256":  "C93FC00B8B22B471B832553079A4594BD53BE475BAE76875960B380FBB8CA4F4"
+                  },
+                  {
+                      "name":  "power_db_hls_mul_33s_33ns_64_1_1.v",
+                      "sha256":  "003769F4D4FAE6DD375262F25B6A9318F736356FEB7FAECA81069F4EEEFCFC9B"
+                  },
+                  {
+                      "name":  "power_db_hls_mul_64s_34ns_78_1_1.v",
+                      "sha256":  "95DA7A354904521A6A48BBC8444BAF18A3C07D08BBDB5EBF4E973EFB0483912C"
+                  },
+                  {
+                      "name":  "power_db_hls_power_db.v",
+                      "sha256":  "FCF03ACC85371ACC795001CCE87AAC6CB45702028D02A30ED5E94BA3EF28AAF9"
+                  },
+                  {
+                      "name":  "power_db_hls_power_db_pipeline_vitis_loop_45_1.v",
+                      "sha256":  "B6CE73CE78AFE5E03DA4BAAA1F1A760190CB90C40AA4E688D0C643A4B0375D94"
+                  },
+                  {
+                      "name":  "power_db_hls_power_db_pipeline_vitis_loop_48_2.v",
+                      "sha256":  "EBBEA1BC31BE2BA04B86422F17E7985ADEE12412E313E5060F67D9A860FAD89A"
+                  },
+                  {
+                      "name":  "power_db_hls_power_db_r18_ln_lut_rom_auto_1r.dat",
+                      "sha256":  "5B9A8CDED4699E3A9D8D3661D03D8D87A70874D18DEF48371F78C07CC0A428B0"
+                  },
+                  {
+                      "name":  "power_db_hls_power_db_r18_ln_lut_rom_auto_1r.v",
+                      "sha256":  "8EDA8760A8B0296C5EFF8E1D219C1A32D3B39F5AA83D35D2070E8A2A4F535F49"
+                  },
+                  {
+                      "name":  "power_db_hls_sparsemux_7_2_33_1_1.v",
+                      "sha256":  "409A0CB38C898DF1F8F3049779835D5FADCEAE158E7B84EFF6726DB9CB510C10"
+                  },
+                  {
+                      "name":  "power_to_db.sv",
+                      "sha256":  "E85B538F60095D7B24DF49908121BE145CB7A68BFE4091D1C53B6B6215B2E71B"
+                  },
+                  {
+                      "name":  "r14_meter_expected.mem",
+                      "sha256":  "4DE28A93700A78CE86F44E86A16D79DB551D5A29AB85130A6891FA7167C04330"
+                  },
+                  {
+                      "name":  "r14_meter_replay.mem",
+                      "sha256":  "F0B0C3B4E1C3408561C2EEC3F5895D540E1027AECDE14C2490AB008EA0AF2F96"
+                  },
+                  {
+                      "name":  "r19_config.vh",
+                      "sha256":  "075C9F069D5A29B3DF91D49EBA5761DF6A72C373ABD90F121FBF325FCD8C6DA0"
+                  },
+                  {
+                      "name":  "r19_grid.mem",
+                      "sha256":  "32D9855E794F264DA4BFAB884B35934EDAB620E5D18687BA5CC7CED0C9540FFC"
+                  },
+                  {
+                      "name":  "r19_grid_cov_b1.mem",
+                      "sha256":  "8EA169D7F1563DE6ADBC71AEA7D8EF5F148C15A2DEA73488465A4280257B0AA8"
+                  },
+                  {
+                      "name":  "r19_grid_cov_b2.mem",
+                      "sha256":  "C18C9E0C49C938450DA41E69338359364EB6975E74C95FD8E2FFA75B33C6883C"
+                  },
+                  {
+                      "name":  "r20_cn16.mem",
+                      "sha256":  "3773C64ED017FF3C8581164D27C3D4EB9D0F9385A50292314775C866C59F0C4B"
+                  },
+                  {
+                      "name":  "r20_cn24.mem",
+                      "sha256":  "13B4077CED1C1020702A7F97337DCFC50AB30BA94CDD8BFE4C313473F2A0A49D"
+                  },
+                  {
+                      "name":  "r20_lcd_text.vh",
+                      "sha256":  "8ACF13BD88174E4F19166636CDCD667243AAE4C4AD2288C564F4054929576234"
+                  },
+                  {
+                      "name":  "r22_cn24.mem",
+                      "sha256":  "D352013C98B552DA5F3226C28F06ECD419A230BBFE1981324C9BC74F926CB7E8"
+                  },
+                  {
+                      "name":  "r22_detector_frontend.sv",
+                      "sha256":  "1D627083DB94716CF4398871B3C8AC82C8C9CB1B700909A11BB276A309798DF9"
+                  },
+                  {
+                      "name":  "r22_display.sv",
+                      "sha256":  "EEDEF259D09F45A06766D3E0960BB3FD2098BEA9CE72F5659315797F7D378135"
+                  },
+                  {
+                      "name":  "r27_page_mux.sv",
+                      "sha256":  "716215AFFC6B1DFA39765A51663FCBCA09EF01A6C94AF6BA81F2681474B619EB"
+                  },
+                  {
+                      "name":  "r27_scope_frontend.sv",
+                      "sha256":  "D8472D4B6B5952B83114A8474EC2A528DCB301D9779D83D02156BD4A9DF9F26C"
+                  },
+                  {
+                      "name":  "r7_a1_measured_cov.mem",
+                      "sha256":  "9BCF7BB82748CB5222767996EA30B87EF615762A97E89CF3453E039B7F33C48F"
+                  },
+                  {
+                      "name":  "r9_dual_measured_cov.mem",
+                      "sha256":  "BC92F647BC23DB4B11C93048C3F276137FA2CA6934BF9593ACCFDE02F31B9EA6"
+                  },
+                  {
+                      "name":  "radar_view_transform.sv",
+                      "sha256":  "0B35830B8C87AE05D0743EE0798C493FE10FE3E1C8BF10BA191A09BC3707436D"
+                  },
+                  {
+                      "name":  "rate48_test_input.mem",
+                      "sha256":  "28CD31A468ADD47CFAB86F9832B2E0436096440CFCD016B346ED3A2107A6CF3F"
+                  },
+                  {
+                      "name":  "rate_test_expected.mem",
+                      "sha256":  "8811752B72D042D5ED0514E76FFB8512D204AB979F32E0097F88C989E3256D94"
+                  },
+                  {
+                      "name":  "rate_test_input.mem",
+                      "sha256":  "2EE44620C2F79D232F4D5D89F4A8B09C1346C158FEED66735B0BAD96F805A512"
+                  },
+                  {
+                      "name":  "ray_intersection.sv",
+                      "sha256":  "154546DA111860AFFDBC2F030458EC71D9DA8FCBC5A907060DD0B48EC05AD04F"
+                  },
+                  {
+                      "name":  "reliable_results.sv",
+                      "sha256":  "3BA552A2391845149A6537C8FE1DB1332441FE06602F1E736C8D618DD4C064D7"
+                  },
+                  {
+                      "name":  "resamp_20k_15k.mem",
+                      "sha256":  "BC3051EACB3B550F04887DF15220ABB4F723FB055BF4C619F948EFE87A5360A3"
+                  },
+                  {
+                      "name":  "resamp_48k_15k.mem",
+                      "sha256":  "C3C4F06810F902EC71CE5069A249D79B7CCADA22B95DB587C8EBE3C18024334D"
+                  },
+                  {
+                      "name":  "resamp_50k_15k.mem",
+                      "sha256":  "14EC4A42685885030F9F3A072F44909A680E63452C83A76CABC2E0027D605DCF"
+                  },
+                  {
+                      "name":  "scope_capture.sv",
+                      "sha256":  "2A9D2847AD78D451000998CB36B0A80A93B2A69E0624E5A5BBABADE428E1977E"
+                  },
+                  {
+                      "name":  "score_px.mem",
+                      "sha256":  "5F3142C136955423040BC7E4315677381C204D36716F34F4895DDBEDF9F658B2"
+                  },
+                  {
+                      "name":  "score_py.mem",
+                      "sha256":  "C7D0C6155812FCA881B3FDD48A8D2C4A4D7CF337C4AB88CEFF4D490DB2663B73"
+                  },
+                  {
+                      "name":  "score_ux.mem",
+                      "sha256":  "5DFBD51AC78C43CA250AADF2E317730785B8A60CD552F769208CE0E8B004A1D6"
+                  },
+                  {
+                      "name":  "score_uy.mem",
+                      "sha256":  "20729B871109E64CC0A40799703B09EA0053480A14CC4396F829EB8454DBEC05"
+                  },
+                  {
+                      "name":  "score_v_im.mem",
+                      "sha256":  "FAF1373CDB5D9BFB3E863B9783BC05FA3FB445EEBA2538A42294CA993DEC4617"
+                  },
+                  {
+                      "name":  "score_v_re.mem",
+                      "sha256":  "15C1ADBC6BACF55EA5AE9E15691FECAE9D0F5D8EB80B4BEEB46998C5866047C7"
+                  },
+                  {
+                      "name":  "score_w_im.mem",
+                      "sha256":  "BE169C54FC66979D1D92AAC7A6831F19D3F0D8B8E2319DCCC206183C62405C05"
+                  },
+                  {
+                      "name":  "score_w_re.mem",
+                      "sha256":  "A90169D0D358C1F748AA22FB37DCE8369B120EF255EF07FB6B1EA76D16EED0E8"
+                  },
+                  {
+                      "name":  "search_px.mem",
+                      "sha256":  "794840E3C971718E29C62228E74F67535DAE4B2954D445B045C67ECA5BF618CA"
+                  },
+                  {
+                      "name":  "search_py.mem",
+                      "sha256":  "FDA64FE8680E9D33DB15FB871D00D9BC25F9C9E59F4EE7D272A731E265F379F0"
+                  },
+                  {
+                      "name":  "search_v_im.mem",
+                      "sha256":  "D79530953D431DBD6E916A478080EAE6F2C2036143FEE1AD510909D6C7EEDBA5"
+                  },
+                  {
+                      "name":  "search_v_re.mem",
+                      "sha256":  "C947C1325B487FD0647ECB6B2E07D2231D0B0A4B1180B556F984A26C28DE7268"
+                  },
+                  {
+                      "name":  "search_w_im.mem",
+                      "sha256":  "1F6A5C0B3A79037CEB7FD76DB77A5EB1CD3AA4442B34A91E3A4480F0ED4E5B5B"
+                  },
+                  {
+                      "name":  "search_w_re.mem",
+                      "sha256":  "A6680D8403F242A7F81040B973E7AB60B7474314AF3A04114340D5DE139D8A8F"
+                  },
+                  {
+                      "name":  "selection.mem",
+                      "sha256":  "02C3CFA2049504B6AD22E7F41F60582DA1945A39463E950D0E2C06B507D34146"
+                  },
+                  {
+                      "name":  "spectral_event_guard.sv",
+                      "sha256":  "AA6F2DE7948617D6CDCCF736435D4738F6381E92F7D8107F3D43B1F29D757651"
+                  },
+                  {
+                      "name":  "sqrt_hls.v",
+                      "sha256":  "A10C627D38E82C4BAD96143BBB61B76C3DB1F67C7E570BF90700574C507AF723"
+                  },
+                  {
+                      "name":  "sqrt_hls_flow_control_loop_pipe_sequential_init.v",
+                      "sha256":  "204D78FF870B07769EA14F3681C2FA7734EF60989F4A4A0B3BD7D2CD93F10F85"
+                  },
+                  {
+                      "name":  "sqrt_hls_isqrt.v",
+                      "sha256":  "6182567E2DFC5021BC6964AA6623CBB43BFCBCD85C5DAD3A985A1254CA4130C6"
+                  },
+                  {
+                      "name":  "sqrt_hls_mul_32ns_32ns_64_1_1.v",
+                      "sha256":  "B19E83CB5230007A06257CB3760DF911E9D1ED9A2C4EAFE27D298AC851A0C2D3"
+                  },
+                  {
+                      "name":  "srp_capture.sv",
+                      "sha256":  "A904CA99B6133A173644F3D87B8805193931B95D94BDBE5D6A47980CEC96E19B"
+                  },
+                  {
+                      "name":  "srp_direction_q30.mem",
+                      "sha256":  "8563225E3E33690E0C65F8727054BC79858592829DE3F589338C45103EC679B1"
+                  },
+                  {
+                      "name":  "srp_dx.mem",
+                      "sha256":  "97894DB9A2596EADCEC05623CB3E56D7E5DB173B380700124A34E136640989AD"
+                  },
+                  {
+                      "name":  "srp_dy.mem",
+                      "sha256":  "CCF065C66CF3DDEC8F8CB54EB03C3C2D732ADE4CE30C5AF1457CCC3E2D52CF7F"
+                  },
+                  {
+                      "name":  "srp_localizer.sv",
+                      "sha256":  "9670C519FD0CC9074958418DE131AA7FEBF0EB156395225773EF536857D0813C"
+                  },
+                  {
+                      "name":  "srp_pairmap.mem",
+                      "sha256":  "C330A4A247EC8A390782037CD934DEC10FD7E967FA94EC33D5C338DE44A87856"
+                  },
+                  {
+                      "name":  "srp_phase_per_percent.mem",
+                      "sha256":  "458D0871AD97A7AEADBCB3F4163E6339C34094F02982E14748319F8B7770D9B6"
+                  },
+                  {
+                      "name":  "steering_per_cm_q40.mem",
+                      "sha256":  "D911D6F26903339BC093DE5C4BF850FE1FE28D21146D63394FA6A99E0E4116B5"
+                  },
+                  {
+                      "name":  "steering_x.mem",
+                      "sha256":  "59684EEB6BD1E1960EBF860AC87199F1F2DF63F8ACE585415EA3B1F3C56B877E"
+                  },
+                  {
+                      "name":  "steering_y.mem",
+                      "sha256":  "E9DCD7DF0D6FC5629C1B7F89121E26AEED826DE088E11CED7F5F66355E99582D"
+                  },
+                  {
+                      "name":  "sub_c_im.mem",
+                      "sha256":  "5D5614AB9F98271300F6DE49272FAEA92BEB1E3B2BBAFF66BDE8D6BE78D45124"
+                  },
+                  {
+                      "name":  "sub_c_re.mem",
+                      "sha256":  "B1B87D2D80E14C7FDEF8098DE91DB3622DD0C8ECB010F965326A0FC4B7A0DFF8"
+                  },
+                  {
+                      "name":  "sub_w_im.mem",
+                      "sha256":  "BE169C54FC66979D1D92AAC7A6831F19D3F0D8B8E2319DCCC206183C62405C05"
+                  },
+                  {
+                      "name":  "sub_w_re.mem",
+                      "sha256":  "A90169D0D358C1F748AA22FB37DCE8369B120EF255EF07FB6B1EA76D16EED0E8"
+                  },
+                  {
+                      "name":  "tb_a1_detector_only.sv",
+                      "sha256":  "A39BAF91517FC6520C698767415F2A1349721833472DDD2C36E2CE6E09C2B0F5"
+                  },
+                  {
+                      "name":  "tb_a1_frontend_event.sv",
+                      "sha256":  "2602ED35AC1839AA8CCD878D0AEFDFAF533C5532E94672BF96DDFACE7CEEA9F8"
+                  },
+                  {
+                      "name":  "tb_a1_search.sv",
+                      "sha256":  "F47603D6833A97BE1C9C29F059ECC58E56A4E064A783775D7575109A7EA77B82"
+                  },
+                  {
+                      "name":  "tb_adc48.sv",
+                      "sha256":  "1278782C021A686BB61377DADD2A30D04FC80ABE816C69F37998B7423DB4FE2E"
+                  },
+                  {
+                      "name":  "tb_adc_hold_conv.sv",
+                      "sha256":  "46C5347E5DD674612C4FB7B55514BF008C9DA0A693CEDB237107322513152A7D"
+                  },
+                  {
+                      "name":  "tb_adc_priming.sv",
+                      "sha256":  "2C55AB59EC25D3721D7A1FDC5EEFB2742BC31CC2251ED0B73A0A16FB0F14A1D0"
+                  },
+                  {
+                      "name":  "tb_adc_recovery.sv",
+                      "sha256":  "5C911E561E64D7353E8D777668EB9EBE80D6405CBBEE9C7B74AC482C6BB17962"
+                  },
+                  {
+                      "name":  "tb_aligned_adc.sv",
+                      "sha256":  "DF087F3D45E62158C6B48034F05D7C37D06005C3E445C85BC8E61B5A17749262"
+                  },
+                  {
+                      "name":  "tb_angles.sv",
+                      "sha256":  "75DB48B3C6782C7F73242EE144DC26112EF6DB84496C03FFEAD4CF03A9D98E61"
+                  },
+                  {
+                      "name":  "tb_audio_detector.sv",
+                      "sha256":  "6A5E1C06AEC39B2A4A2CA1CDC2BCF150C4E62EAB14F0FF4EDAF1A21B55FC6E25"
+                  },
+                  {
+                      "name":  "tb_backend.sv",
+                      "sha256":  "70C5E5EE124D15C65FD98641CF0D6D196538B4B3A2CBF0EAD10808122F18EFDF"
+                  },
+                  {
+                      "name":  "tb_bcd.sv",
+                      "sha256":  "97ECC55A5B231DAC153BEB7D95587F1683CB51F98E0A40F2B7504564C20F9D0A"
+                  },
+                  {
+                      "name":  "tb_candidate_search.sv",
+                      "sha256":  "8B0BBE140F0D09F8B845F06B2C080E32A515BB06554945CE6583AB5229D0D1C1"
+                  },
+                  {
+                      "name":  "tb_cdc.sv",
+                      "sha256":  "195D9581F3155B2C87B71105613B53B3776C603D035174D4B9B44572C5A95761"
+                  },
+                  {
+                      "name":  "tb_consistency.sv",
+                      "sha256":  "87E12188833CABE38CDD3E87A6F510FEA64E7A3FB7F18E7FC04C93444209FACC"
+                  },
+                  {
+                      "name":  "tb_continuous.sv",
+                      "sha256":  "9EF5058C73C4A9F5402D3B8DCA7F25049E099BAADABCBFC9F572712FCDC4F70C"
+                  },
+                  {
+                      "name":  "tb_cs_margin.sv",
+                      "sha256":  "9100E55434721725D4A87F920DC6548D072EA7AC888E50FFE8FBA7022A8D4E10"
+                  },
+                  {
+                      "name":  "tb_dashboard.sv",
+                      "sha256":  "4C24E5F31248A738672BE4D98D94E655359A10E42CA4D0A5EECB03450D7AE036"
+                  },
+                  {
+                      "name":  "tb_detection_independence.sv",
+                      "sha256":  "C7BEC2180328D7E87B373D4842DA50480A723090446171590D8547577CF0DB98"
+                  },
+                  {
+                      "name":  "tb_detector.sv",
+                      "sha256":  "3EF0E145579CE4A0553ED5D162DF058078172631D3C3AC555215358A094C205A"
+                  },
+                  {
+                      "name":  "tb_direction_tracker.sv",
+                      "sha256":  "29B2088FF24A0F690D804D92D87237B44DB1E521A95DEDA1F1F59ED5D62A4CE8"
+                  },
+                  {
+                      "name":  "tb_dual_integration.sv",
+                      "sha256":  "77BFA890090E7D882634DCD80BA735D47DC36689522D959AABF6440E0DA7FA81"
+                  },
+                  {
+                      "name":  "tb_dual_repair_integration.sv",
+                      "sha256":  "3439CC02DAB33CD29AAF3978D3DDD12E960D51CCD464F299517BD79FE4065059"
+                  },
+                  {
+                      "name":  "tb_dual_search.sv",
+                      "sha256":  "3A9D799EDC6BEE261BA66B45CC923C9C020292EEA19EA72849B8E32322C5C450"
+                  },
+                  {
+                      "name":  "tb_event_hold.sv",
+                      "sha256":  "9ACD170FC194C3AEF7B470385AF319EFCCBBA14F4D8B4050374B628325669AEE"
+                  },
+                  {
+                      "name":  "tb_fast_adc.sv",
+                      "sha256":  "65F60B3D8EBE8EF32A82FD3717AB23128C6A2422B0C84B67C1523C64FEBBB94B"
+                  },
+                  {
+                      "name":  "tb_features.sv",
+                      "sha256":  "553F2D626A557BF785144A02F7066B45E08AAC955C0519DE4EF0D8923BA78EDC"
+                  },
+                  {
+                      "name":  "tb_fft.sv",
+                      "sha256":  "9AEC77901B727877C6221D613C81E1EAD2139885A88C36EE80A91779B62F2E17"
+                  },
+                  {
+                      "name":  "tb_geometry.sv",
+                      "sha256":  "1463133B2F2851BC6A8269900869DCE008AA2CB3FBBAEFBC33455C3F743417C2"
+                  },
+                  {
+                      "name":  "tb_guarded_adc.sv",
+                      "sha256":  "DF15A46950B4BCF31F47D1D7E9CEA518960C49BD2F0D51DDFC18E6F65B4E29EE"
+                  },
+                  {
+                      "name":  "tb_health.sv",
+                      "sha256":  "3E2285E560CD1AB997AD94839FF32FBF097F0A207CD2DB9C626FD10672FD128F"
+                  },
+                  {
+                      "name":  "tb_hemisphere.sv",
+                      "sha256":  "705B6238AC9210060B5620AABFB92EE2718127CFFCBA5810D3CF95702C64F178"
+                  },
+                  {
+                      "name":  "tb_hls_catalog_aliases.sv",
+                      "sha256":  "B754E8085BDE1F0231427C66C43132095C9C541352F10FD43F8E83830030F81E"
+                  },
+                  {
+                      "name":  "tb_hls_detector.sv",
+                      "sha256":  "0EB7877C52B6885026A33BE861506309C9D9E3A1623897875B5B03C67CB584F7"
+                  },
+                  {
+                      "name":  "tb_hls_search_interface.sv",
+                      "sha256":  "7E838F019956F5B175E95CED91AE0790E2B8887B264C4EF6CD2A2922C3E8A8B9"
+                  },
+                  {
+                      "name":  "tb_hover_consensus.sv",
+                      "sha256":  "5802BD363A06A73F7771A769447A4FF221AF2EAD506ECE3245D27DF2F2B0BFF3"
+                  },
+                  {
+                      "name":  "tb_innovation_integration.sv",
+                      "sha256":  "FDD668704D5122A46D8F849C2D7C57F2C0E4B450E23A158D3CDF0401314188DC"
+                  },
+                  {
+                      "name":  "tb_innovation_measured.sv",
+                      "sha256":  "F39D2A06555864C6513BA154A8E2B00993EA2329474B546179AAE49DF65A77CE"
+                  },
+                  {
+                      "name":  "tb_joint15_capture.sv",
+                      "sha256":  "C3D2FA555FBB9642C08D9E934EFE8CFD01F97BC149DD9D1BAFE4A6662839F337"
+                  },
+                  {
+                      "name":  "tb_joint15_search.sv",
+                      "sha256":  "C65F8088127DC34AB6892BC5FEC1BEE63EE27263DCA6E73549C4E073C1523C89"
+                  },
+                  {
+                      "name":  "tb_joint16_positions.sv",
+                      "sha256":  "348F94C68DD556FFCBF1DBF2574B24C4C3352B2F6A6A478D9201CC5D0A6F537E"
+                  },
+                  {
+                      "name":  "tb_level_meter.sv",
+                      "sha256":  "923E3C54B3560FA79E5E1C8165A8EBFD2322D71016099910F1D5B41C0152618C"
+                  },
+                  {
+                      "name":  "tb_light.sv",
+                      "sha256":  "4585D976CEAB81C1ACB410971F451BB216254B30A05A0D122A9804A44056CE0E"
+                  },
+                  {
+                      "name":  "tb_light_capture.sv",
+                      "sha256":  "139DDBBF2DBCCFAEBC3E26C8F50F7DAB9A45B1B7333036A5CCCE43F7BDDCE895"
+                  },
+                  {
+                      "name":  "tb_live_detection.sv",
+                      "sha256":  "278C1699FC7896CF5AD91A66ECB32B6A56CA1E585E2FF720876126BBB4436904"
+                  },
+                  {
+                      "name":  "tb_meter_replay.sv",
+                      "sha256":  "33F88E3E16917A993833FDE0A2264A5791A9281E5052D5C84B7BA9EF9C46509B"
+                  },
+                  {
+                      "name":  "tb_near_geometry.sv",
+                      "sha256":  "AA2AD79C6DAD43DA4F67AF07C8FFF033E2EFF3E45D0CDD5AB1745F19AA589305"
+                  },
+                  {
+                      "name":  "tb_numeric.sv",
+                      "sha256":  "9B68999BFAA65FF9AB11D36920E8E48F19E9408195C50F3D540C770BFE505286"
+                  },
+                  {
+                      "name":  "tb_phase_invariance.sv",
+                      "sha256":  "1A320CE0278BDB43E5322D6A5207E7BB2448EFCA3D11FC584E6ECC9B1679F861"
+                  },
+                  {
+                      "name":  "tb_position_tracker.sv",
+                      "sha256":  "6B8B650A3F791A23BFA305DA5C02CFF7E7BC91C155B7F6ED859F592C5CEC895D"
+                  },
+                  {
+                      "name":  "tb_power.sv",
+                      "sha256":  "60625383B5790280385AB7F9CE2A53DA64DD1D34B4C4AA21633530A6872A4364"
+                  },
+                  {
+                      "name":  "tb_r13_pipeline.sv",
+                      "sha256":  "F6285A6AEA9583847398E7D1FEEF9E9B318AC5DF9C3F4FEA9F83BFDC66545FCA"
+                  },
+                  {
+                      "name":  "tb_r19_control.sv",
+                      "sha256":  "8565B6F146F400B2E8C15A9E96F401123D408767A6D928E56947F9E0FC055C87"
+                  },
+                  {
+                      "name":  "tb_r19_fast_capture.sv",
+                      "sha256":  "757CD1ACD37D096D90AE0B342DF6F71532F25FAE9A3A29D2E766FA37452D5F9B"
+                  },
+                  {
+                      "name":  "tb_r19_grid_interface.sv",
+                      "sha256":  "963BE5267D36CAC505A6D4611229852240F68DBE1DEE478552651D2290AB0C0B"
+                  },
+                  {
+                      "name":  "tb_r20_radar.sv",
+                      "sha256":  "929B79276E6E6D251E77FADF7A341941DC0A25C39C48CE5C69007129A1BA3A0A"
+                  },
+                  {
+                      "name":  "tb_r22_scope.sv",
+                      "sha256":  "C70F90FDCC3C98CDF91C364A871A873F83182B6E0D708DEC07790852D481E671"
+                  },
+                  {
+                      "name":  "tb_r24_control.sv",
+                      "sha256":  "D6DA966A19DDA853F1800EFAA165832E9F9B137887EBA7A0597538AF8C4530EC"
+                  },
+                  {
+                      "name":  "tb_r27_key.sv",
+                      "sha256":  "4E5CF99342B91B7579B6FFD18AAD28A5F6B5B0CFA5E746D82C609C42A577923E"
+                  },
+                  {
+                      "name":  "tb_r27_pages.sv",
+                      "sha256":  "02D8E7AD1D0B34ED4DEE7C9CCBC699B32687A905D5248C492D8A5E099ED36BDE"
+                  },
+                  {
+                      "name":  "tb_r27_pipeline.sv",
+                      "sha256":  "BC31E92DEBD671C1C492C35DA7B294B1AEF7016B5B396BC8775B6DCF4B1CFC77"
+                  },
+                  {
+                      "name":  "tb_r27_scope_gaps.sv",
+                      "sha256":  "814A750FC255C3CC2E1D62D69C669E302E21B53FAE4707A919BE228C57F0ECD7"
+                  },
+                  {
+                      "name":  "tb_r27_status_isolation.sv",
+                      "sha256":  "8AC7A88B2A1ED94EA4BCDFC9BA46DE3CE626A619A6845A9D49F644270153CB0C"
+                  },
+                  {
+                      "name":  "tb_r3_integration.sv",
+                      "sha256":  "82B1788434296D466B84211B96B0F643BD665ACE880FF727F24644E1369D6CA5"
+                  },
+                  {
+                      "name":  "tb_rate.sv",
+                      "sha256":  "CDA5E44907AD091A9C6ADF4D91796B6CED4A3A5C27ADFC3ABE816F550DD40472"
+                  },
+                  {
+                      "name":  "tb_rate48.sv",
+                      "sha256":  "F271EF6BE78118E97D466A3F63C7A4DFB79F3B4EFDC8500BCF4317CF3F1D8C1F"
+                  },
+                  {
+                      "name":  "tb_reliable.sv",
+                      "sha256":  "B5124E2B8CBC3042E39C0FAD2E1BACF2C3773EED63F865EA7B6C9D8B14C15276"
+                  },
+                  {
+                      "name":  "tb_repair.sv",
+                      "sha256":  "DE8B474EAA37299596979A6C1EE0AED93733995C6837E692F5BABB72B3D8DD45"
+                  },
+                  {
+                      "name":  "tb_repair_extremes.sv",
+                      "sha256":  "5E330C80CC9BE13D18AA739F33622D72EB10DB628F459896020EBB8D205A6BD8"
+                  },
+                  {
+                      "name":  "tb_repair_symmetry.sv",
+                      "sha256":  "9D38D0CA5ABDD69D366A0A90E9D3119FF3FF73DC0603D5476D5A0897EF87EBD4"
+                  },
+                  {
+                      "name":  "tb_results.sv",
+                      "sha256":  "65368916A203DFD789EED0F1040510769727796D2481B125924538B1B98C4425"
+                  },
+                  {
+                      "name":  "tb_snapshot48.sv",
+                      "sha256":  "80A278F066764D4448697F2384ADD53CF791FB4513BE9CB79ACBA7AD5E9ED3EB"
+                  },
+                  {
+                      "name":  "tb_spectral_guard.sv",
+                      "sha256":  "D812E6C511E15994CEF48C8D14B10BD5150B9A9A68CDF1566A846B77D345E2D4"
+                  },
+                  {
+                      "name":  "tb_stft.sv",
+                      "sha256":  "B05858104655FC13C88A08752897F347B6A0A5EA3F8DF3CEDA0DC90672315E10"
+                  },
+                  {
+                      "name":  "tb_stft16_schedule.sv",
+                      "sha256":  "DDC1CAE7AAF03883FA8B28B6559C57D79507A586365711B1C014DDBFA7E95947"
+                  },
+                  {
+                      "name":  "tb_v2_detector.sv",
+                      "sha256":  "CF54BA7638804E846CD13EC76948EA109BE581613CB4E3A3BF68DD4BC1DF70B2"
+                  },
+                  {
+                      "name":  "tb_v2_integration.sv",
+                      "sha256":  "618F3A3F31553B90823ACDD4928FB299FE826B61939D4F52B94A4DDD3AA95388"
+                  },
+                  {
+                      "name":  "tb_v2_localizer.sv",
+                      "sha256":  "8599EBBC521C963ED4B22D40273B2EC9AEA7DA5D931220748BB37CEF75EF59FC"
+                  },
+                  {
+                      "name":  "tb_xyz_estimate_tracker.sv",
+                      "sha256":  "7F479AF118D2EE60786EA6B0D7A0EE175A27002D5AAB9249F8FB8F02B075A8F4"
+                  },
+                  {
+                      "name":  "tb_xyz_integration.sv",
+                      "sha256":  "1038EDDCDE7DE740312F1DCD3D282C1CAC30B3993AD27A208E7F18D163667F29"
+                  },
+                  {
+                      "name":  "v2_features.mem",
+                      "sha256":  "DD8CAA60DAEDD110A097B3FF18B3483F4A27B2FE702F9B3CC5045C59AAC831A2"
+                  },
+                  {
+                      "name":  "v2_scene0.mem",
+                      "sha256":  "5E363AFB9E3A21FE6B5DA732D426C228F29F84D19E4EFA422540148BEF583A56"
+                  },
+                  {
+                      "name":  "v2_scene1.mem",
+                      "sha256":  "5F812CBE1CCE5BB3E6F5816490314085157C341ECCAAD57B9B24156DF42276B2"
+                  },
+                  {
+                      "name":  "v2_scene2.mem",
+                      "sha256":  "7EB05BE5AC85E221424A2B3341BB65A3E7E6013B55ACA715CB31973D6AE7B6A8"
+                  },
+                  {
+                      "name":  "v2_scene3.mem",
+                      "sha256":  "1556D46E0CE40E60458895EF146A2B8A08AA10EB576EC1ECFEEEBAD3B505E157"
+                  },
+                  {
+                      "name":  "v2_scores.mem",
+                      "sha256":  "F99DD73492383DDAF2023E61902F81F0C944966F161D63DD0BA9600F98F650B8"
+                  },
+                  {
+                      "name":  "weak_candidate_cov.mem",
+                      "sha256":  "8B0A9C10AEA61F0149F8987491C716C8AEB26EDA18771D955B6BD34D042941E0"
+                  },
+                  {
+                      "name":  "xyz_estimate_tracker.sv",
+                      "sha256":  "CE2664C7317C0778B21391B6A275E02D066534BC5753880047640BCD7059758A"
+                  }
+              ]
+}

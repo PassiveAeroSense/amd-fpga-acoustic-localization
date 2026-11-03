@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "tests_run": 26,
+  "failures": 0,
+  "errors": 0,
+  "hardware_pynq_execution": false,
+  "scope": "Desktop contract and numeric checks; DMA driver-double fault injection. No PYNQ board execution."
+}

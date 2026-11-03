@@ -1,0 +1,4 @@
+numpy
+scipy
+pillow
+-r ../sim/analysis/requirements.txt

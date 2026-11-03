@@ -1,0 +1,26 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Nov  3 13:32:59 2026
+| Host         : DESKTOP-QOSKA1C running 64-bit major release  (build 9200)
+| Command      : report_cdc -file board_cdc.rpt
+| Design       : acoustic_top
+| Device       : 7a200t-fbg484
+| Speed File   : -2  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+Severity  Source Clock      Destination Clock  CDC Type                 Exceptions               Endpoints  Safe  Unsafe  Unknown  No ASYNC_REG  
+--------  ----------------  -----------------  -----------------------  -----------------------  ---------  ----  ------  -------  ------------  
+Warning   c0                c1                 Safely Timed             Max Delay Datapath Only        676   676       0        0             0  
+Warning   c0                c2                 Safely Timed             Max Delay Datapath Only        323   323       0        0             0  
+Info      c1                c0                 User Ignored             False Path                       2     2       0        0             0  
+Info      c2                c0                 User Ignored             False Path                       1     1       0        0             0  
+Info      input port clock  c0                 No Common Primary Clock  False Path                       5     5       0        0             0  
+Info      c2                c1                 User Ignored             False Path                       2     2       0        0             0  
+Info      input port clock  c1                 No Common Primary Clock  False Path                       1     1       0        0             0  
+Info      c1                c2                 Safely Timed             None                           577   577       0        0             0  
+Info      input port clock  c2                 No Common Primary Clock  False Path                       2     2       0        0             0  
+

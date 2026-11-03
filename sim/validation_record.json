@@ -1,0 +1,21 @@
+﻿{
+    "status":  "PASS",
+    "completed_at":  "2026-11-03T18:31:24.1174695+08:00",
+    "rtl_cases":  [
+                      "r27_key",
+                      "r27_pages",
+                      "live_detection",
+                      "r20_radar",
+                      "r24_control",
+                      "r19_grid_interface"
+                  ],
+    "scope":  "Six RTL module/interface/display regressions. No microphone-to-position end-to-end acoustic accuracy claim.",
+    "logs":  [
+                 "results/test_r27_key.log",
+                 "results/test_r27_pages.log",
+                 "results/test_live_detection.log",
+                 "results/test_r20_radar.log",
+                 "results/test_r24_control.log",
+                 "results/test_r19_grid_interface.log"
+             ]
+}

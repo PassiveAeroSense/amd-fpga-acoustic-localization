@@ -1,0 +1,39 @@
+{
+  "sources": {
+    "data\\analysis\\algorithm_trials_20261024\\final_stream_results.json": "34b716b0f50fb522abfec06f1801b66b84d81f5772eeb1c2fea9b2d1cff8963e",
+    "data\\analysis\\algorithm_trials_20261024\\final_benchmark.json": "3fba18a169e1252fb22a08289299e6d3211f9f3783d3b6329fa5683b789c7c84",
+    "data\\analysis\\algorithm_trials_20261024\\spatial_accuracy\\空间分布数据与方法.json": "9c46476357d2bb49d4f0df4d72492f939e8de828e743160f10385e7d970e361c"
+  },
+  "figures": {
+    "doa_comparison": {
+      "size_inches": [
+        6.5,
+        4.65
+      ],
+      "png_sha256": "206776ca4a6faa9af4dbeaa133e214f16331f06488e654e7b7ea8479225045fc"
+    },
+    "spatial_results": {
+      "size_inches": [
+        6.5,
+        4.4
+      ],
+      "png_sha256": "a588461b930bec407235bc34f95d6f6cfaebeba0e8af0d605f6e38fac942a892"
+    },
+    "latency": {
+      "size_inches": [
+        6.5,
+        2.25
+      ],
+      "png_sha256": "5568a7f1195ee3e4a63324b273f8762298b0f3099bc6d7f40ac975d2052a3d08"
+    }
+  },
+  "doa_case_ids": [
+    2,
+    26,
+    9
+  ],
+  "no_smoothing": true,
+  "spatial_measured_count": 33,
+  "spatial_interpolation_removed": true,
+  "timing_is_simulation_budget": true
+}

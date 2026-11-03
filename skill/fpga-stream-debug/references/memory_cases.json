@@ -1,0 +1,50 @@
+[
+  {
+    "date": "2026-10-26 21:16",
+    "source_document": "论文/项目记忆与交接.md",
+    "source_sha256": "0fe7e2cb36d96a97e25f04a834ca36d0e629aeaf9519b54879d5991e2f664051",
+    "source_line": 687,
+    "verbatim_excerpt": "- 新错误与先前不同：本次错误事务BUSY在8次读取中一直为低；第1次RD下降后FIRSTDATA仅高约一个30ns采样周期后落下，第8次RD才再次出现FIRSTDATA；采样时FIRST序列00000001，数据相对邻帧表现为通道2～8、通道1循环错位。FPGA内部RD仍仅8次规则脉冲，CONVST没有重复，RESET稳定。",
+    "scope": "Historical project-memory record; not a claim about the current submitted bitstream or PYNQ board execution."
+  },
+  {
+    "date": "2026-10-28 02:38",
+    "source_document": "论文/项目记忆与交接.md",
+    "source_sha256": "0fe7e2cb36d96a97e25f04a834ca36d0e629aeaf9519b54879d5991e2f664051",
+    "source_line": 771,
+    "verbatim_excerpt": "- 发现检测前端 overrun 时可能不再产生 result_valid，顶层旧的检测标志会保持。已在 `acoustic_top.sv` 将 dover 纳入 gap，清空检测/背景/定位历史；mfault 时立即屏蔽显示方向。该修复不可在最终交付中遗漏。",
+    "scope": "Historical project-memory record; not a claim about the current submitted bitstream or PYNQ board execution."
+  },
+  {
+    "date": "2026-10-28 02:32",
+    "source_document": "论文/项目记忆与交接.md",
+    "source_sha256": "0fe7e2cb36d96a97e25f04a834ca36d0e629aeaf9519b54879d5991e2f664051",
+    "source_line": 764,
+    "verbatim_excerpt": "- r4 布局后发现 LCD 文字路径 WNS −5.809 ns，因此停止了自己的旧后台 r4 构建（PID64024），未生成验收 bit。r4 数字仍只能称综合资源报告。",
+    "scope": "Historical project-memory record; not a claim about the current submitted bitstream or PYNQ board execution."
+  },
+  {
+    "date": "2026-10-28 03:04",
+    "source_document": "论文/项目记忆与交接.md",
+    "source_sha256": "0fe7e2cb36d96a97e25f04a834ca36d0e629aeaf9519b54879d5991e2f664051",
+    "source_line": 781,
+    "verbatim_excerpt": "- 已修复：白化trace按32+log2(N)有符号位宽求和，乘3分拍到TW+2位再常数除，严格保留有效输入数值；LCD排版去除不必要32位除150等运算，测试画面SHA256完全一致；fatal_source先在ADC时钟域寄存，再双触发同步；邮箱dst_data/dst_valid改为同步复位，避免直接异步改变BRAM控制。white/model、dashboard、cdc/health回归均通过。",
+    "scope": "Historical project-memory record; not a claim about the current submitted bitstream or PYNQ board execution."
+  },
+  {
+    "date": "2026-10-28 02:38",
+    "source_document": "论文/项目记忆与交接.md",
+    "source_sha256": "0fe7e2cb36d96a97e25f04a834ca36d0e629aeaf9519b54879d5991e2f664051",
+    "source_line": 774,
+    "verbatim_excerpt": "- **最新最终候选是 r6**：`C:/Users/xiaobao/AppData/Local/Temp/acoustic_board_20261028_r6`，日志 `fpga_music/pure_rtl/reports/board_build_r6.log`，后台session88224；r5后台session75577还在布线，用作时序观察。两者构建脚本均可能输出delivery，交付前必须确认delivery的source_manifest与r6相符，不得误用旧r5。",
+    "scope": "Historical project-memory record; not a claim about the current submitted bitstream or PYNQ board execution."
+  },
+  {
+    "date": "2026-10-29 17:50",
+    "source_document": "fpga_accuracy_20261029/项目记忆补充_20261029.md",
+    "source_sha256": "be99623d2a36ec1b5ab0b79cca0df19b5f1ecf2896fe9527a1572c9e8c481e53",
+    "source_line": 82,
+    "verbatim_excerpt": "最新优化将105对搜索改为流水每周期一观测，完整1260观测测试21123290周期=0.422466秒；与旧93649052周期结果完全相同(-507,507,1024)mm、score20634905。采集窗17920/15000=1.194667秒，名义采集+计算1.61713秒，首次锁定仍需2次一致可信结果。旧R5求解1.873秒、合计3.068秒。不要把仿真速度称为实板测量。",
+    "scope": "Historical project-memory record; not a claim about the current submitted bitstream or PYNQ board execution."
+  }
+]

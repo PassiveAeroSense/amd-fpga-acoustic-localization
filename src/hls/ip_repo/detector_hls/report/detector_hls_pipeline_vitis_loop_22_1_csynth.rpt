@@ -1,0 +1,152 @@
+
+
+================================================================
+== Vitis HLS Report for 'detector_hls_Pipeline_VITIS_LOOP_22_1'
+================================================================
+* Date:           Fri Oct 30 23:08:32 2026
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        core
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a200t-fbg484-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  20.00 ns|  6.876 ns|     5.40 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       99|       99|  1.980 us|  1.980 us|   98|   98|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_22_1  |       97|       97|         2|          1|          1|    97|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|      92|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       -|       -|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       0|      45|    -|
+|Register         |        -|    -|      72|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|      72|     137|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      730|  740|  269200|  134600|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+----+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |add_ln22_fu_125_p2   |         +|   0|  0|  14|           7|           1|
+    |sum_1_fu_148_p2      |         +|   0|  0|  62|          55|          55|
+    |icmp_ln22_fu_119_p2  |      icmp|   0|  0|  14|           7|           6|
+    |ap_enable_pp0        |       xor|   0|  0|   2|           1|           2|
+    +---------------------+----------+----+---+----+------------+------------+
+    |Total                |          |   0|  0|  92|          70|          64|
+    +---------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_4     |   9|          2|    7|         14|
+    |i_fu_54                  |   9|          2|    7|         14|
+    |sum_fu_50                |   9|          2|   55|        110|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  45|         10|   71|        142|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |i_fu_54                  |   7|   0|    7|          0|
+    |sum_fu_50                |  55|   0|   55|          0|
+    |zext_ln22_reg_181        |   7|   0|   64|         57|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  72|   0|  129|         57|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+---------------------------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |             Source Object             |    C Type    |
++-------------------+-----+-----+------------+---------------------------------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|  detector_hls_Pipeline_VITIS_LOOP_22_1|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|  detector_hls_Pipeline_VITIS_LOOP_22_1|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|  detector_hls_Pipeline_VITIS_LOOP_22_1|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|  detector_hls_Pipeline_VITIS_LOOP_22_1|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|  detector_hls_Pipeline_VITIS_LOOP_22_1|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|  detector_hls_Pipeline_VITIS_LOOP_22_1|  return value|
+|raw_address0       |  out|    7|   ap_memory|                                    raw|         array|
+|raw_ce0            |  out|    1|   ap_memory|                                    raw|         array|
+|raw_we0            |  out|    1|   ap_memory|                                    raw|         array|
+|raw_d0             |  out|   48|   ap_memory|                                    raw|         array|
+|bands_address0     |  out|    7|   ap_memory|                                  bands|         array|
+|bands_ce0          |  out|    1|   ap_memory|                                  bands|         array|
+|bands_q0           |   in|   48|   ap_memory|                                  bands|         array|
+|features_address0  |  out|    8|   ap_memory|                               features|         array|
+|features_ce0       |  out|    1|   ap_memory|                               features|         array|
+|features_we0       |  out|    1|   ap_memory|                               features|         array|
+|features_d0        |  out|   48|   ap_memory|                               features|         array|
+|sum_out            |  out|   55|      ap_vld|                                sum_out|       pointer|
+|sum_out_ap_vld     |  out|    1|      ap_vld|                                sum_out|       pointer|
++-------------------+-----+-----+------------+---------------------------------------+--------------+
+

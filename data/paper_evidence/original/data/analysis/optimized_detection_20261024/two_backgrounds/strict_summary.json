@@ -1,0 +1,39 @@
+{
+  "selected": {
+    "base": "spectrum__boost__aug0",
+    "smooth": 3.0,
+    "high_recall": 0.2841540576536629,
+    "overall_recall": 0.5305704524108823
+  },
+  "background_calibration": [
+    {
+      "id": 33,
+      "file": "环境噪音.smq",
+      "windows": 226,
+      "hits": [
+        0,
+        0
+      ],
+      "role": "calibration"
+    },
+    {
+      "id": 100,
+      "file": "独立单阵列环境音",
+      "windows": 99,
+      "hits": [
+        0
+      ],
+      "role": "calibration"
+    }
+  ],
+  "target": {
+    "hits": [
+      0,
+      34
+    ],
+    "windows": 124,
+    "joint_hits": 0,
+    "threshold": 4.28192638644834
+  },
+  "caveat": "The zero background alarm count is guaranteed by calibration on the full known noise recordings; it is not an independent test or a guarantee for future noise."
+}

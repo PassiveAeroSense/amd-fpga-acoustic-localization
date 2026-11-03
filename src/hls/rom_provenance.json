@@ -1,0 +1,17 @@
+{
+  "fft4096_tw_re.mem": "10f68aed16fc66da791c1b9dbc847f65109a3c607ab607343e6228adc8852c4d",
+  "fft4096_tw_im.mem": "ed04a00782cbc3c480060231aea91bc14910b4b33fe7475ac3f666caab5c6bec",
+  "detector_hann4096.mem": "942bfd24f53929bbc258086ff38142859c17f984dc3ea89e49d8bf60b510245e",
+  "loc_bandpass48.mem": "26c7fd2c5eb289e6386686816854342a56fc70d0cff627d0c454601ad9101ff4",
+  "resamp_48k_15k.mem": "c3c4f06810f902ec71ce5069a249d79b7ccada22b95db587c8ebe3c18024334d",
+  "cordic_atan.mem": "07b6e4be03bc21e6f33e0a4cb0abe77ffad47d5c21b69936c0e5d3b7285f84bc",
+  "ln_mantissa_4096.mem": "30952c5c5135237b34cbbc7a77817e692da8ef33bd4e5683aa6e2fe4ed5d5ed8",
+  "detector_dct.mem": "0f70e29cea3c9c9a9073c07a28e929819d83c05c8c658e2f1d29793ef7bf1919",
+  "detector_roots.mem": "1ab3da86760981170e989cf2ebbb96d73599a030d777bce1396be2cd1e7bc895",
+  "joint15_phase_mm.mem": "413369c7e5b90f4cceb9ab4f102a849fc5002ac6aa10e5d4c3eef4246ca3bed7",
+  "joint15_pair.mem": "2fa69ba6e43cc03b6413e080b24f2db39d4713ea7e8323724ab674d3723fcc54",
+  "joint15_cos.mem": "eb1f6038f8364937b4fc4adc76d8d74d4c6e5d995044c76eb57675b423b016e7",
+  "joint15_grid.mem": "705df471baab50399ccf0a54feca173a794cb6f5b8def42df38e17e653ac18e1",
+  "joint15_mic.mem": "bda16b588f8bff8ac780b4fb03ceb18e4baeb42180764287b59ba5f2a56aa04b",
+  "detector_nodes.mem": "518ecd24f3f41b6d2e12d22b8cb419b95447cbccce576f7a5cfc7ed9aaab1f1c"
+}

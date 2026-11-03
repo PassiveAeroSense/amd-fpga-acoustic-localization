@@ -1,0 +1,1007 @@
+
+****** vitis-run v2024.2 (64-bit)
+  **** SW Build 5238363 on 2024-11-10-08:15:25
+  **** Start of session at: Sat Oct 31 02:25:25 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2024.2 5238294
+Sourcing Tcl script 'D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/build.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset core 
+INFO: [HLS 200-10] Creating and opening project 'D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core'.
+INFO: [HLS 200-1510] Running: set_top joint_search_hls 
+INFO: [HLS 200-1510] Running: add_files src/detector.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding design file 'src/detector.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/joint_search.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding design file 'src/joint_search.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/kernels.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding design file 'src/kernels.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb grid_10000.mem 
+INFO: [HLS 200-10] Adding test bench file 'grid_10000.mem' to the project
+INFO: [HLS 200-1510] Running: add_files -tb grid_15000.mem 
+INFO: [HLS 200-10] Adding test bench file 'grid_15000.mem' to the project
+INFO: [HLS 200-1510] Running: add_files -tb grid_20000.mem 
+INFO: [HLS 200-10] Adding test bench file 'grid_20000.mem' to the project
+INFO: [HLS 200-1510] Running: add_files -tb position_check_0.mem 
+INFO: [HLS 200-10] Adding test bench file 'position_check_0.mem' to the project
+INFO: [HLS 200-1510] Running: add_files -tb position_check_1.mem 
+INFO: [HLS 200-10] Adding test bench file 'position_check_1.mem' to the project
+INFO: [HLS 200-1510] Running: add_files -tb test_search.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding test bench file 'test_search.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7a200tfbg484-2 
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-fbg484-2'
+INFO: [HLS 200-1510] Running: create_clock -period 20 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1510] Running: config_rtl -reset_level low -reset control 
+INFO: [HLS 200-1510] Running: csim_design -O 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building optimized C Simulation binaries
+   Compiling ../../../../test_search.cpp in release mode
+   Compiling ../../../../src/kernels.cpp in release mode
+   Compiling ../../../../src/joint_search.cpp in release mode
+   Compiling ../../../../src/detector.cpp in release mode
+   Generating csim.exe
+In file included from ../../../../test_search.cpp:2:
+In file included from ../../../../src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../src/kernels.cpp:1:
+In file included from ../../../.././src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../src/joint_search.cpp:1:
+In file included from ../../../.././src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../src/detector.cpp:1:
+In file included from ../../../.././src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+H20000 B1 fast0 target(16000,7000,18000) found(15994,6998,17994) error=8.718mm valid1 quality1
+H15000 B2 fast0 target(12000,-5000,13000) found(11996,-4999,12989) error=11.747mm valid1 quality1
+H10000 B1 fast1 target(-2000,1000,1000) found(-1999,999,998) error=2.449mm valid1 quality1
+H10000 B1 fast1 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H15000 B1 fast0 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H20000 B1 fast0 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H10000 B2 fast1 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H15000 B2 fast0 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H20000 B2 fast0 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+R19 SEARCH RTL CONTRACT PASS: extended cylinder, 2m baseline, fast mode and all six zero-evidence modes
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:01:10; Allocated memory: 0.984 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.077 seconds; current allocated memory: 260.555 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/kernels.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'src/joint_search.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'src/detector.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 32.804 seconds; current allocated memory: 264.621 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 25,384 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,905 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,304 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,223 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,202 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,213 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,538 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,628 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,596 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,826 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,776 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,510 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,564 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,574 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,582 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,563 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'in_domain(ap_int<32>, ap_int<32>, ap_int<32>, unsigned int, unsigned int)' into 'joint_search_hls(ap_uint<64> const*, ap_uint<48> const*, unsigned int, unsigned int, unsigned int, bool, bool, ap_uint<144>&)' (src/joint_search.cpp:163:21)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_22_2' (src/joint_search.cpp:22:19) in function 'candidate_score' completely with a factor of 12 (src/joint_search.cpp:10:0)
+INFO: [HLS 214-248] Applying array_partition to 'distance': Complete partitioning on dimension 1. (src/joint_search.cpp:12:11)
+INFO: [HLS 214-248] Applying array_partition to 'real': Complete partitioning on dimension 1. (src/joint_search.cpp:19:27)
+INFO: [HLS 214-248] Applying array_partition to 'imag': Complete partitioning on dimension 1. (src/joint_search.cpp:19:36)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (src/joint_search.cpp:38:54)
+INFO: [HLS 214-248] Applying array_partition to 'seeds.x': Complete partitioning on dimension 1. (src/joint_search.cpp:111:10)
+INFO: [HLS 214-248] Applying array_partition to 'seeds.y': Complete partitioning on dimension 1. (src/joint_search.cpp:111:10)
+INFO: [HLS 214-248] Applying array_partition to 'seeds.z': Complete partitioning on dimension 1. (src/joint_search.cpp:111:10)
+INFO: [HLS 214-248] Applying array_partition to 'seeds.score': Complete partitioning on dimension 1. (src/joint_search.cpp:111:10)
+INFO: [HLS 214-241] Aggregating bram variable 'obs' with compact=bit mode in 78-bits (src/joint_search.cpp:68:17)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< unknown> at  
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_105_8> at src/joint_search.cpp:105:41 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_113_10> at src/joint_search.cpp:113:21 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_120_12> at src/joint_search.cpp:120:28 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_166_20> at src/joint_search.cpp:166:118 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_150_17> at src/joint_search.cpp:150:118 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_134_14> at src/joint_search.cpp:134:109 
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_141_16'. (src/joint_search.cpp:141:32)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_158_19'. (src/joint_search.cpp:158:32)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_114_11'. (src/joint_search.cpp:114:24)
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_83_4'. (src/joint_search.cpp:83:22)
+INFO: [HLS 214-421] Automatically partitioning small array 'groups' completely based on array size. (src/joint_search.cpp:71:14)
+INFO: [HLS 214-421] Automatically partitioning small array 'reciprocal' completely based on array size. (src/joint_search.cpp:108:17)
+INFO: [HLS 214-421] Automatically partitioning small array 'sg' completely based on array size. (src/joint_search.cpp:118:20)
+INFO: [HLS 214-421] Automatically partitioning small array 'bg' completely based on array size. (src/joint_search.cpp:129:73)
+INFO: [HLS 214-421] Automatically partitioning small array 'sg' completely based on array size. (src/joint_search.cpp:133:20)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'groups' due to pipeline pragma (src/joint_search.cpp:71:14)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'reciprocal' due to pipeline pragma (src/joint_search.cpp:108:17)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'sg' due to pipeline pragma (src/joint_search.cpp:118:20)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'bg' due to pipeline pragma (src/joint_search.cpp:129:73)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'sg401' due to pipeline pragma (src/joint_search.cpp:133:20)
+INFO: [HLS 214-248] Applying array_partition to 'groups': Complete partitioning on dimension 1. (src/joint_search.cpp:71:14)
+INFO: [HLS 214-248] Applying array_partition to 'reciprocal': Complete partitioning on dimension 1. (src/joint_search.cpp:108:17)
+INFO: [HLS 214-248] Applying array_partition to 'sg': Complete partitioning on dimension 1. (src/joint_search.cpp:118:20)
+INFO: [HLS 214-248] Applying array_partition to 'bg': Complete partitioning on dimension 1. (src/joint_search.cpp:129:73)
+INFO: [HLS 214-248] Applying array_partition to 'sg401': Complete partitioning on dimension 1. (src/joint_search.cpp:133:20)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (src/joint_search.cpp:101:32)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 13.747 seconds; current allocated memory: 266.902 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 266.910 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 275.102 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] src/numeric.hpp:21: variable-indexed range selection may cause suboptimal QoR.
+WARNING: [SYNCHK 200-120] src/joint_search.cpp:97: multiplication is assumed not to overflow by default, otherwise, please add option '-fwrapv'.
+INFO: [SYNCHK 200-10] 0 error(s), 2 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.119 seconds; current allocated memory: 279.656 MB.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 6 for loop 'VITIS_LOOP_136_15' (src/joint_search.cpp:129:16) in function 'joint_search_hls'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MIN (= 6) > AVE (= 3)) for loop 'VITIS_LOOP_136_15' (src/joint_search.cpp:129:16) in function 'joint_search_hls'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 41 for loop 'VITIS_LOOP_158_19' (src/joint_search.cpp:129:16) in function 'joint_search_hls'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 3 for loop 'VITIS_LOOP_155_18' (src/joint_search.cpp:129:16) in function 'joint_search_hls'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 3 for loop 'VITIS_LOOP_130_13' (src/joint_search.cpp:129:16) in function 'joint_search_hls'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/numeric.hpp:20:9) to (src/numeric.hpp:19:22) in function 'r18::udiv'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/numeric.hpp:32:9) to (src/numeric.hpp:31:22) in function 'r18::cordic'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/numeric.hpp:25:69) to (src/numeric.hpp:31:35) in function 'r18::cordic'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/joint_search.cpp:85:9) to (src/joint_search.cpp:84:54) in function 'joint_search_hls'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/joint_search.cpp:99:41) to (src/joint_search.cpp:102:13) in function 'joint_search_hls'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/joint_search.cpp:113:29) to (src/joint_search.cpp:113:21) in function 'joint_search_hls'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/joint_search.cpp:142:9) to (src/joint_search.cpp:49:13) in function 'joint_search_hls'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/joint_search.cpp:170:23) to (src/joint_search.cpp:172:1) in function 'joint_search_hls'... converting 7 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'joint_search_hls' (src/joint_search.cpp:48:143)...15 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.83 seconds; current allocated memory: 305.578 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_72_1'(src/joint_search.cpp:72:22) and 'VITIS_LOOP_73_2'(src/joint_search.cpp:73:44) in function 'joint_search_hls' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_72_1' (src/joint_search.cpp:72:22) in function 'joint_search_hls'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.421 seconds; current allocated memory: 461.387 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'joint_search_hls' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'joint_search_hls_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.388 seconds; current allocated memory: 465.852 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 466.859 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'joint_search_hls_Pipeline_VITIS_LOOP_72_1_VITIS_LOOP_73_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_72_1_VITIS_LOOP_73_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_72_1_VITIS_LOOP_73_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 467.711 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.087 seconds; current allocated memory: 467.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'udiv_Pipeline_VITIS_LOOP_19_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_19_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_19_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 468.238 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 468.398 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'udiv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 468.566 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.123 seconds; current allocated memory: 468.605 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'joint_search_hls_Outline_VITIS_LOOP_79_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 468.855 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 469.371 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'joint_search_hls_Pipeline_VITIS_LOOP_84_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_84_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_84_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 469.629 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.069 seconds; current allocated memory: 469.688 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'joint_search_hls_Outline_VITIS_LOOP_83_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 470.098 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.277 seconds; current allocated memory: 470.102 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cordic_Pipeline_VITIS_LOOP_31_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_31_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_31_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 470.375 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 470.527 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cordic' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 470.941 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 471.008 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'joint_search_hls_Pipeline_VITIS_LOOP_105_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_105_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_105_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 471.141 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 471.145 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'isqrt' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_7_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_7_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.125 seconds; current allocated memory: 471.363 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.294 seconds; current allocated memory: 471.520 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'candidate_score_Pipeline_VITIS_LOOP_26_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_26_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'VITIS_LOOP_26_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 474.652 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 474.750 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'candidate_score' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.151 seconds; current allocated memory: 475.500 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 475.832 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'evaluate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 476.102 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.083 seconds; current allocated memory: 476.195 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'joint_search_hls_Pipeline_VITIS_LOOP_120_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_120_12'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_120_12'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 476.520 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 476.535 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'joint_search_hls_Pipeline_VITIS_LOOP_134_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_134_14'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_134_14'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.057 seconds; current allocated memory: 477.000 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 477.336 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'joint_search_hls_Pipeline_VITIS_LOOP_150_17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_150_17'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_150_17'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 477.699 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.077 seconds; current allocated memory: 477.699 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'joint_search_hls_Pipeline_VITIS_LOOP_166_20' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_166_20'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_166_20'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.133 seconds; current allocated memory: 477.832 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 477.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'joint_search_hls' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=cz_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=cy_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=cx_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln159) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.407 seconds; current allocated memory: 489.945 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'obs' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 489.980 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'joint_search_hls_Pipeline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'joint_search_hls_Pipeline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.178 seconds; current allocated memory: 491.336 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'joint_search_hls_Pipeline_VITIS_LOOP_72_1_VITIS_LOOP_73_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'joint_search_hls_Pipeline_VITIS_LOOP_72_1_VITIS_LOOP_73_2' pipeline 'VITIS_LOOP_72_1_VITIS_LOOP_73_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'joint_search_hls_Pipeline_VITIS_LOOP_72_1_VITIS_LOOP_73_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.146 seconds; current allocated memory: 492.305 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'udiv_Pipeline_VITIS_LOOP_19_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'udiv_Pipeline_VITIS_LOOP_19_1' pipeline 'VITIS_LOOP_19_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_64ns_32ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'bitset_64ns_64ns_32ns_1s_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'udiv_Pipeline_VITIS_LOOP_19_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.226 seconds; current allocated memory: 492.781 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'udiv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'udiv'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.095 seconds; current allocated memory: 492.844 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'joint_search_hls_Outline_VITIS_LOOP_79_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'joint_search_hls_Outline_VITIS_LOOP_79_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 493.289 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'joint_search_hls_Pipeline_VITIS_LOOP_84_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'joint_search_hls_Pipeline_VITIS_LOOP_84_5' pipeline 'VITIS_LOOP_84_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'joint_search_hls_Pipeline_VITIS_LOOP_84_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.992 seconds; current allocated memory: 493.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'joint_search_hls_Outline_VITIS_LOOP_83_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'joint_search_hls_Outline_VITIS_LOOP_83_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 494.238 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cordic_Pipeline_VITIS_LOOP_31_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'cordic_Pipeline_VITIS_LOOP_31_1' pipeline 'VITIS_LOOP_31_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cordic_Pipeline_VITIS_LOOP_31_1'.
+INFO: [RTMG 210-279] Implementing memory 'joint_search_hls_cordic_Pipeline_VITIS_LOOP_31_1_r18_CORDIC_ATAN_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.145 seconds; current allocated memory: 495.473 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cordic' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cordic'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.118 seconds; current allocated memory: 496.391 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'joint_search_hls_Pipeline_VITIS_LOOP_105_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_12ns_32ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'joint_search_hls_Pipeline_VITIS_LOOP_105_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.124 seconds; current allocated memory: 496.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'isqrt' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'isqrt' pipeline 'VITIS_LOOP_7_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'isqrt'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.123 seconds; current allocated memory: 497.996 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'candidate_score_Pipeline_VITIS_LOOP_26_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'candidate_score_Pipeline_VITIS_LOOP_26_3' pipeline 'VITIS_LOOP_26_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_12ns_32s_44_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_20ns_22ns_41_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_21ns_21ns_42_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_21ns_32s_52_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32ns_48_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_25_4_64_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_31_4_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'candidate_score_Pipeline_VITIS_LOOP_26_3'.
+INFO: [RTMG 210-279] Implementing memory 'joint_search_hls_candidate_score_Pipeline_VITIS_LOOP_26_3_r18_PAIRS_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-2168] Implementing memory 'joint_search_hls_candidate_score_Pipeline_VITIS_LOOP_26_3_SEARCH_COS_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.367 seconds; current allocated memory: 501.086 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'candidate_score' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_58s_58s_64_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_25_4_64_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'candidate_score'.
+INFO: [RTMG 210-279] Implementing memory 'joint_search_hls_candidate_score_r18_MIC_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.317 seconds; current allocated memory: 505.457 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'evaluate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_64s_32ns_64_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'evaluate'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.197 seconds; current allocated memory: 508.875 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'joint_search_hls_Pipeline_VITIS_LOOP_120_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'joint_search_hls_Pipeline_VITIS_LOOP_120_12' pipeline 'VITIS_LOOP_120_12' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_64_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_32_1_1': 5 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'joint_search_hls_Pipeline_VITIS_LOOP_120_12'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 509.906 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'joint_search_hls_Pipeline_VITIS_LOOP_134_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'joint_search_hls_Pipeline_VITIS_LOOP_134_14'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.151 seconds; current allocated memory: 511.578 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'joint_search_hls_Pipeline_VITIS_LOOP_150_17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'joint_search_hls_Pipeline_VITIS_LOOP_150_17'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.155 seconds; current allocated memory: 512.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'joint_search_hls_Pipeline_VITIS_LOOP_166_20' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'joint_search_hls_Pipeline_VITIS_LOOP_166_20'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.122 seconds; current allocated memory: 513.352 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'joint_search_hls' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'joint_search_hls/covariance' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'joint_search_hls/grid' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'joint_search_hls/grid_count' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'joint_search_hls/horizontal_mm' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'joint_search_hls/vertical_mm' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'joint_search_hls/baseline_two' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'joint_search_hls/fast_mode' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'joint_search_hls/result' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'result' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'joint_search_hls' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'bitset_12ns_12ns_32ns_1s_12_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_11ns_3s_32s_32_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_11ns_5s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_7ns_6s_14s_14_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_14ns_32s_46_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_31ns_62_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32ns_62_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_64_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_46s_48ns_93_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_32_1_1': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_6ns_4ns_3_10_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_4ns_3_11_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'joint_search_hls'.
+INFO: [RTMG 210-279] Implementing memory 'joint_search_hls_r18_PHASE_MM_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'joint_search_hls_trace_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'joint_search_hls_weights_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'joint_search_hls_blocked_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'joint_search_hls_chosen_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'joint_search_hls_obs_RAM_1P_BRAM_1R1W' using block RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.904 seconds; current allocated memory: 521.453 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.625 seconds; current allocated memory: 538.250 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.229 seconds; current allocated memory: 548.824 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for joint_search_hls.
+INFO: [VLOG 209-307] Generating Verilog RTL for joint_search_hls.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 70.30 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:01:08; Allocated memory: 289.215 MB.
+INFO: [HLS 200-1510] Running: cosim_design -rtl verilog -tool xsim 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling detector.cpp_pre.cpp.tb.cpp
+   Compiling apatb_joint_search_hls.cpp
+   Compiling test_search.cpp_pre.cpp.tb.cpp
+   Compiling kernels.cpp_pre.cpp.tb.cpp
+   Compiling joint_search.cpp_pre.cpp.tb.cpp
+   Compiling apatb_joint_search_hls_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+H20000 B1 fast0 target(16000,7000,18000) found(15994,6998,17994) error=8.718mm valid1 quality1
+H15000 B2 fast0 target(12000,-5000,13000) found(11996,-4999,12989) error=11.747mm valid1 quality1
+H10000 B1 fast1 target(-2000,1000,1000) found(-1999,999,998) error=2.449mm valid1 quality1
+H10000 B1 fast1 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H15000 B1 fast0 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H20000 B1 fast0 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H10000 B2 fast1 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H15000 B2 fast0 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H20000 B2 fast0 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+R19 SEARCH RTL CONTRACT PASS: extended cylinder, 2m baseline, fast mode and all six zero-evidence modes
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+D:\xiaobao\2026\fpga_board_work\r19_hls_joint_search_hls_20261031_022524\core\solution1\sim\verilog>set PATH= 
+
+D:\xiaobao\2026\fpga_board_work\r19_hls_joint_search_hls_20261031_022524\core\solution1\sim\verilog>call C:/Xilinx/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_joint_search_hls_top glbl -Oenable_linking_all_libraries  -prj joint_search_hls.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s joint_search_hls  
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_joint_search_hls_top glbl -Oenable_linking_all_libraries -prj joint_search_hls.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s joint_search_hls 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/AESL_automem_covariance.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_covariance
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/AESL_automem_grid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_grid
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_joint_search_hls_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_bitselect_1ns_12ns_32ns_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_bitselect_1ns_12ns_32ns_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_bitselect_1ns_64ns_32ns_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_bitselect_1ns_64ns_32ns_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_bitset_12ns_12ns_32ns_1s_12_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_bitset_12ns_12ns_32ns_1s_12_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_bitset_64ns_64ns_32ns_1s_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_bitset_64ns_64ns_32ns_1s_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_blocked_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_blocked_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_candidate_score.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_candidate_score
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_candidate_score_Pipeline_VITIS_LOOP_26_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_candidate_score_Pipeline_VITIS_LOOP_26_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_candidate_score_Pipeline_VITIS_LOOP_26_3_r18_PAIRS_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_candidate_score_Pipeline_VITIS_LOOP_26_3_r18_PAIRS_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_candidate_score_Pipeline_VITIS_LOOP_26_3_SEARCH_COS_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_candidate_score_Pipeline_VITIS_LOOP_26_3_SEARCH_COS_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_candidate_score_r18_MIC_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_candidate_score_r18_MIC_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_chosen_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_chosen_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_cordic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_cordic
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_cordic_Pipeline_VITIS_LOOP_31_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_cordic_Pipeline_VITIS_LOOP_31_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_cordic_Pipeline_VITIS_LOOP_31_1_r18_CORDIC_ATAN_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_cordic_Pipeline_VITIS_LOOP_31_1_r18_CORDIC_ATAN_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_evaluate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_evaluate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_isqrt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_isqrt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_joint_search_hls_Outline_VITIS_LOOP_79_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_joint_search_hls_Outline_VITIS_LOOP_79_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_joint_search_hls_Outline_VITIS_LOOP_83_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_joint_search_hls_Outline_VITIS_LOOP_83_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_joint_search_hls_Pipeline_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_joint_search_hls_Pipeline_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_joint_search_hls_Pipeline_VITIS_LOOP_105_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_joint_search_hls_Pipeline_VITIS_LOOP_105_8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_joint_search_hls_Pipeline_VITIS_LOOP_120_12.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_joint_search_hls_Pipeline_VITIS_LOOP_120_12
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_joint_search_hls_Pipeline_VITIS_LOOP_134_14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_joint_search_hls_Pipeline_VITIS_LOOP_134_14
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_joint_search_hls_Pipeline_VITIS_LOOP_150_17.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_joint_search_hls_Pipeline_VITIS_LOOP_150_17
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_joint_search_hls_Pipeline_VITIS_LOOP_166_20.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_joint_search_hls_Pipeline_VITIS_LOOP_166_20
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_joint_search_hls_Pipeline_VITIS_LOOP_72_1_VITIS_LOOP_73_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_joint_search_hls_Pipeline_VITIS_LOOP_72_1_VITIS_LOOP_73_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_joint_search_hls_Pipeline_VITIS_LOOP_84_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_joint_search_hls_Pipeline_VITIS_LOOP_84_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mac_muladd_11ns_3s_32s_32_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mac_muladd_11ns_3s_32s_32_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mac_muladd_11ns_3s_32s_32_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mac_muladd_11ns_5s_32s_32_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mac_muladd_11ns_5s_32s_32_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mac_muladd_11ns_5s_32s_32_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mac_muladd_7ns_6s_14s_14_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mac_muladd_7ns_6s_14s_14_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mac_muladd_7ns_6s_14s_14_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_12ns_32s_44_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_12ns_32s_44_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_14ns_32s_46_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_14ns_32s_46_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_16s_16s_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_16s_16s_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_20ns_22ns_41_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_20ns_22ns_41_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_21ns_21ns_42_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_21ns_21ns_42_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_21ns_32s_52_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_21ns_32s_52_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_31ns_31ns_62_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_31ns_31ns_62_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_32ns_32ns_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_32ns_32ns_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_32s_32ns_48_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_32s_32ns_48_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_32s_32ns_62_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_32s_32ns_62_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_32s_32s_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_32s_32s_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_32s_32s_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_32s_32s_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_46s_48ns_93_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_46s_48ns_93_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_58s_58s_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_58s_58s_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_mul_64s_32ns_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_mul_64s_32ns_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_obs_RAM_1P_BRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_obs_RAM_1P_BRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_r18_PHASE_MM_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_r18_PHASE_MM_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_sparsemux_25_4_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_sparsemux_25_4_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_sparsemux_31_4_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_sparsemux_31_4_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_sparsemux_33_4_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_sparsemux_33_4_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_sparsemux_7_2_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_sparsemux_7_2_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_sparsemux_7_2_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_sparsemux_7_2_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_trace_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_trace_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_udiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_udiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_udiv_Pipeline_VITIS_LOOP_19_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_udiv_Pipeline_VITIS_LOOP_19_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_urem_6ns_4ns_3_10_seq_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_urem_6ns_4ns_3_10_seq_1_divseq
+INFO: [VRFC 10-311] analyzing module joint_search_hls_urem_6ns_4ns_3_10_seq_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_urem_7ns_4ns_3_11_seq_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_urem_7ns_4ns_3_11_seq_1_divseq
+INFO: [VRFC 10-311] analyzing module joint_search_hls_urem_7ns_4ns_3_11_seq_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/joint_search_hls_weights_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module joint_search_hls_weights_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.joint_search_hls_r18_PHASE_MM_RO...
+Compiling module xil_defaultlib.joint_search_hls_candidate_score...
+Compiling module xil_defaultlib.joint_search_hls_trace_RAM_AUTO_...
+Compiling module xil_defaultlib.joint_search_hls_weights_RAM_AUT...
+Compiling module xil_defaultlib.joint_search_hls_blocked_RAM_AUT...
+Compiling module xil_defaultlib.joint_search_hls_chosen_RAM_AUTO...
+Compiling module xil_defaultlib.joint_search_hls_obs_RAM_1P_BRAM...
+Compiling module xil_defaultlib.joint_search_hls_flow_control_lo...
+Compiling module xil_defaultlib.joint_search_hls_joint_search_hl...
+Compiling module xil_defaultlib.joint_search_hls_joint_search_hl...
+Compiling module xil_defaultlib.joint_search_hls_joint_search_hl...
+Compiling module xil_defaultlib.joint_search_hls_joint_search_hl...
+Compiling module xil_defaultlib.joint_search_hls_joint_search_hl...
+Compiling module xil_defaultlib.joint_search_hls_bitselect_1ns_1...
+Compiling module xil_defaultlib.joint_search_hls_joint_search_hl...
+Compiling module xil_defaultlib.joint_search_hls_cordic_Pipeline...
+Compiling module xil_defaultlib.joint_search_hls_cordic_Pipeline...
+Compiling module xil_defaultlib.joint_search_hls_cordic
+Compiling module xil_defaultlib.joint_search_hls_bitselect_1ns_6...
+Compiling module xil_defaultlib.joint_search_hls_bitset_64ns_64n...
+Compiling module xil_defaultlib.joint_search_hls_udiv_Pipeline_V...
+Compiling module xil_defaultlib.joint_search_hls_udiv
+Compiling module xil_defaultlib.joint_search_hls_candidate_score...
+Compiling module xil_defaultlib.joint_search_hls_candidate_score...
+Compiling module xil_defaultlib.joint_search_hls_mul_12ns_32s_44...
+Compiling module xil_defaultlib.joint_search_hls_mul_20ns_22ns_4...
+Compiling module xil_defaultlib.joint_search_hls_mul_21ns_21ns_4...
+Compiling module xil_defaultlib.joint_search_hls_mul_21ns_32s_52...
+Compiling module xil_defaultlib.joint_search_hls_mul_32s_32ns_48...
+Compiling module xil_defaultlib.joint_search_hls_sparsemux_33_4_...
+Compiling module xil_defaultlib.joint_search_hls_sparsemux_31_4_...
+Compiling module xil_defaultlib.joint_search_hls_sparsemux_25_4_...
+Compiling module xil_defaultlib.joint_search_hls_candidate_score...
+Compiling module xil_defaultlib.joint_search_hls_isqrt
+Compiling module xil_defaultlib.joint_search_hls_mul_32s_32s_32_...
+Compiling module xil_defaultlib.joint_search_hls_mul_58s_58s_64_...
+Compiling module xil_defaultlib.joint_search_hls_candidate_score
+Compiling module xil_defaultlib.joint_search_hls_mul_64s_32ns_64...
+Compiling module xil_defaultlib.joint_search_hls_evaluate
+Compiling module xil_defaultlib.joint_search_hls_mul_32s_32s_64_...
+Compiling module xil_defaultlib.joint_search_hls_sparsemux_7_2_3...
+Compiling module xil_defaultlib.joint_search_hls_joint_search_hl...
+Compiling module xil_defaultlib.joint_search_hls_sparsemux_7_2_6...
+Compiling module xil_defaultlib.joint_search_hls_joint_search_hl...
+Compiling module xil_defaultlib.joint_search_hls_joint_search_hl...
+Compiling module xil_defaultlib.joint_search_hls_joint_search_hl...
+Compiling module xil_defaultlib.joint_search_hls_mul_14ns_32s_46...
+Compiling module xil_defaultlib.joint_search_hls_mul_31ns_31ns_6...
+Compiling module xil_defaultlib.joint_search_hls_mul_32ns_32ns_6...
+Compiling module xil_defaultlib.joint_search_hls_mul_32s_32ns_62...
+Compiling module xil_defaultlib.joint_search_hls_mul_46s_48ns_93...
+Compiling module xil_defaultlib.joint_search_hls_bitset_12ns_12n...
+Compiling module xil_defaultlib.joint_search_hls_mul_16s_16s_32_...
+Compiling module xil_defaultlib.joint_search_hls_urem_7ns_4ns_3_...
+Compiling module xil_defaultlib.joint_search_hls_urem_7ns_4ns_3_...
+Compiling module xil_defaultlib.joint_search_hls_urem_6ns_4ns_3_...
+Compiling module xil_defaultlib.joint_search_hls_urem_6ns_4ns_3_...
+Compiling module xil_defaultlib.joint_search_hls_mac_muladd_11ns...
+Compiling module xil_defaultlib.joint_search_hls_mac_muladd_11ns...
+Compiling module xil_defaultlib.joint_search_hls_mac_muladd_11ns...
+Compiling module xil_defaultlib.joint_search_hls_mac_muladd_11ns...
+Compiling module xil_defaultlib.joint_search_hls_mac_muladd_7ns_...
+Compiling module xil_defaultlib.joint_search_hls_mac_muladd_7ns_...
+Compiling module xil_defaultlib.joint_search_hls
+Compiling module xil_defaultlib.AESL_automem_covariance
+Compiling module xil_defaultlib.AESL_automem_grid
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=69)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=5)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=11)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_joint_search_hls_top
+Compiling module work.glbl
+Built simulation snapshot joint_search_hls
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sat Oct 31 02:29:25 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/joint_search_hls/xsim_script.tcl
+# xsim {joint_search_hls} -autoloadwcfg -tclbatch {joint_search_hls.tcl}
+Time resolution is 1 ps
+source joint_search_hls.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 9 [0.00%] @ "150000"
+// RTL Simulation : 0 / 9 [12.11%] @ "200000190000"
+// RTL Simulation : 0 / 9 [24.23%] @ "400000210000"
+// RTL Simulation : 0 / 9 [36.34%] @ "600000230000"
+// RTL Simulation : 0 / 9 [48.45%] @ "800000250000"
+// RTL Simulation : 0 / 9 [60.57%] @ "1000000270000"
+// RTL Simulation : 0 / 9 [72.68%] @ "1200000290000"
+// RTL Simulation : 0 / 9 [84.79%] @ "1400000310000"
+// RTL Simulation : 0 / 9 [96.91%] @ "1600000330000"
+// RTL Simulation : 1 / 9 [100.00%] @ "1601035910000"
+// RTL Simulation : 1 / 9 [12.11%] @ "1801035930000"
+// RTL Simulation : 1 / 9 [24.23%] @ "2001035950000"
+// RTL Simulation : 1 / 9 [36.34%] @ "2201035970000"
+// RTL Simulation : 1 / 9 [48.45%] @ "2401035990000"
+// RTL Simulation : 1 / 9 [60.57%] @ "2601036010000"
+// RTL Simulation : 1 / 9 [72.68%] @ "2801036030000"
+// RTL Simulation : 1 / 9 [84.79%] @ "3001036050000"
+// RTL Simulation : 2 / 9 [100.00%] @ "3024038490000"
+// RTL Simulation : 2 / 9 [12.11%] @ "3224038510000"
+// RTL Simulation : 2 / 9 [24.23%] @ "3424038530000"
+// RTL Simulation : 2 / 9 [36.34%] @ "3624038550000"
+// RTL Simulation : 3 / 9 [100.00%] @ "3646922510000"
+// RTL Simulation : 4 / 9 [100.00%] @ "3647624410000"
+// RTL Simulation : 5 / 9 [100.00%] @ "3648326310000"
+// RTL Simulation : 6 / 9 [100.00%] @ "3649028210000"
+// RTL Simulation : 7 / 9 [100.00%] @ "3649730110000"
+// RTL Simulation : 8 / 9 [100.00%] @ "3650432010000"
+// RTL Simulation : 9 / 9 [100.00%] @ "3651133910000"
+////////////////////////////////////////////////////////////////////////////////////
+Command failed: Simulator command interrupted.
+
+Simulation engine not responding
+The simulator has terminated in an unexpected manner.  Please review the simulation log (xsim.log) for details.
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:46:00 . Memory (MB): peak = 199.168 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 31 03:15:26 2026...
+INFO: [COSIM 212-316] Starting C post checking ...
+H20000 B1 fast0 target(16000,7000,18000) found(15994,6998,17994) error=8.718mm valid1 quality1
+H15000 B2 fast0 target(12000,-5000,13000) found(11996,-4999,12989) error=11.747mm valid1 quality1
+H10000 B1 fast1 target(-2000,1000,1000) found(-1999,999,998) error=2.449mm valid1 quality1
+H10000 B1 fast1 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H15000 B1 fast0 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H20000 B1 fast0 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H10000 B2 fast1 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H15000 B2 fast0 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+H20000 B2 fast0 target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+R19 SEARCH RTL CONTRACT PASS: extended cylinder, 2m baseline, fast mode and all six zero-evidence modes
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:47:45; Allocated memory: 10.004 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -rtl verilog -vendor drone.self -library compute -version 1.0 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+WARNING: C:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sat Oct 31 03:15:34 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at 'C'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/solution1_data.json outdir=D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/impl/ip srcdir=D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1 sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/impl/ip/misc
+INFO: Copied 64 verilog file(s) to D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/impl/ip/hdl/verilog
+INFO: Copied 59 vhdl file(s) to D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/impl/ip/hdl/vhdl
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+INFO: Import ports from HDL: D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/impl/ip/hdl/vhdl/joint_search_hls.vhd (joint_search_hls)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Add data interface covariance_address0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: Add data interface covariance_q0
+INFO: Add data interface grid_address0
+INFO: Add data interface grid_q0
+INFO: Add data interface grid_count
+INFO: Add data interface horizontal_mm
+INFO: Add data interface vertical_mm
+INFO: Add data interface baseline_two
+INFO: Add data interface fast_mode
+INFO: Add data interface result
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/impl/ip/component.xml
+INFO: Created IP archive D:/xiaobao/2026/fpga_board_work/r19_hls_joint_search_hls_20261031_022524/core/solution1/impl/ip/drone_self_compute_joint_search_hls_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 31 03:15:41 2026...
+INFO: [HLS 200-802] Generated output file core/solution1/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:08; Allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 2 seconds. Total elapsed time: 3014.67 seconds; peak allocated memory: 559.660 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 50m 15s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

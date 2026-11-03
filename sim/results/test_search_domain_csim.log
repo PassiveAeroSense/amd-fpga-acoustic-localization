@@ -1,0 +1,127 @@
+
+****** vitis-run v2024.2 (64-bit)
+  **** SW Build 5238363 on 2024-11-10-08:15:25
+  **** Start of session at: Tue Nov  3 18:21:26 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2024.2 5238294
+Sourcing Tcl script 'C:/fpga_work/submission_repair/r19_hls_joint_search_hls_20261103_182126/build.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset core 
+INFO: [HLS 200-10] Creating and opening project 'C:/fpga_work/submission_repair/r19_hls_joint_search_hls_20261103_182126/core'.
+INFO: [HLS 200-1510] Running: set_top joint_search_hls 
+INFO: [HLS 200-1510] Running: add_files src/detector.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding design file 'src/detector.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/joint_search.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding design file 'src/joint_search.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/kernels.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding design file 'src/kernels.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb grid_10000.mem 
+INFO: [HLS 200-10] Adding test bench file 'grid_10000.mem' to the project
+INFO: [HLS 200-1510] Running: add_files -tb grid_11000.mem 
+INFO: [HLS 200-10] Adding test bench file 'grid_11000.mem' to the project
+INFO: [HLS 200-1510] Running: add_files -tb grid_15000.mem 
+INFO: [HLS 200-10] Adding test bench file 'grid_15000.mem' to the project
+INFO: [HLS 200-1510] Running: add_files -tb grid_20000.mem 
+INFO: [HLS 200-10] Adding test bench file 'grid_20000.mem' to the project
+INFO: [HLS 200-1510] Running: add_files -tb position_check_0.mem 
+INFO: [HLS 200-10] Adding test bench file 'position_check_0.mem' to the project
+INFO: [HLS 200-1510] Running: add_files -tb position_check_1.mem 
+INFO: [HLS 200-10] Adding test bench file 'position_check_1.mem' to the project
+INFO: [HLS 200-1510] Running: add_files -tb test_tingkong_domain.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding test bench file 'test_tingkong_domain.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'C:/fpga_work/submission_repair/r19_hls_joint_search_hls_20261103_182126/core/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7a200tfbg484-2 
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-fbg484-2'
+INFO: [HLS 200-1510] Running: create_clock -period 20 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1510] Running: config_rtl -reset_level low -reset control 
+INFO: [HLS 200-1510] Running: csim_design -O 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building optimized C Simulation binaries
+   Compiling ../../../../test_tingkong_domain.cpp in release mode
+   Compiling ../../../../src/kernels.cpp in release mode
+   Compiling ../../../../src/joint_search.cpp in release mode
+   Compiling ../../../../src/detector.cpp in release mode
+   Generating csim.exe
+In file included from ../../../../test_tingkong_domain.cpp:2:
+In file included from ../../../../src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../src/kernels.cpp:1:
+In file included from ../../../.././src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../src/joint_search.cpp:1:
+In file included from ../../../.././src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../src/detector.cpp:1:
+In file included from ../../../.././src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+TINGKONG target(10900,0,800) found(10925,0,803) error=25.179mm valid1 quality1
+TINGKONG target(-10900,0,800) found(-10998,2,810) error=98.529mm valid1 quality1
+TINGKONG target(-6000,4000,9900) found(-6000,4000,9897) error=3.000mm valid1 quality1
+TINGKONG target(2000,-2000,3000) found(2000,-1999,2999) error=1.414mm valid1 quality1
+TINGKONG target(0,0,0) found(0,0,0) error=0.000mm valid0 quality0
+TINGKONG_SEARCH_DOMAIN_PASS
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:01:19; Allocated memory: 1.078 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 82.124 seconds; peak allocated memory: 260.500 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 23s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

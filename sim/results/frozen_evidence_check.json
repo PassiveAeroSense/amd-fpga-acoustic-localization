@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "scope": "Internal consistency of supplied frozen JSON/NPZ offline evaluation results. No raw-audio rerun, new accuracy experiment or hardware execution.",
+  "detection_120m": {
+    "a2_hits": 34,
+    "windows": 124,
+    "previous_a2_hits": 3
+  },
+  "backgrounds": [
+    {
+      "windows": 226,
+      "hits": 0
+    },
+    {
+      "windows": 99,
+      "hits": 0
+    },
+    {
+      "windows": 116,
+      "hits": 0
+    }
+  ],
+  "offline_doa_cases": [
+    {
+      "record_id": 2,
+      "valid_windows": 53,
+      "baseline_median_deg": 5.344929350458066,
+      "improved_median_deg": 3.7041173459446948
+    },
+    {
+      "record_id": 26,
+      "valid_windows": 41,
+      "baseline_median_deg": 5.107963029338989,
+      "improved_median_deg": 3.223274218830827
+    },
+    {
+      "record_id": 9,
+      "valid_windows": 47,
+      "baseline_median_deg": 9.438956122524981,
+      "improved_median_deg": 2.07579547724712
+    }
+  ],
+  "input_sha256": {
+    "data/paper_evidence/original/data/analysis/optimized_detection_20261024/detection_summary.json": "8506cff8ab8e5de7779cc2b3e2be3f99a1d89b710781d871adf011958e2cf8c7",
+    "data/paper_evidence/detection_plot_data.npz": "d939b0ded63ad016a7fd32bd72fe9ef9aa1d91e9490d539da8fe7ab950042d02",
+    "data/paper_evidence/original/data/analysis/optimized_detection_20261024/additional_audio_20261024/background_results.json": "3557239c4737957ed4a65b0fce1fddfccb6a6b97d3988afd4630f3f879c1f247",
+    "data/paper_evidence/original/data/analysis/algorithm_trials_20261024/final_stream_results.json": "34b716b0f50fb522abfec06f1801b66b84d81f5772eeb1c2fea9b2d1cff8963e"
+  }
+}

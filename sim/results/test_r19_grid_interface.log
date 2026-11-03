@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# xsim v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Nov  3 18:30:11 2026
+# Process ID         : 59228
+# Current directory  : C:/fpga_work/submission_repair/verify_TingKong_DualArray_20261103_182902_412
+# Command line       : xsim.exe -log test_r19_grid_interface.log -mode tcl -source {xsim.dir/test_r19_grid_interface/xsim_script.tcl}
+# Log file           : C:/fpga_work/submission_repair/verify_TingKong_DualArray_20261103_182902_412/test_r19_grid_interface.log
+# Journal file       : C:/fpga_work/submission_repair/verify_TingKong_DualArray_20261103_182902_412\xsim.jou
+# Running On         : DESKTOP-QOSKA1C
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) 7 240H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 68405 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72700 MB
+# Available Virtual  : 27439 MB
+#-----------------------------------------------------------
+source xsim.dir/test_r19_grid_interface/xsim_script.tcl
+# xsim {test_r19_grid_interface} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+R19 GRID B1 PASS xyz 600 400 1500 cycles3622740
+R19 GRID B2 PASS xyz 600 400 1500 cycles3622756
+R19 GRID INTERFACE PASS: two-cycle external grid, covariance adapter, both baselines and positive source
+$finish called at time : 72455106 ns : File "C:/fpga_work/submission_repair/verify_TingKong_DualArray_20261103_182902_412/tb_r19_grid_interface.sv" Line 28
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:01:10 . Memory (MB): peak = 198.637 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 35284 KB (Peak: 35284 KB), Simulation CPU Usage: 69452 ms
+INFO: [Common 17-206] Exiting xsim at Tue Nov  3 18:31:23 2026...

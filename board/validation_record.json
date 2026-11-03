@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-03",
+  "target": "xc7a200tfbg484-2",
+  "bit_sha256": "ff30ca39cfa1384f7a9a9df917f829e0e60213263ce63d0b3ecff9c177d1a18f",
+  "horizontal_mm": 11000,
+  "vertical_mm": 10000,
+  "team_confirmation": "已经下载并验证正常",
+  "confirmed_functions": [
+    "acquisition",
+    "localization",
+    "display"
+  ],
+  "source": "User confirmation in project conversation, 2026-11-03",
+  "evidence": "Team confirmation of acquisition, localization and display, linked to the reference bitstream SHA-256. Quantitative acoustic accuracy is evaluated separately."
+}

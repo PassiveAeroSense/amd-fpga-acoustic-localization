@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "test": "actual_vivado_report",
+      "status": "PASS"
+    },
+    {
+      "test": "reject_negative_slack",
+      "status": "PASS"
+    },
+    {
+      "test": "reject_missing_resource",
+      "status": "PASS"
+    },
+    {
+      "test": "floating_tolerance",
+      "status": "PASS"
+    },
+    {
+      "test": "reject_wrong_value",
+      "status": "PASS"
+    },
+    {
+      "test": "reject_shape",
+      "status": "PASS"
+    },
+    {
+      "test": "reject_nan",
+      "status": "PASS"
+    },
+    {
+      "test": "reject_dtype",
+      "status": "PASS"
+    },
+    {
+      "test": "reject_bad_tolerance",
+      "status": "PASS"
+    },
+    {
+      "test": "preserve_uint64_precision",
+      "status": "PASS"
+    }
+  ],
+  "hardware_pynq_execution": false,
+  "scope": "Desktop report and numeric validation; PYNQ device workflow documented separately."
+}

@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Nov  3 18:29:16 2026
+# Process ID         : 61224
+# Current directory  : C:/fpga_work/submission_repair/verify_TingKong_DualArray_20261103_182902_412
+# Command line       : xsim.exe -log test_r27_pages.log -mode tcl -source {xsim.dir/test_r27_pages/xsim_script.tcl}
+# Log file           : C:/fpga_work/submission_repair/verify_TingKong_DualArray_20261103_182902_412/test_r27_pages.log
+# Journal file       : C:/fpga_work/submission_repair/verify_TingKong_DualArray_20261103_182902_412\xsim.jou
+# Running On         : DESKTOP-QOSKA1C
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) 7 240H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 68405 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72700 MB
+# Available Virtual  : 27611 MB
+#-----------------------------------------------------------
+source xsim.dir/test_r27_pages/xsim_script.tcl
+# xsim {test_r27_pages} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+R27_PAGES_PASS four real LCD rasters, KEY4 roundtrip, raw16 live across pages, no unknown pixels
+$finish called at time : 104241346 ns : File "C:/fpga_work/submission_repair/verify_TingKong_DualArray_20261103_182902_412/tb_r27_pages.sv" Line 41
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:27 . Memory (MB): peak = 195.645 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 31912 KB (Peak: 31912 KB), Simulation CPU Usage: 26796 ms
+INFO: [Common 17-206] Exiting xsim at Tue Nov  3 18:29:45 2026...

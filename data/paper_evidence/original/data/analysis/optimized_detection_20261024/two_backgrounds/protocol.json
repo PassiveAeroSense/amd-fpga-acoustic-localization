@@ -1,0 +1,174 @@
+{
+  "configurations": [
+    [
+      "shape",
+      "logistic_01",
+      false
+    ],
+    [
+      "shape",
+      "logistic_1",
+      false
+    ],
+    [
+      "shape",
+      "svm_1",
+      false
+    ],
+    [
+      "shape",
+      "svm_10",
+      false
+    ],
+    [
+      "spectrum",
+      "logistic_01",
+      false
+    ],
+    [
+      "spectrum",
+      "svm_1",
+      false
+    ],
+    [
+      "spatial",
+      "lda",
+      false
+    ],
+    [
+      "combined",
+      "lda",
+      false
+    ],
+    [
+      "harmonics",
+      "svm_1",
+      false
+    ],
+    [
+      "spatial",
+      "svm_1",
+      false
+    ],
+    [
+      "shape",
+      "logistic_01",
+      true
+    ],
+    [
+      "spectrum",
+      "logistic_01",
+      true
+    ],
+    [
+      "shape",
+      "trees_4",
+      false
+    ],
+    [
+      "shape",
+      "trees_12",
+      false
+    ],
+    [
+      "shape",
+      "boost",
+      false
+    ],
+    [
+      "spectrum",
+      "trees_4",
+      false
+    ],
+    [
+      "spectrum",
+      "trees_12",
+      false
+    ],
+    [
+      "spectrum",
+      "boost",
+      false
+    ],
+    [
+      "harmonics",
+      "trees_4",
+      false
+    ],
+    [
+      "harmonics",
+      "trees_12",
+      false
+    ],
+    [
+      "harmonics",
+      "boost",
+      false
+    ],
+    [
+      "spectrum",
+      "svm_10",
+      false
+    ],
+    [
+      "spectrum",
+      "lda",
+      false
+    ],
+    [
+      "shape",
+      "lda",
+      false
+    ]
+  ],
+  "smoothing": [
+    0.0,
+    1.5,
+    3.0
+  ],
+  "quantiles": [
+    0.95,
+    0.99,
+    1.0
+  ],
+  "phases": "night noise fit 0..10s, calibration 14..24s, development-check >=28s; second noise fit 0..5s, calibration 8..11s, development-check >=14s",
+  "selection": "Zero development-check false positive windows on BOTH backgrounds in every positive fold preferred; then high-altitude per-record recall",
+  "positive_split": {
+    "8": 0,
+    "0": 1,
+    "4": 2,
+    "21": 3,
+    "27": 4,
+    "28": 0,
+    "34": 1,
+    "1": 2,
+    "5": 3,
+    "24": 4,
+    "29": 0,
+    "2": 1,
+    "6": 2,
+    "22": 3,
+    "25": 4,
+    "30": 0,
+    "3": 1,
+    "7": 2,
+    "23": 3,
+    "26": 4,
+    "31": 0,
+    "9": 1,
+    "12": 2,
+    "13": 3,
+    "14": 4,
+    "15": 0,
+    "16": 1,
+    "17": 2,
+    "32": 3,
+    "18": 4,
+    "19": 0,
+    "20": 1,
+    "10": 2
+  },
+  "independent_noise": false,
+  "target_excluded_from_training_and_selection": true,
+  "warning": "Both negative recordings now development data; no independently unseen environmental recording remains. Temporal checks do not replace new recording sessions."
+}

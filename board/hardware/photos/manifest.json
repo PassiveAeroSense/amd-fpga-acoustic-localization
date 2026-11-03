@@ -1,0 +1,32 @@
+[
+  {
+    "original": "8通道ADC模块.jpg",
+    "path": "board/hardware/photos/adc_module.jpg",
+    "sha256": "50f70d1f78ecdf1f5ea835cdc51af896ad5b4a6b62fabd9dfb612531296cd0ee"
+  },
+  {
+    "original": "单个麦克风阵列.jpg",
+    "path": "board/hardware/photos/microphone_array.jpg",
+    "sha256": "2b1048f5a3f00ec86e269814f4dd8ec07d89dbaea6cbf668631fe1055ecf22d8"
+  },
+  {
+    "original": "整机斜 45°全局照片.jpg",
+    "path": "board/hardware/photos/system_oblique.jpg",
+    "sha256": "568ee945d414b10ba1c779b26fe3355f271be19035f305d5cf57c83e1f66b076"
+  },
+  {
+    "original": "整机正面照片.jpg",
+    "path": "board/hardware/photos/system_front.jpg",
+    "sha256": "e7c4bed18ac1e38809afc43a9550b1cd3b00683ba53f79cee7a3b95d94685523"
+  },
+  {
+    "original": "电源模块.jpg",
+    "path": "board/hardware/photos/battery.jpg",
+    "sha256": "53492da90357e24f4136a737a04db549fabf93bccbf2677c63427de9dd93fe88"
+  },
+  {
+    "original": "稳压模块.jpg",
+    "path": "board/hardware/photos/regulator.jpg",
+    "sha256": "ec593f1229bec94576cb12a5bfd6ad59a7c38b890f20bbaee3ac0064dabcc87a"
+  }
+]

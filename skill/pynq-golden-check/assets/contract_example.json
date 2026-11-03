@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "board": "example_zynq_board",
+  "pynq_version": "3.0.1",
+  "dma_mode": "simple",
+  "dma_instance": "axi_dma_0",
+  "max_transfer_bytes": 16383,
+  "timeout_s": 2.0,
+  "input": {"shape": [256], "dtype": "<i4"},
+  "output": {"shape": [256], "dtype": "<i4"},
+  "numeric_convention": "Example integer pass-through. Replace with the actual scale, saturation, ordering and units.",
+  "output_packet": "one_tlast_per_transfer",
+  "atol": 0.0,
+  "rtol": 0.0,
+  "artifacts": {
+    "bit": {"file": "design.bit", "sha256": "0000000000000000000000000000000000000000000000000000000000000000"},
+    "hwh": {"file": "design.hwh", "sha256": "0000000000000000000000000000000000000000000000000000000000000000"}
+  }
+}

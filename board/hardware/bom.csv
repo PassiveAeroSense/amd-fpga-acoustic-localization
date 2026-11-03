@@ -1,0 +1,10 @@
+item,quantity,description,power_or_interface
+Microphone,16,Vesper VM1000 analog MEMS,3.3 V
+Array,2,8 channels square perimeter 140 mm,8 analog outputs
+ADC,2,AD7606C 8 channels,5 V supply and 3.3 V IO
+FPGA board,1,Wildfire Shengteng XC7A200T FBG484-2,12 V input
+LCD,1,Board-compatible display,RGB565 and timing
+Battery,1,DC24V 2200mAh nominal22.2V charge25.2V,Regulator input
+Regulator,1,Multi-rail power module,12 V / 5 V / 3.3 V
+Cables,1 set,16 analog signals and digital buses,Common ground
+Support,1 set,Array holders and platform,Array baseline 2 m

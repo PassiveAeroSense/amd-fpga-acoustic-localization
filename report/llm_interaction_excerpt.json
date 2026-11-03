@@ -1,0 +1,1679 @@
+{
+  "schema_version": 4,
+  "prepared_on": "2026-11-03",
+  "work_title": "基于 AMD FPGA 的双阵列无人机声学检测与三维定位系统",
+  "record_type": "selected_thematic_collaboration_record",
+  "source": "project_memory_and_visible_conversation_with_artifact_checks",
+  "session_id": null,
+  "model_id": null,
+  "editorial_policy": "保留既有正式化需求和编辑归纳；可追溯专题追加逐字原始提示词与模型回答节选、原始会话文件名、行号、UTC时间、完整消息及节选SHA-256。未找到原文的专题保持原样，不反推或补造原始对话。",
+  "sources": {
+    "M1": {
+      "path": "论文/项目记忆与交接.md",
+      "location": "workspace",
+      "title": "项目总记忆与交接",
+      "sha256": "0fe7e2cb36d96a97e25f04a834ca36d0e629aeaf9519b54879d5991e2f664051"
+    },
+    "M2": {
+      "path": "fpga_accuracy_20261029/项目记忆补充_20261029.md",
+      "location": "workspace",
+      "title": "定位工程迭代补充记忆",
+      "sha256": "be99623d2a36ec1b5ab0b79cca0df19b5f1ecf2896fe9527a1572c9e8c481e53"
+    },
+    "P1": {
+      "path": "src/variant.json",
+      "location": "submission",
+      "title": "提交版本配置",
+      "sha256": "7b4b15b23f3ae488bd0f853f92326a3316cb9393949d86f14c4d50b6eec236f4"
+    },
+    "P2": {
+      "path": "build/reproduction_record.json",
+      "location": "submission",
+      "title": "独立目录构建复现记录",
+      "sha256": "94dea7edff18b02ffade0b3cb6e548b981235ce8213ec240a3fab9efe531049c"
+    },
+    "P3": {
+      "path": "board/validation_record.json",
+      "location": "submission",
+      "title": "团队板级验证确认",
+      "sha256": "82573413d3205f6996432417222d270ae74c4f2117a6c750c95da0eef7d5baa5"
+    },
+    "P4": {
+      "path": "skill/fpga-stream-debug/references/memory_cases.json",
+      "location": "submission",
+      "title": "调试技能的记忆来源摘录",
+      "sha256": "61dbc808a40908ce796b687c951f47a4a31e459a076a4b3b4c8a7c6491b9679f"
+    },
+    "P5": {
+      "path": "skill/pynq-golden-check/references/project_origin.md",
+      "location": "submission",
+      "title": "项目经验向 PYNQ 的迁移说明",
+      "sha256": "2d7ecede22ddf7165d680704908306800acf5050d22509ed241e7f1755257625"
+    },
+    "P6": {
+      "path": "sim/skill_validation.json",
+      "location": "submission",
+      "title": "10 项报告与数值检查记录",
+      "sha256": "ce7bb1fa557159ee42adf3bcd822e2aa5799e6d0a353c1f647cd7733c05cad69"
+    },
+    "P7": {
+      "path": "sim/skill_extensions_validation.json",
+      "location": "submission",
+      "title": "26 项契约与 DMA 桌面测试记录",
+      "sha256": "9df058169ff3fd4d891beb5f4a2415097907cb8b78699530f51ee27d7200c662"
+    },
+    "P8": {
+      "path": "src/hls/tests/test_tingkong_domain.cpp",
+      "location": "submission",
+      "title": "提交搜索域的 HLS 测试源文件",
+      "sha256": "2327e44cc166b10c154e893260f6b59c1250635ddacc4a99191492e122d7f1e2"
+    },
+    "P9": {
+      "path": "skill/pynq-golden-check/references/failure_matrix.md",
+      "location": "submission",
+      "title": "PYNQ 故障诊断矩阵",
+      "sha256": "6fa76f5c3c3b7d80aafce6bc32997872a76100a6e86ddca36391b59331fdf0b8"
+    },
+    "C1": {
+      "location": "conversation",
+      "title": "本项目当前可见会话中的明确需求及反馈",
+      "note": "按主题归纳；无逐条可靠时间戳，不编造消息编号或原话。"
+    }
+  },
+  "cases": [
+    {
+      "id": "01",
+      "title": "围绕低空无人机应用组织系统论证",
+      "category": "选题与技术写作",
+      "stage": "当前作品需求",
+      "user_formalized": "请围绕低空无人机感知的实际应用需求，说明采用麦克风阵列的选型依据，并结合雷达、激光和摄像头的成本、部署条件与环境适应性展开比较；进一步说明 FPGA 对多通道同步采集、并行信号处理和独立运行的价值。",
+      "assistant_response_summary": "协作将应用需求分解为声音获取、目标检测、方向估计、三维定位和现场显示五个环节，再将各环节与双阵列、双 ADC、FPGA 和 LCD 的职责对应。写作重点由单独罗列器件，转向解释器件选择如何服务于系统功能。",
+      "correction_and_reasoning": "用户要求在前文突出实际应用价值与 FPGA 的适用性。技术论证据此区分传感方式的使用条件，将同步采集、硬件流水和现场输出作为实现优势，并将定位精度交给相应实验评价。",
+      "result_and_scope": "形成应用背景、系统优势与创新点的组织思路。本条记录论证与写作需求，不给出未经对照测量的成本或精度优势数值。",
+      "source_refs": [
+        "C1：关于应用价值、传感器比较和 FPGA 优势的需求"
+      ],
+      "artifacts": [],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim",
+      "traceable_dialogue": [
+        {
+          "user_original_excerpt": "这个写的太少了，要显得我们非常创新，并且fpga为什么适合用于我们这个项目，为什么我们有优势，你这个在前文需要说，实际的应用价值占很大的评分比重。第七页有些字体是五号，不对，要改成小四。图34-37中这种字太小了看不清。前面你好像没说麦克风使用的是vesper1000，并且使用图三",
+          "assistant_original_excerpt": "我会扩写前文的创新点、实际应用价值，以及 FPGA 适合本项目的原因，用已有实测和实现结果支撑优势；同时把第七页相关文字改为小四，放大图 34–37 的文字，并补充 Vesper1000 的介绍和你发的器件图片。我会继续按文档技能流程检查排版。",
+          "source_question": null,
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 183,
+            "assistant_line": 186,
+            "user_time_utc": "2026-11-01T14:15:57.411Z",
+            "assistant_time_utc": "2026-11-01T14:16:19.645Z",
+            "user_message_sha256": "142ed4faabdf0318c7c5327da9c33cc78d10f9bee1433a137b14189fc0a286e0",
+            "assistant_message_sha256": "eb3d95fbb42da99d9a4df82a7f133bbe8938837266a6f9db8342b49920f0b2ab",
+            "user_excerpt_sha256": "82a2c92fd4c769382b0e7665ed21778d6f96a22bad0b338f3d69669401f01445",
+            "assistant_excerpt_sha256": "c4eb9762f8c0c631b02464a89e772354063353a890cb7ddc82e4da5b8e76d464"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "title": "明确自主实现范围与软硬件职责",
+      "category": "架构设计",
+      "stage": "历史开发约束及当前工程",
+      "user_formalized": "请明确自研算法模块、HLS 运算核、RTL 控制逻辑与 FPGA 基础资源的边界，使采集、计算和显示之间的接口、数据格式及模块职责可供评审检查。",
+      "assistant_response_summary": "项目记忆记录了自写 RTL 核心及 FPGA 实现约束；当前提交工程保留 HLS 源码、RTL、约束和构建入口。协作中将算法处理与数据搬运、时序控制分别组织，并通过顶层连接和模块层级核对其关系。",
+      "correction_and_reasoning": "用户强调自主实现。整理时将自主编写的算法与控制模块、工具生成的实现文件、器件基础原语分别说明，使自主实现的表述有明确对象。",
+      "result_and_scope": "形成可追溯的实现范围说明；模块归属以实际源码和构建输入为依据，架构说明与代码目录相互对应。",
+      "source_refs": [
+        "M1：第 721—745 行，MUSIC 移植与比赛约束、自写 RTL 核心",
+        "C1：自研 IP 及 Vivado 顶层层级图需求"
+      ],
+      "artifacts": [
+        "src/hls",
+        "src/pure_rtl",
+        "build/build_board.ps1",
+        "build/build_hls.ps1"
+      ],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim"
+    },
+    {
+      "id": "03",
+      "title": "统一阵列坐标、通道映射与位置标签",
+      "category": "实验设计",
+      "stage": "前期采集与后续测量方案",
+      "user_formalized": "请以双阵列中点为坐标原点，统一通道位置、方位角和俯仰角定义。地面水平位置按激光测距标定值记录，高度按遥控器读数记录，并说明悬停漂移和高度读数误差对位置对照的影响。",
+      "assistant_response_summary": "项目记忆保存逐通道坐标、角度正方向及录音文件名的单位换算。后续用户进一步明确水平坐标保留两位小数、高度保留一位小数，以及从标定位置垂直起飞的采集方式。协作将这些条件组织为实验方法说明。",
+      "correction_and_reasoning": "早期采集采用 1 m 阵列中心间距，当前配置为 2 m；坐标表应随对应实验或工程使用。用户对漂移和遥控器高度误差的补充，使评价采用带来源说明的参考位置。",
+      "result_and_scope": "明确几何、单位、通道顺序和标签用途。数值保留位数描述记录格式；位置参考的准确程度由测量方法和现场条件决定。",
+      "source_refs": [
+        "M1：第 115—160 行，阵列几何与位置标签",
+        "P1：baseline_mm",
+        "C1：激光测距、遥控器高度和垂直起飞说明"
+      ],
+      "artifacts": [],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim"
+    },
+    {
+      "id": "04",
+      "title": "交叉核对 ADC 接线与 FPGA 引脚约束",
+      "category": "硬件接口",
+      "stage": "历史调试案例",
+      "user_formalized": "请交叉核对扩展接口表、底板原理图、核心板管脚映射和 Vivado 器件信息，检查 ADC 数据线约束及供电连接，并使接线图与 XDC 保持一致。",
+      "assistant_response_summary": "记忆文档记录 CN3-14 的 DB3 约束核对：接口资料中的 AB14 与底板及器件管脚信息不一致，进一步确认应为 AA14。随后同步修正 XDC 和接线图，保持实物连接位置不变。",
+      "correction_and_reasoning": "单份规格表出现矛盾后，模型结合原理图与 Vivado 数据库重新判断。供电说明同时区分 FPGA 12 V 输入、ADC 外部 5 V 和麦克风低压供电，整理公共地与独立分支。",
+      "result_and_scope": "该案例沉淀了“接口名称—板级网络—器件管脚—约束文件”逐级核验方法。具体管脚更正属于当时采用的板卡连接，应按目标板原理图复核后复用。",
+      "source_refs": [
+        "M1：第 650—672 行，供电接线与 CN3-14 勘误"
+      ],
+      "artifacts": [
+        "board/hardware/system_wiring.svg",
+        "board/hardware/pin_wiring.svg"
+      ],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim"
+    },
+    {
+      "id": "05",
+      "title": "以控制波形定位 ADC 通道字序异常",
+      "category": "硬件调试",
+      "stage": "历史调试案例",
+      "user_formalized": "请结合 BUSY、FIRSTDATA、RD、CONVST 和 RESET 的实测控制波形分析通道错位，优先确认异常发生在哪个读周期，并给出下一步可以验证的排查方法。",
+      "assistant_response_summary": "模型整理 ILA 捕获的完整八路事务及错误触发窗口。一次复测中，FIRSTDATA 在采样序列末尾出现，数据相对邻帧呈通道循环错位，而 FPGA 内部 RD 保持八次规则脉冲，CONVST 与 RESET 也有对应记录。",
+      "correction_and_reasoning": "诊断由笼统的 FIRSTDATA 接线怀疑，细化为读事务边沿与通道字序的一致性检查。后续建议围绕 RD、地回路和 ADC 端电气测量进行对照，数字观测与电气根因分开记录。",
+      "result_and_scope": "形成可复用的通道错位排查顺序：先保留异常波形，再数转换和读取事件，最后核对首通道标志与数据顺序。",
+      "source_refs": [
+        "M1：第 679—689 行，ILA 实测及通道循环错位",
+        "P4：2026-10-26 21:16 来源摘录"
+      ],
+      "artifacts": [],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim"
+    },
+    {
+      "id": "06",
+      "title": "根据供电状态和时间窗口解释诊断计数",
+      "category": "实验反馈与纠错",
+      "stage": "历史调试案例",
+      "user_formalized": "请依据 ADC 已供电后的诊断照片分析采集状态，分别说明累计计数、最近 1 s 计数、有效帧和坏帧之间的关系，并据此确定后续检查重点。",
+      "assistant_response_summary": "用户补充前五张照片未开启 ADC 电源、后两张为供电后状态。模型据此重新归类照片，核对各板最近 1 s 的 GOOD 与 BAD 之和，并对照 BUSY 读取异常与 FIRSTDATA 统计。",
+      "correction_and_reasoning": "供电条件的补充改变了最初判断。分析从混用历史累计值，转为在明确供电条件下清零并观察相同时间窗口；诊断对象也由板卡固定归因转为逐板、逐窗口检查。",
+      "result_and_scope": "该案例体现用户现场反馈对模型判断的修正作用，形成记录供电、清零时刻、观察窗口和板卡身份的诊断模板。",
+      "source_refs": [
+        "M1：第 893—913 行，供电说明、计数解释与清零复测"
+      ],
+      "artifacts": [],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim"
+    },
+    {
+      "id": "07",
+      "title": "将短脉冲观测转化为采集接口保护",
+      "category": "RTL 改进",
+      "stage": "历史调试案例",
+      "user_formalized": "请根据 BUSY 和 FIRSTDATA 的脉宽记录改进接口确认机制，在容忍短扰动的同时保留持续忙、超时、首通道错误等异常检查，并用边界条件验证修改效果。",
+      "assistant_response_summary": "模型先增加读阶段脉宽和通道位置统计，再在独立诊断工程中采用连续三拍电平确认与最小转换等待。原始事件计数继续保留，状态机依据确认后的信号决定是否接受帧。",
+      "correction_and_reasoning": "短脉冲与持续异常采用不同处理。历史测试覆盖 10/20 ns 短扰动、转换期间短暂低电平、较长读取异常和持续故障；只有相关检查完成后才将读取器同步到定位工程。",
+      "result_and_scope": "记忆记录 11 类读取条件的测试及相关集成检查。50 kSPS 和 5 μs 等参数属于该阶段工程，迁移时应按目标 ADC 和采样配置重新检查时序。",
+      "source_refs": [
+        "M1：第 901—931 行，脉宽诊断、三拍确认与集成"
+      ],
+      "artifacts": [],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim"
+    },
+    {
+      "id": "08",
+      "title": "通过有界补齐改善孤立坏帧下的数据连续性",
+      "category": "流水线设计与纠错",
+      "stage": "历史调试案例",
+      "user_formalized": "请分析偶发坏帧对连续处理窗口的影响，在保留原始错误统计和持续故障保护的前提下，为短时缺失设计有上限的补齐机制，并验证极值运算与时序。",
+      "assistant_response_summary": "模型在采集器与重采样桥之间增加 16 通道统一帧补齐，利用前后有效样本插值，设置连续坏帧数量及窗口补齐预算上限；显示分别记录原始错误 ERR 与补齐数量 FIX。",
+      "correction_and_reasoning": "首版将插值除法集中在一个周期，时序余量为 −7.714 ns。模型据实现报告拆分为四周期流水线，保持补齐规则和异常退出条件，再验证正负值及满量程端点。",
+      "result_and_scope": "记忆记录 640 组端点检查、相关采集与重采样回归及后续构建。该改进的工程价值是对孤立中断进行受控处理，并保留故障可见性。",
+      "source_refs": [
+        "M1：第 938—952 行，播放反馈、有界插值及流水修正"
+      ],
+      "artifacts": [],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim"
+    },
+    {
+      "id": "09",
+      "title": "根据关键路径报告优化 LCD 字形流水",
+      "category": "显示与时序优化",
+      "stage": "历史调试案例",
+      "user_formalized": "请定位 LCD 中文文字和坐标显示的关键路径，通过流水拆分满足显示时序，同时保持像素位置、颜色和有效显示区一致。",
+      "assistant_response_summary": "布局报告将关键路径指向文字显示逻辑。模型将排版元数据寄存与字形解码、ROM 读取分拍处理，并调整像素请求的提前量；验证采用实际光栅时序和 DE 有效区捕获。",
+      "correction_and_reasoning": "历史候选出现 −5.809 ns 的布局后建立时间余量后，模型停止该候选并修正流水，随后检查检测、背景和故障等画面。处理以关键路径和输出像素为依据。",
+      "result_and_scope": "形成“时序路径定位—流水延迟对齐—实际光栅验证—重新实现”的闭环，兼顾显示内容和硬件时序。数值属于历史优化案例。",
+      "source_refs": [
+        "M1：第 763—768 行，LCD 时序修复",
+        "P4：LCD 路径来源摘录"
+      ],
+      "artifacts": [],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim"
+    },
+    {
+      "id": "10",
+      "title": "联合检查定点位宽与跨时钟域传输",
+      "category": "数值与可靠性",
+      "stage": "历史优化案例",
+      "user_formalized": "请根据实现报告检查白化计算的加法位宽、常数乘除路径与跨时钟域控制信号，在保持数值结果一致的条件下修正时序和同步问题。",
+      "assistant_response_summary": "模型按累加项数重新确定有符号位宽，将乘法与常数除法分拍；同时在源时钟域寄存故障信号，再经双触发器同步，并调整邮箱数据与有效标志的复位处理。",
+      "correction_and_reasoning": "纠错同时关注结果与实现条件：数值回归用于确认位宽和流水变换保持有效输入结果，CDC 和时序报告用于检查信号跨域及路径余量。",
+      "result_and_scope": "记忆保存白化、画面及 CDC/健康状态回归记录。该经验进一步进入调试 Skill，强调优化后的结果一致性和时序正确性分别验收。",
+      "source_refs": [
+        "M1：第 777—785 行，白化位宽与 CDC 修正",
+        "P4：2026-10-28 03:04 来源摘录"
+      ],
+      "artifacts": [],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim"
+    },
+    {
+      "id": "11",
+      "title": "以结果等价检查支撑搜索流水优化",
+      "category": "计算性能优化",
+      "stage": "历史定位分支",
+      "user_formalized": "请减少双阵列空间搜索的计算周期，在相同输入和搜索配置下比较优化前后的坐标、评分与周期数，并明确计时范围。",
+      "assistant_response_summary": "历史工程将 105 对观测的搜索计算改为每周期一观测的流水方式。记录中完整 1260 观测测试由 93,649,052 周期降至 21,123,290 周期，坐标和评分保持一致。",
+      "correction_and_reasoning": "性能评价将搜索计算周期与采集窗口分别列出，按当时 50 MHz 时钟换算搜索时间；初次锁定所需的一致性判断另行说明。",
+      "result_and_scope": "这是一项历史 RTL 仿真的等价与周期比较，用于说明优化方法及检查口径。当前提交配置和现场响应应查询对应工程记录。",
+      "source_refs": [
+        "M2：第 71—96 行，搜索流水与前缀复测",
+        "P4：2026-10-29 17:50 来源摘录"
+      ],
+      "artifacts": [],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim"
+    },
+    {
+      "id": "12",
+      "title": "改善定位显示的量程与方位表达",
+      "category": "人机界面",
+      "stage": "历史显示迭代",
+      "user_formalized": "请根据目标水平距离自动调整显示量程，同时独立表示方位方向，使近距离目标易于观察，并抑制临界距离附近的量程跳变。",
+      "assistant_response_summary": "模型根据位置设置多档水平显示范围，扩档和缩档采用不同阈值，并为缩档加入连续稳定帧条件。XY 位置标记、方位标记、阵列中心和距离刻度分别表达。",
+      "correction_and_reasoning": "显示设计将位置与方向的语义分开处理，接近正上方时单独提示；无效或历史位置对缩放的作用受到限制。历史记录包含显示路径范围核对及像素检查。",
+      "result_and_scope": "该案例沉淀自动量程、迟滞和状态有效性控制方法。具体档位与帧数属于当时显示分支，当前工程按自身搜索域配置使用。",
+      "source_refs": [
+        "M2：第 418—438 行，自动量程雷达交付记录"
+      ],
+      "artifacts": [],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim",
+      "traceable_dialogue": [
+        {
+          "user_original_excerpt": "我先关电了，现在这几个版本有点问题，就是雷达如果是20米的，无人机在距离两米这种近场它在雷达上显示的就很小几乎看不到方向，这种情况你想怎么解决？",
+          "assistant_original_excerpt": "我建议采用 **“自动量程＋独立方位指示”**。\n\n我核对了代码：目前雷达半径约 **130像素**，20米量程下，水平距离2米的目标离中心只有 **13像素**，所以方向线很难看清。\n\n具体这样改：\n\n1. **自动切换显示量程**  \n   使用 **2、5、10、15、20米**几个档位，上限随版本变化。例如目标在2米附近，显示切到5米量程，目标离中心约 **52像素**，方向会清楚很多。定位搜索仍保持原来的20米范围。\n\n2. **增加外圈方位箭头**  \n   位置点继续按真实距离绘制，外圈另外显示方位指示，让近场目标的方向也容易辨认。\n\n3. **避免画面反复缩放**  \n   目标接近边缘时及时扩大量程；目标持续靠近约2～3秒后再缩小。屏幕明确显示“当前量程”和“每圈多少米”。\n\n另外，雷达是**水平俯视图**：无人机如果就在阵列正上方，即使高度2米，位置点也应该在中心。这时应突出高度、仰角和“接近正上方”提示。\n\n这项改动可以断电离线完成。建议先在 **01版**完成界面验证，再同步到其他五版。",
+          "source_question": null,
+          "source": {
+            "file": "rollout-2026-10-28T23-26-31-01a1831e-a4e4-7df2-9c6d-0fb89428b636.jsonl",
+            "user_line": 12897,
+            "assistant_line": 12924,
+            "user_time_utc": "2026-10-31T02:02:51.492Z",
+            "assistant_time_utc": "2026-10-31T02:05:46.325Z",
+            "user_message_sha256": "0226c96d8eb47f851fe441db6506889a837d58e1a62953078ca0aa978a07fdb4",
+            "assistant_message_sha256": "e6371b53a4c5a225afb01cc8837fa792dc58843e5762b711ae63fb259838f997",
+            "user_excerpt_sha256": "2f4c3de3805b29ea62b5b0e7d5c32c9933d7125c3ea21c2c79708e0277bca379",
+            "assistant_excerpt_sha256": "e6371b53a4c5a225afb01cc8837fa792dc58843e5762b711ae63fb259838f997"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "统一搜索域、代码参数与报告表述",
+      "category": "需求澄清与配置管理",
+      "stage": "当前提交版本",
+      "user_formalized": "请将定位功能搜索范围统一为水平半径 11 m、高度 10 m，同步修改代码配置、搜索表、相关图示和实现记录，并在构建后核查提交位流。",
+      "assistant_response_summary": "核对发现既有工程搜索范围与用户要求存在差异，模型先明确代码参数和实验布点各自含义；用户进一步确认代码也改为半径 11 m、高度 10 m。当前配置记录 horizontal_mm=11000、vertical_mm=10000、grid_points=12479。",
+      "correction_and_reasoning": "修改从文字纠正扩展为配置、生成表和构建结果的一致性核查。搜索域测试源文件作为软件验证依据，板端功能另采用团队反馈记录。",
+      "result_and_scope": "当前 src/variant.json 保存统一参数；搜索域测试与实现记录分别提供检查入口。搜索范围说明描述算法覆盖区域。",
+      "source_refs": [
+        "C1：搜索范围澄清及代码同步修改确认",
+        "P1",
+        "P8"
+      ],
+      "artifacts": [
+        "src/variant.json",
+        "src/hls/tests/test_tingkong_domain.cpp"
+      ],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim",
+      "traceable_dialogue": [
+        {
+          "user_original_excerpt": "代码也改成半径11m，高度10m，相关的vivado的图、资源之类的在文中都要修改，提交到github的代码也修改。",
+          "assistant_original_excerpt": "收到。我会把提交代码同步改为半径 11 m、高度 10 m，重新运行相关仿真和布局布线，再用新的资源、时序报告及 Vivado 截图更新论文和 GitHub 包。",
+          "source_question": "核对提交代码后，当前搜索参数确实是水平半径 10 m、高度 12 m；11 m、10 m 是你提供的实测布点范围。你希望同时把提交代码的搜索范围改成半径 11 m、高度 10 m 并重新构建验证，还是保留代码，仅在论文中把 11 m、10 m 写为定位实测范围？",
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 1806,
+            "assistant_line": 1810,
+            "user_time_utc": "2026-11-03T05:19:29.789Z",
+            "assistant_time_utc": "2026-11-03T05:20:05.274Z",
+            "user_message_sha256": "4fdb282f1604ae9e1d03f607e62b6c933d2e0bc1d4d5826181cf6359312e35c5",
+            "assistant_message_sha256": "145ce295757bd0a6298725bfc15f06bb9963f743f062f509f0f67bd65550700a",
+            "user_excerpt_sha256": "df0777a1f9c61dc5df26f5b560d7cae91b74779abfa3f4b287f5b8d9b23a968e",
+            "assistant_excerpt_sha256": "640e9897601b6bc8366531cf085898cc6cd15b3461144646df00e6e0d3287473"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "固定工具环境并验证独立目录重建",
+      "category": "工程复现",
+      "stage": "当前提交版本",
+      "user_formalized": "请说明实际使用的 Vivado 版本、目标器件和顶层模块，在独立目录中使用提交源码与 HLS 导出文件完成构建，核对资源、时序和生成文件。",
+      "assistant_response_summary": "构建记录给出 Vivado 2024.2 Build 5239630、xc7a200tfbg484-2 和 acoustic_top，并记录从规范化文件名工程进行综合、布局与布线的结果。独立重建的资源与时序和参考实现一致。",
+      "correction_and_reasoning": "比较分别保存参考位流与重建位流的 SHA-256。重建文件存在新时间戳，因此资源及时序一致、文件字节一致和板级确认采用独立字段表述。",
+      "result_and_scope": "记录中的 WNS 为 0.686 ns、WHS 为 0.039 ns，建立、保持与脉宽失败端点均为 0；这些结果对应已报告约束。复现方法和数值可从提交记录核对。",
+      "source_refs": [
+        "P2"
+      ],
+      "artifacts": [
+        "build/reproduction_record.json",
+        "build/build_board.ps1",
+        "build/results/board_routed_timing.rpt",
+        "build/results/board_routed_utilization.rpt"
+      ],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim",
+      "traceable_dialogue": [
+        {
+          "user_original_excerpt": "题目不要改，是基于 AMD FPGA 的双阵列无人机\n声学检测与三维定位系统\n先不管github，你仔细阅读\"D:\\xiaobao\\2026\\03-麦克风阵列\\全国大学生嵌入式芯片与系统设计竞赛'2026FPGA赛道选题指南-AMD.pdf\"的3.3自主选题赛道的所有要求以及评分要求，也就是19-22页，3.3.5.3的设计报告就是现在的技术文档，你非常仔细根据这几页的要求修改技术文档，比如我们的vivado版本，在报告中说明可复现、另外要写大模型协作记录、PYNQ skill等，这些你要非常仔细的按照3.3要求，我是初级组，然后你给我提交内容的文件夹。其中设计报告就是你这轮改进后的技术文档",
+          "assistant_original_excerpt": "指南允许使用其他版本的 Vivado，但要求说明版本并提供可复现脚本，因此报告会如实写入实际使用的 2024.2。大模型协作记录和可复用 Skill 是必交内容；通用 PYNQ Skill 属于可选加分项。我会使用 skill-creator 技能整理真实调试经验，并明确本系统与 PYNQ 工作流各自的验证范围。",
+          "source_question": null,
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 2184,
+            "assistant_line": 2227,
+            "user_time_utc": "2026-11-03T06:43:18.863Z",
+            "assistant_time_utc": "2026-11-03T06:48:27.778Z",
+            "user_message_sha256": "6d3de8909411c2ff92bffa22ccead103faae92f7fbdaadca6631294ba9a2fac5",
+            "assistant_message_sha256": "8a24807883705df0b4db92c52a4638b21ad7501122a21c975afe743f42c4d9b9",
+            "user_excerpt_sha256": "b7957dac7b07ef759a9ca3e70a1e4a8afa089bcd928c0c8f9274e779f500a84a",
+            "assistant_excerpt_sha256": "ae271432dd79f19cac43cadaf98411277de267967f93bb457d9f738d19c2945a"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "将程序身份与板端反馈对应归档",
+      "category": "上板与交接",
+      "stage": "当前提交版本",
+      "user_formalized": "请明确当前程序的源码位置、位流身份和下载方式，将板端采集、定位和显示的人工确认与对应版本关联，并保留复现及交接所需的信息。",
+      "assistant_response_summary": "协作以位流 SHA-256、目标器件和搜索范围确定程序身份。团队在会话中确认半径 11 m、高度 10 m 的版本已经下载并验证正常，提交记录将确认功能列为采集、定位与显示。",
+      "correction_and_reasoning": "项目记忆区分 SRAM 下载、Flash 固化和用户实机反馈。交接依据对应记录说明操作类型，避免多个历史候选混用同一个交付名称。",
+      "result_and_scope": "当前板级确认关联参考位流 ff30ca39cfa1384f7a9a9df917f829e0e60213263ce63d0b3ecff9c177d1a18f。本条仅引用程序身份及团队功能确认，不据此补充定量定位精度。",
+      "source_refs": [
+        "M1：版本交接与 JTAG 下载各阶段记录",
+        "C1：已经下载并验证正常的反馈",
+        "P3"
+      ],
+      "artifacts": [
+        "board/validation_record.json",
+        "board/program.ps1",
+        "board/bitstream/acoustic_top.bit"
+      ],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim",
+      "traceable_dialogue": [
+        {
+          "user_original_excerpt": "已经下载并验证正常",
+          "assistant_original_excerpt": "收到，最新比特流已上板验证正常，我会把这项结果记入板级验证记录。提交包正在从独立目录重新构建，已通过按键、双页面、检测状态、雷达显示和控制流程测试；接下来核对完整布线结果，并将报告中的优化对照与原始证据对应起来。",
+          "source_question": "半径 11 m、高度 10 m 的最新比特流，你是否已经下载到 FPGA 板上并确认采集、定位和显示正常？这决定提交材料中这版代码的板级验证记录如何填写。",
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 2316,
+            "assistant_line": 2320,
+            "user_time_utc": "2026-11-03T06:53:49.618Z",
+            "assistant_time_utc": "2026-11-03T06:54:13.582Z",
+            "user_message_sha256": "ba389e0670dc2ed6980dad2ed9ff4fcb4b915f1c2e47371a4036036ad00f27eb",
+            "assistant_message_sha256": "4cba88c0e748d2bfa046ac3c8ac24a657292d46c056196ae67dabebf3683db55",
+            "user_excerpt_sha256": "e00e4aa1228da4ed08cea0ae21a0d62d2b4acaafbd64f65f487ae22abb3dbe74",
+            "assistant_excerpt_sha256": "c9897acb92813cee50d85dc3396a48cd3d66e3f28eecbe8f43498d9477c17e38"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "按竞赛模板组织设计报告与独立附件",
+      "category": "报告结构",
+      "stage": "提交材料整理",
+      "user_formalized": "请逐项核对模板规定的标题、字数和配图要求，保持作品题目不变，按自主选题初级组的推荐目录组织材料，并将大模型协作记录单独放在 report 目录。",
+      "assistant_response_summary": "用户明确指定模板标题必须一致，要求调整 1.1、1.2、3.1 和 3.2.1 的图文位置，并将系统实拍、显示界面、机械成果、电路成果分别组织。协作据此整理章节与图片职责。",
+      "correction_and_reasoning": "用户后续明确协作记录独立于技术文档保存。当前附件采用主题式记录，正文重点呈现任务、处理依据和验证过程，结构化文件便于检索。",
+      "result_and_scope": "当前报告与协作附件分别保存。本轮仅扩写两个协作记录文件，设计报告中的内容、结论和图表留由团队处理。",
+      "source_refs": [
+        "C1：模板要求、作品题目和独立协作附件要求"
+      ],
+      "artifacts": [
+        "report/design_report.docx",
+        "report/llm_collaboration.md",
+        "report/llm_interaction_excerpt.json"
+      ],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim",
+      "traceable_dialogue": [
+        {
+          "user_original_excerpt": "\"D:\\xiaobao\\2026\\03-麦克风阵列\\技术文档\\模板.docx\"你仔细看看模板，对于每一个段落的标题要求、字数要求、配图要求。论文中指定段落的标题必须和模板中的标题一摸一样，例如3.2.1、3.2.2等，模板中有字数要求的，论文指定段落也需要在指定要求以内。1.1的重要图你放一张屏幕的图上去，就是方位角俯仰角xyz的图。1.2的重要图你上网找四张具有代表性的图。主要性能指标你根据双阵列实测补充一下，原先那个10米那一行去掉，还要加上功耗。你把3.1的图放到3.2.1里面。3.1的图我晚一点再加进来",
+          "assistant_original_excerpt": "模板已核对：1.1–1.3 各限 400 字，1.4–1.6 各限 200 字；摘要限 800 字，4.1 限 300 字，4.2 限 1000 字。上一版前文有几处超限，我会压缩概述，把详细论证移到正文，并将标题统一为模板原名，包括“机械成果”“电路成果”“软件成果”。3.1 会留出后续补整机照片的位置。",
+          "source_question": null,
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 364,
+            "assistant_line": 398,
+            "user_time_utc": "2026-11-01T15:04:18.662Z",
+            "assistant_time_utc": "2026-11-01T15:08:16.513Z",
+            "user_message_sha256": "19a8dc08ff4c504baaa3018d9b4aa6b3aed6caa7c60d08e599b1d54df85a586b",
+            "assistant_message_sha256": "d1bbb227e59aca96d05bc3f164f3d6d375a3c0dfd413644be586d1c2982d7663",
+            "user_excerpt_sha256": "57f61135d2da2d38a1b00cdb353bf717f58e748a1a77b4dc4bc99a90dae2870d",
+            "assistant_excerpt_sha256": "a75bc9cbc659bd057fea83bc3cb40e4ff42a15df94d2e4d11f05885563f09ca4"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        },
+        {
+          "user_original_excerpt": "要按照3.3.5.4的推荐目录结构，不要把大模型协助记录写进技术文档",
+          "assistant_original_excerpt": "收到，提交文件夹按 3.3.5.4 的推荐结构整理。大模型协作记录单独放在 `report/`，技术文档中只保留设计、验证和复现内容；在提交目录说明中标明协作记录附件，便于评委按要求查阅。",
+          "source_question": null,
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 2298,
+            "assistant_line": 2302,
+            "user_time_utc": "2026-11-03T06:52:12.990Z",
+            "assistant_time_utc": "2026-11-03T06:52:35.869Z",
+            "user_message_sha256": "7bfb160fff21cc23b132867f31e53c5b756b1e6318a675f5d1d2044b75757800",
+            "assistant_message_sha256": "baee9ae08876b9181b90fe65c8f400ec9330e5383cbf4ea7b957b4acc09b433a",
+            "user_excerpt_sha256": "7e278c73c8976f47c673056d8c8bc3a3833e08f56f4f085b1805bc5c0cca0f11",
+            "assistant_excerpt_sha256": "61b38fd7b4af21cde60a0db25db5a8acf45fe774118057e6e3e1ca1abc074f45"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "提高工程图像的可读性与文件效率",
+      "category": "科研图文编辑",
+      "stage": "提交材料整理",
+      "user_formalized": "请采用最新实物照片更新阵列和 ADC 展示图，保留完整设备边缘；Vivado 图像突出器件布局、时序摘要和代码层级，保证文字清晰，同时将技术文档控制在 43 MB 以内。",
+      "assistant_response_summary": "用户针对设备裁切不完整、截图带有鼠标、软件界面文字偏小等问题给出具体反馈。协作将整机、阵列、ADC 实拍与软件实现截图分工处理，采用与展示目标匹配的裁切和尺寸。",
+      "correction_and_reasoning": "图像调整由装饰性排版转向信息可读性：器件图显示主体，时序图保留指标，层级图呈现模块关系；图片分辨率与报告显示尺寸共同决定压缩方案。",
+      "result_and_scope": "形成图像完整性、文字可读性和文档体积三项编辑检查。本条记录图文协作方法，图片所表达的实验结果仍按各自来源评价。",
+      "source_refs": [
+        "C1：实物图替换、Vivado 黑色区域裁切、鼠标移除、层级图和 43 MB 限制"
+      ],
+      "artifacts": [],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim",
+      "traceable_dialogue": [
+        {
+          "user_original_excerpt": "技术文档中软件的图不够清晰，最上面那张图只保留黑色的部分呀，并且你把你操控电脑是的鼠标也截进去了 这不应该！，技术文档最大可以43MB",
+          "assistant_original_excerpt": "我会重做这几张软件成果图：器件图只保留黑色布局区域，重新导出不带鼠标的清晰图像，并放大时序、时钟和资源信息。文档总大小会控制在 43 MB 以内。",
+          "source_question": null,
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 2467,
+            "assistant_line": 2471,
+            "user_time_utc": "2026-11-03T07:09:07.724Z",
+            "assistant_time_utc": "2026-11-03T07:09:28.329Z",
+            "user_message_sha256": "bd79b6bcb5e2bc3b35f7598fbe869ad3093c6b3d18597161862766eea00b66b8",
+            "assistant_message_sha256": "26a1b4cf0c1e29b555addf1ab380ba51098b074980eb8c37575e614e4bb118d2",
+            "user_excerpt_sha256": "d0e944bf7c2538b1e18f257786563242bffedec62ef9900b9cac300d82059eb5",
+            "assistant_excerpt_sha256": "fdff131085eaa1fea73f1ec57f626561b75dccb45f55988fad74b16fd48ca2cf"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        },
+        {
+          "user_original_excerpt": "以及vivado代码顶层模块什么的那个图也要一张，就是vivado里面代码的分级图",
+          "assistant_original_excerpt": "层级图已加入“软件成果”，能看到 `acoustic_top`、采集与显示模块，以及展开的联合定位分支。器件图已只保留黑色布局区域；时序报告拆成上下两块放大显示。目前文档约 **39.1 MB**，正在检查最终分页。",
+          "source_question": null,
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 2489,
+            "assistant_line": 2696,
+            "user_time_utc": "2026-11-03T07:10:08.051Z",
+            "assistant_time_utc": "2026-11-03T07:23:14.885Z",
+            "user_message_sha256": "1bd323cbd395233fc4d1c57cfd4080a20be2bf4f7d8f815e90e6c320cf35ce25",
+            "assistant_message_sha256": "6e002b4450299a135ccfdb7865571cea4e85723c693524dbcbd60f0b47033c1d",
+            "user_excerpt_sha256": "51a314d3589ac6c5a47058196d8b0688a100b6f7cc564bc697cbee0ff2e5a000",
+            "assistant_excerpt_sha256": "59b0784cd4b5a8584e871bb830234ac2814d72d1d03e40fb7e4a3ddd825380f0"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "补全声学测量条件与计数口径",
+      "category": "实验方法写作",
+      "stage": "用户提供的测量信息",
+      "user_formalized": "请在检测实验说明中写明夜间测试、RION NL-52 声级计、环境声级 39.5 dB、距无人机约 1 m 的声级 62.7 dB，以及约 15 s 的测量时间窗口；环境噪声样本按检出次数与总窗口数记录。",
+      "assistant_response_summary": "用户逐步补充仪器、时间、距离和窗口条件，并将源声级相对环境的差值明确为 62.7−39.5=23.2 dB。协作将这些条件组织为可重复理解的实验描述。",
+      "correction_and_reasoning": "测量窗口根据用户更正保留“约 15 s”；后续另一场景的 45.6 dB 与 60.5 dB 单独归属相应条件。不同场景的声级与算法统计分别记录。",
+      "result_and_scope": "本条保存用户提供的实验条件和计数口径，不重新确认检测统计、检测距离或硬件端到端性能。相关结论由团队依据原始记录修订。",
+      "source_refs": [
+        "C1：夜间声级计测量、约 15 s 和 23.2 dB 的更正"
+      ],
+      "artifacts": [],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim",
+      "traceable_dialogue": [
+        {
+          "user_original_excerpt": "\"D:\\xiaobao\\2026\\03-麦克风阵列\\技术文档\\AMD赛道_技术文档_R24-01_模板规范修订版.docx\"在这个基础上修改一下内容：文中说120m检测到的无人机段落需要说是在夜间，经使用RION NL-52声级计测量，环境噪声39.5dB，无人机在1m处62.7dB，测量时间窗口15s",
+          "assistant_original_excerpt": "已在 3.3.1 补入完整测量条件，并在摘要、性能表及相关结论中注明“夜间”。15 s 明确写为声级计的测量窗口，与检测算法的分析窗口区分；声级单位按你提供的 dB 保留。文件另存为“夜间检测条件补充版”，正在检查排版。",
+          "source_question": null,
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 632,
+            "assistant_line": 670,
+            "user_time_utc": "2026-11-01T16:09:04.450Z",
+            "assistant_time_utc": "2026-11-01T16:14:18.499Z",
+            "user_message_sha256": "e084c07ad367cff697c4a54f982ef7fdf548e0164d7118caadb3507abe7f40b4",
+            "assistant_message_sha256": "08ab26dbc62e5d6c57f0d4962a90e344c6b61018bf054e29c8645d1028b1d50a",
+            "user_excerpt_sha256": "fbe2c7d65f9d0c76b22b069dfcbf113f1dd2f2c72ee6eca398d614a69b003155",
+            "assistant_excerpt_sha256": "ec965d0b58e370e6f6b22b40fbdce5f18275ec8bf628c9aa43d72557f0d116cd"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "区分器件功耗参数与整机实测指标",
+      "category": "参数写作与需求收敛",
+      "stage": "提交材料整理",
+      "user_formalized": "请补充 Vesper VM1000 的关键器件参数与麦克风功耗，并明确电池、稳压模块和各负载的供电关系；整机功耗待实际测量后补充。",
+      "assistant_response_summary": "用户说明采用 24 V、2200 mAh 电池组，经稳压模块分别向 FPGA 板、ADC 和阵列提供 12 V、5 V 和 3.3 V。随后将本轮功耗写作范围收敛到麦克风器件参数。",
+      "correction_and_reasoning": "协作将电池容量、供电电压、器件数据手册功耗与整机运行功率区分。报告参数应同时标明典型值条件和来源，整机指标采用实际测量记录。",
+      "result_and_scope": "形成清晰的供电描述与参数引用规则。本条不根据电池容量或芯片典型值推定整机实测功耗。",
+      "source_refs": [
+        "C1：供电信息及仅补充麦克风功耗的范围确认"
+      ],
+      "artifacts": [],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim",
+      "traceable_dialogue": [
+        {
+          "user_original_excerpt": "别了，不是实际的功耗先不要加到论文里面，论文里面先加麦克风的功耗",
+          "assistant_original_excerpt": "好，论文里只补充麦克风功耗，并注明是按典型电流估算的；不加入 FPGA 板的供电功率或整机功耗估算。你提供的电池和三路稳压配置保留在硬件介绍中。",
+          "source_question": null,
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 528,
+            "assistant_line": 532,
+            "user_time_utc": "2026-11-01T15:29:05.174Z",
+            "assistant_time_utc": "2026-11-01T15:29:17.735Z",
+            "user_message_sha256": "0126c5b14ca9daf45afefca48b28304f0e1695362d5fd4f2778fb064b66a926a",
+            "assistant_message_sha256": "44da8b1dfb71b75d8e830a9842d81eaee39dba9be3945c266539e4aa9c7ba783",
+            "user_excerpt_sha256": "fe95ab7cae2b4ebc461c96468889ba582ce52c515b4aca35b34840080f40a033",
+            "assistant_excerpt_sha256": "a986188abc2925668a0270629ec455b991fe0399d3cd0cc215540848d21595a3"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        },
+        {
+          "user_original_excerpt": "别了，不是实际的功耗先不要加到论文里面，论文里面先加麦克风的功耗",
+          "assistant_original_excerpt": "麦克风功耗已写入性能表和电路介绍：3.3 V 下，单颗约 0.545 mW，双阵列 16 颗合计约 8.71 mW，并注明为器件级估算。FPGA 和整机的功耗数值未写入。模板规定的限字章节均已控制在要求以内。",
+          "source_question": null,
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 528,
+            "assistant_line": 578,
+            "user_time_utc": "2026-11-01T15:29:05.174Z",
+            "assistant_time_utc": "2026-11-01T15:33:21.910Z",
+            "user_message_sha256": "0126c5b14ca9daf45afefca48b28304f0e1695362d5fd4f2778fb064b66a926a",
+            "assistant_message_sha256": "280afe8e58e408108e31e18e7f4c11f39169bd22e3bcc5896b9eb5c885ec566b",
+            "user_excerpt_sha256": "fe95ab7cae2b4ebc461c96468889ba582ce52c515b4aca35b34840080f40a033",
+            "assistant_excerpt_sha256": "a4e9f645e286c1a64a4bd5e5b138ee04bd8e8ce269b93f94ab7b78096ad5833d"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "将项目调试经验提炼为可复用 Skill",
+      "category": "知识沉淀",
+      "stage": "当前技能包",
+      "user_formalized": "请依据项目记忆扩充调试技能，将典型症状、需保留的证据、排查顺序、验证方法和适用边界整理为其他队伍可直接使用的流程。",
+      "assistant_response_summary": "模型从 ADC 字序、短扰动、LCD 流水、数值位宽、CDC 和并行构建等案例中提取共性，组织为 fpga-stream-debug；另以 fpga-evidence-check 承担资源与时序报告核查。记忆案例保存原文摘录、来源行号与摘要哈希。",
+      "correction_and_reasoning": "技能内容由项目时间线转为按症状检索的诊断方法。历史板卡参数保留来源，通用流程明确需要输入什么证据、何时停止判断以及如何确认修改有效。",
+      "result_and_scope": "技能包具有可追溯案例和操作流程，便于迁移至其他多通道采集、显示或 FPGA 流水项目。适用性应由新项目的接口与时钟条件确认。",
+      "source_refs": [
+        "C1：参考记忆文档扩充 Skill 的需求",
+        "P4"
+      ],
+      "artifacts": [
+        "skill/fpga-stream-debug",
+        "skill/fpga-evidence-check",
+        "skill/README.md"
+      ],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim",
+      "traceable_dialogue": [
+        {
+          "user_original_excerpt": "不需要有演示视频，我已删除，skill要不要多写一点？pynq写的会不会不够好。本项目的skill可以参考记忆文档",
+          "assistant_original_excerpt": "记忆文档里有几类很有价值的经验：ADC 通道错位的波形排查、溢出后旧检测结果未清除、显示流水线的时序修复，以及并行构建时源码与位流混用的风险。我会把它们整理成“症状—证据—处理—回归验证”的可复用案例，并保留日期和来源，避免把历史状态当成当前结论。",
+          "source_question": null,
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 2820,
+            "assistant_line": 2856,
+            "user_time_utc": "2026-11-03T08:01:50.529Z",
+            "assistant_time_utc": "2026-11-03T08:04:47.124Z",
+            "user_message_sha256": "87efebd8b0a2032d7887d32bf6e7971ef09f276a0d82fc89b9ed79f3b00da2e6",
+            "assistant_message_sha256": "eca8e160d44a3527c96de2118ac805eae8c610b9a7e6048de99fca725b8a1cd2",
+            "user_excerpt_sha256": "af849499c944396346ef9a0eb26fd4aaa26dedfa6b9fccb724b64d0e66b1e116",
+            "assistant_excerpt_sha256": "314fc6d70a2540386a5b819c4e5501367b37c6b884625d26d3b79db85ceedd34"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "title": "将工程验证经验迁移为通用 PYNQ 工作流",
+      "category": "通用工具协作",
+      "stage": "当前技能包",
+      "user_formalized": "请将文件身份核验、数据格式约定、传输异常诊断和结果比较提炼为与无人机题目解耦的 PYNQ Skill，说明更换板卡、Overlay 和算法时需要提供的配置。",
+      "assistant_response_summary": "模型将项目中的版本对应关系、超时诊断和数值等价经验转换为 PYNQ 主机流程：核对 bit/hwh 与实例元数据，明确 shape、dtype、字节数和 DMA 长度，采用接收优先、缓存同步、有界等待和异常快照。",
+      "correction_and_reasoning": "通用性通过参数化接口实现。迁移时更换 Overlay、契约、参考算法和启动函数，保留数据比对与故障处理流程；本项目 Artix-7 系统与 PYNQ 扩展的执行环境分别说明。",
+      "result_and_scope": "现有记录为 26 项桌面契约与驱动替身测试通过，hardware_pynq_execution=false。覆盖短包、超时、错误和启动异常等情况；板端 PYNQ 执行属于后续验证环节。",
+      "source_refs": [
+        "C1：PYNQ 通用性与技能完善需求",
+        "P5",
+        "P7",
+        "P9"
+      ],
+      "artifacts": [
+        "skill/pynq-golden-check/scripts/pynq_contract.py",
+        "skill/pynq-golden-check/scripts/dma_guard.py",
+        "sim/skill_extensions_validation.json"
+      ],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim",
+      "traceable_dialogue": [
+        {
+          "user_original_excerpt": "PYNQ是通用的吗？是否完全满足3.3要求",
+          "assistant_original_excerpt": "指南 3.3.2 将 PYNQ 列为初级组推荐方向，并未强制使用；3.3.5.2 则对通用 PYNQ Skill 单独加分。目前技能已覆盖跨题目的数值比对和 DMA 验证流程，但尚无真实 PYNQ 板卡运行记录，因此可以说明可复用范围，不能保证获得这项加分。指南也没有要求必须提交演示视频。",
+          "source_question": null,
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 2927,
+            "assistant_line": 2942,
+            "user_time_utc": "2026-11-03T08:17:21.820Z",
+            "assistant_time_utc": "2026-11-03T08:18:00.080Z",
+            "user_message_sha256": "76f4e6f72a50ea6471b00a2fd5e029488088835285a989bce0a86643aaa4b826",
+            "assistant_message_sha256": "c1bd74f4c93c119cb0b2e3146e4567303c51f15767de9c53b4ecbd03fe7799f5",
+            "user_excerpt_sha256": "48b10c431789930fcfee3114977a55d17909f1da6f96940192202f788be17dbd",
+            "assistant_excerpt_sha256": "c1bd74f4c93c119cb0b2e3146e4567303c51f15767de9c53b4ecbd03fe7799f5"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        },
+        {
+          "user_original_excerpt": "不需要有演示视频，我已删除，skill要不要多写一点？pynq写的会不会不够好。本项目的skill可以参考记忆文档",
+          "assistant_original_excerpt": "已补成三项 Skill，并加入六段带来源和日期的项目记忆摘录。PYNQ 部分新增了接口契约校验、位流与 HWH 摘要核对、带超时的 DMA 辅助程序和故障排查表；26项新增桌面测试已通过，覆盖超时、短包、错误状态和缓存同步顺序。接下来会同步清理视频引用，更新文档中的技能说明。",
+          "source_question": null,
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 2820,
+            "assistant_line": 2882,
+            "user_time_utc": "2026-11-03T08:01:50.529Z",
+            "assistant_time_utc": "2026-11-03T08:11:14.254Z",
+            "user_message_sha256": "87efebd8b0a2032d7887d32bf6e7971ef09f276a0d82fc89b9ed79f3b00da2e6",
+            "assistant_message_sha256": "1620de2d1aa8935e29781b938725d9af2e110265fa0e13971ecff72aa9d59d29",
+            "user_excerpt_sha256": "af849499c944396346ef9a0eb26fd4aaa26dedfa6b9fccb724b64d0e66b1e116",
+            "assistant_excerpt_sha256": "c91b022a8e20cc3af4eaff80b3db617921f2c358321bf74f9fe5f974184f375a"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "title": "以严格数值比较和反例检查验证辅助工具",
+      "category": "验证方法",
+      "stage": "当前技能包",
+      "user_formalized": "请为黄金参考比较工具明确整数精确比较、浮点容差、数组形状和类型检查，覆盖错误输入与极端数值，并用真实实现报告验证报告解析逻辑。",
+      "assistant_response_summary": "模型组织数值与报告检查，涵盖正确结果、错误值、形状与类型差异、NaN、非法容差、大整数精度、负时序余量和缺失资源字段。工具对数组和报告采用明确的接受条件。",
+      "correction_and_reasoning": "比较逻辑保留 uint64 的整数精度，避免转浮点后遗漏低位差异；浮点数据要求显式容差。报告检查同时覆盖可接受结果与应拒绝的反例。",
+      "result_and_scope": "现有记录列出 10 项桌面检查通过。该结果说明辅助工具在列明用例中的行为；与 26 项 PYNQ 契约测试分别归档，供其他算法工程复用。",
+      "source_refs": [
+        "P6",
+        "P7"
+      ],
+      "artifacts": [
+        "skill/pynq-golden-check/scripts/compare_arrays.py",
+        "skill/fpga-evidence-check/scripts/check_reports.py",
+        "sim/test_skills.py",
+        "sim/skill_validation.json"
+      ],
+      "timestamp": null,
+      "text_kind": "thematic_editorial_summary_not_verbatim",
+      "traceable_dialogue": [
+        {
+          "user_original_excerpt": "不需要有演示视频，我已删除，skill要不要多写一点？pynq写的会不会不够好。本项目的skill可以参考记忆文档",
+          "assistant_original_excerpt": "三项 Skill 已通过格式检查，原有10项检查和新增26项测试均通过。",
+          "source_question": null,
+          "source": {
+            "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+            "user_line": 2820,
+            "assistant_line": 2915,
+            "user_time_utc": "2026-11-03T08:01:50.529Z",
+            "assistant_time_utc": "2026-11-03T08:15:22.018Z",
+            "user_message_sha256": "87efebd8b0a2032d7887d32bf6e7971ef09f276a0d82fc89b9ed79f3b00da2e6",
+            "assistant_message_sha256": "0ca5ba86460e9a02c5be8b8bd647534f84409f864571e3927b0701d7f52d8635",
+            "user_excerpt_sha256": "af849499c944396346ef9a0eb26fd4aaa26dedfa6b9fccb724b64d0e66b1e116",
+            "assistant_excerpt_sha256": "a3f01431a6001d96042f1d17eab223f73886f0a7a383452023b9738722f672f0"
+          },
+          "excerpt_type": "verbatim_excerpt"
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "case": "01",
+      "role": "user",
+      "text": "请围绕低空无人机感知的实际应用需求，说明采用麦克风阵列的选型依据，并结合雷达、激光和摄像头的成本、部署条件与环境适应性展开比较；进一步说明 FPGA 对多通道同步采集、并行信号处理和独立运行的价值。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "01",
+      "role": "assistant",
+      "text": "协作将应用需求分解为声音获取、目标检测、方向估计、三维定位和现场显示五个环节，再将各环节与双阵列、双 ADC、FPGA 和 LCD 的职责对应。写作重点由单独罗列器件，转向解释器件选择如何服务于系统功能。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "02",
+      "role": "user",
+      "text": "请明确自研算法模块、HLS 运算核、RTL 控制逻辑与 FPGA 基础资源的边界，使采集、计算和显示之间的接口、数据格式及模块职责可供评审检查。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "02",
+      "role": "assistant",
+      "text": "项目记忆记录了自写 RTL 核心及 FPGA 实现约束；当前提交工程保留 HLS 源码、RTL、约束和构建入口。协作中将算法处理与数据搬运、时序控制分别组织，并通过顶层连接和模块层级核对其关系。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "03",
+      "role": "user",
+      "text": "请以双阵列中点为坐标原点，统一通道位置、方位角和俯仰角定义。地面水平位置按激光测距标定值记录，高度按遥控器读数记录，并说明悬停漂移和高度读数误差对位置对照的影响。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "03",
+      "role": "assistant",
+      "text": "项目记忆保存逐通道坐标、角度正方向及录音文件名的单位换算。后续用户进一步明确水平坐标保留两位小数、高度保留一位小数，以及从标定位置垂直起飞的采集方式。协作将这些条件组织为实验方法说明。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "04",
+      "role": "user",
+      "text": "请交叉核对扩展接口表、底板原理图、核心板管脚映射和 Vivado 器件信息，检查 ADC 数据线约束及供电连接，并使接线图与 XDC 保持一致。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "04",
+      "role": "assistant",
+      "text": "记忆文档记录 CN3-14 的 DB3 约束核对：接口资料中的 AB14 与底板及器件管脚信息不一致，进一步确认应为 AA14。随后同步修正 XDC 和接线图，保持实物连接位置不变。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "05",
+      "role": "user",
+      "text": "请结合 BUSY、FIRSTDATA、RD、CONVST 和 RESET 的实测控制波形分析通道错位，优先确认异常发生在哪个读周期，并给出下一步可以验证的排查方法。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "05",
+      "role": "assistant",
+      "text": "模型整理 ILA 捕获的完整八路事务及错误触发窗口。一次复测中，FIRSTDATA 在采样序列末尾出现，数据相对邻帧呈通道循环错位，而 FPGA 内部 RD 保持八次规则脉冲，CONVST 与 RESET 也有对应记录。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "06",
+      "role": "user",
+      "text": "请依据 ADC 已供电后的诊断照片分析采集状态，分别说明累计计数、最近 1 s 计数、有效帧和坏帧之间的关系，并据此确定后续检查重点。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "06",
+      "role": "assistant",
+      "text": "用户补充前五张照片未开启 ADC 电源、后两张为供电后状态。模型据此重新归类照片，核对各板最近 1 s 的 GOOD 与 BAD 之和，并对照 BUSY 读取异常与 FIRSTDATA 统计。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "07",
+      "role": "user",
+      "text": "请根据 BUSY 和 FIRSTDATA 的脉宽记录改进接口确认机制，在容忍短扰动的同时保留持续忙、超时、首通道错误等异常检查，并用边界条件验证修改效果。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "07",
+      "role": "assistant",
+      "text": "模型先增加读阶段脉宽和通道位置统计，再在独立诊断工程中采用连续三拍电平确认与最小转换等待。原始事件计数继续保留，状态机依据确认后的信号决定是否接受帧。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "08",
+      "role": "user",
+      "text": "请分析偶发坏帧对连续处理窗口的影响，在保留原始错误统计和持续故障保护的前提下，为短时缺失设计有上限的补齐机制，并验证极值运算与时序。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "08",
+      "role": "assistant",
+      "text": "模型在采集器与重采样桥之间增加 16 通道统一帧补齐，利用前后有效样本插值，设置连续坏帧数量及窗口补齐预算上限；显示分别记录原始错误 ERR 与补齐数量 FIX。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "09",
+      "role": "user",
+      "text": "请定位 LCD 中文文字和坐标显示的关键路径，通过流水拆分满足显示时序，同时保持像素位置、颜色和有效显示区一致。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "09",
+      "role": "assistant",
+      "text": "布局报告将关键路径指向文字显示逻辑。模型将排版元数据寄存与字形解码、ROM 读取分拍处理，并调整像素请求的提前量；验证采用实际光栅时序和 DE 有效区捕获。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "10",
+      "role": "user",
+      "text": "请根据实现报告检查白化计算的加法位宽、常数乘除路径与跨时钟域控制信号，在保持数值结果一致的条件下修正时序和同步问题。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "10",
+      "role": "assistant",
+      "text": "模型按累加项数重新确定有符号位宽，将乘法与常数除法分拍；同时在源时钟域寄存故障信号，再经双触发器同步，并调整邮箱数据与有效标志的复位处理。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "11",
+      "role": "user",
+      "text": "请减少双阵列空间搜索的计算周期，在相同输入和搜索配置下比较优化前后的坐标、评分与周期数，并明确计时范围。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "11",
+      "role": "assistant",
+      "text": "历史工程将 105 对观测的搜索计算改为每周期一观测的流水方式。记录中完整 1260 观测测试由 93,649,052 周期降至 21,123,290 周期，坐标和评分保持一致。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "12",
+      "role": "user",
+      "text": "请根据目标水平距离自动调整显示量程，同时独立表示方位方向，使近距离目标易于观察，并抑制临界距离附近的量程跳变。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "12",
+      "role": "assistant",
+      "text": "模型根据位置设置多档水平显示范围，扩档和缩档采用不同阈值，并为缩档加入连续稳定帧条件。XY 位置标记、方位标记、阵列中心和距离刻度分别表达。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "13",
+      "role": "user",
+      "text": "请将定位功能搜索范围统一为水平半径 11 m、高度 10 m，同步修改代码配置、搜索表、相关图示和实现记录，并在构建后核查提交位流。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "13",
+      "role": "assistant",
+      "text": "核对发现既有工程搜索范围与用户要求存在差异，模型先明确代码参数和实验布点各自含义；用户进一步确认代码也改为半径 11 m、高度 10 m。当前配置记录 horizontal_mm=11000、vertical_mm=10000、grid_points=12479。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "14",
+      "role": "user",
+      "text": "请说明实际使用的 Vivado 版本、目标器件和顶层模块，在独立目录中使用提交源码与 HLS 导出文件完成构建，核对资源、时序和生成文件。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "14",
+      "role": "assistant",
+      "text": "构建记录给出 Vivado 2024.2 Build 5239630、xc7a200tfbg484-2 和 acoustic_top，并记录从规范化文件名工程进行综合、布局与布线的结果。独立重建的资源与时序和参考实现一致。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "15",
+      "role": "user",
+      "text": "请明确当前程序的源码位置、位流身份和下载方式，将板端采集、定位和显示的人工确认与对应版本关联，并保留复现及交接所需的信息。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "15",
+      "role": "assistant",
+      "text": "协作以位流 SHA-256、目标器件和搜索范围确定程序身份。团队在会话中确认半径 11 m、高度 10 m 的版本已经下载并验证正常，提交记录将确认功能列为采集、定位与显示。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "16",
+      "role": "user",
+      "text": "请逐项核对模板规定的标题、字数和配图要求，保持作品题目不变，按自主选题初级组的推荐目录组织材料，并将大模型协作记录单独放在 report 目录。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "16",
+      "role": "assistant",
+      "text": "用户明确指定模板标题必须一致，要求调整 1.1、1.2、3.1 和 3.2.1 的图文位置，并将系统实拍、显示界面、机械成果、电路成果分别组织。协作据此整理章节与图片职责。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "17",
+      "role": "user",
+      "text": "请采用最新实物照片更新阵列和 ADC 展示图，保留完整设备边缘；Vivado 图像突出器件布局、时序摘要和代码层级，保证文字清晰，同时将技术文档控制在 43 MB 以内。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "17",
+      "role": "assistant",
+      "text": "用户针对设备裁切不完整、截图带有鼠标、软件界面文字偏小等问题给出具体反馈。协作将整机、阵列、ADC 实拍与软件实现截图分工处理，采用与展示目标匹配的裁切和尺寸。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "18",
+      "role": "user",
+      "text": "请在检测实验说明中写明夜间测试、RION NL-52 声级计、环境声级 39.5 dB、距无人机约 1 m 的声级 62.7 dB，以及约 15 s 的测量时间窗口；环境噪声样本按检出次数与总窗口数记录。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "18",
+      "role": "assistant",
+      "text": "用户逐步补充仪器、时间、距离和窗口条件，并将源声级相对环境的差值明确为 62.7−39.5=23.2 dB。协作将这些条件组织为可重复理解的实验描述。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "19",
+      "role": "user",
+      "text": "请补充 Vesper VM1000 的关键器件参数与麦克风功耗，并明确电池、稳压模块和各负载的供电关系；整机功耗待实际测量后补充。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "19",
+      "role": "assistant",
+      "text": "用户说明采用 24 V、2200 mAh 电池组，经稳压模块分别向 FPGA 板、ADC 和阵列提供 12 V、5 V 和 3.3 V。随后将本轮功耗写作范围收敛到麦克风器件参数。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "20",
+      "role": "user",
+      "text": "请依据项目记忆扩充调试技能，将典型症状、需保留的证据、排查顺序、验证方法和适用边界整理为其他队伍可直接使用的流程。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "20",
+      "role": "assistant",
+      "text": "模型从 ADC 字序、短扰动、LCD 流水、数值位宽、CDC 和并行构建等案例中提取共性，组织为 fpga-stream-debug；另以 fpga-evidence-check 承担资源与时序报告核查。记忆案例保存原文摘录、来源行号与摘要哈希。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "21",
+      "role": "user",
+      "text": "请将文件身份核验、数据格式约定、传输异常诊断和结果比较提炼为与无人机题目解耦的 PYNQ Skill，说明更换板卡、Overlay 和算法时需要提供的配置。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "21",
+      "role": "assistant",
+      "text": "模型将项目中的版本对应关系、超时诊断和数值等价经验转换为 PYNQ 主机流程：核对 bit/hwh 与实例元数据，明确 shape、dtype、字节数和 DMA 长度，采用接收优先、缓存同步、有界等待和异常快照。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "22",
+      "role": "user",
+      "text": "请为黄金参考比较工具明确整数精确比较、浮点容差、数组形状和类型检查，覆盖错误输入与极端数值，并用真实实现报告验证报告解析逻辑。",
+      "text_kind": "formalized_summary",
+      "timestamp": null
+    },
+    {
+      "case": "22",
+      "role": "assistant",
+      "text": "模型组织数值与报告检查，涵盖正确结果、错误值、形状与类型差异、NaN、非法容差、大整数精度、负时序余量和缺失资源字段。工具对数组和报告采用明确的接受条件。",
+      "text_kind": "editorial_summary",
+      "timestamp": null
+    },
+    {
+      "case": "01",
+      "role": "user",
+      "text": "这个写的太少了，要显得我们非常创新，并且fpga为什么适合用于我们这个项目，为什么我们有优势，你这个在前文需要说，实际的应用价值占很大的评分比重。第七页有些字体是五号，不对，要改成小四。图34-37中这种字太小了看不清。前面你好像没说麦克风使用的是vesper1000，并且使用图三",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 183,
+        "assistant_line": 186,
+        "user_time_utc": "2026-11-01T14:15:57.411Z",
+        "assistant_time_utc": "2026-11-01T14:16:19.645Z",
+        "user_message_sha256": "142ed4faabdf0318c7c5327da9c33cc78d10f9bee1433a137b14189fc0a286e0",
+        "assistant_message_sha256": "eb3d95fbb42da99d9a4df82a7f133bbe8938837266a6f9db8342b49920f0b2ab",
+        "user_excerpt_sha256": "82a2c92fd4c769382b0e7665ed21778d6f96a22bad0b338f3d69669401f01445",
+        "assistant_excerpt_sha256": "c4eb9762f8c0c631b02464a89e772354063353a890cb7ddc82e4da5b8e76d464"
+      },
+      "timestamp": "2026-11-01T14:15:57.411Z"
+    },
+    {
+      "case": "01",
+      "role": "assistant",
+      "text": "我会扩写前文的创新点、实际应用价值，以及 FPGA 适合本项目的原因，用已有实测和实现结果支撑优势；同时把第七页相关文字改为小四，放大图 34–37 的文字，并补充 Vesper1000 的介绍和你发的器件图片。我会继续按文档技能流程检查排版。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 183,
+        "assistant_line": 186,
+        "user_time_utc": "2026-11-01T14:15:57.411Z",
+        "assistant_time_utc": "2026-11-01T14:16:19.645Z",
+        "user_message_sha256": "142ed4faabdf0318c7c5327da9c33cc78d10f9bee1433a137b14189fc0a286e0",
+        "assistant_message_sha256": "eb3d95fbb42da99d9a4df82a7f133bbe8938837266a6f9db8342b49920f0b2ab",
+        "user_excerpt_sha256": "82a2c92fd4c769382b0e7665ed21778d6f96a22bad0b338f3d69669401f01445",
+        "assistant_excerpt_sha256": "c4eb9762f8c0c631b02464a89e772354063353a890cb7ddc82e4da5b8e76d464"
+      },
+      "timestamp": "2026-11-01T14:16:19.645Z"
+    },
+    {
+      "case": "12",
+      "role": "user",
+      "text": "我先关电了，现在这几个版本有点问题，就是雷达如果是20米的，无人机在距离两米这种近场它在雷达上显示的就很小几乎看不到方向，这种情况你想怎么解决？",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-10-28T23-26-31-01a1831e-a4e4-7df2-9c6d-0fb89428b636.jsonl",
+        "user_line": 12897,
+        "assistant_line": 12924,
+        "user_time_utc": "2026-10-31T02:02:51.492Z",
+        "assistant_time_utc": "2026-10-31T02:05:46.325Z",
+        "user_message_sha256": "0226c96d8eb47f851fe441db6506889a837d58e1a62953078ca0aa978a07fdb4",
+        "assistant_message_sha256": "e6371b53a4c5a225afb01cc8837fa792dc58843e5762b711ae63fb259838f997",
+        "user_excerpt_sha256": "2f4c3de3805b29ea62b5b0e7d5c32c9933d7125c3ea21c2c79708e0277bca379",
+        "assistant_excerpt_sha256": "e6371b53a4c5a225afb01cc8837fa792dc58843e5762b711ae63fb259838f997"
+      },
+      "timestamp": "2026-10-31T02:02:51.492Z"
+    },
+    {
+      "case": "12",
+      "role": "assistant",
+      "text": "我建议采用 **“自动量程＋独立方位指示”**。\n\n我核对了代码：目前雷达半径约 **130像素**，20米量程下，水平距离2米的目标离中心只有 **13像素**，所以方向线很难看清。\n\n具体这样改：\n\n1. **自动切换显示量程**  \n   使用 **2、5、10、15、20米**几个档位，上限随版本变化。例如目标在2米附近，显示切到5米量程，目标离中心约 **52像素**，方向会清楚很多。定位搜索仍保持原来的20米范围。\n\n2. **增加外圈方位箭头**  \n   位置点继续按真实距离绘制，外圈另外显示方位指示，让近场目标的方向也容易辨认。\n\n3. **避免画面反复缩放**  \n   目标接近边缘时及时扩大量程；目标持续靠近约2～3秒后再缩小。屏幕明确显示“当前量程”和“每圈多少米”。\n\n另外，雷达是**水平俯视图**：无人机如果就在阵列正上方，即使高度2米，位置点也应该在中心。这时应突出高度、仰角和“接近正上方”提示。\n\n这项改动可以断电离线完成。建议先在 **01版**完成界面验证，再同步到其他五版。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-10-28T23-26-31-01a1831e-a4e4-7df2-9c6d-0fb89428b636.jsonl",
+        "user_line": 12897,
+        "assistant_line": 12924,
+        "user_time_utc": "2026-10-31T02:02:51.492Z",
+        "assistant_time_utc": "2026-10-31T02:05:46.325Z",
+        "user_message_sha256": "0226c96d8eb47f851fe441db6506889a837d58e1a62953078ca0aa978a07fdb4",
+        "assistant_message_sha256": "e6371b53a4c5a225afb01cc8837fa792dc58843e5762b711ae63fb259838f997",
+        "user_excerpt_sha256": "2f4c3de3805b29ea62b5b0e7d5c32c9933d7125c3ea21c2c79708e0277bca379",
+        "assistant_excerpt_sha256": "e6371b53a4c5a225afb01cc8837fa792dc58843e5762b711ae63fb259838f997"
+      },
+      "timestamp": "2026-10-31T02:05:46.325Z"
+    },
+    {
+      "case": "13",
+      "role": "user",
+      "text": "代码也改成半径11m，高度10m，相关的vivado的图、资源之类的在文中都要修改，提交到github的代码也修改。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 1806,
+        "assistant_line": 1810,
+        "user_time_utc": "2026-11-03T05:19:29.789Z",
+        "assistant_time_utc": "2026-11-03T05:20:05.274Z",
+        "user_message_sha256": "4fdb282f1604ae9e1d03f607e62b6c933d2e0bc1d4d5826181cf6359312e35c5",
+        "assistant_message_sha256": "145ce295757bd0a6298725bfc15f06bb9963f743f062f509f0f67bd65550700a",
+        "user_excerpt_sha256": "df0777a1f9c61dc5df26f5b560d7cae91b74779abfa3f4b287f5b8d9b23a968e",
+        "assistant_excerpt_sha256": "640e9897601b6bc8366531cf085898cc6cd15b3461144646df00e6e0d3287473"
+      },
+      "timestamp": "2026-11-03T05:19:29.789Z"
+    },
+    {
+      "case": "13",
+      "role": "assistant",
+      "text": "收到。我会把提交代码同步改为半径 11 m、高度 10 m，重新运行相关仿真和布局布线，再用新的资源、时序报告及 Vivado 截图更新论文和 GitHub 包。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 1806,
+        "assistant_line": 1810,
+        "user_time_utc": "2026-11-03T05:19:29.789Z",
+        "assistant_time_utc": "2026-11-03T05:20:05.274Z",
+        "user_message_sha256": "4fdb282f1604ae9e1d03f607e62b6c933d2e0bc1d4d5826181cf6359312e35c5",
+        "assistant_message_sha256": "145ce295757bd0a6298725bfc15f06bb9963f743f062f509f0f67bd65550700a",
+        "user_excerpt_sha256": "df0777a1f9c61dc5df26f5b560d7cae91b74779abfa3f4b287f5b8d9b23a968e",
+        "assistant_excerpt_sha256": "640e9897601b6bc8366531cf085898cc6cd15b3461144646df00e6e0d3287473"
+      },
+      "timestamp": "2026-11-03T05:20:05.274Z"
+    },
+    {
+      "case": "14",
+      "role": "user",
+      "text": "题目不要改，是基于 AMD FPGA 的双阵列无人机\n声学检测与三维定位系统\n先不管github，你仔细阅读\"D:\\xiaobao\\2026\\03-麦克风阵列\\全国大学生嵌入式芯片与系统设计竞赛'2026FPGA赛道选题指南-AMD.pdf\"的3.3自主选题赛道的所有要求以及评分要求，也就是19-22页，3.3.5.3的设计报告就是现在的技术文档，你非常仔细根据这几页的要求修改技术文档，比如我们的vivado版本，在报告中说明可复现、另外要写大模型协作记录、PYNQ skill等，这些你要非常仔细的按照3.3要求，我是初级组，然后你给我提交内容的文件夹。其中设计报告就是你这轮改进后的技术文档",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2184,
+        "assistant_line": 2227,
+        "user_time_utc": "2026-11-03T06:43:18.863Z",
+        "assistant_time_utc": "2026-11-03T06:48:27.778Z",
+        "user_message_sha256": "6d3de8909411c2ff92bffa22ccead103faae92f7fbdaadca6631294ba9a2fac5",
+        "assistant_message_sha256": "8a24807883705df0b4db92c52a4638b21ad7501122a21c975afe743f42c4d9b9",
+        "user_excerpt_sha256": "b7957dac7b07ef759a9ca3e70a1e4a8afa089bcd928c0c8f9274e779f500a84a",
+        "assistant_excerpt_sha256": "ae271432dd79f19cac43cadaf98411277de267967f93bb457d9f738d19c2945a"
+      },
+      "timestamp": "2026-11-03T06:43:18.863Z"
+    },
+    {
+      "case": "14",
+      "role": "assistant",
+      "text": "指南允许使用其他版本的 Vivado，但要求说明版本并提供可复现脚本，因此报告会如实写入实际使用的 2024.2。大模型协作记录和可复用 Skill 是必交内容；通用 PYNQ Skill 属于可选加分项。我会使用 skill-creator 技能整理真实调试经验，并明确本系统与 PYNQ 工作流各自的验证范围。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2184,
+        "assistant_line": 2227,
+        "user_time_utc": "2026-11-03T06:43:18.863Z",
+        "assistant_time_utc": "2026-11-03T06:48:27.778Z",
+        "user_message_sha256": "6d3de8909411c2ff92bffa22ccead103faae92f7fbdaadca6631294ba9a2fac5",
+        "assistant_message_sha256": "8a24807883705df0b4db92c52a4638b21ad7501122a21c975afe743f42c4d9b9",
+        "user_excerpt_sha256": "b7957dac7b07ef759a9ca3e70a1e4a8afa089bcd928c0c8f9274e779f500a84a",
+        "assistant_excerpt_sha256": "ae271432dd79f19cac43cadaf98411277de267967f93bb457d9f738d19c2945a"
+      },
+      "timestamp": "2026-11-03T06:48:27.778Z"
+    },
+    {
+      "case": "15",
+      "role": "user",
+      "text": "已经下载并验证正常",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2316,
+        "assistant_line": 2320,
+        "user_time_utc": "2026-11-03T06:53:49.618Z",
+        "assistant_time_utc": "2026-11-03T06:54:13.582Z",
+        "user_message_sha256": "ba389e0670dc2ed6980dad2ed9ff4fcb4b915f1c2e47371a4036036ad00f27eb",
+        "assistant_message_sha256": "4cba88c0e748d2bfa046ac3c8ac24a657292d46c056196ae67dabebf3683db55",
+        "user_excerpt_sha256": "e00e4aa1228da4ed08cea0ae21a0d62d2b4acaafbd64f65f487ae22abb3dbe74",
+        "assistant_excerpt_sha256": "c9897acb92813cee50d85dc3396a48cd3d66e3f28eecbe8f43498d9477c17e38"
+      },
+      "timestamp": "2026-11-03T06:53:49.618Z"
+    },
+    {
+      "case": "15",
+      "role": "assistant",
+      "text": "收到，最新比特流已上板验证正常，我会把这项结果记入板级验证记录。提交包正在从独立目录重新构建，已通过按键、双页面、检测状态、雷达显示和控制流程测试；接下来核对完整布线结果，并将报告中的优化对照与原始证据对应起来。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2316,
+        "assistant_line": 2320,
+        "user_time_utc": "2026-11-03T06:53:49.618Z",
+        "assistant_time_utc": "2026-11-03T06:54:13.582Z",
+        "user_message_sha256": "ba389e0670dc2ed6980dad2ed9ff4fcb4b915f1c2e47371a4036036ad00f27eb",
+        "assistant_message_sha256": "4cba88c0e748d2bfa046ac3c8ac24a657292d46c056196ae67dabebf3683db55",
+        "user_excerpt_sha256": "e00e4aa1228da4ed08cea0ae21a0d62d2b4acaafbd64f65f487ae22abb3dbe74",
+        "assistant_excerpt_sha256": "c9897acb92813cee50d85dc3396a48cd3d66e3f28eecbe8f43498d9477c17e38"
+      },
+      "timestamp": "2026-11-03T06:54:13.582Z"
+    },
+    {
+      "case": "16",
+      "role": "user",
+      "text": "\"D:\\xiaobao\\2026\\03-麦克风阵列\\技术文档\\模板.docx\"你仔细看看模板，对于每一个段落的标题要求、字数要求、配图要求。论文中指定段落的标题必须和模板中的标题一摸一样，例如3.2.1、3.2.2等，模板中有字数要求的，论文指定段落也需要在指定要求以内。1.1的重要图你放一张屏幕的图上去，就是方位角俯仰角xyz的图。1.2的重要图你上网找四张具有代表性的图。主要性能指标你根据双阵列实测补充一下，原先那个10米那一行去掉，还要加上功耗。你把3.1的图放到3.2.1里面。3.1的图我晚一点再加进来",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 364,
+        "assistant_line": 398,
+        "user_time_utc": "2026-11-01T15:04:18.662Z",
+        "assistant_time_utc": "2026-11-01T15:08:16.513Z",
+        "user_message_sha256": "19a8dc08ff4c504baaa3018d9b4aa6b3aed6caa7c60d08e599b1d54df85a586b",
+        "assistant_message_sha256": "d1bbb227e59aca96d05bc3f164f3d6d375a3c0dfd413644be586d1c2982d7663",
+        "user_excerpt_sha256": "57f61135d2da2d38a1b00cdb353bf717f58e748a1a77b4dc4bc99a90dae2870d",
+        "assistant_excerpt_sha256": "a75bc9cbc659bd057fea83bc3cb40e4ff42a15df94d2e4d11f05885563f09ca4"
+      },
+      "timestamp": "2026-11-01T15:04:18.662Z"
+    },
+    {
+      "case": "16",
+      "role": "assistant",
+      "text": "模板已核对：1.1–1.3 各限 400 字，1.4–1.6 各限 200 字；摘要限 800 字，4.1 限 300 字，4.2 限 1000 字。上一版前文有几处超限，我会压缩概述，把详细论证移到正文，并将标题统一为模板原名，包括“机械成果”“电路成果”“软件成果”。3.1 会留出后续补整机照片的位置。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 364,
+        "assistant_line": 398,
+        "user_time_utc": "2026-11-01T15:04:18.662Z",
+        "assistant_time_utc": "2026-11-01T15:08:16.513Z",
+        "user_message_sha256": "19a8dc08ff4c504baaa3018d9b4aa6b3aed6caa7c60d08e599b1d54df85a586b",
+        "assistant_message_sha256": "d1bbb227e59aca96d05bc3f164f3d6d375a3c0dfd413644be586d1c2982d7663",
+        "user_excerpt_sha256": "57f61135d2da2d38a1b00cdb353bf717f58e748a1a77b4dc4bc99a90dae2870d",
+        "assistant_excerpt_sha256": "a75bc9cbc659bd057fea83bc3cb40e4ff42a15df94d2e4d11f05885563f09ca4"
+      },
+      "timestamp": "2026-11-01T15:08:16.513Z"
+    },
+    {
+      "case": "16",
+      "role": "user",
+      "text": "要按照3.3.5.4的推荐目录结构，不要把大模型协助记录写进技术文档",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2298,
+        "assistant_line": 2302,
+        "user_time_utc": "2026-11-03T06:52:12.990Z",
+        "assistant_time_utc": "2026-11-03T06:52:35.869Z",
+        "user_message_sha256": "7bfb160fff21cc23b132867f31e53c5b756b1e6318a675f5d1d2044b75757800",
+        "assistant_message_sha256": "baee9ae08876b9181b90fe65c8f400ec9330e5383cbf4ea7b957b4acc09b433a",
+        "user_excerpt_sha256": "7e278c73c8976f47c673056d8c8bc3a3833e08f56f4f085b1805bc5c0cca0f11",
+        "assistant_excerpt_sha256": "61b38fd7b4af21cde60a0db25db5a8acf45fe774118057e6e3e1ca1abc074f45"
+      },
+      "timestamp": "2026-11-03T06:52:12.990Z"
+    },
+    {
+      "case": "16",
+      "role": "assistant",
+      "text": "收到，提交文件夹按 3.3.5.4 的推荐结构整理。大模型协作记录单独放在 `report/`，技术文档中只保留设计、验证和复现内容；在提交目录说明中标明协作记录附件，便于评委按要求查阅。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2298,
+        "assistant_line": 2302,
+        "user_time_utc": "2026-11-03T06:52:12.990Z",
+        "assistant_time_utc": "2026-11-03T06:52:35.869Z",
+        "user_message_sha256": "7bfb160fff21cc23b132867f31e53c5b756b1e6318a675f5d1d2044b75757800",
+        "assistant_message_sha256": "baee9ae08876b9181b90fe65c8f400ec9330e5383cbf4ea7b957b4acc09b433a",
+        "user_excerpt_sha256": "7e278c73c8976f47c673056d8c8bc3a3833e08f56f4f085b1805bc5c0cca0f11",
+        "assistant_excerpt_sha256": "61b38fd7b4af21cde60a0db25db5a8acf45fe774118057e6e3e1ca1abc074f45"
+      },
+      "timestamp": "2026-11-03T06:52:35.869Z"
+    },
+    {
+      "case": "17",
+      "role": "user",
+      "text": "技术文档中软件的图不够清晰，最上面那张图只保留黑色的部分呀，并且你把你操控电脑是的鼠标也截进去了 这不应该！，技术文档最大可以43MB",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2467,
+        "assistant_line": 2471,
+        "user_time_utc": "2026-11-03T07:09:07.724Z",
+        "assistant_time_utc": "2026-11-03T07:09:28.329Z",
+        "user_message_sha256": "bd79b6bcb5e2bc3b35f7598fbe869ad3093c6b3d18597161862766eea00b66b8",
+        "assistant_message_sha256": "26a1b4cf0c1e29b555addf1ab380ba51098b074980eb8c37575e614e4bb118d2",
+        "user_excerpt_sha256": "d0e944bf7c2538b1e18f257786563242bffedec62ef9900b9cac300d82059eb5",
+        "assistant_excerpt_sha256": "fdff131085eaa1fea73f1ec57f626561b75dccb45f55988fad74b16fd48ca2cf"
+      },
+      "timestamp": "2026-11-03T07:09:07.724Z"
+    },
+    {
+      "case": "17",
+      "role": "assistant",
+      "text": "我会重做这几张软件成果图：器件图只保留黑色布局区域，重新导出不带鼠标的清晰图像，并放大时序、时钟和资源信息。文档总大小会控制在 43 MB 以内。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2467,
+        "assistant_line": 2471,
+        "user_time_utc": "2026-11-03T07:09:07.724Z",
+        "assistant_time_utc": "2026-11-03T07:09:28.329Z",
+        "user_message_sha256": "bd79b6bcb5e2bc3b35f7598fbe869ad3093c6b3d18597161862766eea00b66b8",
+        "assistant_message_sha256": "26a1b4cf0c1e29b555addf1ab380ba51098b074980eb8c37575e614e4bb118d2",
+        "user_excerpt_sha256": "d0e944bf7c2538b1e18f257786563242bffedec62ef9900b9cac300d82059eb5",
+        "assistant_excerpt_sha256": "fdff131085eaa1fea73f1ec57f626561b75dccb45f55988fad74b16fd48ca2cf"
+      },
+      "timestamp": "2026-11-03T07:09:28.329Z"
+    },
+    {
+      "case": "17",
+      "role": "user",
+      "text": "以及vivado代码顶层模块什么的那个图也要一张，就是vivado里面代码的分级图",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2489,
+        "assistant_line": 2696,
+        "user_time_utc": "2026-11-03T07:10:08.051Z",
+        "assistant_time_utc": "2026-11-03T07:23:14.885Z",
+        "user_message_sha256": "1bd323cbd395233fc4d1c57cfd4080a20be2bf4f7d8f815e90e6c320cf35ce25",
+        "assistant_message_sha256": "6e002b4450299a135ccfdb7865571cea4e85723c693524dbcbd60f0b47033c1d",
+        "user_excerpt_sha256": "51a314d3589ac6c5a47058196d8b0688a100b6f7cc564bc697cbee0ff2e5a000",
+        "assistant_excerpt_sha256": "59b0784cd4b5a8584e871bb830234ac2814d72d1d03e40fb7e4a3ddd825380f0"
+      },
+      "timestamp": "2026-11-03T07:10:08.051Z"
+    },
+    {
+      "case": "17",
+      "role": "assistant",
+      "text": "层级图已加入“软件成果”，能看到 `acoustic_top`、采集与显示模块，以及展开的联合定位分支。器件图已只保留黑色布局区域；时序报告拆成上下两块放大显示。目前文档约 **39.1 MB**，正在检查最终分页。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2489,
+        "assistant_line": 2696,
+        "user_time_utc": "2026-11-03T07:10:08.051Z",
+        "assistant_time_utc": "2026-11-03T07:23:14.885Z",
+        "user_message_sha256": "1bd323cbd395233fc4d1c57cfd4080a20be2bf4f7d8f815e90e6c320cf35ce25",
+        "assistant_message_sha256": "6e002b4450299a135ccfdb7865571cea4e85723c693524dbcbd60f0b47033c1d",
+        "user_excerpt_sha256": "51a314d3589ac6c5a47058196d8b0688a100b6f7cc564bc697cbee0ff2e5a000",
+        "assistant_excerpt_sha256": "59b0784cd4b5a8584e871bb830234ac2814d72d1d03e40fb7e4a3ddd825380f0"
+      },
+      "timestamp": "2026-11-03T07:23:14.885Z"
+    },
+    {
+      "case": "18",
+      "role": "user",
+      "text": "\"D:\\xiaobao\\2026\\03-麦克风阵列\\技术文档\\AMD赛道_技术文档_R24-01_模板规范修订版.docx\"在这个基础上修改一下内容：文中说120m检测到的无人机段落需要说是在夜间，经使用RION NL-52声级计测量，环境噪声39.5dB，无人机在1m处62.7dB，测量时间窗口15s",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 632,
+        "assistant_line": 670,
+        "user_time_utc": "2026-11-01T16:09:04.450Z",
+        "assistant_time_utc": "2026-11-01T16:14:18.499Z",
+        "user_message_sha256": "e084c07ad367cff697c4a54f982ef7fdf548e0164d7118caadb3507abe7f40b4",
+        "assistant_message_sha256": "08ab26dbc62e5d6c57f0d4962a90e344c6b61018bf054e29c8645d1028b1d50a",
+        "user_excerpt_sha256": "fbe2c7d65f9d0c76b22b069dfcbf113f1dd2f2c72ee6eca398d614a69b003155",
+        "assistant_excerpt_sha256": "ec965d0b58e370e6f6b22b40fbdce5f18275ec8bf628c9aa43d72557f0d116cd"
+      },
+      "timestamp": "2026-11-01T16:09:04.450Z"
+    },
+    {
+      "case": "18",
+      "role": "assistant",
+      "text": "已在 3.3.1 补入完整测量条件，并在摘要、性能表及相关结论中注明“夜间”。15 s 明确写为声级计的测量窗口，与检测算法的分析窗口区分；声级单位按你提供的 dB 保留。文件另存为“夜间检测条件补充版”，正在检查排版。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 632,
+        "assistant_line": 670,
+        "user_time_utc": "2026-11-01T16:09:04.450Z",
+        "assistant_time_utc": "2026-11-01T16:14:18.499Z",
+        "user_message_sha256": "e084c07ad367cff697c4a54f982ef7fdf548e0164d7118caadb3507abe7f40b4",
+        "assistant_message_sha256": "08ab26dbc62e5d6c57f0d4962a90e344c6b61018bf054e29c8645d1028b1d50a",
+        "user_excerpt_sha256": "fbe2c7d65f9d0c76b22b069dfcbf113f1dd2f2c72ee6eca398d614a69b003155",
+        "assistant_excerpt_sha256": "ec965d0b58e370e6f6b22b40fbdce5f18275ec8bf628c9aa43d72557f0d116cd"
+      },
+      "timestamp": "2026-11-01T16:14:18.499Z"
+    },
+    {
+      "case": "19",
+      "role": "user",
+      "text": "别了，不是实际的功耗先不要加到论文里面，论文里面先加麦克风的功耗",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 528,
+        "assistant_line": 532,
+        "user_time_utc": "2026-11-01T15:29:05.174Z",
+        "assistant_time_utc": "2026-11-01T15:29:17.735Z",
+        "user_message_sha256": "0126c5b14ca9daf45afefca48b28304f0e1695362d5fd4f2778fb064b66a926a",
+        "assistant_message_sha256": "44da8b1dfb71b75d8e830a9842d81eaee39dba9be3945c266539e4aa9c7ba783",
+        "user_excerpt_sha256": "fe95ab7cae2b4ebc461c96468889ba582ce52c515b4aca35b34840080f40a033",
+        "assistant_excerpt_sha256": "a986188abc2925668a0270629ec455b991fe0399d3cd0cc215540848d21595a3"
+      },
+      "timestamp": "2026-11-01T15:29:05.174Z"
+    },
+    {
+      "case": "19",
+      "role": "assistant",
+      "text": "好，论文里只补充麦克风功耗，并注明是按典型电流估算的；不加入 FPGA 板的供电功率或整机功耗估算。你提供的电池和三路稳压配置保留在硬件介绍中。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 528,
+        "assistant_line": 532,
+        "user_time_utc": "2026-11-01T15:29:05.174Z",
+        "assistant_time_utc": "2026-11-01T15:29:17.735Z",
+        "user_message_sha256": "0126c5b14ca9daf45afefca48b28304f0e1695362d5fd4f2778fb064b66a926a",
+        "assistant_message_sha256": "44da8b1dfb71b75d8e830a9842d81eaee39dba9be3945c266539e4aa9c7ba783",
+        "user_excerpt_sha256": "fe95ab7cae2b4ebc461c96468889ba582ce52c515b4aca35b34840080f40a033",
+        "assistant_excerpt_sha256": "a986188abc2925668a0270629ec455b991fe0399d3cd0cc215540848d21595a3"
+      },
+      "timestamp": "2026-11-01T15:29:17.735Z"
+    },
+    {
+      "case": "19",
+      "role": "user",
+      "text": "别了，不是实际的功耗先不要加到论文里面，论文里面先加麦克风的功耗",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 528,
+        "assistant_line": 578,
+        "user_time_utc": "2026-11-01T15:29:05.174Z",
+        "assistant_time_utc": "2026-11-01T15:33:21.910Z",
+        "user_message_sha256": "0126c5b14ca9daf45afefca48b28304f0e1695362d5fd4f2778fb064b66a926a",
+        "assistant_message_sha256": "280afe8e58e408108e31e18e7f4c11f39169bd22e3bcc5896b9eb5c885ec566b",
+        "user_excerpt_sha256": "fe95ab7cae2b4ebc461c96468889ba582ce52c515b4aca35b34840080f40a033",
+        "assistant_excerpt_sha256": "a4e9f645e286c1a64a4bd5e5b138ee04bd8e8ce269b93f94ab7b78096ad5833d"
+      },
+      "timestamp": "2026-11-01T15:29:05.174Z"
+    },
+    {
+      "case": "19",
+      "role": "assistant",
+      "text": "麦克风功耗已写入性能表和电路介绍：3.3 V 下，单颗约 0.545 mW，双阵列 16 颗合计约 8.71 mW，并注明为器件级估算。FPGA 和整机的功耗数值未写入。模板规定的限字章节均已控制在要求以内。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 528,
+        "assistant_line": 578,
+        "user_time_utc": "2026-11-01T15:29:05.174Z",
+        "assistant_time_utc": "2026-11-01T15:33:21.910Z",
+        "user_message_sha256": "0126c5b14ca9daf45afefca48b28304f0e1695362d5fd4f2778fb064b66a926a",
+        "assistant_message_sha256": "280afe8e58e408108e31e18e7f4c11f39169bd22e3bcc5896b9eb5c885ec566b",
+        "user_excerpt_sha256": "fe95ab7cae2b4ebc461c96468889ba582ce52c515b4aca35b34840080f40a033",
+        "assistant_excerpt_sha256": "a4e9f645e286c1a64a4bd5e5b138ee04bd8e8ce269b93f94ab7b78096ad5833d"
+      },
+      "timestamp": "2026-11-01T15:33:21.910Z"
+    },
+    {
+      "case": "20",
+      "role": "user",
+      "text": "不需要有演示视频，我已删除，skill要不要多写一点？pynq写的会不会不够好。本项目的skill可以参考记忆文档",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2820,
+        "assistant_line": 2856,
+        "user_time_utc": "2026-11-03T08:01:50.529Z",
+        "assistant_time_utc": "2026-11-03T08:04:47.124Z",
+        "user_message_sha256": "87efebd8b0a2032d7887d32bf6e7971ef09f276a0d82fc89b9ed79f3b00da2e6",
+        "assistant_message_sha256": "eca8e160d44a3527c96de2118ac805eae8c610b9a7e6048de99fca725b8a1cd2",
+        "user_excerpt_sha256": "af849499c944396346ef9a0eb26fd4aaa26dedfa6b9fccb724b64d0e66b1e116",
+        "assistant_excerpt_sha256": "314fc6d70a2540386a5b819c4e5501367b37c6b884625d26d3b79db85ceedd34"
+      },
+      "timestamp": "2026-11-03T08:01:50.529Z"
+    },
+    {
+      "case": "20",
+      "role": "assistant",
+      "text": "记忆文档里有几类很有价值的经验：ADC 通道错位的波形排查、溢出后旧检测结果未清除、显示流水线的时序修复，以及并行构建时源码与位流混用的风险。我会把它们整理成“症状—证据—处理—回归验证”的可复用案例，并保留日期和来源，避免把历史状态当成当前结论。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2820,
+        "assistant_line": 2856,
+        "user_time_utc": "2026-11-03T08:01:50.529Z",
+        "assistant_time_utc": "2026-11-03T08:04:47.124Z",
+        "user_message_sha256": "87efebd8b0a2032d7887d32bf6e7971ef09f276a0d82fc89b9ed79f3b00da2e6",
+        "assistant_message_sha256": "eca8e160d44a3527c96de2118ac805eae8c610b9a7e6048de99fca725b8a1cd2",
+        "user_excerpt_sha256": "af849499c944396346ef9a0eb26fd4aaa26dedfa6b9fccb724b64d0e66b1e116",
+        "assistant_excerpt_sha256": "314fc6d70a2540386a5b819c4e5501367b37c6b884625d26d3b79db85ceedd34"
+      },
+      "timestamp": "2026-11-03T08:04:47.124Z"
+    },
+    {
+      "case": "21",
+      "role": "user",
+      "text": "PYNQ是通用的吗？是否完全满足3.3要求",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2927,
+        "assistant_line": 2942,
+        "user_time_utc": "2026-11-03T08:17:21.820Z",
+        "assistant_time_utc": "2026-11-03T08:18:00.080Z",
+        "user_message_sha256": "76f4e6f72a50ea6471b00a2fd5e029488088835285a989bce0a86643aaa4b826",
+        "assistant_message_sha256": "c1bd74f4c93c119cb0b2e3146e4567303c51f15767de9c53b4ecbd03fe7799f5",
+        "user_excerpt_sha256": "48b10c431789930fcfee3114977a55d17909f1da6f96940192202f788be17dbd",
+        "assistant_excerpt_sha256": "c1bd74f4c93c119cb0b2e3146e4567303c51f15767de9c53b4ecbd03fe7799f5"
+      },
+      "timestamp": "2026-11-03T08:17:21.820Z"
+    },
+    {
+      "case": "21",
+      "role": "assistant",
+      "text": "指南 3.3.2 将 PYNQ 列为初级组推荐方向，并未强制使用；3.3.5.2 则对通用 PYNQ Skill 单独加分。目前技能已覆盖跨题目的数值比对和 DMA 验证流程，但尚无真实 PYNQ 板卡运行记录，因此可以说明可复用范围，不能保证获得这项加分。指南也没有要求必须提交演示视频。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2927,
+        "assistant_line": 2942,
+        "user_time_utc": "2026-11-03T08:17:21.820Z",
+        "assistant_time_utc": "2026-11-03T08:18:00.080Z",
+        "user_message_sha256": "76f4e6f72a50ea6471b00a2fd5e029488088835285a989bce0a86643aaa4b826",
+        "assistant_message_sha256": "c1bd74f4c93c119cb0b2e3146e4567303c51f15767de9c53b4ecbd03fe7799f5",
+        "user_excerpt_sha256": "48b10c431789930fcfee3114977a55d17909f1da6f96940192202f788be17dbd",
+        "assistant_excerpt_sha256": "c1bd74f4c93c119cb0b2e3146e4567303c51f15767de9c53b4ecbd03fe7799f5"
+      },
+      "timestamp": "2026-11-03T08:18:00.080Z"
+    },
+    {
+      "case": "21",
+      "role": "user",
+      "text": "不需要有演示视频，我已删除，skill要不要多写一点？pynq写的会不会不够好。本项目的skill可以参考记忆文档",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2820,
+        "assistant_line": 2882,
+        "user_time_utc": "2026-11-03T08:01:50.529Z",
+        "assistant_time_utc": "2026-11-03T08:11:14.254Z",
+        "user_message_sha256": "87efebd8b0a2032d7887d32bf6e7971ef09f276a0d82fc89b9ed79f3b00da2e6",
+        "assistant_message_sha256": "1620de2d1aa8935e29781b938725d9af2e110265fa0e13971ecff72aa9d59d29",
+        "user_excerpt_sha256": "af849499c944396346ef9a0eb26fd4aaa26dedfa6b9fccb724b64d0e66b1e116",
+        "assistant_excerpt_sha256": "c91b022a8e20cc3af4eaff80b3db617921f2c358321bf74f9fe5f974184f375a"
+      },
+      "timestamp": "2026-11-03T08:01:50.529Z"
+    },
+    {
+      "case": "21",
+      "role": "assistant",
+      "text": "已补成三项 Skill，并加入六段带来源和日期的项目记忆摘录。PYNQ 部分新增了接口契约校验、位流与 HWH 摘要核对、带超时的 DMA 辅助程序和故障排查表；26项新增桌面测试已通过，覆盖超时、短包、错误状态和缓存同步顺序。接下来会同步清理视频引用，更新文档中的技能说明。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2820,
+        "assistant_line": 2882,
+        "user_time_utc": "2026-11-03T08:01:50.529Z",
+        "assistant_time_utc": "2026-11-03T08:11:14.254Z",
+        "user_message_sha256": "87efebd8b0a2032d7887d32bf6e7971ef09f276a0d82fc89b9ed79f3b00da2e6",
+        "assistant_message_sha256": "1620de2d1aa8935e29781b938725d9af2e110265fa0e13971ecff72aa9d59d29",
+        "user_excerpt_sha256": "af849499c944396346ef9a0eb26fd4aaa26dedfa6b9fccb724b64d0e66b1e116",
+        "assistant_excerpt_sha256": "c91b022a8e20cc3af4eaff80b3db617921f2c358321bf74f9fe5f974184f375a"
+      },
+      "timestamp": "2026-11-03T08:11:14.254Z"
+    },
+    {
+      "case": "22",
+      "role": "user",
+      "text": "不需要有演示视频，我已删除，skill要不要多写一点？pynq写的会不会不够好。本项目的skill可以参考记忆文档",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2820,
+        "assistant_line": 2915,
+        "user_time_utc": "2026-11-03T08:01:50.529Z",
+        "assistant_time_utc": "2026-11-03T08:15:22.018Z",
+        "user_message_sha256": "87efebd8b0a2032d7887d32bf6e7971ef09f276a0d82fc89b9ed79f3b00da2e6",
+        "assistant_message_sha256": "0ca5ba86460e9a02c5be8b8bd647534f84409f864571e3927b0701d7f52d8635",
+        "user_excerpt_sha256": "af849499c944396346ef9a0eb26fd4aaa26dedfa6b9fccb724b64d0e66b1e116",
+        "assistant_excerpt_sha256": "a3f01431a6001d96042f1d17eab223f73886f0a7a383452023b9738722f672f0"
+      },
+      "timestamp": "2026-11-03T08:01:50.529Z"
+    },
+    {
+      "case": "22",
+      "role": "assistant",
+      "text": "三项 Skill 已通过格式检查，原有10项检查和新增26项测试均通过。",
+      "text_kind": "verbatim_excerpt",
+      "source": {
+        "file": "rollout-2026-11-01T21-12-28-01a1973d-7192-7d42-8b04-09106e4f0106.jsonl",
+        "user_line": 2820,
+        "assistant_line": 2915,
+        "user_time_utc": "2026-11-03T08:01:50.529Z",
+        "assistant_time_utc": "2026-11-03T08:15:22.018Z",
+        "user_message_sha256": "87efebd8b0a2032d7887d32bf6e7971ef09f276a0d82fc89b9ed79f3b00da2e6",
+        "assistant_message_sha256": "0ca5ba86460e9a02c5be8b8bd647534f84409f864571e3927b0701d7f52d8635",
+        "user_excerpt_sha256": "af849499c944396346ef9a0eb26fd4aaa26dedfa6b9fccb724b64d0e66b1e116",
+        "assistant_excerpt_sha256": "a3f01431a6001d96042f1d17eab223f73886f0a7a383452023b9738722f672f0"
+      },
+      "timestamp": "2026-11-03T08:15:22.018Z"
+    }
+  ],
+  "traceability_update": {
+    "date": "2026-11-03",
+    "cases_with_original_dialogue": 12,
+    "dialogue_pairs": 16,
+    "source": "local response_item message records",
+    "unmatched_cases_unchanged": true
+  }
+}

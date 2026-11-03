@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-03",
+  "report_pages": 73,
+  "report_bytes": 37736321,
+  "report_size_limit_bytes": 43000000,
+  "visual_review": "Latest user-saved document retained as input. Updated board-evidence paragraph and Skill appendix; rendered all 73 pages. Revised pages 7, 44, 72 and 73 inspected; remaining page bodies match prior reviewed rendering.",
+  "equation_objects_preserved": 27,
+  "recordings_verified": 74,
+  "powershell_parse_failures": 0,
+  "full_implementation_reproduction": "PASS; see reproduction_record.json",
+  "rtl_regressions": "6 PASS; current configuration H11000/Z10000 tracker bounds; module/interface/display scope",
+  "search_domain_csim": "5 cases PASS; see sim/results/test_search_domain_csim.log",
+  "skill_tests": "10 original checks and 26 extension tests PASS; desktop only. See sim/skill_validation.json and sim/skill_extensions_validation.json.",
+  "llm_records_location": "report/llm_collaboration.md and report/llm_interaction_excerpt.json; separate from design report",
+  "board_confirmation_location": "board/validation_record.json",
+  "llm_record_revision": {
+    "date": "2026-11-03",
+    "cases_with_original_dialogue": 12,
+    "dialogue_pairs": 16,
+    "source": "local response_item message records",
+    "unmatched_cases_unchanged": true,
+    "cases": 22,
+    "user_prompts_formalized": true,
+    "original_excerpts_preserved": true,
+    "raw_user_prompts_included": true,
+    "design_report_unchanged": true
+  },
+  "skill_count": 3,
+  "skill_memory_cases": 6,
+  "video_included": false,
+  "entrypoint_repair": "See readme_validation.json. Removed obsolete references; manifest regenerated after tests."
+}

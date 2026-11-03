@@ -1,0 +1,7562 @@
+[
+  {
+    "id": 1,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      -11.0,
+      2.4
+    ],
+    "reference_azimuth_deg": 270.0,
+    "reference_elevation_deg": 12.31,
+    "array_xyz_m": [
+      -0.32,
+      -10.99,
+      2.05
+    ],
+    "array_azimuth_deg": 268.33,
+    "array_elevation_deg": 10.56,
+    "reported_azimuth_error_deg": "1.67",
+    "reported_spatial_angle_deg": 2.39,
+    "reported_spatial_distance_m": 0.474
+  },
+  {
+    "id": 2,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      -11.0,
+      3.4
+    ],
+    "reference_azimuth_deg": 270.0,
+    "reference_elevation_deg": 17.18,
+    "array_xyz_m": [
+      -0.83,
+      -10.96,
+      3.3
+    ],
+    "array_azimuth_deg": 265.67,
+    "array_elevation_deg": 16.71,
+    "reported_azimuth_error_deg": "4.33",
+    "reported_spatial_angle_deg": 4.17,
+    "reported_spatial_distance_m": 0.837
+  },
+  {
+    "id": 3,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      -11.0,
+      5.2
+    ],
+    "reference_azimuth_deg": 270.0,
+    "reference_elevation_deg": 25.3,
+    "array_xyz_m": [
+      -0.24,
+      -10.6,
+      6.15
+    ],
+    "array_azimuth_deg": 268.7,
+    "array_elevation_deg": 30.12,
+    "reported_azimuth_error_deg": "1.30",
+    "reported_spatial_angle_deg": 4.95,
+    "reported_spatial_distance_m": 1.058
+  },
+  {
+    "id": 4,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      -11.0,
+      7.4
+    ],
+    "reference_azimuth_deg": 270.0,
+    "reference_elevation_deg": 33.93,
+    "array_xyz_m": [
+      0.39,
+      -10.99,
+      6.98
+    ],
+    "array_azimuth_deg": 272.03,
+    "array_elevation_deg": 32.4,
+    "reported_azimuth_error_deg": "2.03",
+    "reported_spatial_angle_deg": 2.28,
+    "reported_spatial_distance_m": 0.573
+  },
+  {
+    "id": 5,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      -11.0,
+      10.0
+    ],
+    "reference_azimuth_deg": 270.0,
+    "reference_elevation_deg": 42.27,
+    "array_xyz_m": [
+      1.0,
+      -10.95,
+      8.2
+    ],
+    "array_azimuth_deg": 275.22,
+    "array_elevation_deg": 36.71,
+    "reported_azimuth_error_deg": "5.22",
+    "reported_spatial_angle_deg": 6.86,
+    "reported_spatial_distance_m": 2.06
+  },
+  {
+    "id": 6,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      -1.0,
+      2.0
+    ],
+    "reference_azimuth_deg": 270.0,
+    "reference_elevation_deg": 63.43,
+    "array_xyz_m": [
+      0.0,
+      -0.99,
+      1.99
+    ],
+    "array_azimuth_deg": 270.0,
+    "array_elevation_deg": 63.55,
+    "reported_azimuth_error_deg": "<0.01",
+    "reported_spatial_angle_deg": 0.12,
+    "reported_spatial_distance_m": 0.014
+  },
+  {
+    "id": 7,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      -1.0,
+      4.3
+    ],
+    "reference_azimuth_deg": 270.0,
+    "reference_elevation_deg": 76.91,
+    "array_xyz_m": [
+      0.04,
+      -0.93,
+      4.39
+    ],
+    "array_azimuth_deg": 272.46,
+    "array_elevation_deg": 78.03,
+    "reported_azimuth_error_deg": "2.46",
+    "reported_spatial_angle_deg": 1.24,
+    "reported_spatial_distance_m": 0.121
+  },
+  {
+    "id": 8,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      -1.0,
+      5.1
+    ],
+    "reference_azimuth_deg": 270.0,
+    "reference_elevation_deg": 78.91,
+    "array_xyz_m": [
+      0.01,
+      -1.35,
+      4.94
+    ],
+    "array_azimuth_deg": 270.42,
+    "array_elevation_deg": 74.72,
+    "reported_azimuth_error_deg": "0.42",
+    "reported_spatial_angle_deg": 4.19,
+    "reported_spatial_distance_m": 0.385
+  },
+  {
+    "id": 9,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      -1.0,
+      7.9
+    ],
+    "reference_azimuth_deg": 270.0,
+    "reference_elevation_deg": 82.79,
+    "array_xyz_m": [
+      -0.02,
+      -0.81,
+      8.0
+    ],
+    "array_azimuth_deg": 268.59,
+    "array_elevation_deg": 84.22,
+    "reported_azimuth_error_deg": "1.41",
+    "reported_spatial_angle_deg": 1.44,
+    "reported_spatial_distance_m": 0.216
+  },
+  {
+    "id": 10,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      -1.0,
+      9.6
+    ],
+    "reference_azimuth_deg": 270.0,
+    "reference_elevation_deg": 84.05,
+    "array_xyz_m": [
+      0.03,
+      -0.62,
+      9.58
+    ],
+    "array_azimuth_deg": 272.77,
+    "array_elevation_deg": 86.29,
+    "reported_azimuth_error_deg": "2.77",
+    "reported_spatial_angle_deg": 2.25,
+    "reported_spatial_distance_m": 0.382
+  },
+  {
+    "id": 11,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      1.0,
+      1.0
+    ],
+    "reference_azimuth_deg": 90.0,
+    "reference_elevation_deg": 45.0,
+    "array_xyz_m": [
+      0.0,
+      1.03,
+      1.01
+    ],
+    "array_azimuth_deg": 90.0,
+    "array_elevation_deg": 44.44,
+    "reported_azimuth_error_deg": "<0.01",
+    "reported_spatial_angle_deg": 0.56,
+    "reported_spatial_distance_m": 0.032
+  },
+  {
+    "id": 12,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      1.0,
+      3.9
+    ],
+    "reference_azimuth_deg": 90.0,
+    "reference_elevation_deg": 75.62,
+    "array_xyz_m": [
+      0.01,
+      1.1,
+      4.01
+    ],
+    "array_azimuth_deg": 89.48,
+    "array_elevation_deg": 74.66,
+    "reported_azimuth_error_deg": "0.52",
+    "reported_spatial_angle_deg": 0.97,
+    "reported_spatial_distance_m": 0.149
+  },
+  {
+    "id": 13,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      1.0,
+      4.6
+    ],
+    "reference_azimuth_deg": 90.0,
+    "reference_elevation_deg": 77.74,
+    "array_xyz_m": [
+      -0.01,
+      0.83,
+      4.65
+    ],
+    "array_azimuth_deg": 90.69,
+    "array_elevation_deg": 79.88,
+    "reported_azimuth_error_deg": "0.69",
+    "reported_spatial_angle_deg": 2.15,
+    "reported_spatial_distance_m": 0.177
+  },
+  {
+    "id": 14,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      1.0,
+      7.9
+    ],
+    "reference_azimuth_deg": 90.0,
+    "reference_elevation_deg": 82.79,
+    "array_xyz_m": [
+      -0.08,
+      1.33,
+      8.06
+    ],
+    "array_azimuth_deg": 93.44,
+    "array_elevation_deg": 80.61,
+    "reported_azimuth_error_deg": "3.44",
+    "reported_spatial_angle_deg": 2.23,
+    "reported_spatial_distance_m": 0.375
+  },
+  {
+    "id": 15,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      1.0,
+      9.4
+    ],
+    "reference_azimuth_deg": 90.0,
+    "reference_elevation_deg": 83.93,
+    "array_xyz_m": [
+      0.04,
+      0.66,
+      9.61
+    ],
+    "array_azimuth_deg": 86.53,
+    "array_elevation_deg": 86.06,
+    "reported_azimuth_error_deg": "3.47",
+    "reported_spatial_angle_deg": 2.16,
+    "reported_spatial_distance_m": 0.402
+  },
+  {
+    "id": 16,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      11.0,
+      2.2
+    ],
+    "reference_azimuth_deg": 90.0,
+    "reference_elevation_deg": 11.31,
+    "array_xyz_m": [
+      -0.59,
+      10.98,
+      1.79
+    ],
+    "array_azimuth_deg": 93.08,
+    "array_elevation_deg": 9.25,
+    "reported_azimuth_error_deg": "3.08",
+    "reported_spatial_angle_deg": 3.66,
+    "reported_spatial_distance_m": 0.719
+  },
+  {
+    "id": 17,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      11.0,
+      4.2
+    ],
+    "reference_azimuth_deg": 90.0,
+    "reference_elevation_deg": 20.9,
+    "array_xyz_m": [
+      -0.62,
+      10.98,
+      4.36
+    ],
+    "array_azimuth_deg": 93.23,
+    "array_elevation_deg": 21.63,
+    "reported_azimuth_error_deg": "3.23",
+    "reported_spatial_angle_deg": 3.1,
+    "reported_spatial_distance_m": 0.641
+  },
+  {
+    "id": 18,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      11.0,
+      5.4
+    ],
+    "reference_azimuth_deg": 90.0,
+    "reference_elevation_deg": 26.15,
+    "array_xyz_m": [
+      -0.31,
+      10.99,
+      5.02
+    ],
+    "array_azimuth_deg": 91.62,
+    "array_elevation_deg": 24.54,
+    "reported_azimuth_error_deg": "1.62",
+    "reported_spatial_angle_deg": 2.17,
+    "reported_spatial_distance_m": 0.491
+  },
+  {
+    "id": 19,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      11.0,
+      7.1
+    ],
+    "reference_azimuth_deg": 90.0,
+    "reference_elevation_deg": 32.84,
+    "array_xyz_m": [
+      -0.76,
+      10.64,
+      7.16
+    ],
+    "array_azimuth_deg": 94.09,
+    "array_elevation_deg": 33.87,
+    "reported_azimuth_error_deg": "4.09",
+    "reported_spatial_angle_deg": 3.56,
+    "reported_spatial_distance_m": 0.843
+  },
+  {
+    "id": 20,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.0,
+      11.0,
+      8.6
+    ],
+    "reference_azimuth_deg": 90.0,
+    "reference_elevation_deg": 38.02,
+    "array_xyz_m": [
+      -0.09,
+      10.99,
+      8.92
+    ],
+    "array_azimuth_deg": 90.47,
+    "array_elevation_deg": 39.06,
+    "reported_azimuth_error_deg": "0.47",
+    "reported_spatial_angle_deg": 1.11,
+    "reported_spatial_distance_m": 0.333
+  },
+  {
+    "id": 21,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.31,
+      -2.98,
+      1.3
+    ],
+    "reference_azimuth_deg": 275.94,
+    "reference_elevation_deg": 23.46,
+    "array_xyz_m": [
+      0.29,
+      -2.92,
+      1.11
+    ],
+    "array_azimuth_deg": 275.67,
+    "array_elevation_deg": 20.72,
+    "reported_azimuth_error_deg": "0.27",
+    "reported_spatial_angle_deg": 2.75,
+    "reported_spatial_distance_m": 0.2
+  },
+  {
+    "id": 22,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.31,
+      -2.98,
+      4.3
+    ],
+    "reference_azimuth_deg": 275.94,
+    "reference_elevation_deg": 55.13,
+    "array_xyz_m": [
+      0.41,
+      -2.83,
+      4.37
+    ],
+    "array_azimuth_deg": 278.24,
+    "array_elevation_deg": 56.8,
+    "reported_azimuth_error_deg": "2.30",
+    "reported_spatial_angle_deg": 2.11,
+    "reported_spatial_distance_m": 0.193
+  },
+  {
+    "id": 23,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.31,
+      -2.98,
+      5.1
+    ],
+    "reference_azimuth_deg": 275.94,
+    "reference_elevation_deg": 59.57,
+    "array_xyz_m": [
+      0.32,
+      -2.89,
+      5.3
+    ],
+    "array_azimuth_deg": 276.32,
+    "array_elevation_deg": 61.25,
+    "reported_azimuth_error_deg": "0.38",
+    "reported_spatial_angle_deg": 1.69,
+    "reported_spatial_distance_m": 0.22
+  },
+  {
+    "id": 24,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.31,
+      -2.98,
+      6.9
+    ],
+    "reference_azimuth_deg": 275.94,
+    "reference_elevation_deg": 66.53,
+    "array_xyz_m": [
+      0.22,
+      -2.48,
+      6.92
+    ],
+    "array_azimuth_deg": 275.07,
+    "array_elevation_deg": 70.21,
+    "reported_azimuth_error_deg": "0.87",
+    "reported_spatial_angle_deg": 3.7,
+    "reported_spatial_distance_m": 0.508
+  },
+  {
+    "id": 25,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      0.31,
+      -2.98,
+      8.2
+    ],
+    "reference_azimuth_deg": 275.94,
+    "reference_elevation_deg": 69.93,
+    "array_xyz_m": [
+      0.5,
+      -2.77,
+      8.31
+    ],
+    "array_azimuth_deg": 280.23,
+    "array_elevation_deg": 71.29,
+    "reported_azimuth_error_deg": "4.29",
+    "reported_spatial_angle_deg": 1.97,
+    "reported_spatial_distance_m": 0.304
+  },
+  {
+    "id": 26,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      -0.31,
+      2.98,
+      1.8
+    ],
+    "reference_azimuth_deg": 95.94,
+    "reference_elevation_deg": 31.0,
+    "array_xyz_m": [
+      -0.34,
+      3.02,
+      1.87
+    ],
+    "array_azimuth_deg": 96.42,
+    "array_elevation_deg": 31.6,
+    "reported_azimuth_error_deg": "0.48",
+    "reported_spatial_angle_deg": 0.74,
+    "reported_spatial_distance_m": 0.086
+  },
+  {
+    "id": 27,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      -0.31,
+      2.98,
+      3.7
+    ],
+    "reference_azimuth_deg": 95.94,
+    "reference_elevation_deg": 51.0,
+    "array_xyz_m": [
+      -0.25,
+      3.09,
+      3.72
+    ],
+    "array_azimuth_deg": 94.63,
+    "array_elevation_deg": 50.19,
+    "reported_azimuth_error_deg": "1.31",
+    "reported_spatial_angle_deg": 1.16,
+    "reported_spatial_distance_m": 0.127
+  },
+  {
+    "id": 28,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      -0.31,
+      2.98,
+      5.6
+    ],
+    "reference_azimuth_deg": 95.94,
+    "reference_elevation_deg": 61.85,
+    "array_xyz_m": [
+      -0.33,
+      3.34,
+      5.34
+    ],
+    "array_azimuth_deg": 95.64,
+    "array_elevation_deg": 57.85,
+    "reported_azimuth_error_deg": "0.30",
+    "reported_spatial_angle_deg": 4.01,
+    "reported_spatial_distance_m": 0.445
+  },
+  {
+    "id": 29,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      -0.31,
+      2.98,
+      6.4
+    ],
+    "reference_azimuth_deg": 95.94,
+    "reference_elevation_deg": 64.91,
+    "array_xyz_m": [
+      -0.39,
+      3.32,
+      6.61
+    ],
+    "array_azimuth_deg": 96.7,
+    "array_elevation_deg": 63.17,
+    "reported_azimuth_error_deg": "0.76",
+    "reported_spatial_angle_deg": 1.77,
+    "reported_spatial_distance_m": 0.408
+  },
+  {
+    "id": 30,
+    "pdf_page": 1,
+    "reference_xyz_m": [
+      -0.31,
+      2.98,
+      10.0
+    ],
+    "reference_azimuth_deg": 95.94,
+    "reference_elevation_deg": 73.32,
+    "array_xyz_m": [
+      -0.3,
+      2.81,
+      10.0
+    ],
+    "array_azimuth_deg": 96.09,
+    "array_elevation_deg": 74.22,
+    "reported_azimuth_error_deg": "0.15",
+    "reported_spatial_angle_deg": 0.9,
+    "reported_spatial_distance_m": 0.17
+  },
+  {
+    "id": 31,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.5,
+      -0.87,
+      1.3
+    ],
+    "reference_azimuth_deg": 299.89,
+    "reference_elevation_deg": 52.34,
+    "array_xyz_m": [
+      0.5,
+      -0.91,
+      1.26
+    ],
+    "array_azimuth_deg": 298.79,
+    "array_elevation_deg": 50.51,
+    "reported_azimuth_error_deg": "1.10",
+    "reported_spatial_angle_deg": 1.95,
+    "reported_spatial_distance_m": 0.057
+  },
+  {
+    "id": 32,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.5,
+      -0.87,
+      4.0
+    ],
+    "reference_azimuth_deg": 299.89,
+    "reference_elevation_deg": 75.92,
+    "array_xyz_m": [
+      0.62,
+      -1.0,
+      4.06
+    ],
+    "array_azimuth_deg": 301.8,
+    "array_elevation_deg": 73.84,
+    "reported_azimuth_error_deg": "1.91",
+    "reported_spatial_angle_deg": 2.14,
+    "reported_spatial_distance_m": 0.187
+  },
+  {
+    "id": 33,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.5,
+      -0.87,
+      5.0
+    ],
+    "reference_azimuth_deg": 299.89,
+    "reference_elevation_deg": 78.65,
+    "array_xyz_m": [
+      0.58,
+      -0.95,
+      4.87
+    ],
+    "array_azimuth_deg": 301.41,
+    "array_elevation_deg": 77.13,
+    "reported_azimuth_error_deg": "1.52",
+    "reported_spatial_angle_deg": 1.56,
+    "reported_spatial_distance_m": 0.172
+  },
+  {
+    "id": 34,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.5,
+      -0.87,
+      7.9
+    ],
+    "reference_azimuth_deg": 299.89,
+    "reference_elevation_deg": 82.76,
+    "array_xyz_m": [
+      0.43,
+      -0.81,
+      8.08
+    ],
+    "array_azimuth_deg": 297.96,
+    "array_elevation_deg": 83.52,
+    "reported_azimuth_error_deg": "1.92",
+    "reported_spatial_angle_deg": 0.8,
+    "reported_spatial_distance_m": 0.202
+  },
+  {
+    "id": 35,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.5,
+      -0.87,
+      9.7
+    ],
+    "reference_azimuth_deg": 299.89,
+    "reference_elevation_deg": 84.09,
+    "array_xyz_m": [
+      0.18,
+      -0.3,
+      9.77
+    ],
+    "array_azimuth_deg": 300.96,
+    "array_elevation_deg": 87.95,
+    "reported_azimuth_error_deg": "1.08",
+    "reported_spatial_angle_deg": 3.86,
+    "reported_spatial_distance_m": 0.657
+  },
+  {
+    "id": 36,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.5,
+      0.87,
+      1.4
+    ],
+    "reference_azimuth_deg": 60.11,
+    "reference_elevation_deg": 54.37,
+    "array_xyz_m": [
+      0.49,
+      0.9,
+      1.46
+    ],
+    "array_azimuth_deg": 61.43,
+    "array_elevation_deg": 54.94,
+    "reported_azimuth_error_deg": "1.32",
+    "reported_spatial_angle_deg": 0.95,
+    "reported_spatial_distance_m": 0.068
+  },
+  {
+    "id": 37,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.5,
+      0.87,
+      4.2
+    ],
+    "reference_azimuth_deg": 60.11,
+    "reference_elevation_deg": 76.56,
+    "array_xyz_m": [
+      0.44,
+      0.63,
+      3.63
+    ],
+    "array_azimuth_deg": 55.07,
+    "array_elevation_deg": 78.05,
+    "reported_azimuth_error_deg": "5.04",
+    "reported_spatial_angle_deg": 1.85,
+    "reported_spatial_distance_m": 0.621
+  },
+  {
+    "id": 38,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.5,
+      0.87,
+      6.1
+    ],
+    "reference_azimuth_deg": 60.11,
+    "reference_elevation_deg": 80.66,
+    "array_xyz_m": [
+      0.45,
+      0.84,
+      6.25
+    ],
+    "array_azimuth_deg": 61.82,
+    "array_elevation_deg": 81.33,
+    "reported_azimuth_error_deg": "1.71",
+    "reported_spatial_angle_deg": 0.72,
+    "reported_spatial_distance_m": 0.161
+  },
+  {
+    "id": 39,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.5,
+      0.87,
+      6.6
+    ],
+    "reference_azimuth_deg": 60.11,
+    "reference_elevation_deg": 81.36,
+    "array_xyz_m": [
+      0.71,
+      1.13,
+      6.32
+    ],
+    "array_azimuth_deg": 57.86,
+    "array_elevation_deg": 78.08,
+    "reported_azimuth_error_deg": "2.26",
+    "reported_spatial_angle_deg": 3.3,
+    "reported_spatial_distance_m": 0.436
+  },
+  {
+    "id": 40,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.5,
+      0.87,
+      8.6
+    ],
+    "reference_azimuth_deg": 60.11,
+    "reference_elevation_deg": 83.34,
+    "array_xyz_m": [
+      0.43,
+      0.74,
+      8.61
+    ],
+    "array_azimuth_deg": 59.84,
+    "array_elevation_deg": 84.32,
+    "reported_azimuth_error_deg": "0.27",
+    "reported_spatial_angle_deg": 0.98,
+    "reported_spatial_distance_m": 0.148
+  },
+  {
+    "id": 41,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      -0.5,
+      -0.87,
+      1.1
+    ],
+    "reference_azimuth_deg": 240.11,
+    "reference_elevation_deg": 47.63,
+    "array_xyz_m": [
+      -0.51,
+      -0.87,
+      1.05
+    ],
+    "array_azimuth_deg": 239.62,
+    "array_elevation_deg": 46.16,
+    "reported_azimuth_error_deg": "0.49",
+    "reported_spatial_angle_deg": 1.51,
+    "reported_spatial_distance_m": 0.051
+  },
+  {
+    "id": 42,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      -0.5,
+      -0.87,
+      2.9
+    ],
+    "reference_azimuth_deg": 240.11,
+    "reference_elevation_deg": 70.91,
+    "array_xyz_m": [
+      -0.57,
+      -0.93,
+      2.95
+    ],
+    "array_azimuth_deg": 238.5,
+    "array_elevation_deg": 69.71,
+    "reported_azimuth_error_deg": "1.62",
+    "reported_spatial_angle_deg": 1.32,
+    "reported_spatial_distance_m": 0.105
+  },
+  {
+    "id": 43,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      -0.5,
+      -0.87,
+      6.0
+    ],
+    "reference_azimuth_deg": 240.11,
+    "reference_elevation_deg": 80.51,
+    "array_xyz_m": [
+      -0.57,
+      -0.97,
+      5.77
+    ],
+    "array_azimuth_deg": 239.56,
+    "array_elevation_deg": 78.97,
+    "reported_azimuth_error_deg": "0.55",
+    "reported_spatial_angle_deg": 1.54,
+    "reported_spatial_distance_m": 0.26
+  },
+  {
+    "id": 44,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      -0.5,
+      -0.87,
+      7.8
+    ],
+    "reference_azimuth_deg": 240.11,
+    "reference_elevation_deg": 82.67,
+    "array_xyz_m": [
+      -0.53,
+      -0.88,
+      7.29
+    ],
+    "array_azimuth_deg": 238.94,
+    "array_elevation_deg": 81.98,
+    "reported_azimuth_error_deg": "1.17",
+    "reported_spatial_angle_deg": 0.71,
+    "reported_spatial_distance_m": 0.511
+  },
+  {
+    "id": 45,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      -0.5,
+      -0.87,
+      8.7
+    ],
+    "reference_azimuth_deg": 240.11,
+    "reference_elevation_deg": 83.42,
+    "array_xyz_m": [
+      -0.16,
+      -0.29,
+      8.82
+    ],
+    "array_azimuth_deg": 241.11,
+    "array_elevation_deg": 87.85,
+    "reported_azimuth_error_deg": "1.00",
+    "reported_spatial_angle_deg": 4.43,
+    "reported_spatial_distance_m": 0.683
+  },
+  {
+    "id": 46,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      -0.5,
+      0.87,
+      1.3
+    ],
+    "reference_azimuth_deg": 119.89,
+    "reference_elevation_deg": 52.34,
+    "array_xyz_m": [
+      -0.5,
+      0.86,
+      1.28
+    ],
+    "array_azimuth_deg": 120.17,
+    "array_elevation_deg": 52.15,
+    "reported_azimuth_error_deg": "0.29",
+    "reported_spatial_angle_deg": 0.26,
+    "reported_spatial_distance_m": 0.022
+  },
+  {
+    "id": 47,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      -0.5,
+      0.87,
+      4.3
+    ],
+    "reference_azimuth_deg": 119.89,
+    "reference_elevation_deg": 76.86,
+    "array_xyz_m": [
+      -0.44,
+      0.79,
+      4.63
+    ],
+    "array_azimuth_deg": 119.12,
+    "array_elevation_deg": 78.95,
+    "reported_azimuth_error_deg": "0.77",
+    "reported_spatial_angle_deg": 2.09,
+    "reported_spatial_distance_m": 0.345
+  },
+  {
+    "id": 48,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      -0.5,
+      0.87,
+      4.6
+    ],
+    "reference_azimuth_deg": 119.89,
+    "reference_elevation_deg": 77.69,
+    "array_xyz_m": [
+      -0.44,
+      0.73,
+      4.56
+    ],
+    "array_azimuth_deg": 121.08,
+    "array_elevation_deg": 79.41,
+    "reported_azimuth_error_deg": "1.19",
+    "reported_spatial_angle_deg": 1.73,
+    "reported_spatial_distance_m": 0.157
+  },
+  {
+    "id": 49,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      -0.5,
+      0.87,
+      6.9
+    ],
+    "reference_azimuth_deg": 119.89,
+    "reference_elevation_deg": 81.73,
+    "array_xyz_m": [
+      -0.61,
+      1.02,
+      6.78
+    ],
+    "array_azimuth_deg": 120.88,
+    "array_elevation_deg": 80.06,
+    "reported_azimuth_error_deg": "0.99",
+    "reported_spatial_angle_deg": 1.68,
+    "reported_spatial_distance_m": 0.221
+  },
+  {
+    "id": 50,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      -0.5,
+      0.87,
+      8.5
+    ],
+    "reference_azimuth_deg": 119.89,
+    "reference_elevation_deg": 83.27,
+    "array_xyz_m": [
+      -0.71,
+      1.12,
+      8.21
+    ],
+    "array_azimuth_deg": 122.37,
+    "array_elevation_deg": 80.82,
+    "reported_azimuth_error_deg": "2.49",
+    "reported_spatial_angle_deg": 2.47,
+    "reported_spatial_distance_m": 0.437
+  },
+  {
+    "id": 51,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.87,
+      -0.5,
+      1.0
+    ],
+    "reference_azimuth_deg": 330.11,
+    "reference_elevation_deg": 44.9,
+    "array_xyz_m": [
+      0.79,
+      -0.48,
+      0.94
+    ],
+    "array_azimuth_deg": 328.72,
+    "array_elevation_deg": 45.48,
+    "reported_azimuth_error_deg": "1.40",
+    "reported_spatial_angle_deg": 1.14,
+    "reported_spatial_distance_m": 0.102
+  },
+  {
+    "id": 52,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.87,
+      -0.5,
+      3.1
+    ],
+    "reference_azimuth_deg": 330.11,
+    "reference_elevation_deg": 72.06,
+    "array_xyz_m": [
+      0.98,
+      -0.6,
+      3.16
+    ],
+    "array_azimuth_deg": 328.52,
+    "array_elevation_deg": 70.02,
+    "reported_azimuth_error_deg": "1.59",
+    "reported_spatial_angle_deg": 2.11,
+    "reported_spatial_distance_m": 0.16
+  },
+  {
+    "id": 53,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.87,
+      -0.5,
+      5.0
+    ],
+    "reference_azimuth_deg": 330.11,
+    "reference_elevation_deg": 78.65,
+    "array_xyz_m": [
+      0.91,
+      -0.54,
+      4.93
+    ],
+    "array_azimuth_deg": 329.31,
+    "array_elevation_deg": 77.89,
+    "reported_azimuth_error_deg": "0.80",
+    "reported_spatial_angle_deg": 0.78,
+    "reported_spatial_distance_m": 0.09
+  },
+  {
+    "id": 54,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.87,
+      -0.5,
+      6.8
+    ],
+    "reference_azimuth_deg": 330.11,
+    "reference_elevation_deg": 81.61,
+    "array_xyz_m": [
+      0.95,
+      -0.51,
+      7.39
+    ],
+    "array_azimuth_deg": 331.77,
+    "array_elevation_deg": 81.7,
+    "reported_azimuth_error_deg": "1.66",
+    "reported_spatial_angle_deg": 0.26,
+    "reported_spatial_distance_m": 0.595
+  },
+  {
+    "id": 55,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.87,
+      -0.5,
+      10.0
+    ],
+    "reference_azimuth_deg": 330.11,
+    "reference_elevation_deg": 84.27,
+    "array_xyz_m": [
+      1.16,
+      -0.63,
+      9.51
+    ],
+    "array_azimuth_deg": 331.49,
+    "array_elevation_deg": 82.1,
+    "reported_azimuth_error_deg": "1.38",
+    "reported_spatial_angle_deg": 2.18,
+    "reported_spatial_distance_m": 0.584
+  },
+  {
+    "id": 56,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.87,
+      0.5,
+      1.1
+    ],
+    "reference_azimuth_deg": 29.89,
+    "reference_elevation_deg": 47.63,
+    "array_xyz_m": [
+      0.78,
+      0.46,
+      0.99
+    ],
+    "array_azimuth_deg": 30.53,
+    "array_elevation_deg": 47.55,
+    "reported_azimuth_error_deg": "0.64",
+    "reported_spatial_angle_deg": 0.44,
+    "reported_spatial_distance_m": 0.148
+  },
+  {
+    "id": 57,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.87,
+      0.5,
+      3.5
+    ],
+    "reference_azimuth_deg": 29.89,
+    "reference_elevation_deg": 74.0,
+    "array_xyz_m": [
+      0.9,
+      0.5,
+      3.55
+    ],
+    "array_azimuth_deg": 29.05,
+    "array_elevation_deg": 73.83,
+    "reported_azimuth_error_deg": "0.83",
+    "reported_spatial_angle_deg": 0.29,
+    "reported_spatial_distance_m": 0.058
+  },
+  {
+    "id": 58,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.87,
+      0.5,
+      5.4
+    ],
+    "reference_azimuth_deg": 29.89,
+    "reference_elevation_deg": 79.47,
+    "array_xyz_m": [
+      1.03,
+      0.6,
+      5.39
+    ],
+    "array_azimuth_deg": 30.22,
+    "array_elevation_deg": 77.53,
+    "reported_azimuth_error_deg": "0.34",
+    "reported_spatial_angle_deg": 1.94,
+    "reported_spatial_distance_m": 0.189
+  },
+  {
+    "id": 59,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.87,
+      0.5,
+      7.4
+    ],
+    "reference_azimuth_deg": 29.89,
+    "reference_elevation_deg": 82.28,
+    "array_xyz_m": [
+      0.65,
+      0.4,
+      7.3
+    ],
+    "array_azimuth_deg": 31.61,
+    "array_elevation_deg": 84.03,
+    "reported_azimuth_error_deg": "1.72",
+    "reported_spatial_angle_deg": 1.77,
+    "reported_spatial_distance_m": 0.262
+  },
+  {
+    "id": 60,
+    "pdf_page": 2,
+    "reference_xyz_m": [
+      0.87,
+      0.5,
+      8.6
+    ],
+    "reference_azimuth_deg": 29.89,
+    "reference_elevation_deg": 83.34,
+    "array_xyz_m": [
+      1.07,
+      0.57,
+      8.35
+    ],
+    "array_azimuth_deg": 28.04,
+    "array_elevation_deg": 81.74,
+    "reported_azimuth_error_deg": "1.84",
+    "reported_spatial_angle_deg": 1.62,
+    "reported_spatial_distance_m": 0.328
+  },
+  {
+    "id": 61,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.87,
+      -0.5,
+      2.0
+    ],
+    "reference_azimuth_deg": 209.89,
+    "reference_elevation_deg": 63.36,
+    "array_xyz_m": [
+      -0.88,
+      -0.48,
+      1.86
+    ],
+    "array_azimuth_deg": 208.61,
+    "array_elevation_deg": 61.68,
+    "reported_azimuth_error_deg": "1.28",
+    "reported_spatial_angle_deg": 1.78,
+    "reported_spatial_distance_m": 0.142
+  },
+  {
+    "id": 62,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.87,
+      -0.5,
+      3.5
+    ],
+    "reference_azimuth_deg": 209.89,
+    "reference_elevation_deg": 74.0,
+    "array_xyz_m": [
+      -0.9,
+      -0.55,
+      3.55
+    ],
+    "array_azimuth_deg": 211.43,
+    "array_elevation_deg": 73.45,
+    "reported_azimuth_error_deg": "1.54",
+    "reported_spatial_angle_deg": 0.7,
+    "reported_spatial_distance_m": 0.077
+  },
+  {
+    "id": 63,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.87,
+      -0.5,
+      6.0
+    ],
+    "reference_azimuth_deg": 209.89,
+    "reference_elevation_deg": 80.51,
+    "array_xyz_m": [
+      -0.7,
+      -0.43,
+      6.2
+    ],
+    "array_azimuth_deg": 211.56,
+    "array_elevation_deg": 82.45,
+    "reported_azimuth_error_deg": "1.68",
+    "reported_spatial_angle_deg": 1.96,
+    "reported_spatial_distance_m": 0.272
+  },
+  {
+    "id": 64,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.87,
+      -0.5,
+      7.7
+    ],
+    "reference_azimuth_deg": 209.89,
+    "reference_elevation_deg": 82.58,
+    "array_xyz_m": [
+      -0.98,
+      -0.6,
+      7.72
+    ],
+    "array_azimuth_deg": 211.48,
+    "array_elevation_deg": 81.53,
+    "reported_azimuth_error_deg": "1.59",
+    "reported_spatial_angle_deg": 1.06,
+    "reported_spatial_distance_m": 0.15
+  },
+  {
+    "id": 65,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.87,
+      -0.5,
+      9.8
+    ],
+    "reference_azimuth_deg": 209.89,
+    "reference_elevation_deg": 84.15,
+    "array_xyz_m": [
+      -0.91,
+      -0.52,
+      10.0
+    ],
+    "array_azimuth_deg": 209.74,
+    "array_elevation_deg": 84.02,
+    "reported_azimuth_error_deg": "0.14",
+    "reported_spatial_angle_deg": 0.14,
+    "reported_spatial_distance_m": 0.205
+  },
+  {
+    "id": 66,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.87,
+      0.5,
+      2.0
+    ],
+    "reference_azimuth_deg": 150.11,
+    "reference_elevation_deg": 63.36,
+    "array_xyz_m": [
+      -0.83,
+      0.5,
+      1.99
+    ],
+    "array_azimuth_deg": 148.93,
+    "array_elevation_deg": 64.04,
+    "reported_azimuth_error_deg": "1.18",
+    "reported_spatial_angle_deg": 0.86,
+    "reported_spatial_distance_m": 0.041
+  },
+  {
+    "id": 67,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.87,
+      0.5,
+      3.5
+    ],
+    "reference_azimuth_deg": 150.11,
+    "reference_elevation_deg": 74.0,
+    "array_xyz_m": [
+      -0.91,
+      0.53,
+      3.21
+    ],
+    "array_azimuth_deg": 149.78,
+    "array_elevation_deg": 71.84,
+    "reported_azimuth_error_deg": "0.33",
+    "reported_spatial_angle_deg": 2.17,
+    "reported_spatial_distance_m": 0.294
+  },
+  {
+    "id": 68,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.87,
+      0.5,
+      5.1
+    ],
+    "reference_azimuth_deg": 150.11,
+    "reference_elevation_deg": 78.87,
+    "array_xyz_m": [
+      -0.66,
+      0.36,
+      5.14
+    ],
+    "array_azimuth_deg": 151.39,
+    "array_elevation_deg": 81.68,
+    "reported_azimuth_error_deg": "1.28",
+    "reported_spatial_angle_deg": 2.82,
+    "reported_spatial_distance_m": 0.256
+  },
+  {
+    "id": 69,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.87,
+      0.5,
+      7.3
+    ],
+    "reference_azimuth_deg": 150.11,
+    "reference_elevation_deg": 82.17,
+    "array_xyz_m": [
+      -0.53,
+      0.33,
+      7.21
+    ],
+    "array_azimuth_deg": 148.09,
+    "array_elevation_deg": 85.05,
+    "reported_azimuth_error_deg": "2.02",
+    "reported_spatial_angle_deg": 2.89,
+    "reported_spatial_distance_m": 0.391
+  },
+  {
+    "id": 70,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.87,
+      0.5,
+      9.2
+    ],
+    "reference_azimuth_deg": 150.11,
+    "reference_elevation_deg": 83.78,
+    "array_xyz_m": [
+      -0.75,
+      0.42,
+      9.01
+    ],
+    "array_azimuth_deg": 150.75,
+    "array_elevation_deg": 84.55,
+    "reported_azimuth_error_deg": "0.64",
+    "reported_spatial_angle_deg": 0.78,
+    "reported_spatial_distance_m": 0.239
+  },
+  {
+    "id": 71,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      0.94,
+      8.95,
+      1.1
+    ],
+    "reference_azimuth_deg": 84.0,
+    "reference_elevation_deg": 6.97,
+    "array_xyz_m": [
+      0.48,
+      8.79,
+      0.28
+    ],
+    "array_azimuth_deg": 86.87,
+    "array_elevation_deg": 1.82,
+    "reported_azimuth_error_deg": "2.87",
+    "reported_spatial_angle_deg": 5.89,
+    "reported_spatial_distance_m": 0.954
+  },
+  {
+    "id": 72,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      0.94,
+      8.95,
+      3.2
+    ],
+    "reference_azimuth_deg": 84.0,
+    "reference_elevation_deg": 19.57,
+    "array_xyz_m": [
+      1.65,
+      9.17,
+      3.47
+    ],
+    "array_azimuth_deg": 79.8,
+    "array_elevation_deg": 20.43,
+    "reported_azimuth_error_deg": "4.20",
+    "reported_spatial_angle_deg": 4.04,
+    "reported_spatial_distance_m": 0.791
+  },
+  {
+    "id": 73,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      0.94,
+      8.95,
+      5.6
+    ],
+    "reference_azimuth_deg": 84.0,
+    "reference_elevation_deg": 31.89,
+    "array_xyz_m": [
+      0.83,
+      8.91,
+      5.9
+    ],
+    "array_azimuth_deg": 84.68,
+    "array_elevation_deg": 33.4,
+    "reported_azimuth_error_deg": "0.67",
+    "reported_spatial_angle_deg": 1.61,
+    "reported_spatial_distance_m": 0.322
+  },
+  {
+    "id": 74,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      0.94,
+      8.95,
+      7.5
+    ],
+    "reference_azimuth_deg": 84.0,
+    "reference_elevation_deg": 39.81,
+    "array_xyz_m": [
+      1.27,
+      8.97,
+      8.01
+    ],
+    "array_azimuth_deg": 81.94,
+    "array_elevation_deg": 41.48,
+    "reported_azimuth_error_deg": "2.06",
+    "reported_spatial_angle_deg": 2.29,
+    "reported_spatial_distance_m": 0.608
+  },
+  {
+    "id": 75,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      0.94,
+      8.95,
+      8.5
+    ],
+    "reference_azimuth_deg": 84.0,
+    "reference_elevation_deg": 43.37,
+    "array_xyz_m": [
+      0.93,
+      9.26,
+      7.88
+    ],
+    "array_azimuth_deg": 84.26,
+    "array_elevation_deg": 40.26,
+    "reported_azimuth_error_deg": "0.26",
+    "reported_spatial_angle_deg": 3.12,
+    "reported_spatial_distance_m": 0.693
+  },
+  {
+    "id": 76,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.94,
+      -8.95,
+      1.5
+    ],
+    "reference_azimuth_deg": 264.0,
+    "reference_elevation_deg": 9.46,
+    "array_xyz_m": [
+      -1.04,
+      -8.77,
+      1.07
+    ],
+    "array_azimuth_deg": 263.24,
+    "array_elevation_deg": 6.91,
+    "reported_azimuth_error_deg": "0.77",
+    "reported_spatial_angle_deg": 2.67,
+    "reported_spatial_distance_m": 0.477
+  },
+  {
+    "id": 77,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.94,
+      -8.95,
+      4.1
+    ],
+    "reference_azimuth_deg": 264.0,
+    "reference_elevation_deg": 24.49,
+    "array_xyz_m": [
+      -1.19,
+      -8.88,
+      4.01
+    ],
+    "array_azimuth_deg": 262.37,
+    "array_elevation_deg": 24.11,
+    "reported_azimuth_error_deg": "1.64",
+    "reported_spatial_angle_deg": 1.54,
+    "reported_spatial_distance_m": 0.275
+  },
+  {
+    "id": 78,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.94,
+      -8.95,
+      5.4
+    ],
+    "reference_azimuth_deg": 264.0,
+    "reference_elevation_deg": 30.97,
+    "array_xyz_m": [
+      -0.61,
+      -9.31,
+      4.76
+    ],
+    "array_azimuth_deg": 266.25,
+    "array_elevation_deg": 27.03,
+    "reported_azimuth_error_deg": "2.25",
+    "reported_spatial_angle_deg": 4.4,
+    "reported_spatial_distance_m": 0.805
+  },
+  {
+    "id": 79,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.94,
+      -8.95,
+      7.9
+    ],
+    "reference_azimuth_deg": 264.0,
+    "reference_elevation_deg": 41.28,
+    "array_xyz_m": [
+      -0.6,
+      -8.48,
+      8.37
+    ],
+    "array_azimuth_deg": 265.95,
+    "array_elevation_deg": 44.55,
+    "reported_azimuth_error_deg": "1.95",
+    "reported_spatial_angle_deg": 3.57,
+    "reported_spatial_distance_m": 0.747
+  },
+  {
+    "id": 80,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -0.94,
+      -8.95,
+      9.0
+    ],
+    "reference_azimuth_deg": 264.0,
+    "reference_elevation_deg": 45.0,
+    "array_xyz_m": [
+      -1.1,
+      -8.8,
+      9.52
+    ],
+    "array_azimuth_deg": 262.87,
+    "array_elevation_deg": 47.03,
+    "reported_azimuth_error_deg": "1.13",
+    "reported_spatial_angle_deg": 2.17,
+    "reported_spatial_distance_m": 0.564
+  },
+  {
+    "id": 81,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      1.0,
+      0.0,
+      1.2
+    ],
+    "reference_azimuth_deg": 0.0,
+    "reference_elevation_deg": 50.19,
+    "array_xyz_m": [
+      1.04,
+      0.0,
+      1.24
+    ],
+    "array_azimuth_deg": 0.0,
+    "array_elevation_deg": 50.01,
+    "reported_azimuth_error_deg": "<0.01",
+    "reported_spatial_angle_deg": 0.18,
+    "reported_spatial_distance_m": 0.057
+  },
+  {
+    "id": 82,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      1.0,
+      0.0,
+      3.1
+    ],
+    "reference_azimuth_deg": 0.0,
+    "reference_elevation_deg": 72.12,
+    "array_xyz_m": [
+      1.05,
+      0.04,
+      3.15
+    ],
+    "array_azimuth_deg": 2.18,
+    "array_elevation_deg": 71.55,
+    "reported_azimuth_error_deg": "2.18",
+    "reported_spatial_angle_deg": 0.89,
+    "reported_spatial_distance_m": 0.081
+  },
+  {
+    "id": 83,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      1.0,
+      0.0,
+      5.8
+    ],
+    "reference_azimuth_deg": 0.0,
+    "reference_elevation_deg": 80.22,
+    "array_xyz_m": [
+      1.0,
+      -0.01,
+      5.85
+    ],
+    "array_azimuth_deg": 359.43,
+    "array_elevation_deg": 80.3,
+    "reported_azimuth_error_deg": "0.57",
+    "reported_spatial_angle_deg": 0.13,
+    "reported_spatial_distance_m": 0.051
+  },
+  {
+    "id": 84,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      1.0,
+      0.0,
+      6.5
+    ],
+    "reference_azimuth_deg": 0.0,
+    "reference_elevation_deg": 81.25,
+    "array_xyz_m": [
+      0.96,
+      0.03,
+      6.5
+    ],
+    "array_azimuth_deg": 1.79,
+    "array_elevation_deg": 81.59,
+    "reported_azimuth_error_deg": "1.79",
+    "reported_spatial_angle_deg": 0.43,
+    "reported_spatial_distance_m": 0.05
+  },
+  {
+    "id": 85,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      1.0,
+      0.0,
+      8.3
+    ],
+    "reference_azimuth_deg": 0.0,
+    "reference_elevation_deg": 83.13,
+    "array_xyz_m": [
+      1.21,
+      0.0,
+      7.64
+    ],
+    "array_azimuth_deg": 0.0,
+    "array_elevation_deg": 81.0,
+    "reported_azimuth_error_deg": "<0.01",
+    "reported_spatial_angle_deg": 2.13,
+    "reported_spatial_distance_m": 0.693
+  },
+  {
+    "id": 86,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -1.0,
+      0.0,
+      1.0
+    ],
+    "reference_azimuth_deg": 180.0,
+    "reference_elevation_deg": 45.0,
+    "array_xyz_m": [
+      -0.92,
+      0.02,
+      0.86
+    ],
+    "array_azimuth_deg": 178.75,
+    "array_elevation_deg": 43.06,
+    "reported_azimuth_error_deg": "1.25",
+    "reported_spatial_angle_deg": 2.13,
+    "reported_spatial_distance_m": 0.162
+  },
+  {
+    "id": 87,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -1.0,
+      0.0,
+      3.3
+    ],
+    "reference_azimuth_deg": 180.0,
+    "reference_elevation_deg": 73.14,
+    "array_xyz_m": [
+      -1.05,
+      0.01,
+      3.43
+    ],
+    "array_azimuth_deg": 179.45,
+    "array_elevation_deg": 72.98,
+    "reported_azimuth_error_deg": "0.55",
+    "reported_spatial_angle_deg": 0.23,
+    "reported_spatial_distance_m": 0.14
+  },
+  {
+    "id": 88,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -1.0,
+      0.0,
+      5.3
+    ],
+    "reference_azimuth_deg": 180.0,
+    "reference_elevation_deg": 79.32,
+    "array_xyz_m": [
+      -0.86,
+      -0.06,
+      5.55
+    ],
+    "array_azimuth_deg": 183.99,
+    "array_elevation_deg": 81.17,
+    "reported_azimuth_error_deg": "3.99",
+    "reported_spatial_angle_deg": 1.97,
+    "reported_spatial_distance_m": 0.293
+  },
+  {
+    "id": 89,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -1.0,
+      0.0,
+      7.7
+    ],
+    "reference_azimuth_deg": 180.0,
+    "reference_elevation_deg": 82.6,
+    "array_xyz_m": [
+      -0.65,
+      -0.01,
+      7.64
+    ],
+    "array_azimuth_deg": 180.88,
+    "array_elevation_deg": 85.14,
+    "reported_azimuth_error_deg": "0.88",
+    "reported_spatial_angle_deg": 2.54,
+    "reported_spatial_distance_m": 0.355
+  },
+  {
+    "id": 90,
+    "pdf_page": 3,
+    "reference_xyz_m": [
+      -1.0,
+      0.0,
+      9.1
+    ],
+    "reference_azimuth_deg": 180.0,
+    "reference_elevation_deg": 83.73,
+    "array_xyz_m": [
+      -1.26,
+      0.02,
+      9.5
+    ],
+    "array_azimuth_deg": 179.09,
+    "array_elevation_deg": 82.44,
+    "reported_azimuth_error_deg": "0.91",
+    "reported_spatial_angle_deg": 1.29,
+    "reported_spatial_distance_m": 0.477
+  },
+  {
+    "id": 91,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.04,
+      -4.89,
+      1.1
+    ],
+    "reference_azimuth_deg": 282.01,
+    "reference_elevation_deg": 12.41,
+    "array_xyz_m": [
+      0.84,
+      -4.8,
+      0.98
+    ],
+    "array_azimuth_deg": 279.93,
+    "array_elevation_deg": 11.37,
+    "reported_azimuth_error_deg": "2.08",
+    "reported_spatial_angle_deg": 2.29,
+    "reported_spatial_distance_m": 0.25
+  },
+  {
+    "id": 92,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.04,
+      -4.89,
+      3.8
+    ],
+    "reference_azimuth_deg": 282.01,
+    "reference_elevation_deg": 37.24,
+    "array_xyz_m": [
+      0.95,
+      -4.63,
+      4.2
+    ],
+    "array_azimuth_deg": 281.6,
+    "array_elevation_deg": 41.62,
+    "reported_azimuth_error_deg": "0.41",
+    "reported_spatial_angle_deg": 4.4,
+    "reported_spatial_distance_m": 0.485
+  },
+  {
+    "id": 93,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.04,
+      -4.89,
+      5.5
+    ],
+    "reference_azimuth_deg": 282.01,
+    "reference_elevation_deg": 47.73,
+    "array_xyz_m": [
+      1.2,
+      -5.04,
+      5.25
+    ],
+    "array_azimuth_deg": 283.39,
+    "array_elevation_deg": 45.38,
+    "reported_azimuth_error_deg": "1.39",
+    "reported_spatial_angle_deg": 2.54,
+    "reported_spatial_distance_m": 0.333
+  },
+  {
+    "id": 94,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.04,
+      -4.89,
+      6.5
+    ],
+    "reference_azimuth_deg": 282.01,
+    "reference_elevation_deg": 52.43,
+    "array_xyz_m": [
+      0.86,
+      -4.93,
+      6.45
+    ],
+    "array_azimuth_deg": 279.9,
+    "array_elevation_deg": 52.19,
+    "reported_azimuth_error_deg": "2.11",
+    "reported_spatial_angle_deg": 1.31,
+    "reported_spatial_distance_m": 0.191
+  },
+  {
+    "id": 95,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.04,
+      -4.89,
+      8.7
+    ],
+    "reference_azimuth_deg": 282.01,
+    "reference_elevation_deg": 60.12,
+    "array_xyz_m": [
+      1.04,
+      -4.57,
+      9.48
+    ],
+    "array_azimuth_deg": 282.82,
+    "array_elevation_deg": 63.69,
+    "reported_azimuth_error_deg": "0.81",
+    "reported_spatial_angle_deg": 3.6,
+    "reported_spatial_distance_m": 0.843
+  },
+  {
+    "id": 96,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.04,
+      4.89,
+      1.4
+    ],
+    "reference_azimuth_deg": 102.01,
+    "reference_elevation_deg": 15.64,
+    "array_xyz_m": [
+      -0.95,
+      4.98,
+      1.34
+    ],
+    "array_azimuth_deg": 100.8,
+    "array_elevation_deg": 14.81,
+    "reported_azimuth_error_deg": "1.21",
+    "reported_spatial_angle_deg": 1.43,
+    "reported_spatial_distance_m": 0.141
+  },
+  {
+    "id": 97,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.04,
+      4.89,
+      4.3
+    ],
+    "reference_azimuth_deg": 102.01,
+    "reference_elevation_deg": 40.7,
+    "array_xyz_m": [
+      -0.93,
+      4.53,
+      4.46
+    ],
+    "array_azimuth_deg": 101.6,
+    "array_elevation_deg": 43.96,
+    "reported_azimuth_error_deg": "0.41",
+    "reported_spatial_angle_deg": 3.28,
+    "reported_spatial_distance_m": 0.409
+  },
+  {
+    "id": 98,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.04,
+      4.89,
+      5.7
+    ],
+    "reference_azimuth_deg": 102.01,
+    "reference_elevation_deg": 48.75,
+    "array_xyz_m": [
+      -1.16,
+      4.57,
+      5.95
+    ],
+    "array_azimuth_deg": 104.24,
+    "array_elevation_deg": 51.61,
+    "reported_azimuth_error_deg": "2.24",
+    "reported_spatial_angle_deg": 3.2,
+    "reported_spatial_distance_m": 0.423
+  },
+  {
+    "id": 99,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.04,
+      4.89,
+      7.2
+    ],
+    "reference_azimuth_deg": 102.01,
+    "reference_elevation_deg": 55.23,
+    "array_xyz_m": [
+      -0.79,
+      5.11,
+      6.55
+    ],
+    "array_azimuth_deg": 98.79,
+    "array_elevation_deg": 51.71,
+    "reported_azimuth_error_deg": "3.22",
+    "reported_spatial_angle_deg": 4.0,
+    "reported_spatial_distance_m": 0.73
+  },
+  {
+    "id": 100,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.04,
+      4.89,
+      8.5
+    ],
+    "reference_azimuth_deg": 102.01,
+    "reference_elevation_deg": 59.54,
+    "array_xyz_m": [
+      -0.93,
+      5.22,
+      8.07
+    ],
+    "array_azimuth_deg": 100.1,
+    "array_elevation_deg": 56.69,
+    "reported_azimuth_error_deg": "1.90",
+    "reported_spatial_angle_deg": 3.02,
+    "reported_spatial_distance_m": 0.553
+  },
+  {
+    "id": 101,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.22,
+      2.74,
+      2.3
+    ],
+    "reference_azimuth_deg": 66.0,
+    "reference_elevation_deg": 37.48,
+    "array_xyz_m": [
+      1.32,
+      2.73,
+      2.12
+    ],
+    "array_azimuth_deg": 64.2,
+    "array_elevation_deg": 34.96,
+    "reported_azimuth_error_deg": "1.80",
+    "reported_spatial_angle_deg": 2.91,
+    "reported_spatial_distance_m": 0.206
+  },
+  {
+    "id": 102,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.22,
+      2.74,
+      3.8
+    ],
+    "reference_azimuth_deg": 66.0,
+    "reference_elevation_deg": 51.72,
+    "array_xyz_m": [
+      1.24,
+      2.82,
+      3.61
+    ],
+    "array_azimuth_deg": 66.26,
+    "array_elevation_deg": 49.52,
+    "reported_azimuth_error_deg": "0.27",
+    "reported_spatial_angle_deg": 2.2,
+    "reported_spatial_distance_m": 0.207
+  },
+  {
+    "id": 103,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.22,
+      2.74,
+      4.7
+    ],
+    "reference_azimuth_deg": 66.0,
+    "reference_elevation_deg": 57.46,
+    "array_xyz_m": [
+      1.24,
+      2.57,
+      4.4
+    ],
+    "array_azimuth_deg": 64.24,
+    "array_elevation_deg": 57.04,
+    "reported_azimuth_error_deg": "1.76",
+    "reported_spatial_angle_deg": 1.04,
+    "reported_spatial_distance_m": 0.345
+  },
+  {
+    "id": 104,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.22,
+      2.74,
+      6.7
+    ],
+    "reference_azimuth_deg": 66.0,
+    "reference_elevation_deg": 65.88,
+    "array_xyz_m": [
+      1.25,
+      2.9,
+      6.43
+    ],
+    "array_azimuth_deg": 66.68,
+    "array_elevation_deg": 63.84,
+    "reported_azimuth_error_deg": "0.68",
+    "reported_spatial_angle_deg": 2.06,
+    "reported_spatial_distance_m": 0.315
+  },
+  {
+    "id": 105,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.22,
+      2.74,
+      8.7
+    ],
+    "reference_azimuth_deg": 66.0,
+    "reference_elevation_deg": 70.98,
+    "array_xyz_m": [
+      1.54,
+      2.85,
+      8.56
+    ],
+    "array_azimuth_deg": 61.62,
+    "array_elevation_deg": 69.27,
+    "reported_azimuth_error_deg": "4.38",
+    "reported_spatial_angle_deg": 2.26,
+    "reported_spatial_distance_m": 0.366
+  },
+  {
+    "id": 106,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.22,
+      -2.74,
+      1.5
+    ],
+    "reference_azimuth_deg": 246.0,
+    "reference_elevation_deg": 26.57,
+    "array_xyz_m": [
+      -1.26,
+      -2.82,
+      1.57
+    ],
+    "array_azimuth_deg": 245.92,
+    "array_elevation_deg": 26.94,
+    "reported_azimuth_error_deg": "0.07",
+    "reported_spatial_angle_deg": 0.38,
+    "reported_spatial_distance_m": 0.114
+  },
+  {
+    "id": 107,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.22,
+      -2.74,
+      3.0
+    ],
+    "reference_azimuth_deg": 246.0,
+    "reference_elevation_deg": 45.01,
+    "array_xyz_m": [
+      -1.14,
+      -2.69,
+      2.98
+    ],
+    "array_azimuth_deg": 247.03,
+    "array_elevation_deg": 45.57,
+    "reported_azimuth_error_deg": "1.03",
+    "reported_spatial_angle_deg": 0.92,
+    "reported_spatial_distance_m": 0.096
+  },
+  {
+    "id": 108,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.22,
+      -2.74,
+      5.5
+    ],
+    "reference_azimuth_deg": 246.0,
+    "reference_elevation_deg": 61.39,
+    "array_xyz_m": [
+      -1.28,
+      -2.93,
+      5.37
+    ],
+    "array_azimuth_deg": 246.4,
+    "array_elevation_deg": 59.23,
+    "reported_azimuth_error_deg": "0.40",
+    "reported_spatial_angle_deg": 2.17,
+    "reported_spatial_distance_m": 0.238
+  },
+  {
+    "id": 109,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.22,
+      -2.74,
+      7.2
+    ],
+    "reference_azimuth_deg": 246.0,
+    "reference_elevation_deg": 67.38,
+    "array_xyz_m": [
+      -1.17,
+      -2.73,
+      7.26
+    ],
+    "array_azimuth_deg": 246.8,
+    "array_elevation_deg": 67.75,
+    "reported_azimuth_error_deg": "0.80",
+    "reported_spatial_angle_deg": 0.48,
+    "reported_spatial_distance_m": 0.079
+  },
+  {
+    "id": 110,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.22,
+      -2.74,
+      9.2
+    ],
+    "reference_azimuth_deg": 246.0,
+    "reference_elevation_deg": 71.94,
+    "array_xyz_m": [
+      -1.34,
+      -2.86,
+      9.41
+    ],
+    "array_azimuth_deg": 244.9,
+    "array_elevation_deg": 71.45,
+    "reported_azimuth_error_deg": "1.10",
+    "reported_spatial_angle_deg": 0.61,
+    "reported_spatial_distance_m": 0.27
+  },
+  {
+    "id": 111,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.46,
+      6.85,
+      2.3
+    ],
+    "reference_azimuth_deg": 77.97,
+    "reference_elevation_deg": 18.18,
+    "array_xyz_m": [
+      1.19,
+      6.98,
+      2.54
+    ],
+    "array_azimuth_deg": 80.32,
+    "array_elevation_deg": 19.73,
+    "reported_azimuth_error_deg": "2.36",
+    "reported_spatial_angle_deg": 2.72,
+    "reported_spatial_distance_m": 0.384
+  },
+  {
+    "id": 112,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.46,
+      6.85,
+      4.1
+    ],
+    "reference_azimuth_deg": 77.97,
+    "reference_elevation_deg": 30.34,
+    "array_xyz_m": [
+      1.61,
+      6.96,
+      3.94
+    ],
+    "array_azimuth_deg": 76.98,
+    "array_elevation_deg": 28.88,
+    "reported_azimuth_error_deg": "0.99",
+    "reported_spatial_angle_deg": 1.7,
+    "reported_spatial_distance_m": 0.245
+  },
+  {
+    "id": 113,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.46,
+      6.85,
+      5.0
+    ],
+    "reference_azimuth_deg": 77.97,
+    "reference_elevation_deg": 35.52,
+    "array_xyz_m": [
+      1.25,
+      7.18,
+      5.18
+    ],
+    "array_azimuth_deg": 80.12,
+    "array_elevation_deg": 35.4,
+    "reported_azimuth_error_deg": "2.16",
+    "reported_spatial_angle_deg": 1.76,
+    "reported_spatial_distance_m": 0.431
+  },
+  {
+    "id": 114,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.46,
+      6.85,
+      6.4
+    ],
+    "reference_azimuth_deg": 77.97,
+    "reference_elevation_deg": 42.42,
+    "array_xyz_m": [
+      1.47,
+      7.03,
+      6.09
+    ],
+    "array_azimuth_deg": 78.19,
+    "array_elevation_deg": 40.3,
+    "reported_azimuth_error_deg": "0.22",
+    "reported_spatial_angle_deg": 2.13,
+    "reported_spatial_distance_m": 0.359
+  },
+  {
+    "id": 115,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      1.46,
+      6.85,
+      8.8
+    ],
+    "reference_azimuth_deg": 77.97,
+    "reference_elevation_deg": 51.48,
+    "array_xyz_m": [
+      1.55,
+      6.36,
+      8.78
+    ],
+    "array_azimuth_deg": 76.3,
+    "array_elevation_deg": 53.29,
+    "reported_azimuth_error_deg": "1.66",
+    "reported_spatial_angle_deg": 2.07,
+    "reported_spatial_distance_m": 0.499
+  },
+  {
+    "id": 116,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.46,
+      -6.85,
+      1.9
+    ],
+    "reference_azimuth_deg": 257.97,
+    "reference_elevation_deg": 15.18,
+    "array_xyz_m": [
+      -1.53,
+      -7.12,
+      1.47
+    ],
+    "array_azimuth_deg": 257.87,
+    "array_elevation_deg": 11.41,
+    "reported_azimuth_error_deg": "0.10",
+    "reported_spatial_angle_deg": 3.77,
+    "reported_spatial_distance_m": 0.513
+  },
+  {
+    "id": 117,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.46,
+      -6.85,
+      3.4
+    ],
+    "reference_azimuth_deg": 257.97,
+    "reference_elevation_deg": 25.89,
+    "array_xyz_m": [
+      -1.79,
+      -6.99,
+      2.69
+    ],
+    "array_azimuth_deg": 255.64,
+    "array_elevation_deg": 20.45,
+    "reported_azimuth_error_deg": "2.33",
+    "reported_spatial_angle_deg": 5.85,
+    "reported_spatial_distance_m": 0.795
+  },
+  {
+    "id": 118,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.46,
+      -6.85,
+      4.7
+    ],
+    "reference_azimuth_deg": 257.97,
+    "reference_elevation_deg": 33.86,
+    "array_xyz_m": [
+      -2.07,
+      -6.82,
+      4.37
+    ],
+    "array_azimuth_deg": 253.12,
+    "array_elevation_deg": 31.51,
+    "reported_azimuth_error_deg": "4.85",
+    "reported_spatial_angle_deg": 4.71,
+    "reported_spatial_distance_m": 0.694
+  },
+  {
+    "id": 119,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.46,
+      -6.85,
+      7.4
+    ],
+    "reference_azimuth_deg": 257.97,
+    "reference_elevation_deg": 46.58,
+    "array_xyz_m": [
+      -1.53,
+      -6.53,
+      7.65
+    ],
+    "array_azimuth_deg": 256.81,
+    "array_elevation_deg": 48.76,
+    "reported_azimuth_error_deg": "1.15",
+    "reported_spatial_angle_deg": 2.32,
+    "reported_spatial_distance_m": 0.412
+  },
+  {
+    "id": 120,
+    "pdf_page": 4,
+    "reference_xyz_m": [
+      -1.46,
+      -6.85,
+      8.7
+    ],
+    "reference_azimuth_deg": 257.97,
+    "reference_elevation_deg": 51.16,
+    "array_xyz_m": [
+      -1.48,
+      -6.74,
+      8.83
+    ],
+    "array_azimuth_deg": 257.62,
+    "array_elevation_deg": 51.99,
+    "reported_azimuth_error_deg": "0.35",
+    "reported_spatial_angle_deg": 0.86,
+    "reported_spatial_distance_m": 0.171
+  },
+  {
+    "id": 121,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      1.55,
+      4.76,
+      2.2
+    ],
+    "reference_azimuth_deg": 71.96,
+    "reference_elevation_deg": 23.72,
+    "array_xyz_m": [
+      1.55,
+      4.78,
+      2.3
+    ],
+    "array_azimuth_deg": 72.03,
+    "array_elevation_deg": 24.59,
+    "reported_azimuth_error_deg": "0.07",
+    "reported_spatial_angle_deg": 0.87,
+    "reported_spatial_distance_m": 0.102
+  },
+  {
+    "id": 122,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      1.55,
+      4.76,
+      2.9
+    ],
+    "reference_azimuth_deg": 71.96,
+    "reference_elevation_deg": 30.08,
+    "array_xyz_m": [
+      1.63,
+      4.79,
+      2.82
+    ],
+    "array_azimuth_deg": 71.21,
+    "array_elevation_deg": 29.13,
+    "reported_azimuth_error_deg": "0.76",
+    "reported_spatial_angle_deg": 1.16,
+    "reported_spatial_distance_m": 0.117
+  },
+  {
+    "id": 123,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      1.55,
+      4.76,
+      4.6
+    ],
+    "reference_azimuth_deg": 71.96,
+    "reference_elevation_deg": 42.58,
+    "array_xyz_m": [
+      1.56,
+      4.74,
+      4.32
+    ],
+    "array_azimuth_deg": 71.78,
+    "array_elevation_deg": 40.88,
+    "reported_azimuth_error_deg": "0.18",
+    "reported_spatial_angle_deg": 1.7,
+    "reported_spatial_distance_m": 0.281
+  },
+  {
+    "id": 124,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      1.55,
+      4.76,
+      7.8
+    ],
+    "reference_azimuth_deg": 71.96,
+    "reference_elevation_deg": 57.31,
+    "array_xyz_m": [
+      1.92,
+      4.69,
+      7.79
+    ],
+    "array_azimuth_deg": 67.74,
+    "array_elevation_deg": 56.95,
+    "reported_azimuth_error_deg": "4.23",
+    "reported_spatial_angle_deg": 2.32,
+    "reported_spatial_distance_m": 0.377
+  },
+  {
+    "id": 125,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      1.55,
+      4.76,
+      8.4
+    ],
+    "reference_azimuth_deg": 71.96,
+    "reference_elevation_deg": 59.21,
+    "array_xyz_m": [
+      1.27,
+      4.6,
+      8.42
+    ],
+    "array_azimuth_deg": 74.57,
+    "array_elevation_deg": 60.46,
+    "reported_azimuth_error_deg": "2.60",
+    "reported_spatial_angle_deg": 1.81,
+    "reported_spatial_distance_m": 0.323
+  },
+  {
+    "id": 126,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -1.55,
+      -4.76,
+      2.2
+    ],
+    "reference_azimuth_deg": 251.96,
+    "reference_elevation_deg": 23.72,
+    "array_xyz_m": [
+      -1.78,
+      -4.94,
+      1.87
+    ],
+    "array_azimuth_deg": 250.18,
+    "array_elevation_deg": 19.6,
+    "reported_azimuth_error_deg": "1.78",
+    "reported_spatial_angle_deg": 4.44,
+    "reported_spatial_distance_m": 0.441
+  },
+  {
+    "id": 127,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -1.55,
+      -4.76,
+      4.1
+    ],
+    "reference_azimuth_deg": 251.96,
+    "reference_elevation_deg": 39.32,
+    "array_xyz_m": [
+      -1.7,
+      -4.68,
+      4.09
+    ],
+    "array_azimuth_deg": 250.04,
+    "array_elevation_deg": 39.4,
+    "reported_azimuth_error_deg": "1.93",
+    "reported_spatial_angle_deg": 1.49,
+    "reported_spatial_distance_m": 0.17
+  },
+  {
+    "id": 128,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -1.55,
+      -4.76,
+      4.6
+    ],
+    "reference_azimuth_deg": 251.96,
+    "reference_elevation_deg": 42.58,
+    "array_xyz_m": [
+      -1.68,
+      -5.01,
+      4.39
+    ],
+    "array_azimuth_deg": 251.46,
+    "array_elevation_deg": 39.72,
+    "reported_azimuth_error_deg": "0.50",
+    "reported_spatial_angle_deg": 2.89,
+    "reported_spatial_distance_m": 0.351
+  },
+  {
+    "id": 129,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -1.55,
+      -4.76,
+      7.2
+    ],
+    "reference_azimuth_deg": 251.96,
+    "reference_elevation_deg": 55.19,
+    "array_xyz_m": [
+      -1.33,
+      -4.19,
+      7.77
+    ],
+    "array_azimuth_deg": 252.39,
+    "array_elevation_deg": 60.5,
+    "reported_azimuth_error_deg": "0.43",
+    "reported_spatial_angle_deg": 5.32,
+    "reported_spatial_distance_m": 0.836
+  },
+  {
+    "id": 130,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -1.55,
+      -4.76,
+      9.8
+    ],
+    "reference_azimuth_deg": 251.96,
+    "reference_elevation_deg": 62.94,
+    "array_xyz_m": [
+      -1.96,
+      -5.38,
+      9.69
+    ],
+    "array_azimuth_deg": 249.98,
+    "array_elevation_deg": 59.42,
+    "reported_azimuth_error_deg": "1.98",
+    "reported_spatial_angle_deg": 3.65,
+    "reported_spatial_distance_m": 0.751
+  },
+  {
+    "id": 131,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      1.76,
+      -2.43,
+      2.2
+    ],
+    "reference_azimuth_deg": 305.92,
+    "reference_elevation_deg": 36.25,
+    "array_xyz_m": [
+      1.67,
+      -2.48,
+      2.01
+    ],
+    "array_azimuth_deg": 303.96,
+    "array_elevation_deg": 33.91,
+    "reported_azimuth_error_deg": "1.96",
+    "reported_spatial_angle_deg": 2.83,
+    "reported_spatial_distance_m": 0.216
+  },
+  {
+    "id": 132,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      1.76,
+      -2.43,
+      3.8
+    ],
+    "reference_azimuth_deg": 305.92,
+    "reference_elevation_deg": 51.71,
+    "array_xyz_m": [
+      1.96,
+      -2.48,
+      3.44
+    ],
+    "array_azimuth_deg": 308.32,
+    "array_elevation_deg": 47.42,
+    "reported_azimuth_error_deg": "2.41",
+    "reported_spatial_angle_deg": 4.56,
+    "reported_spatial_distance_m": 0.415
+  },
+  {
+    "id": 133,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      1.76,
+      -2.43,
+      5.1
+    ],
+    "reference_azimuth_deg": 305.92,
+    "reference_elevation_deg": 59.53,
+    "array_xyz_m": [
+      1.78,
+      -2.6,
+      5.29
+    ],
+    "array_azimuth_deg": 304.4,
+    "array_elevation_deg": 59.22,
+    "reported_azimuth_error_deg": "1.52",
+    "reported_spatial_angle_deg": 0.83,
+    "reported_spatial_distance_m": 0.256
+  },
+  {
+    "id": 134,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      1.76,
+      -2.43,
+      6.5
+    ],
+    "reference_azimuth_deg": 305.92,
+    "reference_elevation_deg": 65.22,
+    "array_xyz_m": [
+      1.98,
+      -2.72,
+      6.08
+    ],
+    "array_azimuth_deg": 306.05,
+    "array_elevation_deg": 61.04,
+    "reported_azimuth_error_deg": "0.14",
+    "reported_spatial_angle_deg": 4.18,
+    "reported_spatial_distance_m": 0.556
+  },
+  {
+    "id": 135,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      1.76,
+      -2.43,
+      10.0
+    ],
+    "reference_azimuth_deg": 305.92,
+    "reference_elevation_deg": 73.3,
+    "array_xyz_m": [
+      1.58,
+      -2.14,
+      10.0
+    ],
+    "array_azimuth_deg": 306.44,
+    "array_elevation_deg": 75.1,
+    "reported_azimuth_error_deg": "0.52",
+    "reported_spatial_angle_deg": 1.81,
+    "reported_spatial_distance_m": 0.341
+  },
+  {
+    "id": 136,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -1.76,
+      2.43,
+      1.9
+    ],
+    "reference_azimuth_deg": 125.92,
+    "reference_elevation_deg": 32.34,
+    "array_xyz_m": [
+      -1.66,
+      2.35,
+      1.84
+    ],
+    "array_azimuth_deg": 125.24,
+    "array_elevation_deg": 32.6,
+    "reported_azimuth_error_deg": "0.68",
+    "reported_spatial_angle_deg": 0.63,
+    "reported_spatial_distance_m": 0.141
+  },
+  {
+    "id": 137,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -1.76,
+      2.43,
+      3.9
+    ],
+    "reference_azimuth_deg": 125.92,
+    "reference_elevation_deg": 52.43,
+    "array_xyz_m": [
+      -1.79,
+      2.5,
+      3.75
+    ],
+    "array_azimuth_deg": 125.6,
+    "array_elevation_deg": 50.65,
+    "reported_azimuth_error_deg": "0.31",
+    "reported_spatial_angle_deg": 1.79,
+    "reported_spatial_distance_m": 0.168
+  },
+  {
+    "id": 138,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -1.76,
+      2.43,
+      5.7
+    ],
+    "reference_azimuth_deg": 125.92,
+    "reference_elevation_deg": 62.24,
+    "array_xyz_m": [
+      -2.01,
+      2.7,
+      5.44
+    ],
+    "array_azimuth_deg": 126.67,
+    "array_elevation_deg": 58.25,
+    "reported_azimuth_error_deg": "0.75",
+    "reported_spatial_angle_deg": 4.0,
+    "reported_spatial_distance_m": 0.451
+  },
+  {
+    "id": 139,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -1.76,
+      2.43,
+      7.9
+    ],
+    "reference_azimuth_deg": 125.92,
+    "reference_elevation_deg": 69.2,
+    "array_xyz_m": [
+      -1.56,
+      2.35,
+      7.87
+    ],
+    "array_azimuth_deg": 123.58,
+    "array_elevation_deg": 70.28,
+    "reported_azimuth_error_deg": "2.34",
+    "reported_spatial_angle_deg": 1.35,
+    "reported_spatial_distance_m": 0.217
+  },
+  {
+    "id": 140,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -1.76,
+      2.43,
+      9.5
+    ],
+    "reference_azimuth_deg": 125.92,
+    "reference_elevation_deg": 72.47,
+    "array_xyz_m": [
+      -1.77,
+      2.78,
+      9.22
+    ],
+    "array_azimuth_deg": 122.48,
+    "array_elevation_deg": 70.33,
+    "reported_azimuth_error_deg": "3.43",
+    "reported_spatial_angle_deg": 2.4,
+    "reported_spatial_distance_m": 0.448
+  },
+  {
+    "id": 141,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      2.16,
+      -6.66,
+      2.0
+    ],
+    "reference_azimuth_deg": 287.97,
+    "reference_elevation_deg": 15.94,
+    "array_xyz_m": [
+      1.82,
+      -6.59,
+      2.14
+    ],
+    "array_azimuth_deg": 285.44,
+    "array_elevation_deg": 17.38,
+    "reported_azimuth_error_deg": "2.53",
+    "reported_spatial_angle_deg": 2.82,
+    "reported_spatial_distance_m": 0.374
+  },
+  {
+    "id": 142,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      2.16,
+      -6.66,
+      4.0
+    ],
+    "reference_azimuth_deg": 287.97,
+    "reference_elevation_deg": 29.74,
+    "array_xyz_m": [
+      2.17,
+      -6.57,
+      4.03
+    ],
+    "array_azimuth_deg": 288.28,
+    "array_elevation_deg": 30.22,
+    "reported_azimuth_error_deg": "0.31",
+    "reported_spatial_angle_deg": 0.55,
+    "reported_spatial_distance_m": 0.095
+  },
+  {
+    "id": 143,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      2.16,
+      -6.66,
+      5.5
+    ],
+    "reference_azimuth_deg": 287.97,
+    "reference_elevation_deg": 38.15,
+    "array_xyz_m": [
+      2.56,
+      -6.87,
+      5.16
+    ],
+    "array_azimuth_deg": 290.44,
+    "array_elevation_deg": 35.14,
+    "reported_azimuth_error_deg": "2.47",
+    "reported_spatial_angle_deg": 3.6,
+    "reported_spatial_distance_m": 0.565
+  },
+  {
+    "id": 144,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      2.16,
+      -6.66,
+      7.7
+    ],
+    "reference_azimuth_deg": 287.97,
+    "reference_elevation_deg": 47.72,
+    "array_xyz_m": [
+      2.52,
+      -6.62,
+      7.46
+    ],
+    "array_azimuth_deg": 290.84,
+    "array_elevation_deg": 46.48,
+    "reported_azimuth_error_deg": "2.87",
+    "reported_spatial_angle_deg": 2.31,
+    "reported_spatial_distance_m": 0.435
+  },
+  {
+    "id": 145,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      2.16,
+      -6.66,
+      9.5
+    ],
+    "reference_azimuth_deg": 287.97,
+    "reference_elevation_deg": 53.61,
+    "array_xyz_m": [
+      1.9,
+      -6.47,
+      9.58
+    ],
+    "array_azimuth_deg": 286.37,
+    "array_elevation_deg": 54.86,
+    "reported_azimuth_error_deg": "1.60",
+    "reported_spatial_angle_deg": 1.56,
+    "reported_spatial_distance_m": 0.332
+  },
+  {
+    "id": 146,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -2.16,
+      6.66,
+      2.0
+    ],
+    "reference_azimuth_deg": 107.97,
+    "reference_elevation_deg": 15.94,
+    "array_xyz_m": [
+      -2.02,
+      6.88,
+      2.38
+    ],
+    "array_azimuth_deg": 106.36,
+    "array_elevation_deg": 18.36,
+    "reported_azimuth_error_deg": "1.61",
+    "reported_spatial_angle_deg": 2.87,
+    "reported_spatial_distance_m": 0.461
+  },
+  {
+    "id": 147,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -2.16,
+      6.66,
+      3.8
+    ],
+    "reference_azimuth_deg": 107.97,
+    "reference_elevation_deg": 28.49,
+    "array_xyz_m": [
+      -2.1,
+      6.56,
+      4.06
+    ],
+    "array_azimuth_deg": 107.75,
+    "array_elevation_deg": 30.52,
+    "reported_azimuth_error_deg": "0.22",
+    "reported_spatial_angle_deg": 2.04,
+    "reported_spatial_distance_m": 0.285
+  },
+  {
+    "id": 148,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -2.16,
+      6.66,
+      6.1
+    ],
+    "reference_azimuth_deg": 107.97,
+    "reference_elevation_deg": 41.06,
+    "array_xyz_m": [
+      -1.62,
+      6.92,
+      6.1
+    ],
+    "array_azimuth_deg": 103.18,
+    "array_elevation_deg": 40.64,
+    "reported_azimuth_error_deg": "4.79",
+    "reported_spatial_angle_deg": 3.65,
+    "reported_spatial_distance_m": 0.599
+  },
+  {
+    "id": 149,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -2.16,
+      6.66,
+      7.7
+    ],
+    "reference_azimuth_deg": 107.97,
+    "reference_elevation_deg": 47.72,
+    "array_xyz_m": [
+      -2.52,
+      6.68,
+      7.59
+    ],
+    "array_azimuth_deg": 110.67,
+    "array_elevation_deg": 46.75,
+    "reported_azimuth_error_deg": "2.70",
+    "reported_spatial_angle_deg": 2.07,
+    "reported_spatial_distance_m": 0.377
+  },
+  {
+    "id": 150,
+    "pdf_page": 5,
+    "reference_xyz_m": [
+      -2.16,
+      6.66,
+      9.2
+    ],
+    "reference_azimuth_deg": 107.97,
+    "reference_elevation_deg": 52.73,
+    "array_xyz_m": [
+      -2.22,
+      6.48,
+      9.25
+    ],
+    "array_azimuth_deg": 108.91,
+    "array_elevation_deg": 53.48,
+    "reported_azimuth_error_deg": "0.94",
+    "reported_spatial_angle_deg": 0.94,
+    "reported_spatial_distance_m": 0.196
+  },
+  {
+    "id": 151,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.43,
+      1.76,
+      1.6
+    ],
+    "reference_azimuth_deg": 35.92,
+    "reference_elevation_deg": 28.07,
+    "array_xyz_m": [
+      2.33,
+      1.67,
+      1.51
+    ],
+    "array_azimuth_deg": 35.63,
+    "array_elevation_deg": 27.78,
+    "reported_azimuth_error_deg": "0.28",
+    "reported_spatial_angle_deg": 0.38,
+    "reported_spatial_distance_m": 0.162
+  },
+  {
+    "id": 152,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.43,
+      1.76,
+      2.9
+    ],
+    "reference_azimuth_deg": 35.92,
+    "reference_elevation_deg": 44.03,
+    "array_xyz_m": [
+      2.36,
+      1.65,
+      2.92
+    ],
+    "array_azimuth_deg": 34.96,
+    "array_elevation_deg": 45.4,
+    "reported_azimuth_error_deg": "0.96",
+    "reported_spatial_angle_deg": 1.53,
+    "reported_spatial_distance_m": 0.132
+  },
+  {
+    "id": 153,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.43,
+      1.76,
+      5.1
+    ],
+    "reference_azimuth_deg": 35.92,
+    "reference_elevation_deg": 59.53,
+    "array_xyz_m": [
+      2.82,
+      1.67,
+      4.97
+    ],
+    "array_azimuth_deg": 30.63,
+    "array_elevation_deg": 56.6,
+    "reported_azimuth_error_deg": "5.28",
+    "reported_spatial_angle_deg": 4.05,
+    "reported_spatial_distance_m": 0.421
+  },
+  {
+    "id": 154,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.43,
+      1.76,
+      7.3
+    ],
+    "reference_azimuth_deg": 35.92,
+    "reference_elevation_deg": 67.66,
+    "array_xyz_m": [
+      2.45,
+      1.82,
+      7.24
+    ],
+    "array_azimuth_deg": 36.61,
+    "array_elevation_deg": 67.14,
+    "reported_azimuth_error_deg": "0.69",
+    "reported_spatial_angle_deg": 0.58,
+    "reported_spatial_distance_m": 0.087
+  },
+  {
+    "id": 155,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.43,
+      1.76,
+      9.4
+    ],
+    "reference_azimuth_deg": 35.92,
+    "reference_elevation_deg": 72.3,
+    "array_xyz_m": [
+      2.97,
+      2.22,
+      9.08
+    ],
+    "array_azimuth_deg": 36.78,
+    "array_elevation_deg": 67.79,
+    "reported_azimuth_error_deg": "0.86",
+    "reported_spatial_angle_deg": 4.52,
+    "reported_spatial_distance_m": 0.778
+  },
+  {
+    "id": 156,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.43,
+      -1.76,
+      1.1
+    ],
+    "reference_azimuth_deg": 215.92,
+    "reference_elevation_deg": 20.13,
+    "array_xyz_m": [
+      -2.45,
+      -1.83,
+      1.22
+    ],
+    "array_azimuth_deg": 216.76,
+    "array_elevation_deg": 21.75,
+    "reported_azimuth_error_deg": "0.84",
+    "reported_spatial_angle_deg": 1.8,
+    "reported_spatial_distance_m": 0.14
+  },
+  {
+    "id": 157,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.43,
+      -1.76,
+      3.3
+    ],
+    "reference_azimuth_deg": 215.92,
+    "reference_elevation_deg": 47.72,
+    "array_xyz_m": [
+      -2.44,
+      -1.91,
+      3.23
+    ],
+    "array_azimuth_deg": 218.05,
+    "array_elevation_deg": 46.19,
+    "reported_azimuth_error_deg": "2.14",
+    "reported_spatial_angle_deg": 2.12,
+    "reported_spatial_distance_m": 0.166
+  },
+  {
+    "id": 158,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.43,
+      -1.76,
+      4.8
+    ],
+    "reference_azimuth_deg": 215.92,
+    "reference_elevation_deg": 57.99,
+    "array_xyz_m": [
+      -2.53,
+      -1.74,
+      4.66
+    ],
+    "array_azimuth_deg": 214.52,
+    "array_elevation_deg": 56.62,
+    "reported_azimuth_error_deg": "1.40",
+    "reported_spatial_angle_deg": 1.57,
+    "reported_spatial_distance_m": 0.173
+  },
+  {
+    "id": 159,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.43,
+      -1.76,
+      7.9
+    ],
+    "reference_azimuth_deg": 215.92,
+    "reference_elevation_deg": 69.2,
+    "array_xyz_m": [
+      -2.24,
+      -1.61,
+      8.16
+    ],
+    "array_azimuth_deg": 215.71,
+    "array_elevation_deg": 71.32,
+    "reported_azimuth_error_deg": "0.21",
+    "reported_spatial_angle_deg": 2.12,
+    "reported_spatial_distance_m": 0.355
+  },
+  {
+    "id": 160,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.43,
+      -1.76,
+      9.8
+    ],
+    "reference_azimuth_deg": 215.92,
+    "reference_elevation_deg": 72.98,
+    "array_xyz_m": [
+      -1.89,
+      -1.48,
+      10.0
+    ],
+    "array_azimuth_deg": 218.06,
+    "array_elevation_deg": 76.5,
+    "reported_azimuth_error_deg": "2.15",
+    "reported_spatial_angle_deg": 3.57,
+    "reported_spatial_distance_m": 0.64
+  },
+  {
+    "id": 161,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.74,
+      -1.22,
+      2.4
+    ],
+    "reference_azimuth_deg": 336.0,
+    "reference_elevation_deg": 38.67,
+    "array_xyz_m": [
+      2.81,
+      -1.19,
+      2.34
+    ],
+    "array_azimuth_deg": 337.05,
+    "array_elevation_deg": 37.48,
+    "reported_azimuth_error_deg": "1.05",
+    "reported_spatial_angle_deg": 1.44,
+    "reported_spatial_distance_m": 0.097
+  },
+  {
+    "id": 162,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.74,
+      -1.22,
+      4.3
+    ],
+    "reference_azimuth_deg": 336.0,
+    "reference_elevation_deg": 55.1,
+    "array_xyz_m": [
+      2.54,
+      -1.06,
+      4.31
+    ],
+    "array_azimuth_deg": 337.35,
+    "array_elevation_deg": 57.44,
+    "reported_azimuth_error_deg": "1.35",
+    "reported_spatial_angle_deg": 2.45,
+    "reported_spatial_distance_m": 0.256
+  },
+  {
+    "id": 163,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.74,
+      -1.22,
+      5.4
+    ],
+    "reference_azimuth_deg": 336.0,
+    "reference_elevation_deg": 60.95,
+    "array_xyz_m": [
+      2.74,
+      -1.12,
+      5.23
+    ],
+    "array_azimuth_deg": 337.77,
+    "array_elevation_deg": 60.49,
+    "reported_azimuth_error_deg": "1.77",
+    "reported_spatial_angle_deg": 0.98,
+    "reported_spatial_distance_m": 0.197
+  },
+  {
+    "id": 164,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.74,
+      -1.22,
+      7.7
+    ],
+    "reference_azimuth_deg": 336.0,
+    "reference_elevation_deg": 68.72,
+    "array_xyz_m": [
+      2.97,
+      -1.47,
+      7.63
+    ],
+    "array_azimuth_deg": 333.67,
+    "array_elevation_deg": 66.52,
+    "reported_azimuth_error_deg": "2.33",
+    "reported_spatial_angle_deg": 2.37,
+    "reported_spatial_distance_m": 0.347
+  },
+  {
+    "id": 165,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.74,
+      -1.22,
+      9.6
+    ],
+    "reference_azimuth_deg": 336.0,
+    "reference_elevation_deg": 72.65,
+    "array_xyz_m": [
+      3.52,
+      -1.65,
+      9.12
+    ],
+    "array_azimuth_deg": 334.89,
+    "array_elevation_deg": 66.91,
+    "reported_azimuth_error_deg": "1.11",
+    "reported_spatial_angle_deg": 5.75,
+    "reported_spatial_distance_m": 1.012
+  },
+  {
+    "id": 166,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.74,
+      1.22,
+      1.5
+    ],
+    "reference_azimuth_deg": 156.0,
+    "reference_elevation_deg": 26.57,
+    "array_xyz_m": [
+      -2.82,
+      1.2,
+      1.58
+    ],
+    "array_azimuth_deg": 156.95,
+    "array_elevation_deg": 27.27,
+    "reported_azimuth_error_deg": "0.95",
+    "reported_spatial_angle_deg": 1.1,
+    "reported_spatial_distance_m": 0.115
+  },
+  {
+    "id": 167,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.74,
+      1.22,
+      2.9
+    ],
+    "reference_azimuth_deg": 156.0,
+    "reference_elevation_deg": 44.04,
+    "array_xyz_m": [
+      -2.69,
+      1.22,
+      3.05
+    ],
+    "array_azimuth_deg": 155.6,
+    "array_elevation_deg": 45.92,
+    "reported_azimuth_error_deg": "0.39",
+    "reported_spatial_angle_deg": 1.9,
+    "reported_spatial_distance_m": 0.158
+  },
+  {
+    "id": 168,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.74,
+      1.22,
+      5.8
+    ],
+    "reference_azimuth_deg": 156.0,
+    "reference_elevation_deg": 62.66,
+    "array_xyz_m": [
+      -2.58,
+      1.21,
+      5.46
+    ],
+    "array_azimuth_deg": 154.87,
+    "array_elevation_deg": 62.44,
+    "reported_azimuth_error_deg": "1.12",
+    "reported_spatial_angle_deg": 0.56,
+    "reported_spatial_distance_m": 0.376
+  },
+  {
+    "id": 169,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.74,
+      1.22,
+      7.5
+    ],
+    "reference_azimuth_deg": 156.0,
+    "reference_elevation_deg": 68.2,
+    "array_xyz_m": [
+      -2.54,
+      1.16,
+      8.1
+    ],
+    "array_azimuth_deg": 155.45,
+    "array_elevation_deg": 70.98,
+    "reported_azimuth_error_deg": "0.54",
+    "reported_spatial_angle_deg": 2.78,
+    "reported_spatial_distance_m": 0.635
+  },
+  {
+    "id": 170,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.74,
+      1.22,
+      8.8
+    ],
+    "reference_azimuth_deg": 156.0,
+    "reference_elevation_deg": 71.18,
+    "array_xyz_m": [
+      -2.43,
+      1.11,
+      8.44
+    ],
+    "array_azimuth_deg": 155.45,
+    "array_elevation_deg": 72.44,
+    "reported_azimuth_error_deg": "0.55",
+    "reported_spatial_angle_deg": 1.27,
+    "reported_spatial_distance_m": 0.488
+  },
+  {
+    "id": 171,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.98,
+      0.31,
+      2.5
+    ],
+    "reference_azimuth_deg": 5.94,
+    "reference_elevation_deg": 39.84,
+    "array_xyz_m": [
+      2.74,
+      0.28,
+      2.49
+    ],
+    "array_azimuth_deg": 5.83,
+    "array_elevation_deg": 42.12,
+    "reported_azimuth_error_deg": "0.10",
+    "reported_spatial_angle_deg": 2.27,
+    "reported_spatial_distance_m": 0.242
+  },
+  {
+    "id": 172,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.98,
+      0.31,
+      3.4
+    ],
+    "reference_azimuth_deg": 5.94,
+    "reference_elevation_deg": 48.61,
+    "array_xyz_m": [
+      3.08,
+      0.23,
+      2.99
+    ],
+    "array_azimuth_deg": 4.27,
+    "array_elevation_deg": 44.07,
+    "reported_azimuth_error_deg": "1.67",
+    "reported_spatial_angle_deg": 4.69,
+    "reported_spatial_distance_m": 0.43
+  },
+  {
+    "id": 173,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.98,
+      0.31,
+      6.1
+    ],
+    "reference_azimuth_deg": 5.94,
+    "reference_elevation_deg": 63.84,
+    "array_xyz_m": [
+      3.12,
+      0.53,
+      6.12
+    ],
+    "array_azimuth_deg": 9.64,
+    "array_elevation_deg": 62.66,
+    "reported_azimuth_error_deg": "3.70",
+    "reported_spatial_angle_deg": 2.04,
+    "reported_spatial_distance_m": 0.262
+  },
+  {
+    "id": 174,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.98,
+      0.31,
+      7.8
+    ],
+    "reference_azimuth_deg": 5.94,
+    "reference_elevation_deg": 68.99,
+    "array_xyz_m": [
+      2.9,
+      0.23,
+      8.17
+    ],
+    "array_azimuth_deg": 4.53,
+    "array_elevation_deg": 70.4,
+    "reported_azimuth_error_deg": "1.40",
+    "reported_spatial_angle_deg": 1.49,
+    "reported_spatial_distance_m": 0.387
+  },
+  {
+    "id": 175,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      2.98,
+      0.31,
+      8.7
+    ],
+    "reference_azimuth_deg": 5.94,
+    "reference_elevation_deg": 71.0,
+    "array_xyz_m": [
+      3.07,
+      0.33,
+      8.76
+    ],
+    "array_azimuth_deg": 6.14,
+    "array_elevation_deg": 70.58,
+    "reported_azimuth_error_deg": "0.20",
+    "reported_spatial_angle_deg": 0.42,
+    "reported_spatial_distance_m": 0.11
+  },
+  {
+    "id": 176,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.98,
+      -0.31,
+      2.3
+    ],
+    "reference_azimuth_deg": 185.94,
+    "reference_elevation_deg": 37.51,
+    "array_xyz_m": [
+      -2.8,
+      -0.35,
+      2.08
+    ],
+    "array_azimuth_deg": 187.13,
+    "array_elevation_deg": 36.39,
+    "reported_azimuth_error_deg": "1.19",
+    "reported_spatial_angle_deg": 1.47,
+    "reported_spatial_distance_m": 0.287
+  },
+  {
+    "id": 177,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.98,
+      -0.31,
+      3.2
+    ],
+    "reference_azimuth_deg": 185.94,
+    "reference_elevation_deg": 46.88,
+    "array_xyz_m": [
+      -2.9,
+      -0.18,
+      3.12
+    ],
+    "array_azimuth_deg": 183.55,
+    "array_elevation_deg": 47.04,
+    "reported_azimuth_error_deg": "2.39",
+    "reported_spatial_angle_deg": 1.64,
+    "reported_spatial_distance_m": 0.172
+  },
+  {
+    "id": 178,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.98,
+      -0.31,
+      6.0
+    ],
+    "reference_azimuth_deg": 185.94,
+    "reference_elevation_deg": 63.46,
+    "array_xyz_m": [
+      -2.9,
+      -0.35,
+      5.81
+    ],
+    "array_azimuth_deg": 186.88,
+    "array_elevation_deg": 63.31,
+    "reported_azimuth_error_deg": "0.94",
+    "reported_spatial_angle_deg": 0.45,
+    "reported_spatial_distance_m": 0.21
+  },
+  {
+    "id": 179,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.98,
+      -0.31,
+      6.7
+    ],
+    "reference_azimuth_deg": 185.94,
+    "reference_elevation_deg": 65.91,
+    "array_xyz_m": [
+      -2.95,
+      -0.25,
+      6.78
+    ],
+    "array_azimuth_deg": 184.84,
+    "array_elevation_deg": 66.41,
+    "reported_azimuth_error_deg": "1.09",
+    "reported_spatial_angle_deg": 0.67,
+    "reported_spatial_distance_m": 0.104
+  },
+  {
+    "id": 180,
+    "pdf_page": 6,
+    "reference_xyz_m": [
+      -2.98,
+      -0.31,
+      9.8
+    ],
+    "reference_azimuth_deg": 185.94,
+    "reference_elevation_deg": 73.0,
+    "array_xyz_m": [
+      -2.89,
+      -0.35,
+      9.47
+    ],
+    "array_azimuth_deg": 186.91,
+    "array_elevation_deg": 72.91,
+    "reported_azimuth_error_deg": "0.97",
+    "reported_spatial_angle_deg": 0.3,
+    "reported_spatial_distance_m": 0.344
+  },
+  {
+    "id": 181,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.35,
+      -3.72,
+      1.5
+    ],
+    "reference_azimuth_deg": 312.0,
+    "reference_elevation_deg": 16.68,
+    "array_xyz_m": [
+      3.38,
+      -3.64,
+      1.67
+    ],
+    "array_azimuth_deg": 312.88,
+    "array_elevation_deg": 18.58,
+    "reported_azimuth_error_deg": "0.87",
+    "reported_spatial_angle_deg": 2.08,
+    "reported_spatial_distance_m": 0.19
+  },
+  {
+    "id": 182,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.35,
+      -3.72,
+      3.9
+    ],
+    "reference_azimuth_deg": 312.0,
+    "reference_elevation_deg": 37.92,
+    "array_xyz_m": [
+      3.64,
+      -3.95,
+      4.17
+    ],
+    "array_azimuth_deg": 312.66,
+    "array_elevation_deg": 37.82,
+    "reported_azimuth_error_deg": "0.66",
+    "reported_spatial_angle_deg": 0.53,
+    "reported_spatial_distance_m": 0.458
+  },
+  {
+    "id": 183,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.35,
+      -3.72,
+      4.9
+    ],
+    "reference_azimuth_deg": 312.0,
+    "reference_elevation_deg": 44.39,
+    "array_xyz_m": [
+      3.75,
+      -3.78,
+      4.71
+    ],
+    "array_azimuth_deg": 314.77,
+    "array_elevation_deg": 41.5,
+    "reported_azimuth_error_deg": "2.77",
+    "reported_spatial_angle_deg": 3.53,
+    "reported_spatial_distance_m": 0.447
+  },
+  {
+    "id": 184,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.35,
+      -3.72,
+      7.8
+    ],
+    "reference_azimuth_deg": 312.0,
+    "reference_elevation_deg": 57.31,
+    "array_xyz_m": [
+      3.62,
+      -3.58,
+      8.28
+    ],
+    "array_azimuth_deg": 315.32,
+    "array_elevation_deg": 58.41,
+    "reported_azimuth_error_deg": "3.31",
+    "reported_spatial_angle_deg": 2.08,
+    "reported_spatial_distance_m": 0.568
+  },
+  {
+    "id": 185,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.35,
+      -3.72,
+      9.7
+    ],
+    "reference_azimuth_deg": 312.0,
+    "reference_elevation_deg": 62.7,
+    "array_xyz_m": [
+      3.17,
+      -3.2,
+      9.95
+    ],
+    "array_azimuth_deg": 314.73,
+    "array_elevation_deg": 65.64,
+    "reported_azimuth_error_deg": "2.73",
+    "reported_spatial_angle_deg": 3.17,
+    "reported_spatial_distance_m": 0.604
+  },
+  {
+    "id": 186,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.35,
+      3.72,
+      1.3
+    ],
+    "reference_azimuth_deg": 132.0,
+    "reference_elevation_deg": 14.56,
+    "array_xyz_m": [
+      -3.32,
+      3.51,
+      1.38
+    ],
+    "array_azimuth_deg": 133.41,
+    "array_elevation_deg": 15.94,
+    "reported_azimuth_error_deg": "1.40",
+    "reported_spatial_angle_deg": 1.94,
+    "reported_spatial_distance_m": 0.227
+  },
+  {
+    "id": 187,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.35,
+      3.72,
+      4.0
+    ],
+    "reference_azimuth_deg": 132.0,
+    "reference_elevation_deg": 38.63,
+    "array_xyz_m": [
+      -3.16,
+      3.5,
+      4.01
+    ],
+    "array_azimuth_deg": 132.08,
+    "array_elevation_deg": 40.38,
+    "reported_azimuth_error_deg": "0.07",
+    "reported_spatial_angle_deg": 1.75,
+    "reported_spatial_distance_m": 0.291
+  },
+  {
+    "id": 188,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.35,
+      3.72,
+      5.3
+    ],
+    "reference_azimuth_deg": 132.0,
+    "reference_elevation_deg": 46.63,
+    "array_xyz_m": [
+      -3.27,
+      3.66,
+      5.44
+    ],
+    "array_azimuth_deg": 131.78,
+    "array_elevation_deg": 47.94,
+    "reported_azimuth_error_deg": "0.23",
+    "reported_spatial_angle_deg": 1.32,
+    "reported_spatial_distance_m": 0.172
+  },
+  {
+    "id": 189,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.35,
+      3.72,
+      6.6
+    ],
+    "reference_azimuth_deg": 132.0,
+    "reference_elevation_deg": 52.82,
+    "array_xyz_m": [
+      -3.44,
+      3.92,
+      6.31
+    ],
+    "array_azimuth_deg": 131.27,
+    "array_elevation_deg": 50.43,
+    "reported_azimuth_error_deg": "0.74",
+    "reported_spatial_angle_deg": 2.44,
+    "reported_spatial_distance_m": 0.364
+  },
+  {
+    "id": 190,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.35,
+      3.72,
+      8.9
+    ],
+    "reference_azimuth_deg": 132.0,
+    "reference_elevation_deg": 60.64,
+    "array_xyz_m": [
+      -3.68,
+      3.92,
+      8.41
+    ],
+    "array_azimuth_deg": 133.19,
+    "array_elevation_deg": 57.41,
+    "reported_azimuth_error_deg": "1.19",
+    "reported_spatial_angle_deg": 3.29,
+    "reported_spatial_distance_m": 0.624
+  },
+  {
+    "id": 191,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.66,
+      -8.22,
+      2.5
+    ],
+    "reference_azimuth_deg": 294.0,
+    "reference_elevation_deg": 15.53,
+    "array_xyz_m": [
+      3.78,
+      -8.03,
+      2.59
+    ],
+    "array_azimuth_deg": 295.21,
+    "array_elevation_deg": 16.27,
+    "reported_azimuth_error_deg": "1.21",
+    "reported_spatial_angle_deg": 1.38,
+    "reported_spatial_distance_m": 0.242
+  },
+  {
+    "id": 192,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.66,
+      -8.22,
+      4.1
+    ],
+    "reference_azimuth_deg": 294.0,
+    "reference_elevation_deg": 24.5,
+    "array_xyz_m": [
+      3.59,
+      -8.26,
+      4.59
+    ],
+    "array_azimuth_deg": 293.49,
+    "array_elevation_deg": 27.01,
+    "reported_azimuth_error_deg": "0.51",
+    "reported_spatial_angle_deg": 2.55,
+    "reported_spatial_distance_m": 0.497
+  },
+  {
+    "id": 193,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.66,
+      -8.22,
+      5.9
+    ],
+    "reference_azimuth_deg": 294.0,
+    "reference_elevation_deg": 33.25,
+    "array_xyz_m": [
+      3.74,
+      -7.9,
+      6.23
+    ],
+    "array_azimuth_deg": 295.33,
+    "array_elevation_deg": 35.48,
+    "reported_azimuth_error_deg": "1.33",
+    "reported_spatial_angle_deg": 2.48,
+    "reported_spatial_distance_m": 0.467
+  },
+  {
+    "id": 194,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.66,
+      -8.22,
+      7.9
+    ],
+    "reference_azimuth_deg": 294.0,
+    "reference_elevation_deg": 41.28,
+    "array_xyz_m": [
+      3.55,
+      -8.88,
+      7.9
+    ],
+    "array_azimuth_deg": 291.79,
+    "array_elevation_deg": 39.56,
+    "reported_azimuth_error_deg": "2.21",
+    "reported_spatial_angle_deg": 2.41,
+    "reported_spatial_distance_m": 0.669
+  },
+  {
+    "id": 195,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.66,
+      -8.22,
+      9.4
+    ],
+    "reference_azimuth_deg": 294.0,
+    "reference_elevation_deg": 46.25,
+    "array_xyz_m": [
+      3.46,
+      -7.94,
+      9.36
+    ],
+    "array_azimuth_deg": 293.55,
+    "array_elevation_deg": 47.22,
+    "reported_azimuth_error_deg": "0.46",
+    "reported_spatial_angle_deg": 1.02,
+    "reported_spatial_distance_m": 0.346
+  },
+  {
+    "id": 196,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.66,
+      8.22,
+      1.8
+    ],
+    "reference_azimuth_deg": 114.0,
+    "reference_elevation_deg": 11.31,
+    "array_xyz_m": [
+      -3.61,
+      8.08,
+      1.99
+    ],
+    "array_azimuth_deg": 114.07,
+    "array_elevation_deg": 12.67,
+    "reported_azimuth_error_deg": "0.07",
+    "reported_spatial_angle_deg": 1.36,
+    "reported_spatial_distance_m": 0.241
+  },
+  {
+    "id": 197,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.66,
+      8.22,
+      4.1
+    ],
+    "reference_azimuth_deg": 114.0,
+    "reference_elevation_deg": 24.5,
+    "array_xyz_m": [
+      -3.95,
+      8.27,
+      4.38
+    ],
+    "array_azimuth_deg": 115.53,
+    "array_elevation_deg": 25.54,
+    "reported_azimuth_error_deg": "1.53",
+    "reported_spatial_angle_deg": 1.74,
+    "reported_spatial_distance_m": 0.406
+  },
+  {
+    "id": 198,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.66,
+      8.22,
+      5.9
+    ],
+    "reference_azimuth_deg": 114.0,
+    "reference_elevation_deg": 33.25,
+    "array_xyz_m": [
+      -4.19,
+      8.23,
+      4.92
+    ],
+    "array_azimuth_deg": 116.98,
+    "array_elevation_deg": 28.05,
+    "reported_azimuth_error_deg": "2.98",
+    "reported_spatial_angle_deg": 5.8,
+    "reported_spatial_distance_m": 1.114
+  },
+  {
+    "id": 199,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.66,
+      8.22,
+      7.1
+    ],
+    "reference_azimuth_deg": 114.0,
+    "reference_elevation_deg": 38.28,
+    "array_xyz_m": [
+      -2.81,
+      8.43,
+      6.57
+    ],
+    "array_azimuth_deg": 108.43,
+    "array_elevation_deg": 36.48,
+    "reported_azimuth_error_deg": "5.57",
+    "reported_spatial_angle_deg": 4.77,
+    "reported_spatial_distance_m": 1.023
+  },
+  {
+    "id": 200,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.66,
+      8.22,
+      9.2
+    ],
+    "reference_azimuth_deg": 114.0,
+    "reference_elevation_deg": 45.64,
+    "array_xyz_m": [
+      -2.98,
+      8.79,
+      9.14
+    ],
+    "array_azimuth_deg": 108.73,
+    "array_elevation_deg": 44.56,
+    "reported_azimuth_error_deg": "5.27",
+    "reported_spatial_angle_deg": 3.87,
+    "reported_spatial_distance_m": 0.889
+  },
+  {
+    "id": 201,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.72,
+      3.35,
+      1.1
+    ],
+    "reference_azimuth_deg": 42.0,
+    "reference_elevation_deg": 12.39,
+    "array_xyz_m": [
+      3.42,
+      3.29,
+      1.31
+    ],
+    "array_azimuth_deg": 43.89,
+    "array_elevation_deg": 15.43,
+    "reported_azimuth_error_deg": "1.89",
+    "reported_spatial_angle_deg": 3.55,
+    "reported_spatial_distance_m": 0.371
+  },
+  {
+    "id": 202,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.72,
+      3.35,
+      2.8
+    ],
+    "reference_azimuth_deg": 42.0,
+    "reference_elevation_deg": 29.22,
+    "array_xyz_m": [
+      3.65,
+      3.5,
+      3.03
+    ],
+    "array_azimuth_deg": 43.8,
+    "array_elevation_deg": 30.93,
+    "reported_azimuth_error_deg": "1.79",
+    "reported_spatial_angle_deg": 2.31,
+    "reported_spatial_distance_m": 0.283
+  },
+  {
+    "id": 203,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.72,
+      3.35,
+      5.8
+    ],
+    "reference_azimuth_deg": 42.0,
+    "reference_elevation_deg": 49.2,
+    "array_xyz_m": [
+      4.11,
+      3.52,
+      5.64
+    ],
+    "array_azimuth_deg": 40.58,
+    "array_elevation_deg": 46.19,
+    "reported_azimuth_error_deg": "1.43",
+    "reported_spatial_angle_deg": 3.17,
+    "reported_spatial_distance_m": 0.455
+  },
+  {
+    "id": 204,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.72,
+      3.35,
+      7.0
+    ],
+    "reference_azimuth_deg": 42.0,
+    "reference_elevation_deg": 54.43,
+    "array_xyz_m": [
+      3.92,
+      3.2,
+      6.88
+    ],
+    "array_azimuth_deg": 39.23,
+    "array_elevation_deg": 53.67,
+    "reported_azimuth_error_deg": "2.78",
+    "reported_spatial_angle_deg": 1.8,
+    "reported_spatial_distance_m": 0.277
+  },
+  {
+    "id": 205,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      3.72,
+      3.35,
+      8.3
+    ],
+    "reference_azimuth_deg": 42.0,
+    "reference_elevation_deg": 58.9,
+    "array_xyz_m": [
+      3.97,
+      3.78,
+      7.46
+    ],
+    "array_azimuth_deg": 43.6,
+    "array_elevation_deg": 53.69,
+    "reported_azimuth_error_deg": "1.59",
+    "reported_spatial_angle_deg": 5.29,
+    "reported_spatial_distance_m": 0.976
+  },
+  {
+    "id": 206,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.72,
+      -3.35,
+      2.1
+    ],
+    "reference_azimuth_deg": 222.0,
+    "reference_elevation_deg": 22.76,
+    "array_xyz_m": [
+      -3.57,
+      -3.19,
+      1.81
+    ],
+    "array_azimuth_deg": 221.78,
+    "array_elevation_deg": 20.71,
+    "reported_azimuth_error_deg": "0.22",
+    "reported_spatial_angle_deg": 2.06,
+    "reported_spatial_distance_m": 0.364
+  },
+  {
+    "id": 207,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.72,
+      -3.35,
+      3.3
+    ],
+    "reference_azimuth_deg": 222.0,
+    "reference_elevation_deg": 33.39,
+    "array_xyz_m": [
+      -3.44,
+      -3.24,
+      3.47
+    ],
+    "array_azimuth_deg": 223.29,
+    "array_elevation_deg": 36.29,
+    "reported_azimuth_error_deg": "1.28",
+    "reported_spatial_angle_deg": 3.08,
+    "reported_spatial_distance_m": 0.346
+  },
+  {
+    "id": 208,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.72,
+      -3.35,
+      4.7
+    ],
+    "reference_azimuth_deg": 222.0,
+    "reference_elevation_deg": 43.19,
+    "array_xyz_m": [
+      -3.45,
+      -3.44,
+      5.35
+    ],
+    "array_azimuth_deg": 224.92,
+    "array_elevation_deg": 47.68,
+    "reported_azimuth_error_deg": "2.91",
+    "reported_spatial_angle_deg": 4.93,
+    "reported_spatial_distance_m": 0.71
+  },
+  {
+    "id": 209,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.72,
+      -3.35,
+      7.9
+    ],
+    "reference_azimuth_deg": 222.0,
+    "reference_elevation_deg": 57.64,
+    "array_xyz_m": [
+      -3.17,
+      -2.68,
+      7.95
+    ],
+    "array_azimuth_deg": 220.21,
+    "array_elevation_deg": 62.43,
+    "reported_azimuth_error_deg": "1.79",
+    "reported_spatial_angle_deg": 4.87,
+    "reported_spatial_distance_m": 0.868
+  },
+  {
+    "id": 210,
+    "pdf_page": 7,
+    "reference_xyz_m": [
+      -3.72,
+      -3.35,
+      9.0
+    ],
+    "reference_azimuth_deg": 222.0,
+    "reference_elevation_deg": 60.92,
+    "array_xyz_m": [
+      -3.68,
+      -3.32,
+      9.39
+    ],
+    "array_azimuth_deg": 222.06,
+    "array_elevation_deg": 62.17,
+    "reported_azimuth_error_deg": "0.05",
+    "reported_spatial_angle_deg": 1.26,
+    "reported_spatial_distance_m": 0.393
+  },
+  {
+    "id": 211,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.68,
+      5.2,
+      1.8
+    ],
+    "reference_azimuth_deg": 48.01,
+    "reference_elevation_deg": 14.43,
+    "array_xyz_m": [
+      4.86,
+      5.31,
+      1.9
+    ],
+    "array_azimuth_deg": 47.53,
+    "array_elevation_deg": 14.79,
+    "reported_azimuth_error_deg": "0.48",
+    "reported_spatial_angle_deg": 0.59,
+    "reported_spatial_distance_m": 0.233
+  },
+  {
+    "id": 212,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.68,
+      5.2,
+      3.6
+    ],
+    "reference_azimuth_deg": 48.01,
+    "reference_elevation_deg": 27.23,
+    "array_xyz_m": [
+      4.61,
+      5.21,
+      3.36
+    ],
+    "array_azimuth_deg": 48.5,
+    "array_elevation_deg": 25.78,
+    "reported_azimuth_error_deg": "0.48",
+    "reported_spatial_angle_deg": 1.51,
+    "reported_spatial_distance_m": 0.25
+  },
+  {
+    "id": 213,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.68,
+      5.2,
+      5.9
+    ],
+    "reference_azimuth_deg": 48.01,
+    "reference_elevation_deg": 40.14,
+    "array_xyz_m": [
+      4.67,
+      5.14,
+      6.17
+    ],
+    "array_azimuth_deg": 47.74,
+    "array_elevation_deg": 41.62,
+    "reported_azimuth_error_deg": "0.27",
+    "reported_spatial_angle_deg": 1.49,
+    "reported_spatial_distance_m": 0.277
+  },
+  {
+    "id": 214,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.68,
+      5.2,
+      7.6
+    ],
+    "reference_azimuth_deg": 48.01,
+    "reference_elevation_deg": 47.37,
+    "array_xyz_m": [
+      4.46,
+      5.45,
+      6.92
+    ],
+    "array_azimuth_deg": 50.7,
+    "array_elevation_deg": 44.5,
+    "reported_azimuth_error_deg": "2.69",
+    "reported_spatial_angle_deg": 3.43,
+    "reported_spatial_distance_m": 0.757
+  },
+  {
+    "id": 215,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.68,
+      5.2,
+      9.6
+    ],
+    "reference_azimuth_deg": 48.01,
+    "reference_elevation_deg": 53.92,
+    "array_xyz_m": [
+      5.07,
+      5.58,
+      8.62
+    ],
+    "array_azimuth_deg": 47.74,
+    "array_elevation_deg": 48.83,
+    "reported_azimuth_error_deg": "0.27",
+    "reported_spatial_angle_deg": 5.09,
+    "reported_spatial_distance_m": 1.121
+  },
+  {
+    "id": 216,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.68,
+      -5.2,
+      1.2
+    ],
+    "reference_azimuth_deg": 228.01,
+    "reference_elevation_deg": 9.73,
+    "array_xyz_m": [
+      -4.72,
+      -5.23,
+      1.15
+    ],
+    "array_azimuth_deg": 227.93,
+    "array_elevation_deg": 9.27,
+    "reported_azimuth_error_deg": "0.08",
+    "reported_spatial_angle_deg": 0.47,
+    "reported_spatial_distance_m": 0.071
+  },
+  {
+    "id": 217,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.68,
+      -5.2,
+      3.8
+    ],
+    "reference_azimuth_deg": 228.01,
+    "reference_elevation_deg": 28.51,
+    "array_xyz_m": [
+      -4.91,
+      -5.38,
+      3.65
+    ],
+    "array_azimuth_deg": 227.62,
+    "array_elevation_deg": 26.62,
+    "reported_azimuth_error_deg": "0.40",
+    "reported_spatial_angle_deg": 1.93,
+    "reported_spatial_distance_m": 0.328
+  },
+  {
+    "id": 218,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.68,
+      -5.2,
+      4.7
+    ],
+    "reference_azimuth_deg": 228.01,
+    "reference_elevation_deg": 33.89,
+    "array_xyz_m": [
+      -4.55,
+      -5.41,
+      4.43
+    ],
+    "array_azimuth_deg": 229.93,
+    "array_elevation_deg": 32.07,
+    "reported_azimuth_error_deg": "1.92",
+    "reported_spatial_angle_deg": 2.43,
+    "reported_spatial_distance_m": 0.366
+  },
+  {
+    "id": 219,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.68,
+      -5.2,
+      7.1
+    ],
+    "reference_azimuth_deg": 228.01,
+    "reference_elevation_deg": 45.42,
+    "array_xyz_m": [
+      -4.95,
+      -5.53,
+      7.03
+    ],
+    "array_azimuth_deg": 228.17,
+    "array_elevation_deg": 43.45,
+    "reported_azimuth_error_deg": "0.15",
+    "reported_spatial_angle_deg": 1.98,
+    "reported_spatial_distance_m": 0.432
+  },
+  {
+    "id": 220,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.68,
+      -5.2,
+      8.6
+    ],
+    "reference_azimuth_deg": 228.01,
+    "reference_elevation_deg": 50.87,
+    "array_xyz_m": [
+      -4.27,
+      -5.04,
+      9.52
+    ],
+    "array_azimuth_deg": 229.73,
+    "array_elevation_deg": 55.24,
+    "reported_azimuth_error_deg": "1.72",
+    "reported_spatial_angle_deg": 4.49,
+    "reported_spatial_distance_m": 1.02
+  },
+  {
+    "id": 221,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.76,
+      -1.55,
+      1.0
+    ],
+    "reference_azimuth_deg": 341.96,
+    "reference_elevation_deg": 11.3,
+    "array_xyz_m": [
+      4.49,
+      -1.39,
+      1.05
+    ],
+    "array_azimuth_deg": 342.8,
+    "array_elevation_deg": 12.59,
+    "reported_azimuth_error_deg": "0.84",
+    "reported_spatial_angle_deg": 1.53,
+    "reported_spatial_distance_m": 0.318
+  },
+  {
+    "id": 222,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.76,
+      -1.55,
+      2.9
+    ],
+    "reference_azimuth_deg": 341.96,
+    "reference_elevation_deg": 30.08,
+    "array_xyz_m": [
+      4.84,
+      -1.75,
+      3.32
+    ],
+    "array_azimuth_deg": 340.12,
+    "array_elevation_deg": 32.83,
+    "reported_azimuth_error_deg": "1.84",
+    "reported_spatial_angle_deg": 3.16,
+    "reported_spatial_distance_m": 0.472
+  },
+  {
+    "id": 223,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.76,
+      -1.55,
+      5.1
+    ],
+    "reference_azimuth_deg": 341.96,
+    "reference_elevation_deg": 45.53,
+    "array_xyz_m": [
+      4.74,
+      -1.47,
+      4.66
+    ],
+    "array_azimuth_deg": 342.77,
+    "array_elevation_deg": 43.2,
+    "reported_azimuth_error_deg": "0.81",
+    "reported_spatial_angle_deg": 2.4,
+    "reported_spatial_distance_m": 0.448
+  },
+  {
+    "id": 224,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.76,
+      -1.55,
+      6.6
+    ],
+    "reference_azimuth_deg": 341.96,
+    "reference_elevation_deg": 52.82,
+    "array_xyz_m": [
+      4.94,
+      -1.71,
+      6.57
+    ],
+    "array_azimuth_deg": 340.91,
+    "array_elevation_deg": 51.49,
+    "reported_azimuth_error_deg": "1.06",
+    "reported_spatial_angle_deg": 1.48,
+    "reported_spatial_distance_m": 0.243
+  },
+  {
+    "id": 225,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.76,
+      -1.55,
+      9.1
+    ],
+    "reference_azimuth_deg": 341.96,
+    "reference_elevation_deg": 61.18,
+    "array_xyz_m": [
+      5.06,
+      -1.81,
+      8.9
+    ],
+    "array_azimuth_deg": 340.32,
+    "array_elevation_deg": 58.88,
+    "reported_azimuth_error_deg": "1.65",
+    "reported_spatial_angle_deg": 2.45,
+    "reported_spatial_distance_m": 0.445
+  },
+  {
+    "id": 226,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.76,
+      1.55,
+      1.9
+    ],
+    "reference_azimuth_deg": 161.96,
+    "reference_elevation_deg": 20.78,
+    "array_xyz_m": [
+      -4.63,
+      1.55,
+      1.98
+    ],
+    "array_azimuth_deg": 161.49,
+    "array_elevation_deg": 22.07,
+    "reported_azimuth_error_deg": "0.47",
+    "reported_spatial_angle_deg": 1.36,
+    "reported_spatial_distance_m": 0.153
+  },
+  {
+    "id": 227,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.76,
+      1.55,
+      4.3
+    ],
+    "reference_azimuth_deg": 161.96,
+    "reference_elevation_deg": 40.66,
+    "array_xyz_m": [
+      -4.72,
+      1.38,
+      4.52
+    ],
+    "array_azimuth_deg": 163.7,
+    "array_elevation_deg": 42.59,
+    "reported_azimuth_error_deg": "1.74",
+    "reported_spatial_angle_deg": 2.32,
+    "reported_spatial_distance_m": 0.281
+  },
+  {
+    "id": 228,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.76,
+      1.55,
+      4.6
+    ],
+    "reference_azimuth_deg": 161.96,
+    "reference_elevation_deg": 42.58,
+    "array_xyz_m": [
+      -4.72,
+      1.47,
+      5.16
+    ],
+    "array_azimuth_deg": 162.7,
+    "array_elevation_deg": 46.23,
+    "reported_azimuth_error_deg": "0.74",
+    "reported_spatial_angle_deg": 3.69,
+    "reported_spatial_distance_m": 0.567
+  },
+  {
+    "id": 229,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.76,
+      1.55,
+      6.9
+    ],
+    "reference_azimuth_deg": 161.96,
+    "reference_elevation_deg": 54.04,
+    "array_xyz_m": [
+      -5.04,
+      1.74,
+      6.95
+    ],
+    "array_azimuth_deg": 160.95,
+    "array_elevation_deg": 52.51,
+    "reported_azimuth_error_deg": "1.01",
+    "reported_spatial_angle_deg": 1.65,
+    "reported_spatial_distance_m": 0.342
+  },
+  {
+    "id": 230,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.76,
+      1.55,
+      8.8
+    ],
+    "reference_azimuth_deg": 161.96,
+    "reference_elevation_deg": 60.37,
+    "array_xyz_m": [
+      -5.31,
+      1.97,
+      8.59
+    ],
+    "array_azimuth_deg": 159.65,
+    "array_elevation_deg": 56.6,
+    "reported_azimuth_error_deg": "2.32",
+    "reported_spatial_angle_deg": 3.95,
+    "reported_spatial_distance_m": 0.723
+  },
+  {
+    "id": 231,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.89,
+      1.04,
+      2.4
+    ],
+    "reference_azimuth_deg": 12.01,
+    "reference_elevation_deg": 25.64,
+    "array_xyz_m": [
+      5.08,
+      1.08,
+      2.02
+    ],
+    "array_azimuth_deg": 12.0,
+    "array_elevation_deg": 21.25,
+    "reported_azimuth_error_deg": "<0.01",
+    "reported_spatial_angle_deg": 4.39,
+    "reported_spatial_distance_m": 0.427
+  },
+  {
+    "id": 232,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.89,
+      1.04,
+      4.3
+    ],
+    "reference_azimuth_deg": 12.01,
+    "reference_elevation_deg": 40.7,
+    "array_xyz_m": [
+      5.08,
+      0.86,
+      4.86
+    ],
+    "array_azimuth_deg": 9.61,
+    "array_elevation_deg": 43.33,
+    "reported_azimuth_error_deg": "2.40",
+    "reported_spatial_angle_deg": 3.18,
+    "reported_spatial_distance_m": 0.618
+  },
+  {
+    "id": 233,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.89,
+      1.04,
+      5.0
+    ],
+    "reference_azimuth_deg": 12.01,
+    "reference_elevation_deg": 45.0,
+    "array_xyz_m": [
+      4.69,
+      1.09,
+      5.26
+    ],
+    "array_azimuth_deg": 13.08,
+    "array_elevation_deg": 47.53,
+    "reported_azimuth_error_deg": "1.08",
+    "reported_spatial_angle_deg": 2.63,
+    "reported_spatial_distance_m": 0.332
+  },
+  {
+    "id": 234,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.89,
+      1.04,
+      6.8
+    ],
+    "reference_azimuth_deg": 12.01,
+    "reference_elevation_deg": 53.68,
+    "array_xyz_m": [
+      4.5,
+      1.07,
+      6.53
+    ],
+    "array_azimuth_deg": 13.38,
+    "array_elevation_deg": 54.69,
+    "reported_azimuth_error_deg": "1.37",
+    "reported_spatial_angle_deg": 1.29,
+    "reported_spatial_distance_m": 0.475
+  },
+  {
+    "id": 235,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      4.89,
+      1.04,
+      8.4
+    ],
+    "reference_azimuth_deg": 12.01,
+    "reference_elevation_deg": 59.24,
+    "array_xyz_m": [
+      4.87,
+      1.13,
+      8.57
+    ],
+    "array_azimuth_deg": 13.06,
+    "array_elevation_deg": 59.74,
+    "reported_azimuth_error_deg": "1.06",
+    "reported_spatial_angle_deg": 0.73,
+    "reported_spatial_distance_m": 0.193
+  },
+  {
+    "id": 236,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.89,
+      -1.04,
+      1.1
+    ],
+    "reference_azimuth_deg": 192.01,
+    "reference_elevation_deg": 12.41,
+    "array_xyz_m": [
+      -4.8,
+      -0.88,
+      0.89
+    ],
+    "array_azimuth_deg": 190.39,
+    "array_elevation_deg": 10.34,
+    "reported_azimuth_error_deg": "1.62",
+    "reported_spatial_angle_deg": 2.61,
+    "reported_spatial_distance_m": 0.279
+  },
+  {
+    "id": 237,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.89,
+      -1.04,
+      3.2
+    ],
+    "reference_azimuth_deg": 192.01,
+    "reference_elevation_deg": 32.62,
+    "array_xyz_m": [
+      -4.96,
+      -0.94,
+      3.39
+    ],
+    "array_azimuth_deg": 190.73,
+    "array_elevation_deg": 33.88,
+    "reported_azimuth_error_deg": "1.28",
+    "reported_spatial_angle_deg": 1.65,
+    "reported_spatial_distance_m": 0.226
+  },
+  {
+    "id": 238,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.89,
+      -1.04,
+      4.7
+    ],
+    "reference_azimuth_deg": 192.01,
+    "reference_elevation_deg": 43.23,
+    "array_xyz_m": [
+      -4.91,
+      -1.14,
+      4.78
+    ],
+    "array_azimuth_deg": 193.07,
+    "array_elevation_deg": 43.48,
+    "reported_azimuth_error_deg": "1.06",
+    "reported_spatial_angle_deg": 0.81,
+    "reported_spatial_distance_m": 0.13
+  },
+  {
+    "id": 239,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.89,
+      -1.04,
+      7.9
+    ],
+    "reference_azimuth_deg": 192.01,
+    "reference_elevation_deg": 57.67,
+    "array_xyz_m": [
+      -4.65,
+      -0.97,
+      8.04
+    ],
+    "array_azimuth_deg": 191.78,
+    "array_elevation_deg": 59.43,
+    "reported_azimuth_error_deg": "0.22",
+    "reported_spatial_angle_deg": 1.76,
+    "reported_spatial_distance_m": 0.287
+  },
+  {
+    "id": 240,
+    "pdf_page": 8,
+    "reference_xyz_m": [
+      -4.89,
+      -1.04,
+      9.4
+    ],
+    "reference_azimuth_deg": 192.01,
+    "reference_elevation_deg": 61.99,
+    "array_xyz_m": [
+      -5.09,
+      -1.41,
+      9.46
+    ],
+    "array_azimuth_deg": 195.48,
+    "array_elevation_deg": 60.82,
+    "reported_azimuth_error_deg": "3.48",
+    "reported_spatial_angle_deg": 2.03,
+    "reported_spatial_distance_m": 0.425
+  },
+  {
+    "id": 241,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.2,
+      -4.68,
+      1.1
+    ],
+    "reference_azimuth_deg": 318.01,
+    "reference_elevation_deg": 8.94,
+    "array_xyz_m": [
+      5.28,
+      -4.43,
+      0.94
+    ],
+    "array_azimuth_deg": 320.0,
+    "array_elevation_deg": 7.77,
+    "reported_azimuth_error_deg": "1.99",
+    "reported_spatial_angle_deg": 2.29,
+    "reported_spatial_distance_m": 0.307
+  },
+  {
+    "id": 242,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.2,
+      -4.68,
+      3.9
+    ],
+    "reference_azimuth_deg": 318.01,
+    "reference_elevation_deg": 29.14,
+    "array_xyz_m": [
+      5.08,
+      -4.8,
+      4.14
+    ],
+    "array_azimuth_deg": 316.62,
+    "array_elevation_deg": 30.64,
+    "reported_azimuth_error_deg": "1.39",
+    "reported_spatial_angle_deg": 1.93,
+    "reported_spatial_distance_m": 0.294
+  },
+  {
+    "id": 243,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.2,
+      -4.68,
+      5.8
+    ],
+    "reference_azimuth_deg": 318.01,
+    "reference_elevation_deg": 39.66,
+    "array_xyz_m": [
+      5.85,
+      -4.57,
+      5.97
+    ],
+    "array_azimuth_deg": 322.0,
+    "array_elevation_deg": 38.81,
+    "reported_azimuth_error_deg": "3.99",
+    "reported_spatial_angle_deg": 3.21,
+    "reported_spatial_distance_m": 0.681
+  },
+  {
+    "id": 244,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.2,
+      -4.68,
+      6.6
+    ],
+    "reference_azimuth_deg": 318.01,
+    "reference_elevation_deg": 43.33,
+    "array_xyz_m": [
+      5.43,
+      -4.66,
+      6.36
+    ],
+    "array_azimuth_deg": 319.36,
+    "array_elevation_deg": 41.63,
+    "reported_azimuth_error_deg": "1.35",
+    "reported_spatial_angle_deg": 1.97,
+    "reported_spatial_distance_m": 0.333
+  },
+  {
+    "id": 245,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.2,
+      -4.68,
+      8.6
+    ],
+    "reference_azimuth_deg": 318.01,
+    "reference_elevation_deg": 50.87,
+    "array_xyz_m": [
+      5.05,
+      -4.64,
+      8.61
+    ],
+    "array_azimuth_deg": 317.42,
+    "array_elevation_deg": 51.46,
+    "reported_azimuth_error_deg": "0.59",
+    "reported_spatial_angle_deg": 0.7,
+    "reported_spatial_distance_m": 0.156
+  },
+  {
+    "id": 246,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      -5.2,
+      4.68,
+      2.0
+    ],
+    "reference_azimuth_deg": 138.01,
+    "reference_elevation_deg": 15.95,
+    "array_xyz_m": [
+      -5.71,
+      4.46,
+      1.57
+    ],
+    "array_azimuth_deg": 142.01,
+    "array_elevation_deg": 12.23,
+    "reported_azimuth_error_deg": "3.99",
+    "reported_spatial_angle_deg": 5.38,
+    "reported_spatial_distance_m": 0.702
+  },
+  {
+    "id": 247,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      -5.2,
+      4.68,
+      3.0
+    ],
+    "reference_azimuth_deg": 138.01,
+    "reference_elevation_deg": 23.21,
+    "array_xyz_m": [
+      -5.38,
+      4.45,
+      2.72
+    ],
+    "array_azimuth_deg": 140.4,
+    "array_elevation_deg": 21.28,
+    "reported_azimuth_error_deg": "2.39",
+    "reported_spatial_angle_deg": 2.93,
+    "reported_spatial_distance_m": 0.405
+  },
+  {
+    "id": 248,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      -5.2,
+      4.68,
+      5.1
+    ],
+    "reference_azimuth_deg": 138.01,
+    "reference_elevation_deg": 36.09,
+    "array_xyz_m": [
+      -5.1,
+      4.72,
+      4.7
+    ],
+    "array_azimuth_deg": 137.22,
+    "array_elevation_deg": 34.07,
+    "reported_azimuth_error_deg": "0.80",
+    "reported_spatial_angle_deg": 2.12,
+    "reported_spatial_distance_m": 0.414
+  },
+  {
+    "id": 249,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      -5.2,
+      4.68,
+      6.5
+    ],
+    "reference_azimuth_deg": 138.01,
+    "reference_elevation_deg": 42.9,
+    "array_xyz_m": [
+      -5.43,
+      4.72,
+      6.12
+    ],
+    "array_azimuth_deg": 139.0,
+    "array_elevation_deg": 40.39,
+    "reported_azimuth_error_deg": "0.99",
+    "reported_spatial_angle_deg": 2.62,
+    "reported_spatial_distance_m": 0.446
+  },
+  {
+    "id": 250,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      -5.2,
+      4.68,
+      9.8
+    ],
+    "reference_azimuth_deg": 138.01,
+    "reference_elevation_deg": 54.48,
+    "array_xyz_m": [
+      -2.09,
+      1.63,
+      10.0
+    ],
+    "array_azimuth_deg": 142.05,
+    "array_elevation_deg": 75.16,
+    "reported_azimuth_error_deg": "4.04",
+    "reported_spatial_angle_deg": 20.74,
+    "reported_spatial_distance_m": 4.361
+  },
+  {
+    "id": 251,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.29,
+      7.28,
+      1.9
+    ],
+    "reference_azimuth_deg": 54.0,
+    "reference_elevation_deg": 11.92,
+    "array_xyz_m": [
+      5.02,
+      7.57,
+      1.24
+    ],
+    "array_azimuth_deg": 56.45,
+    "array_elevation_deg": 7.77,
+    "reported_azimuth_error_deg": "2.45",
+    "reported_spatial_angle_deg": 4.8,
+    "reported_spatial_distance_m": 0.77
+  },
+  {
+    "id": 252,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.29,
+      7.28,
+      3.9
+    ],
+    "reference_azimuth_deg": 54.0,
+    "reference_elevation_deg": 23.43,
+    "array_xyz_m": [
+      5.09,
+      6.91,
+      3.86
+    ],
+    "array_azimuth_deg": 53.62,
+    "array_elevation_deg": 24.22,
+    "reported_azimuth_error_deg": "0.37",
+    "reported_spatial_angle_deg": 0.86,
+    "reported_spatial_distance_m": 0.422
+  },
+  {
+    "id": 253,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.29,
+      7.28,
+      5.1
+    ],
+    "reference_azimuth_deg": 54.0,
+    "reference_elevation_deg": 29.54,
+    "array_xyz_m": [
+      5.97,
+      6.64,
+      4.5
+    ],
+    "array_azimuth_deg": 48.04,
+    "array_elevation_deg": 26.75,
+    "reported_azimuth_error_deg": "5.95",
+    "reported_spatial_angle_deg": 5.95,
+    "reported_spatial_distance_m": 1.11
+  },
+  {
+    "id": 254,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.29,
+      7.28,
+      6.5
+    ],
+    "reference_azimuth_deg": 54.0,
+    "reference_elevation_deg": 35.84,
+    "array_xyz_m": [
+      5.31,
+      7.73,
+      6.4
+    ],
+    "array_azimuth_deg": 55.51,
+    "array_elevation_deg": 34.31,
+    "reported_azimuth_error_deg": "1.52",
+    "reported_spatial_angle_deg": 1.97,
+    "reported_spatial_distance_m": 0.461
+  },
+  {
+    "id": 255,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.29,
+      7.28,
+      8.9
+    ],
+    "reference_azimuth_deg": 54.0,
+    "reference_elevation_deg": 44.68,
+    "array_xyz_m": [
+      5.11,
+      8.08,
+      7.4
+    ],
+    "array_azimuth_deg": 57.69,
+    "array_elevation_deg": 37.74,
+    "reported_azimuth_error_deg": "3.69",
+    "reported_spatial_angle_deg": 7.48,
+    "reported_spatial_distance_m": 1.71
+  },
+  {
+    "id": 256,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      -5.29,
+      -7.28,
+      1.0
+    ],
+    "reference_azimuth_deg": 234.0,
+    "reference_elevation_deg": 6.34,
+    "array_xyz_m": [
+      -5.5,
+      -7.13,
+      0.65
+    ],
+    "array_azimuth_deg": 232.35,
+    "array_elevation_deg": 4.13,
+    "reported_azimuth_error_deg": "1.64",
+    "reported_spatial_angle_deg": 2.75,
+    "reported_spatial_distance_m": 0.435
+  },
+  {
+    "id": 257,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      -5.29,
+      -7.28,
+      2.8
+    ],
+    "reference_azimuth_deg": 234.0,
+    "reference_elevation_deg": 17.28,
+    "array_xyz_m": [
+      -5.7,
+      -7.71,
+      1.65
+    ],
+    "array_azimuth_deg": 233.52,
+    "array_elevation_deg": 9.76,
+    "reported_azimuth_error_deg": "0.47",
+    "reported_spatial_angle_deg": 7.53,
+    "reported_spatial_distance_m": 1.294
+  },
+  {
+    "id": 258,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      -5.29,
+      -7.28,
+      5.7
+    ],
+    "reference_azimuth_deg": 234.0,
+    "reference_elevation_deg": 32.35,
+    "array_xyz_m": [
+      -5.0,
+      -7.35,
+      5.6
+    ],
+    "array_azimuth_deg": 235.77,
+    "array_elevation_deg": 32.21,
+    "reported_azimuth_error_deg": "1.78",
+    "reported_spatial_angle_deg": 1.51,
+    "reported_spatial_distance_m": 0.315
+  },
+  {
+    "id": 259,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      -5.29,
+      -7.28,
+      6.6
+    ],
+    "reference_azimuth_deg": 234.0,
+    "reference_elevation_deg": 36.26,
+    "array_xyz_m": [
+      -5.8,
+      -6.85,
+      6.79
+    ],
+    "array_azimuth_deg": 229.74,
+    "array_elevation_deg": 37.11,
+    "reported_azimuth_error_deg": "4.25",
+    "reported_spatial_angle_deg": 3.51,
+    "reported_spatial_distance_m": 0.694
+  },
+  {
+    "id": 260,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      -5.29,
+      -7.28,
+      9.2
+    ],
+    "reference_azimuth_deg": 234.0,
+    "reference_elevation_deg": 45.63,
+    "array_xyz_m": [
+      -5.26,
+      -6.76,
+      9.85
+    ],
+    "array_azimuth_deg": 232.11,
+    "array_elevation_deg": 48.99,
+    "reported_azimuth_error_deg": "1.88",
+    "reported_spatial_angle_deg": 3.59,
+    "reported_spatial_distance_m": 0.833
+  },
+  {
+    "id": 261,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.5,
+      -9.53,
+      1.5
+    ],
+    "reference_azimuth_deg": 299.99,
+    "reference_elevation_deg": 7.76,
+    "array_xyz_m": [
+      5.54,
+      -9.5,
+      2.29
+    ],
+    "array_azimuth_deg": 300.25,
+    "array_elevation_deg": 11.76,
+    "reported_azimuth_error_deg": "0.26",
+    "reported_spatial_angle_deg": 4.01,
+    "reported_spatial_distance_m": 0.792
+  },
+  {
+    "id": 262,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.5,
+      -9.53,
+      4.1
+    ],
+    "reference_azimuth_deg": 299.99,
+    "reference_elevation_deg": 20.44,
+    "array_xyz_m": [
+      4.79,
+      -9.9,
+      4.57
+    ],
+    "array_azimuth_deg": 295.82,
+    "array_elevation_deg": 22.56,
+    "reported_azimuth_error_deg": "4.17",
+    "reported_spatial_angle_deg": 4.43,
+    "reported_spatial_distance_m": 0.928
+  },
+  {
+    "id": 263,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.5,
+      -9.53,
+      4.6
+    ],
+    "reference_azimuth_deg": 299.99,
+    "reference_elevation_deg": 22.69,
+    "array_xyz_m": [
+      5.46,
+      -9.54,
+      4.38
+    ],
+    "array_azimuth_deg": 299.78,
+    "array_elevation_deg": 21.73,
+    "reported_azimuth_error_deg": "0.21",
+    "reported_spatial_angle_deg": 0.98,
+    "reported_spatial_distance_m": 0.224
+  },
+  {
+    "id": 264,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.5,
+      -9.53,
+      6.6
+    ],
+    "reference_azimuth_deg": 299.99,
+    "reference_elevation_deg": 30.96,
+    "array_xyz_m": [
+      5.69,
+      -9.41,
+      6.53
+    ],
+    "array_azimuth_deg": 301.16,
+    "array_elevation_deg": 30.7,
+    "reported_azimuth_error_deg": "1.17",
+    "reported_spatial_angle_deg": 1.04,
+    "reported_spatial_distance_m": 0.235
+  },
+  {
+    "id": 265,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.5,
+      -9.53,
+      10.0
+    ],
+    "reference_azimuth_deg": 299.99,
+    "reference_elevation_deg": 42.27,
+    "array_xyz_m": [
+      5.06,
+      -9.76,
+      8.96
+    ],
+    "array_azimuth_deg": 297.4,
+    "array_elevation_deg": 39.18,
+    "reported_azimuth_error_deg": "2.59",
+    "reported_spatial_angle_deg": 3.65,
+    "reported_spatial_distance_m": 1.152
+  },
+  {
+    "id": 266,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.5,
+      9.53,
+      2.5
+    ],
+    "reference_azimuth_deg": 60.01,
+    "reference_elevation_deg": 12.8,
+    "array_xyz_m": [
+      5.5,
+      9.36,
+      1.72
+    ],
+    "array_azimuth_deg": 59.56,
+    "array_elevation_deg": 9.0,
+    "reported_azimuth_error_deg": "0.45",
+    "reported_spatial_angle_deg": 3.82,
+    "reported_spatial_distance_m": 0.798
+  },
+  {
+    "id": 267,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.5,
+      9.53,
+      3.5
+    ],
+    "reference_azimuth_deg": 60.01,
+    "reference_elevation_deg": 17.65,
+    "array_xyz_m": [
+      4.99,
+      9.35,
+      3.36
+    ],
+    "array_azimuth_deg": 61.91,
+    "array_elevation_deg": 17.59,
+    "reported_azimuth_error_deg": "1.90",
+    "reported_spatial_angle_deg": 1.81,
+    "reported_spatial_distance_m": 0.559
+  },
+  {
+    "id": 268,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.5,
+      9.53,
+      5.8
+    ],
+    "reference_azimuth_deg": 60.01,
+    "reference_elevation_deg": 27.79,
+    "array_xyz_m": [
+      5.33,
+      9.02,
+      5.82
+    ],
+    "array_azimuth_deg": 59.42,
+    "array_elevation_deg": 29.05,
+    "reported_azimuth_error_deg": "0.59",
+    "reported_spatial_angle_deg": 1.36,
+    "reported_spatial_distance_m": 0.538
+  },
+  {
+    "id": 269,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.5,
+      9.53,
+      7.6
+    ],
+    "reference_azimuth_deg": 60.01,
+    "reference_elevation_deg": 34.63,
+    "array_xyz_m": [
+      6.2,
+      9.08,
+      6.91
+    ],
+    "array_azimuth_deg": 55.67,
+    "array_elevation_deg": 32.15,
+    "reported_azimuth_error_deg": "4.34",
+    "reported_spatial_angle_deg": 4.39,
+    "reported_spatial_distance_m": 1.081
+  },
+  {
+    "id": 270,
+    "pdf_page": 9,
+    "reference_xyz_m": [
+      5.5,
+      9.53,
+      10.0
+    ],
+    "reference_azimuth_deg": 60.01,
+    "reference_elevation_deg": 42.27,
+    "array_xyz_m": [
+      5.31,
+      8.65,
+      10.0
+    ],
+    "array_azimuth_deg": 58.46,
+    "array_elevation_deg": 44.57,
+    "reported_azimuth_error_deg": "1.55",
+    "reported_spatial_angle_deg": 2.57,
+    "reported_spatial_distance_m": 0.9
+  },
+  {
+    "id": 271,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -5.5,
+      -9.53,
+      1.8
+    ],
+    "reference_azimuth_deg": 240.01,
+    "reference_elevation_deg": 9.29,
+    "array_xyz_m": [
+      -5.63,
+      -9.45,
+      2.11
+    ],
+    "array_azimuth_deg": 239.21,
+    "array_elevation_deg": 10.86,
+    "reported_azimuth_error_deg": "0.79",
+    "reported_spatial_angle_deg": 1.75,
+    "reported_spatial_distance_m": 0.346
+  },
+  {
+    "id": 272,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -5.5,
+      -9.53,
+      3.3
+    ],
+    "reference_azimuth_deg": 240.01,
+    "reference_elevation_deg": 16.69,
+    "array_xyz_m": [
+      -5.25,
+      -8.94,
+      3.87
+    ],
+    "array_azimuth_deg": 239.58,
+    "array_elevation_deg": 20.47,
+    "reported_azimuth_error_deg": "0.43",
+    "reported_spatial_angle_deg": 3.8,
+    "reported_spatial_distance_m": 0.858
+  },
+  {
+    "id": 273,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -5.5,
+      -9.53,
+      5.8
+    ],
+    "reference_azimuth_deg": 240.01,
+    "reference_elevation_deg": 27.79,
+    "array_xyz_m": [
+      -5.3,
+      -9.45,
+      5.07
+    ],
+    "array_azimuth_deg": 240.71,
+    "array_elevation_deg": 25.08,
+    "reported_azimuth_error_deg": "0.70",
+    "reported_spatial_angle_deg": 2.79,
+    "reported_spatial_distance_m": 0.761
+  },
+  {
+    "id": 274,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -5.5,
+      -9.53,
+      6.7
+    ],
+    "reference_azimuth_deg": 240.01,
+    "reference_elevation_deg": 31.34,
+    "array_xyz_m": [
+      -5.25,
+      -9.66,
+      7.06
+    ],
+    "array_azimuth_deg": 241.48,
+    "array_elevation_deg": 32.71,
+    "reported_azimuth_error_deg": "1.47",
+    "reported_spatial_angle_deg": 1.85,
+    "reported_spatial_distance_m": 0.457
+  },
+  {
+    "id": 275,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -5.5,
+      -9.53,
+      9.8
+    ],
+    "reference_azimuth_deg": 240.01,
+    "reference_elevation_deg": 41.69,
+    "array_xyz_m": [
+      -5.73,
+      -9.38,
+      9.31
+    ],
+    "array_azimuth_deg": 238.58,
+    "array_elevation_deg": 40.26,
+    "reported_azimuth_error_deg": "1.43",
+    "reported_spatial_angle_deg": 1.79,
+    "reported_spatial_distance_m": 0.562
+  },
+  {
+    "id": 276,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -5.5,
+      9.53,
+      2.0
+    ],
+    "reference_azimuth_deg": 119.99,
+    "reference_elevation_deg": 10.3,
+    "array_xyz_m": [
+      -5.06,
+      9.76,
+      2.3
+    ],
+    "array_azimuth_deg": 117.4,
+    "array_elevation_deg": 11.82,
+    "reported_azimuth_error_deg": "2.59",
+    "reported_spatial_angle_deg": 2.96,
+    "reported_spatial_distance_m": 0.58
+  },
+  {
+    "id": 277,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -5.5,
+      9.53,
+      3.2
+    ],
+    "reference_azimuth_deg": 119.99,
+    "reference_elevation_deg": 16.22,
+    "array_xyz_m": [
+      -5.56,
+      6.11,
+      7.2
+    ],
+    "array_azimuth_deg": 132.3,
+    "array_elevation_deg": 41.07,
+    "reported_azimuth_error_deg": "12.31",
+    "reported_spatial_angle_deg": 27.04,
+    "reported_spatial_distance_m": 5.263
+  },
+  {
+    "id": 278,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -5.5,
+      9.53,
+      4.9
+    ],
+    "reference_azimuth_deg": 119.99,
+    "reference_elevation_deg": 24.0,
+    "array_xyz_m": [
+      -6.44,
+      8.91,
+      5.09
+    ],
+    "array_azimuth_deg": 125.86,
+    "array_elevation_deg": 24.84,
+    "reported_azimuth_error_deg": "5.87",
+    "reported_spatial_angle_deg": 5.41,
+    "reported_spatial_distance_m": 1.142
+  },
+  {
+    "id": 279,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -5.5,
+      9.53,
+      6.6
+    ],
+    "reference_azimuth_deg": 119.99,
+    "reference_elevation_deg": 30.96,
+    "array_xyz_m": [
+      -5.62,
+      9.45,
+      5.88
+    ],
+    "array_azimuth_deg": 120.74,
+    "array_elevation_deg": 28.14,
+    "reported_azimuth_error_deg": "0.75",
+    "reported_spatial_angle_deg": 2.89,
+    "reported_spatial_distance_m": 0.734
+  },
+  {
+    "id": 280,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -5.5,
+      9.53,
+      9.5
+    ],
+    "reference_azimuth_deg": 119.99,
+    "reference_elevation_deg": 40.81,
+    "array_xyz_m": [
+      -5.37,
+      9.21,
+      10.0
+    ],
+    "array_azimuth_deg": 120.24,
+    "array_elevation_deg": 43.17,
+    "reported_azimuth_error_deg": "0.25",
+    "reported_spatial_angle_deg": 2.37,
+    "reported_spatial_distance_m": 0.608
+  },
+  {
+    "id": 281,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      6.66,
+      2.16,
+      1.4
+    ],
+    "reference_azimuth_deg": 17.97,
+    "reference_elevation_deg": 11.31,
+    "array_xyz_m": [
+      6.74,
+      2.24,
+      1.06
+    ],
+    "array_azimuth_deg": 18.38,
+    "array_elevation_deg": 8.49,
+    "reported_azimuth_error_deg": "0.41",
+    "reported_spatial_angle_deg": 2.85,
+    "reported_spatial_distance_m": 0.358
+  },
+  {
+    "id": 282,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      6.66,
+      2.16,
+      4.3
+    ],
+    "reference_azimuth_deg": 17.97,
+    "reference_elevation_deg": 31.56,
+    "array_xyz_m": [
+      6.42,
+      2.34,
+      4.06
+    ],
+    "array_azimuth_deg": 20.03,
+    "array_elevation_deg": 30.72,
+    "reported_azimuth_error_deg": "2.06",
+    "reported_spatial_angle_deg": 1.95,
+    "reported_spatial_distance_m": 0.384
+  },
+  {
+    "id": 283,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      6.66,
+      2.16,
+      6.0
+    ],
+    "reference_azimuth_deg": 17.97,
+    "reference_elevation_deg": 40.6,
+    "array_xyz_m": [
+      7.18,
+      2.07,
+      5.73
+    ],
+    "array_azimuth_deg": 16.08,
+    "array_elevation_deg": 37.48,
+    "reported_azimuth_error_deg": "1.89",
+    "reported_spatial_angle_deg": 3.44,
+    "reported_spatial_distance_m": 0.593
+  },
+  {
+    "id": 284,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      6.66,
+      2.16,
+      7.8
+    ],
+    "reference_azimuth_deg": 17.97,
+    "reference_elevation_deg": 48.09,
+    "array_xyz_m": [
+      6.34,
+      2.07,
+      7.86
+    ],
+    "array_azimuth_deg": 18.08,
+    "array_elevation_deg": 49.68,
+    "reported_azimuth_error_deg": "0.11",
+    "reported_spatial_angle_deg": 1.6,
+    "reported_spatial_distance_m": 0.338
+  },
+  {
+    "id": 285,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      6.66,
+      2.16,
+      9.4
+    ],
+    "reference_azimuth_deg": 17.97,
+    "reference_elevation_deg": 53.32,
+    "array_xyz_m": [
+      6.73,
+      2.58,
+      9.41
+    ],
+    "array_azimuth_deg": 20.97,
+    "array_elevation_deg": 52.55,
+    "reported_azimuth_error_deg": "3.01",
+    "reported_spatial_angle_deg": 1.97,
+    "reported_spatial_distance_m": 0.426
+  },
+  {
+    "id": 286,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -6.66,
+      -2.16,
+      2.2
+    ],
+    "reference_azimuth_deg": 197.97,
+    "reference_elevation_deg": 17.44,
+    "array_xyz_m": [
+      -6.54,
+      -2.18,
+      1.89
+    ],
+    "array_azimuth_deg": 198.43,
+    "array_elevation_deg": 15.33,
+    "reported_azimuth_error_deg": "0.47",
+    "reported_spatial_angle_deg": 2.16,
+    "reported_spatial_distance_m": 0.333
+  },
+  {
+    "id": 287,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -6.66,
+      -2.16,
+      3.8
+    ],
+    "reference_azimuth_deg": 197.97,
+    "reference_elevation_deg": 28.49,
+    "array_xyz_m": [
+      -6.59,
+      -2.18,
+      3.43
+    ],
+    "array_azimuth_deg": 198.3,
+    "array_elevation_deg": 26.3,
+    "reported_azimuth_error_deg": "0.34",
+    "reported_spatial_angle_deg": 2.21,
+    "reported_spatial_distance_m": 0.377
+  },
+  {
+    "id": 288,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -6.66,
+      -2.16,
+      5.7
+    ],
+    "reference_azimuth_deg": 197.97,
+    "reference_elevation_deg": 39.15,
+    "array_xyz_m": [
+      -6.27,
+      -1.37,
+      5.93
+    ],
+    "array_azimuth_deg": 192.33,
+    "array_elevation_deg": 42.74,
+    "reported_azimuth_error_deg": "5.64",
+    "reported_spatial_angle_deg": 5.57,
+    "reported_spatial_distance_m": 0.911
+  },
+  {
+    "id": 289,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -6.66,
+      -2.16,
+      7.4
+    ],
+    "reference_azimuth_deg": 197.97,
+    "reference_elevation_deg": 46.58,
+    "array_xyz_m": [
+      -7.28,
+      -2.38,
+      6.55
+    ],
+    "array_azimuth_deg": 198.1,
+    "array_elevation_deg": 40.54,
+    "reported_azimuth_error_deg": "0.13",
+    "reported_spatial_angle_deg": 6.05,
+    "reported_spatial_distance_m": 1.075
+  },
+  {
+    "id": 290,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -6.66,
+      -2.16,
+      9.1
+    ],
+    "reference_azimuth_deg": 197.97,
+    "reference_elevation_deg": 52.43,
+    "array_xyz_m": [
+      -6.49,
+      -2.18,
+      9.37
+    ],
+    "array_azimuth_deg": 198.57,
+    "array_elevation_deg": 53.85,
+    "reported_azimuth_error_deg": "0.60",
+    "reported_spatial_angle_deg": 1.46,
+    "reported_spatial_distance_m": 0.32
+  },
+  {
+    "id": 291,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      6.85,
+      -1.46,
+      2.4
+    ],
+    "reference_azimuth_deg": 347.97,
+    "reference_elevation_deg": 18.91,
+    "array_xyz_m": [
+      6.91,
+      -1.38,
+      3.01
+    ],
+    "array_azimuth_deg": 348.71,
+    "array_elevation_deg": 23.13,
+    "reported_azimuth_error_deg": "0.74",
+    "reported_spatial_angle_deg": 4.27,
+    "reported_spatial_distance_m": 0.618
+  },
+  {
+    "id": 292,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      6.85,
+      -1.46,
+      3.2
+    ],
+    "reference_azimuth_deg": 347.97,
+    "reference_elevation_deg": 24.56,
+    "array_xyz_m": [
+      6.72,
+      -1.57,
+      3.43
+    ],
+    "array_azimuth_deg": 346.85,
+    "array_elevation_deg": 26.43,
+    "reported_azimuth_error_deg": "1.12",
+    "reported_spatial_angle_deg": 2.13,
+    "reported_spatial_distance_m": 0.286
+  },
+  {
+    "id": 293,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      6.85,
+      -1.46,
+      5.5
+    ],
+    "reference_azimuth_deg": 347.97,
+    "reference_elevation_deg": 38.14,
+    "array_xyz_m": [
+      6.72,
+      -1.67,
+      5.35
+    ],
+    "array_azimuth_deg": 346.04,
+    "array_elevation_deg": 37.69,
+    "reported_azimuth_error_deg": "1.92",
+    "reported_spatial_angle_deg": 1.58,
+    "reported_spatial_distance_m": 0.289
+  },
+  {
+    "id": 294,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      6.85,
+      -1.46,
+      7.5
+    ],
+    "reference_azimuth_deg": 347.97,
+    "reference_elevation_deg": 46.96,
+    "array_xyz_m": [
+      7.42,
+      -1.71,
+      6.49
+    ],
+    "array_azimuth_deg": 347.02,
+    "array_elevation_deg": 40.44,
+    "reported_azimuth_error_deg": "0.95",
+    "reported_spatial_angle_deg": 6.55,
+    "reported_spatial_distance_m": 1.186
+  },
+  {
+    "id": 295,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      6.85,
+      -1.46,
+      9.6
+    ],
+    "reference_azimuth_deg": 347.97,
+    "reference_elevation_deg": 53.89,
+    "array_xyz_m": [
+      6.29,
+      -1.03,
+      10.0
+    ],
+    "array_azimuth_deg": 350.7,
+    "array_elevation_deg": 57.49,
+    "reported_azimuth_error_deg": "2.73",
+    "reported_spatial_angle_deg": 3.92,
+    "reported_spatial_distance_m": 0.811
+  },
+  {
+    "id": 296,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -6.85,
+      1.46,
+      1.1
+    ],
+    "reference_azimuth_deg": 167.97,
+    "reference_elevation_deg": 8.93,
+    "array_xyz_m": [
+      -5.86,
+      1.22,
+      1.95
+    ],
+    "array_azimuth_deg": 168.24,
+    "array_elevation_deg": 18.04,
+    "reported_azimuth_error_deg": "0.27",
+    "reported_spatial_angle_deg": 9.12,
+    "reported_spatial_distance_m": 1.327
+  },
+  {
+    "id": 297,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -6.85,
+      1.46,
+      3.3
+    ],
+    "reference_azimuth_deg": 167.97,
+    "reference_elevation_deg": 25.23,
+    "array_xyz_m": [
+      -6.7,
+      1.65,
+      3.34
+    ],
+    "array_azimuth_deg": 166.17,
+    "array_elevation_deg": 25.83,
+    "reported_azimuth_error_deg": "1.80",
+    "reported_spatial_angle_deg": 1.73,
+    "reported_spatial_distance_m": 0.245
+  },
+  {
+    "id": 298,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -6.85,
+      1.46,
+      5.6
+    ],
+    "reference_azimuth_deg": 167.97,
+    "reference_elevation_deg": 38.64,
+    "array_xyz_m": [
+      -7.05,
+      1.58,
+      5.74
+    ],
+    "array_azimuth_deg": 167.37,
+    "array_elevation_deg": 38.47,
+    "reported_azimuth_error_deg": "0.60",
+    "reported_spatial_angle_deg": 0.5,
+    "reported_spatial_distance_m": 0.272
+  },
+  {
+    "id": 299,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -6.85,
+      1.46,
+      6.9
+    ],
+    "reference_azimuth_deg": 167.97,
+    "reference_elevation_deg": 44.57,
+    "array_xyz_m": [
+      -6.72,
+      1.53,
+      6.48
+    ],
+    "array_azimuth_deg": 167.17,
+    "array_elevation_deg": 43.24,
+    "reported_azimuth_error_deg": "0.79",
+    "reported_spatial_angle_deg": 1.45,
+    "reported_spatial_distance_m": 0.445
+  },
+  {
+    "id": 300,
+    "pdf_page": 10,
+    "reference_xyz_m": [
+      -6.85,
+      1.46,
+      8.3
+    ],
+    "reference_azimuth_deg": 167.97,
+    "reference_elevation_deg": 49.84,
+    "array_xyz_m": [
+      -7.2,
+      1.14,
+      8.62
+    ],
+    "array_azimuth_deg": 171.0,
+    "array_elevation_deg": 49.78,
+    "reported_azimuth_error_deg": "3.03",
+    "reported_spatial_angle_deg": 1.96,
+    "reported_spatial_distance_m": 0.572
+  },
+  {
+    "id": 301,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      7.28,
+      -5.29,
+      1.6
+    ],
+    "reference_azimuth_deg": 324.0,
+    "reference_elevation_deg": 10.08,
+    "array_xyz_m": [
+      7.59,
+      -5.34,
+      1.74
+    ],
+    "array_azimuth_deg": 324.87,
+    "array_elevation_deg": 10.62,
+    "reported_azimuth_error_deg": "0.88",
+    "reported_spatial_angle_deg": 1.02,
+    "reported_spatial_distance_m": 0.344
+  },
+  {
+    "id": 302,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      7.28,
+      -5.29,
+      2.8
+    ],
+    "reference_azimuth_deg": 324.0,
+    "reference_elevation_deg": 17.28,
+    "array_xyz_m": [
+      7.16,
+      -5.34,
+      3.39
+    ],
+    "array_azimuth_deg": 323.28,
+    "array_elevation_deg": 20.78,
+    "reported_azimuth_error_deg": "0.71",
+    "reported_spatial_angle_deg": 3.56,
+    "reported_spatial_distance_m": 0.604
+  },
+  {
+    "id": 303,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      7.28,
+      -5.29,
+      5.6
+    ],
+    "reference_azimuth_deg": 324.0,
+    "reference_elevation_deg": 31.89,
+    "array_xyz_m": [
+      7.1,
+      -5.9,
+      5.47
+    ],
+    "array_azimuth_deg": 320.27,
+    "array_elevation_deg": 30.65,
+    "reported_azimuth_error_deg": "3.72",
+    "reported_spatial_angle_deg": 3.42,
+    "reported_spatial_distance_m": 0.649
+  },
+  {
+    "id": 304,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      7.28,
+      -5.29,
+      7.8
+    ],
+    "reference_azimuth_deg": 324.0,
+    "reference_elevation_deg": 40.92,
+    "array_xyz_m": [
+      6.82,
+      -5.42,
+      8.42
+    ],
+    "array_azimuth_deg": 321.53,
+    "array_elevation_deg": 44.03,
+    "reported_azimuth_error_deg": "2.47",
+    "reported_spatial_angle_deg": 3.6,
+    "reported_spatial_distance_m": 0.783
+  },
+  {
+    "id": 305,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      7.28,
+      -5.29,
+      9.6
+    ],
+    "reference_azimuth_deg": 324.0,
+    "reference_elevation_deg": 46.85,
+    "array_xyz_m": [
+      7.44,
+      -4.5,
+      10.0
+    ],
+    "array_azimuth_deg": 328.83,
+    "array_elevation_deg": 48.99,
+    "reported_azimuth_error_deg": "4.84",
+    "reported_spatial_angle_deg": 3.88,
+    "reported_spatial_distance_m": 0.9
+  },
+  {
+    "id": 306,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -7.28,
+      5.29,
+      1.3
+    ],
+    "reference_azimuth_deg": 144.0,
+    "reference_elevation_deg": 8.22,
+    "array_xyz_m": [
+      -6.81,
+      5.71,
+      1.4
+    ],
+    "array_azimuth_deg": 140.02,
+    "array_elevation_deg": 8.95,
+    "reported_azimuth_error_deg": "3.97",
+    "reported_spatial_angle_deg": 4.0,
+    "reported_spatial_distance_m": 0.638
+  },
+  {
+    "id": 307,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -7.28,
+      5.29,
+      3.8
+    ],
+    "reference_azimuth_deg": 144.0,
+    "reference_elevation_deg": 22.89,
+    "array_xyz_m": [
+      -7.18,
+      5.74,
+      3.2
+    ],
+    "array_azimuth_deg": 141.36,
+    "array_elevation_deg": 19.19,
+    "reported_azimuth_error_deg": "2.64",
+    "reported_spatial_angle_deg": 4.44,
+    "reported_spatial_distance_m": 0.757
+  },
+  {
+    "id": 308,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -7.28,
+      5.29,
+      6.0
+    ],
+    "reference_azimuth_deg": 144.0,
+    "reference_elevation_deg": 33.69,
+    "array_xyz_m": [
+      -7.24,
+      5.2,
+      6.1
+    ],
+    "array_azimuth_deg": 144.31,
+    "array_elevation_deg": 34.38,
+    "reported_azimuth_error_deg": "0.32",
+    "reported_spatial_angle_deg": 0.74,
+    "reported_spatial_distance_m": 0.14
+  },
+  {
+    "id": 309,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -7.28,
+      5.29,
+      6.8
+    ],
+    "reference_azimuth_deg": 144.0,
+    "reference_elevation_deg": 37.08,
+    "array_xyz_m": [
+      -7.37,
+      5.59,
+      5.98
+    ],
+    "array_azimuth_deg": 142.82,
+    "array_elevation_deg": 32.88,
+    "reported_azimuth_error_deg": "1.18",
+    "reported_spatial_angle_deg": 4.3,
+    "reported_spatial_distance_m": 0.878
+  },
+  {
+    "id": 310,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -7.28,
+      5.29,
+      9.4
+    ],
+    "reference_azimuth_deg": 144.0,
+    "reference_elevation_deg": 46.25,
+    "array_xyz_m": [
+      -7.67,
+      4.77,
+      8.78
+    ],
+    "array_azimuth_deg": 148.12,
+    "array_elevation_deg": 44.19,
+    "reported_azimuth_error_deg": "4.13",
+    "reported_spatial_angle_deg": 3.56,
+    "reported_spatial_distance_m": 0.898
+  },
+  {
+    "id": 311,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      8.22,
+      3.66,
+      1.6
+    ],
+    "reference_azimuth_deg": 24.0,
+    "reference_elevation_deg": 10.08,
+    "array_xyz_m": [
+      7.79,
+      3.99,
+      2.69
+    ],
+    "array_azimuth_deg": 27.12,
+    "array_elevation_deg": 17.08,
+    "reported_azimuth_error_deg": "3.12",
+    "reported_spatial_angle_deg": 7.63,
+    "reported_spatial_distance_m": 1.217
+  },
+  {
+    "id": 312,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      8.22,
+      3.66,
+      4.2
+    ],
+    "reference_azimuth_deg": 24.0,
+    "reference_elevation_deg": 25.02,
+    "array_xyz_m": [
+      7.79,
+      3.74,
+      4.0
+    ],
+    "array_azimuth_deg": 25.65,
+    "array_elevation_deg": 24.84,
+    "reported_azimuth_error_deg": "1.64",
+    "reported_spatial_angle_deg": 1.5,
+    "reported_spatial_distance_m": 0.481
+  },
+  {
+    "id": 313,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      8.22,
+      3.66,
+      5.0
+    ],
+    "reference_azimuth_deg": 24.0,
+    "reference_elevation_deg": 29.06,
+    "array_xyz_m": [
+      7.73,
+      3.48,
+      5.55
+    ],
+    "array_azimuth_deg": 24.24,
+    "array_elevation_deg": 33.21,
+    "reported_azimuth_error_deg": "0.24",
+    "reported_spatial_angle_deg": 4.16,
+    "reported_spatial_distance_m": 0.758
+  },
+  {
+    "id": 314,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      8.22,
+      3.66,
+      6.5
+    ],
+    "reference_azimuth_deg": 24.0,
+    "reference_elevation_deg": 35.84,
+    "array_xyz_m": [
+      7.77,
+      3.58,
+      6.8
+    ],
+    "array_azimuth_deg": 24.74,
+    "array_elevation_deg": 38.48,
+    "reported_azimuth_error_deg": "0.74",
+    "reported_spatial_angle_deg": 2.7,
+    "reported_spatial_distance_m": 0.547
+  },
+  {
+    "id": 315,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      8.22,
+      3.66,
+      9.5
+    ],
+    "reference_azimuth_deg": 24.0,
+    "reference_elevation_deg": 46.55,
+    "array_xyz_m": [
+      8.52,
+      3.3,
+      9.65
+    ],
+    "array_azimuth_deg": 21.17,
+    "array_elevation_deg": 46.56,
+    "reported_azimuth_error_deg": "2.83",
+    "reported_spatial_angle_deg": 1.94,
+    "reported_spatial_distance_m": 0.492
+  },
+  {
+    "id": 316,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -8.22,
+      -3.66,
+      1.9
+    ],
+    "reference_azimuth_deg": 204.0,
+    "reference_elevation_deg": 11.92,
+    "array_xyz_m": [
+      -8.53,
+      -4.08,
+      1.49
+    ],
+    "array_azimuth_deg": 205.56,
+    "array_elevation_deg": 8.96,
+    "reported_azimuth_error_deg": "1.56",
+    "reported_spatial_angle_deg": 3.34,
+    "reported_spatial_distance_m": 0.664
+  },
+  {
+    "id": 317,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -8.22,
+      -3.66,
+      3.1
+    ],
+    "reference_azimuth_deg": 204.0,
+    "reference_elevation_deg": 19.01,
+    "array_xyz_m": [
+      -8.6,
+      -3.47,
+      3.58
+    ],
+    "array_azimuth_deg": 201.97,
+    "array_elevation_deg": 21.11,
+    "reported_azimuth_error_deg": "2.03",
+    "reported_spatial_angle_deg": 2.83,
+    "reported_spatial_distance_m": 0.641
+  },
+  {
+    "id": 318,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -8.22,
+      -3.66,
+      5.4
+    ],
+    "reference_azimuth_deg": 204.0,
+    "reference_elevation_deg": 30.97,
+    "array_xyz_m": [
+      -5.79,
+      -3.64,
+      7.51
+    ],
+    "array_azimuth_deg": 212.16,
+    "array_elevation_deg": 47.68,
+    "reported_azimuth_error_deg": "8.16",
+    "reported_spatial_angle_deg": 17.83,
+    "reported_spatial_distance_m": 3.218
+  },
+  {
+    "id": 319,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -8.22,
+      -3.66,
+      7.9
+    ],
+    "reference_azimuth_deg": 204.0,
+    "reference_elevation_deg": 41.28,
+    "array_xyz_m": [
+      -7.88,
+      -3.61,
+      8.35
+    ],
+    "array_azimuth_deg": 204.61,
+    "array_elevation_deg": 43.93,
+    "reported_azimuth_error_deg": "0.61",
+    "reported_spatial_angle_deg": 2.69,
+    "reported_spatial_distance_m": 0.566
+  },
+  {
+    "id": 320,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -8.22,
+      -3.66,
+      8.7
+    ],
+    "reference_azimuth_deg": 204.0,
+    "reference_elevation_deg": 44.04,
+    "array_xyz_m": [
+      -8.44,
+      -3.99,
+      8.16
+    ],
+    "array_azimuth_deg": 205.3,
+    "array_elevation_deg": 41.16,
+    "reported_azimuth_error_deg": "1.30",
+    "reported_spatial_angle_deg": 3.03,
+    "reported_spatial_distance_m": 0.67
+  },
+  {
+    "id": 321,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      8.95,
+      -0.94,
+      1.5
+    ],
+    "reference_azimuth_deg": 354.0,
+    "reference_elevation_deg": 9.46,
+    "array_xyz_m": [
+      9.01,
+      -0.86,
+      1.29
+    ],
+    "array_azimuth_deg": 354.55,
+    "array_elevation_deg": 8.11,
+    "reported_azimuth_error_deg": "0.54",
+    "reported_spatial_angle_deg": 1.45,
+    "reported_spatial_distance_m": 0.233
+  },
+  {
+    "id": 322,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      8.95,
+      -0.94,
+      3.2
+    ],
+    "reference_azimuth_deg": 354.0,
+    "reference_elevation_deg": 19.57,
+    "array_xyz_m": [
+      8.67,
+      -1.1,
+      3.11
+    ],
+    "array_azimuth_deg": 352.77,
+    "array_elevation_deg": 19.59,
+    "reported_azimuth_error_deg": "1.24",
+    "reported_spatial_angle_deg": 1.16,
+    "reported_spatial_distance_m": 0.335
+  },
+  {
+    "id": 323,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      8.95,
+      -0.94,
+      5.9
+    ],
+    "reference_azimuth_deg": 354.0,
+    "reference_elevation_deg": 33.25,
+    "array_xyz_m": [
+      9.4,
+      -0.45,
+      5.28
+    ],
+    "array_azimuth_deg": 357.26,
+    "array_elevation_deg": 29.3,
+    "reported_azimuth_error_deg": "3.25",
+    "reported_spatial_angle_deg": 4.83,
+    "reported_spatial_distance_m": 0.909
+  },
+  {
+    "id": 324,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      8.95,
+      -0.94,
+      7.8
+    ],
+    "reference_azimuth_deg": 354.0,
+    "reference_elevation_deg": 40.92,
+    "array_xyz_m": [
+      8.5,
+      -0.25,
+      8.3
+    ],
+    "array_azimuth_deg": 358.32,
+    "array_elevation_deg": 44.31,
+    "reported_azimuth_error_deg": "4.31",
+    "reported_spatial_angle_deg": 4.64,
+    "reported_spatial_distance_m": 0.964
+  },
+  {
+    "id": 325,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      8.95,
+      -0.94,
+      8.9
+    ],
+    "reference_azimuth_deg": 354.0,
+    "reference_elevation_deg": 44.68,
+    "array_xyz_m": [
+      8.31,
+      -1.46,
+      8.95
+    ],
+    "array_azimuth_deg": 350.04,
+    "array_elevation_deg": 46.69,
+    "reported_azimuth_error_deg": "3.97",
+    "reported_spatial_angle_deg": 3.42,
+    "reported_spatial_distance_m": 0.826
+  },
+  {
+    "id": 326,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -8.95,
+      0.94,
+      1.1
+    ],
+    "reference_azimuth_deg": 174.0,
+    "reference_elevation_deg": 6.97,
+    "array_xyz_m": [
+      -8.99,
+      0.68,
+      1.58
+    ],
+    "array_azimuth_deg": 175.67,
+    "array_elevation_deg": 9.94,
+    "reported_azimuth_error_deg": "1.67",
+    "reported_spatial_angle_deg": 3.4,
+    "reported_spatial_distance_m": 0.547
+  },
+  {
+    "id": 327,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -8.95,
+      0.94,
+      4.3
+    ],
+    "reference_azimuth_deg": 174.0,
+    "reference_elevation_deg": 25.54,
+    "array_xyz_m": [
+      -9.58,
+      0.92,
+      3.55
+    ],
+    "array_azimuth_deg": 174.51,
+    "array_elevation_deg": 20.25,
+    "reported_azimuth_error_deg": "0.51",
+    "reported_spatial_angle_deg": 5.31,
+    "reported_spatial_distance_m": 0.98
+  },
+  {
+    "id": 328,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -8.95,
+      0.94,
+      5.7
+    ],
+    "reference_azimuth_deg": 174.0,
+    "reference_elevation_deg": 32.35,
+    "array_xyz_m": [
+      -9.0,
+      1.09,
+      5.06
+    ],
+    "array_azimuth_deg": 173.09,
+    "array_elevation_deg": 29.17,
+    "reported_azimuth_error_deg": "0.91",
+    "reported_spatial_angle_deg": 3.28,
+    "reported_spatial_distance_m": 0.659
+  },
+  {
+    "id": 329,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -8.95,
+      0.94,
+      6.5
+    ],
+    "reference_azimuth_deg": 174.0,
+    "reference_elevation_deg": 35.84,
+    "array_xyz_m": [
+      -8.88,
+      1.55,
+      6.5
+    ],
+    "array_azimuth_deg": 170.1,
+    "array_elevation_deg": 35.79,
+    "reported_azimuth_error_deg": "3.91",
+    "reported_spatial_angle_deg": 3.17,
+    "reported_spatial_distance_m": 0.614
+  },
+  {
+    "id": 330,
+    "pdf_page": 11,
+    "reference_xyz_m": [
+      -8.95,
+      0.94,
+      8.9
+    ],
+    "reference_azimuth_deg": 174.0,
+    "reference_elevation_deg": 44.68,
+    "array_xyz_m": [
+      -9.01,
+      0.7,
+      9.59
+    ],
+    "array_azimuth_deg": 175.56,
+    "array_elevation_deg": 46.7,
+    "reported_azimuth_error_deg": "1.55",
+    "reported_spatial_angle_deg": 2.29,
+    "reported_spatial_distance_m": 0.733
+  },
+  {
+    "id": 331,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      9.53,
+      -5.5,
+      1.1
+    ],
+    "reference_azimuth_deg": 330.01,
+    "reference_elevation_deg": 5.71,
+    "array_xyz_m": [
+      9.14,
+      -6.11,
+      1.32
+    ],
+    "array_azimuth_deg": 326.24,
+    "array_elevation_deg": 6.85,
+    "reported_azimuth_error_deg": "3.77",
+    "reported_spatial_angle_deg": 3.92,
+    "reported_spatial_distance_m": 0.757
+  },
+  {
+    "id": 332,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      9.53,
+      -5.5,
+      4.2
+    ],
+    "reference_azimuth_deg": 330.01,
+    "reference_elevation_deg": 20.89,
+    "array_xyz_m": [
+      9.21,
+      -5.71,
+      4.2
+    ],
+    "array_azimuth_deg": 328.2,
+    "array_elevation_deg": 21.19,
+    "reported_azimuth_error_deg": "1.81",
+    "reported_spatial_angle_deg": 1.71,
+    "reported_spatial_distance_m": 0.383
+  },
+  {
+    "id": 333,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      9.53,
+      -5.5,
+      4.9
+    ],
+    "reference_azimuth_deg": 330.01,
+    "reference_elevation_deg": 24.0,
+    "array_xyz_m": [
+      9.57,
+      -5.41,
+      4.3
+    ],
+    "array_azimuth_deg": 330.52,
+    "array_elevation_deg": 21.36,
+    "reported_azimuth_error_deg": "0.51",
+    "reported_spatial_angle_deg": 2.68,
+    "reported_spatial_distance_m": 0.608
+  },
+  {
+    "id": 334,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      9.53,
+      -5.5,
+      7.0
+    ],
+    "reference_azimuth_deg": 330.01,
+    "reference_elevation_deg": 32.46,
+    "array_xyz_m": [
+      9.3,
+      -5.87,
+      7.0
+    ],
+    "array_azimuth_deg": 327.74,
+    "array_elevation_deg": 32.48,
+    "reported_azimuth_error_deg": "2.27",
+    "reported_spatial_angle_deg": 1.91,
+    "reported_spatial_distance_m": 0.436
+  },
+  {
+    "id": 335,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      9.53,
+      -5.5,
+      9.8
+    ],
+    "reference_azimuth_deg": 330.01,
+    "reference_elevation_deg": 41.69,
+    "array_xyz_m": [
+      9.5,
+      -5.53,
+      10.0
+    ],
+    "array_azimuth_deg": 329.8,
+    "array_elevation_deg": 42.29,
+    "reported_azimuth_error_deg": "0.21",
+    "reported_spatial_angle_deg": 0.62,
+    "reported_spatial_distance_m": 0.204
+  },
+  {
+    "id": 336,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      9.53,
+      5.5,
+      1.6
+    ],
+    "reference_azimuth_deg": 29.99,
+    "reference_elevation_deg": 8.27,
+    "array_xyz_m": [
+      9.45,
+      5.62,
+      1.97
+    ],
+    "array_azimuth_deg": 30.74,
+    "array_elevation_deg": 10.16,
+    "reported_azimuth_error_deg": "0.75",
+    "reported_spatial_angle_deg": 2.02,
+    "reported_spatial_distance_m": 0.397
+  },
+  {
+    "id": 337,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      9.53,
+      5.5,
+      3.9
+    ],
+    "reference_azimuth_deg": 29.99,
+    "reference_elevation_deg": 19.52,
+    "array_xyz_m": [
+      9.93,
+      4.73,
+      3.65
+    ],
+    "array_azimuth_deg": 25.47,
+    "array_elevation_deg": 18.36,
+    "reported_azimuth_error_deg": "4.52",
+    "reported_spatial_angle_deg": 4.43,
+    "reported_spatial_distance_m": 0.903
+  },
+  {
+    "id": 338,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      9.53,
+      5.5,
+      5.4
+    ],
+    "reference_azimuth_deg": 29.99,
+    "reference_elevation_deg": 26.14,
+    "array_xyz_m": [
+      9.13,
+      5.76,
+      4.74
+    ],
+    "array_azimuth_deg": 32.25,
+    "array_elevation_deg": 23.71,
+    "reported_azimuth_error_deg": "2.26",
+    "reported_spatial_angle_deg": 3.18,
+    "reported_spatial_distance_m": 0.814
+  },
+  {
+    "id": 339,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      9.53,
+      5.5,
+      6.9
+    ],
+    "reference_azimuth_deg": 29.99,
+    "reference_elevation_deg": 32.09,
+    "array_xyz_m": [
+      9.15,
+      5.34,
+      7.69
+    ],
+    "array_azimuth_deg": 30.27,
+    "array_elevation_deg": 35.97,
+    "reported_azimuth_error_deg": "0.28",
+    "reported_spatial_angle_deg": 3.89,
+    "reported_spatial_distance_m": 0.891
+  },
+  {
+    "id": 340,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      9.53,
+      5.5,
+      9.7
+    ],
+    "reference_azimuth_deg": 29.99,
+    "reference_elevation_deg": 41.4,
+    "array_xyz_m": [
+      9.51,
+      4.93,
+      10.0
+    ],
+    "array_azimuth_deg": 27.4,
+    "array_elevation_deg": 43.03,
+    "reported_azimuth_error_deg": "2.59",
+    "reported_spatial_angle_deg": 2.52,
+    "reported_spatial_distance_m": 0.644
+  },
+  {
+    "id": 341,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -9.53,
+      -5.5,
+      1.2
+    ],
+    "reference_azimuth_deg": 209.99,
+    "reference_elevation_deg": 6.22,
+    "array_xyz_m": [
+      -9.25,
+      -5.95,
+      1.34
+    ],
+    "array_azimuth_deg": 212.75,
+    "array_elevation_deg": 6.95,
+    "reported_azimuth_error_deg": "2.76",
+    "reported_spatial_angle_deg": 2.84,
+    "reported_spatial_distance_m": 0.548
+  },
+  {
+    "id": 342,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -9.53,
+      -5.5,
+      3.2
+    ],
+    "reference_azimuth_deg": 209.99,
+    "reference_elevation_deg": 16.22,
+    "array_xyz_m": [
+      -9.21,
+      -6.0,
+      2.87
+    ],
+    "array_azimuth_deg": 213.08,
+    "array_elevation_deg": 14.63,
+    "reported_azimuth_error_deg": "3.09",
+    "reported_spatial_angle_deg": 3.38,
+    "reported_spatial_distance_m": 0.679
+  },
+  {
+    "id": 343,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -9.53,
+      -5.5,
+      4.8
+    ],
+    "reference_azimuth_deg": 209.99,
+    "reference_elevation_deg": 23.57,
+    "array_xyz_m": [
+      -9.6,
+      -5.36,
+      4.34
+    ],
+    "array_azimuth_deg": 209.18,
+    "array_elevation_deg": 21.54,
+    "reported_azimuth_error_deg": "0.81",
+    "reported_spatial_angle_deg": 2.16,
+    "reported_spatial_distance_m": 0.486
+  },
+  {
+    "id": 344,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -9.53,
+      -5.5,
+      6.9
+    ],
+    "reference_azimuth_deg": 209.99,
+    "reference_elevation_deg": 32.09,
+    "array_xyz_m": [
+      -9.57,
+      -5.42,
+      5.91
+    ],
+    "array_azimuth_deg": 209.53,
+    "array_elevation_deg": 28.25,
+    "reported_azimuth_error_deg": "0.47",
+    "reported_spatial_angle_deg": 3.86,
+    "reported_spatial_distance_m": 0.994
+  },
+  {
+    "id": 345,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -9.53,
+      -5.5,
+      9.4
+    ],
+    "reference_azimuth_deg": 209.99,
+    "reference_elevation_deg": 40.51,
+    "array_xyz_m": [
+      -9.72,
+      -5.14,
+      9.42
+    ],
+    "array_azimuth_deg": 207.87,
+    "array_elevation_deg": 40.59,
+    "reported_azimuth_error_deg": "2.12",
+    "reported_spatial_angle_deg": 1.61,
+    "reported_spatial_distance_m": 0.408
+  },
+  {
+    "id": 346,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -9.53,
+      5.5,
+      1.6
+    ],
+    "reference_azimuth_deg": 150.01,
+    "reference_elevation_deg": 8.27,
+    "array_xyz_m": [
+      -9.2,
+      5.38,
+      2.27
+    ],
+    "array_azimuth_deg": 149.68,
+    "array_elevation_deg": 12.02,
+    "reported_azimuth_error_deg": "0.33",
+    "reported_spatial_angle_deg": 3.76,
+    "reported_spatial_distance_m": 0.756
+  },
+  {
+    "id": 347,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -9.53,
+      5.5,
+      3.0
+    ],
+    "reference_azimuth_deg": 150.01,
+    "reference_elevation_deg": 15.25,
+    "array_xyz_m": [
+      -9.07,
+      6.21,
+      1.83
+    ],
+    "array_azimuth_deg": 145.6,
+    "array_elevation_deg": 9.45,
+    "reported_azimuth_error_deg": "4.41",
+    "reported_spatial_angle_deg": 7.22,
+    "reported_spatial_distance_m": 1.444
+  },
+  {
+    "id": 348,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -9.53,
+      5.5,
+      5.5
+    ],
+    "reference_azimuth_deg": 150.01,
+    "reference_elevation_deg": 26.56,
+    "array_xyz_m": [
+      -10.03,
+      4.5,
+      5.23
+    ],
+    "array_azimuth_deg": 155.84,
+    "array_elevation_deg": 25.44,
+    "reported_azimuth_error_deg": "5.83",
+    "reported_spatial_angle_deg": 5.35,
+    "reported_spatial_distance_m": 1.15
+  },
+  {
+    "id": 349,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -9.53,
+      5.5,
+      6.8
+    ],
+    "reference_azimuth_deg": 150.01,
+    "reference_elevation_deg": 31.72,
+    "array_xyz_m": [
+      -9.27,
+      5.91,
+      6.42
+    ],
+    "array_azimuth_deg": 147.48,
+    "array_elevation_deg": 30.28,
+    "reported_azimuth_error_deg": "2.53",
+    "reported_spatial_angle_deg": 2.6,
+    "reported_spatial_distance_m": 0.617
+  },
+  {
+    "id": 350,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -9.53,
+      5.5,
+      9.1
+    ],
+    "reference_azimuth_deg": 150.01,
+    "reference_elevation_deg": 39.59,
+    "array_xyz_m": [
+      -9.29,
+      5.88,
+      8.55
+    ],
+    "array_azimuth_deg": 147.67,
+    "array_elevation_deg": 37.87,
+    "reported_azimuth_error_deg": "2.34",
+    "reported_spatial_angle_deg": 2.51,
+    "reported_spatial_distance_m": 0.71
+  },
+  {
+    "id": 351,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      11.0,
+      0.0,
+      1.6
+    ],
+    "reference_azimuth_deg": 0.0,
+    "reference_elevation_deg": 8.28,
+    "array_xyz_m": [
+      10.11,
+      1.59,
+      5.74
+    ],
+    "array_azimuth_deg": 8.94,
+    "array_elevation_deg": 29.29,
+    "reported_azimuth_error_deg": "8.94",
+    "reported_spatial_angle_deg": 22.63,
+    "reported_spatial_distance_m": 4.523
+  },
+  {
+    "id": 352,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      11.0,
+      0.0,
+      2.8
+    ],
+    "reference_azimuth_deg": 0.0,
+    "reference_elevation_deg": 14.28,
+    "array_xyz_m": [
+      10.99,
+      -0.18,
+      3.7
+    ],
+    "array_azimuth_deg": 359.06,
+    "array_elevation_deg": 18.6,
+    "reported_azimuth_error_deg": "0.94",
+    "reported_spatial_angle_deg": 4.42,
+    "reported_spatial_distance_m": 0.918
+  },
+  {
+    "id": 353,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      11.0,
+      0.0,
+      5.8
+    ],
+    "reference_azimuth_deg": 0.0,
+    "reference_elevation_deg": 27.8,
+    "array_xyz_m": [
+      10.54,
+      -0.04,
+      7.0
+    ],
+    "array_azimuth_deg": 359.78,
+    "array_elevation_deg": 33.59,
+    "reported_azimuth_error_deg": "0.22",
+    "reported_spatial_angle_deg": 5.79,
+    "reported_spatial_distance_m": 1.286
+  },
+  {
+    "id": 354,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      11.0,
+      0.0,
+      7.9
+    ],
+    "reference_azimuth_deg": 0.0,
+    "reference_elevation_deg": 35.69,
+    "array_xyz_m": [
+      10.98,
+      0.65,
+      6.31
+    ],
+    "array_azimuth_deg": 3.39,
+    "array_elevation_deg": 29.84,
+    "reported_azimuth_error_deg": "3.39",
+    "reported_spatial_angle_deg": 6.5,
+    "reported_spatial_distance_m": 1.718
+  },
+  {
+    "id": 355,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      11.0,
+      0.0,
+      8.4
+    ],
+    "reference_azimuth_deg": 0.0,
+    "reference_elevation_deg": 37.37,
+    "array_xyz_m": [
+      10.99,
+      0.35,
+      9.09
+    ],
+    "array_azimuth_deg": 1.82,
+    "array_elevation_deg": 39.58,
+    "reported_azimuth_error_deg": "1.82",
+    "reported_spatial_angle_deg": 2.63,
+    "reported_spatial_distance_m": 0.774
+  },
+  {
+    "id": 356,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -11.0,
+      0.0,
+      1.1
+    ],
+    "reference_azimuth_deg": 180.0,
+    "reference_elevation_deg": 5.71,
+    "array_xyz_m": [
+      -10.74,
+      0.07,
+      0.35
+    ],
+    "array_azimuth_deg": 179.63,
+    "array_elevation_deg": 1.87,
+    "reported_azimuth_error_deg": "0.37",
+    "reported_spatial_angle_deg": 3.86,
+    "reported_spatial_distance_m": 0.797
+  },
+  {
+    "id": 357,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -11.0,
+      0.0,
+      4.2
+    ],
+    "reference_azimuth_deg": 180.0,
+    "reference_elevation_deg": 20.9,
+    "array_xyz_m": [
+      -10.82,
+      0.11,
+      4.14
+    ],
+    "array_azimuth_deg": 179.42,
+    "array_elevation_deg": 20.94,
+    "reported_azimuth_error_deg": "0.58",
+    "reported_spatial_angle_deg": 0.55,
+    "reported_spatial_distance_m": 0.219
+  },
+  {
+    "id": 358,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -11.0,
+      0.0,
+      4.9
+    ],
+    "reference_azimuth_deg": 180.0,
+    "reference_elevation_deg": 24.01,
+    "array_xyz_m": [
+      -10.35,
+      0.05,
+      5.46
+    ],
+    "array_azimuth_deg": 179.72,
+    "array_elevation_deg": 27.81,
+    "reported_azimuth_error_deg": "0.28",
+    "reported_spatial_angle_deg": 3.81,
+    "reported_spatial_distance_m": 0.859
+  },
+  {
+    "id": 359,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -11.0,
+      0.0,
+      7.8
+    ],
+    "reference_azimuth_deg": 180.0,
+    "reference_elevation_deg": 35.34,
+    "array_xyz_m": [
+      -10.99,
+      -0.08,
+      7.56
+    ],
+    "array_azimuth_deg": 180.42,
+    "array_elevation_deg": 34.52,
+    "reported_azimuth_error_deg": "0.42",
+    "reported_spatial_angle_deg": 0.89,
+    "reported_spatial_distance_m": 0.253
+  },
+  {
+    "id": 360,
+    "pdf_page": 12,
+    "reference_xyz_m": [
+      -11.0,
+      0.0,
+      8.3
+    ],
+    "reference_azimuth_deg": 180.0,
+    "reference_elevation_deg": 37.04,
+    "array_xyz_m": [
+      -10.12,
+      0.1,
+      10.0
+    ],
+    "array_azimuth_deg": 179.43,
+    "array_elevation_deg": 44.66,
+    "reported_azimuth_error_deg": "0.57",
+    "reported_spatial_angle_deg": 7.63,
+    "reported_spatial_distance_m": 1.917
+  }
+]

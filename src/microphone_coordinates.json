@@ -1,0 +1,130 @@
+[
+  {
+    "channel": 0,
+    "array": 1,
+    "adc_channel": 1,
+    "x_mm": -930,
+    "y_mm": -70,
+    "z_mm": 0
+  },
+  {
+    "channel": 1,
+    "array": 1,
+    "adc_channel": 2,
+    "x_mm": -1000,
+    "y_mm": -70,
+    "z_mm": 0
+  },
+  {
+    "channel": 2,
+    "array": 1,
+    "adc_channel": 3,
+    "x_mm": -1070,
+    "y_mm": -70,
+    "z_mm": 0
+  },
+  {
+    "channel": 3,
+    "array": 1,
+    "adc_channel": 4,
+    "x_mm": -1070,
+    "y_mm": 0,
+    "z_mm": 0
+  },
+  {
+    "channel": 4,
+    "array": 1,
+    "adc_channel": 5,
+    "x_mm": -1070,
+    "y_mm": 70,
+    "z_mm": 0
+  },
+  {
+    "channel": 5,
+    "array": 1,
+    "adc_channel": 6,
+    "x_mm": -1000,
+    "y_mm": 70,
+    "z_mm": 0
+  },
+  {
+    "channel": 6,
+    "array": 1,
+    "adc_channel": 7,
+    "x_mm": -930,
+    "y_mm": 70,
+    "z_mm": 0
+  },
+  {
+    "channel": 7,
+    "array": 1,
+    "adc_channel": 8,
+    "x_mm": -930,
+    "y_mm": 0,
+    "z_mm": 0
+  },
+  {
+    "channel": 8,
+    "array": 2,
+    "adc_channel": 1,
+    "x_mm": 1070,
+    "y_mm": -70,
+    "z_mm": 0
+  },
+  {
+    "channel": 9,
+    "array": 2,
+    "adc_channel": 2,
+    "x_mm": 1000,
+    "y_mm": -70,
+    "z_mm": 0
+  },
+  {
+    "channel": 10,
+    "array": 2,
+    "adc_channel": 3,
+    "x_mm": 930,
+    "y_mm": -70,
+    "z_mm": 0
+  },
+  {
+    "channel": 11,
+    "array": 2,
+    "adc_channel": 4,
+    "x_mm": 930,
+    "y_mm": 0,
+    "z_mm": 0
+  },
+  {
+    "channel": 12,
+    "array": 2,
+    "adc_channel": 5,
+    "x_mm": 930,
+    "y_mm": 70,
+    "z_mm": 0
+  },
+  {
+    "channel": 13,
+    "array": 2,
+    "adc_channel": 6,
+    "x_mm": 1000,
+    "y_mm": 70,
+    "z_mm": 0
+  },
+  {
+    "channel": 14,
+    "array": 2,
+    "adc_channel": 7,
+    "x_mm": 1070,
+    "y_mm": 70,
+    "z_mm": 0
+  },
+  {
+    "channel": 15,
+    "array": 2,
+    "adc_channel": 8,
+    "x_mm": 1070,
+    "y_mm": 0,
+    "z_mm": 0
+  }
+]

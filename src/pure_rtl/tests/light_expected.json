@@ -1,0 +1,114 @@
+[
+  {
+    "name": "far",
+    "means": [
+      0.5000000000000002,
+      -0.5000000000000002,
+      0.5000000000000002,
+      -0.5000000000000002
+    ],
+    "valid": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "selected_bins": 46
+  },
+  {
+    "name": "near",
+    "means": [
+      0.5697265946896719,
+      -0.45579482717947284,
+      0.38404487666827214,
+      -0.5120409733725194
+    ],
+    "valid": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "selected_bins": 46
+  },
+  {
+    "name": "zenith",
+    "means": [
+      0.010000000000000005,
+      0.02,
+      0.010000000000000007,
+      0.02
+    ],
+    "valid": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "selected_bins": 46
+  },
+  {
+    "name": "noise",
+    "means": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "valid": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "selected_bins": 46
+  },
+  {
+    "name": "offband",
+    "means": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "valid": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "selected_bins": 46
+  },
+  {
+    "name": "bad_pairs",
+    "means": [
+      0.5000000000000002,
+      0.0,
+      0.5000000000000002,
+      0.0
+    ],
+    "valid": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "selected_bins": 46
+  },
+  {
+    "name": "split_conflict",
+    "means": [
+      0.7985236034297082,
+      2.193387699805552e-18,
+      0.7985236034297082,
+      -2.193387699805552e-18
+    ],
+    "valid": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "selected_bins": 46
+  }
+]

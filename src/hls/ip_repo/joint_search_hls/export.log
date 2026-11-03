@@ -1,0 +1,69 @@
+
+****** vitis-run v2024.2 (64-bit)
+  **** SW Build 5238363 on 2024-11-10-08:15:25
+  **** Start of session at: Sat Oct 31 02:47:05 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2024.2 5238294
+Sourcing Tcl script 'D:/xiaobao/2026/fpga_board_work/r19_pending_export_20261031_024704/export.tcl'
+INFO: [HLS 200-1510] Running: open_project core 
+INFO: [HLS 200-10] Opening project 'D:/xiaobao/2026/fpga_board_work/r19_pending_export_20261031_024704/core'.
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Opening solution 'D:/xiaobao/2026/fpga_board_work/r19_pending_export_20261031_024704/core/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-fbg484-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset_level=low
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -rtl verilog -vendor drone.self -library compute -version 1.0 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sat Oct 31 02:47:11 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at 'C'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=D:/xiaobao/2026/fpga_board_work/r19_pending_export_20261031_024704/core/solution1/solution1_data.json outdir=D:/xiaobao/2026/fpga_board_work/r19_pending_export_20261031_024704/core/solution1/impl/ip srcdir=D:/xiaobao/2026/fpga_board_work/r19_pending_export_20261031_024704/core/solution1 sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to D:/xiaobao/2026/fpga_board_work/r19_pending_export_20261031_024704/core/solution1/impl/ip/misc
+INFO: Copied 64 verilog file(s) to D:/xiaobao/2026/fpga_board_work/r19_pending_export_20261031_024704/core/solution1/impl/ip/hdl/verilog
+INFO: Copied 59 vhdl file(s) to D:/xiaobao/2026/fpga_board_work/r19_pending_export_20261031_024704/core/solution1/impl/ip/hdl/vhdl
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+INFO: Import ports from HDL: D:/xiaobao/2026/fpga_board_work/r19_pending_export_20261031_024704/core/solution1/impl/ip/hdl/vhdl/joint_search_hls.vhd (joint_search_hls)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Add data interface covariance_address0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: Add data interface covariance_q0
+INFO: Add data interface grid_address0
+INFO: Add data interface grid_q0
+INFO: Add data interface grid_count
+INFO: Add data interface horizontal_mm
+INFO: Add data interface vertical_mm
+INFO: Add data interface baseline_two
+INFO: Add data interface fast_mode
+INFO: Add data interface result
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP D:/xiaobao/2026/fpga_board_work/r19_pending_export_20261031_024704/core/solution1/impl/ip/component.xml
+INFO: Created IP archive D:/xiaobao/2026/fpga_board_work/r19_pending_export_20261031_024704/core/solution1/impl/ip/drone_self_compute_joint_search_hls_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 31 02:47:23 2026...
+INFO: [HLS 200-802] Generated output file core/solution1/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:15; Allocated memory: 9.402 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 17.214 seconds; peak allocated memory: 269.398 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 18s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

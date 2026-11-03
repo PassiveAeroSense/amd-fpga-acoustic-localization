@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-03",
+  "status": "PASS",
+  "method": "Independent working directory synthesis, place and route from normalized submission filenames, using the supplied validated HLS exports.",
+  "tool": "Vivado 2024.2 Build 5239630",
+  "part": "xc7a200tfbg484-2",
+  "top": "acoustic_top",
+  "resource_and_timing_equal_to_reference": true,
+  "reproduced": {
+    "lut": {
+      "used": 52106.0,
+      "available": 133800.0,
+      "percent": 38.94319880418535
+    },
+    "ff": {
+      "used": 35339.0,
+      "available": 267600.0,
+      "percent": 13.205904334828103
+    },
+    "bram36": {
+      "used": 324.5,
+      "available": 365.0,
+      "percent": 88.9041095890411
+    },
+    "dsp": {
+      "used": 304.0,
+      "available": 740.0,
+      "percent": 41.08108108108108
+    },
+    "timing": {
+      "wns_ns": 0.686,
+      "tns_ns": 0.0,
+      "setup_failures": 0.0,
+      "whs_ns": 0.039,
+      "ths_ns": 0.0,
+      "hold_failures": 0.0,
+      "wpws_ns": 4.5,
+      "pulse_failures": 0.0
+    },
+    "status": "PASS",
+    "sha256": {
+      "board_routed_utilization.rpt": "6d63aa4298f28a4c9f9b7cfe7d6ac20647f982e65cc8df4260a32bf54dcdf756",
+      "board_routed_timing.rpt": "547a3ab3364a698bc74f5d6437d80d127a2d77dffff6ff6221a5f45c2a7c4898"
+    },
+    "scope": "Reported constraints only; review CDC, DRC and timing exceptions separately."
+  },
+  "reference_bit_sha256": "ff30ca39cfa1384f7a9a9df917f829e0e60213263ce63d0b3ecff9c177d1a18f",
+  "rebuilt_bit_sha256": "6af910215c56f708430b152c9633f7a845a4d3144ddda174ef40fea1e01d1ac3",
+  "default_programming_image": "board/bitstream/acoustic_top.bit (team-confirmed reference)",
+  "notes": "The fresh .bit has a new build timestamp. Resources and timing match. Board confirmation applies to the reference hash; no additional programming was performed during packaging."
+}

@@ -1,0 +1,413 @@
+
+****** vitis-run v2024.2 (64-bit)
+  **** SW Build 5238363 on 2024-11-10-08:15:25
+  **** Start of session at: Fri Oct 30 23:07:52 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2024.2 5238294
+Sourcing Tcl script 'D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/build.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset core 
+INFO: [HLS 200-10] Creating and opening project 'D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core'.
+INFO: [HLS 200-1510] Running: set_top divide_hls 
+INFO: [HLS 200-1510] Running: add_files src/detector.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding design file 'src/detector.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/joint_search.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding design file 'src/joint_search.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/kernels.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding design file 'src/kernels.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb test_numeric.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding test bench file 'test_numeric.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7a200tfbg484-2 
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-fbg484-2'
+INFO: [HLS 200-1510] Running: create_clock -period 20 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1510] Running: config_rtl -reset_level low -reset control 
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../test_numeric.cpp in debug mode
+   Compiling ../../../../src/kernels.cpp in debug mode
+   Compiling ../../../../src/joint_search.cpp in debug mode
+   Compiling ../../../../src/detector.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../test_numeric.cpp:1:
+In file included from ../../../../src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../src/kernels.cpp:1:
+In file included from ../../../.././src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../src/joint_search.cpp:1:
+In file included from ../../../.././src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../src/detector.cpp:1:
+In file included from ../../../.././src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+NUMERIC HLS PASS: integer bounds/remainders, divide-zero, CORDIC vs trig, calibrated dB vs log10, complex covariance sign
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:18; Allocated memory: 0.852 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 260.270 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/kernels.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'src/joint_search.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'src/detector.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 34.355 seconds; current allocated memory: 264.340 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 672 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 53 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 44 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 44 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 45 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 45 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 44 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 43 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 44 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 51 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.435 seconds; current allocated memory: 265.590 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 265.590 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.048 seconds; current allocated memory: 270.117 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] src/numeric.hpp:21: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.066 seconds; current allocated memory: 272.035 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/numeric.hpp:20:9) to (src/numeric.hpp:19:22) in function 'r18::udiv'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.077 seconds; current allocated memory: 293.961 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 296.961 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'divide_hls' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'udiv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_19_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_19_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.372 seconds; current allocated memory: 300.328 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.144 seconds; current allocated memory: 301.410 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'divide_hls' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.132 seconds; current allocated memory: 301.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.187 seconds; current allocated memory: 301.656 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'udiv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'udiv' pipeline 'VITIS_LOOP_19_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_64ns_32ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'bitset_64ns_64ns_32ns_1s_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'udiv'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.784 seconds; current allocated memory: 303.504 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'divide_hls' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'divide_hls/num' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'divide_hls/den' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'divide_hls/result' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'result' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'divide_hls' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_64s_64s_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'divide_hls'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.394 seconds; current allocated memory: 304.371 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.344 seconds; current allocated memory: 307.113 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.505 seconds; current allocated memory: 309.258 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for divide_hls.
+INFO: [VLOG 209-307] Generating Verilog RTL for divide_hls.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 74.36 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:49; Allocated memory: 49.504 MB.
+INFO: [HLS 200-1510] Running: cosim_design -rtl verilog -tool xsim 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling detector.cpp_pre.cpp.tb.cpp
+   Compiling kernels.cpp_pre.cpp.tb.cpp
+   Compiling joint_search.cpp_pre.cpp.tb.cpp
+   Compiling apatb_divide_hls.cpp
+   Compiling test_numeric.cpp_pre.cpp.tb.cpp
+   Compiling apatb_divide_hls_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+NUMERIC HLS PASS: integer bounds/remainders, divide-zero, CORDIC vs trig, calibrated dB vs log10, complex covariance sign
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+D:\xiaobao\2026\fpga_board_work\r18_hls_divide_hls_20261030_230751\core\solution1\sim\verilog>set PATH= 
+
+D:\xiaobao\2026\fpga_board_work\r18_hls_divide_hls_20261030_230751\core\solution1\sim\verilog>call C:/Xilinx/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_divide_hls_top glbl -Oenable_linking_all_libraries  -prj divide_hls.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s divide_hls  
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_divide_hls_top glbl -Oenable_linking_all_libraries -prj divide_hls.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s divide_hls 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/sim/verilog/divide_hls.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_divide_hls_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/sim/verilog/divide_hls.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divide_hls
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/sim/verilog/divide_hls_bitselect_1ns_64ns_32ns_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divide_hls_bitselect_1ns_64ns_32ns_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/sim/verilog/divide_hls_bitset_64ns_64ns_32ns_1s_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divide_hls_bitset_64ns_64ns_32ns_1s_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/sim/verilog/divide_hls_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divide_hls_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/sim/verilog/divide_hls_mul_64s_64s_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divide_hls_mul_64s_64s_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/sim/verilog/divide_hls_udiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divide_hls_udiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.divide_hls_bitselect_1ns_64ns_32...
+Compiling module xil_defaultlib.divide_hls_bitset_64ns_64ns_32ns...
+Compiling module xil_defaultlib.divide_hls_flow_control_loop_pip...
+Compiling module xil_defaultlib.divide_hls_udiv
+Compiling module xil_defaultlib.divide_hls_mul_64s_64s_64_1_1(NU...
+Compiling module xil_defaultlib.divide_hls
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_divide_hls_top
+Compiling module work.glbl
+Built simulation snapshot divide_hls
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Oct 30 23:09:38 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/divide_hls/xsim_script.tcl
+# xsim {divide_hls} -autoloadwcfg -tclbatch {divide_hls.tcl}
+Time resolution is 1 ps
+source divide_hls.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 81 [0.00%] @ "150000"
+// RTL Simulation : 1 / 81 [100.00%] @ "1530000"
+// RTL Simulation : 2 / 81 [100.00%] @ "2890000"
+// RTL Simulation : 3 / 81 [100.00%] @ "4250000"
+// RTL Simulation : 4 / 81 [100.00%] @ "5610000"
+// RTL Simulation : 5 / 81 [100.00%] @ "6970000"
+// RTL Simulation : 6 / 81 [100.00%] @ "8330000"
+// RTL Simulation : 7 / 81 [100.00%] @ "9690000"
+// RTL Simulation : 8 / 81 [100.00%] @ "11050000"
+// RTL Simulation : 9 / 81 [100.00%] @ "12410000"
+// RTL Simulation : 10 / 81 [100.00%] @ "13770000"
+// RTL Simulation : 11 / 81 [100.00%] @ "15130000"
+// RTL Simulation : 12 / 81 [100.00%] @ "16490000"
+// RTL Simulation : 13 / 81 [100.00%] @ "17850000"
+// RTL Simulation : 14 / 81 [100.00%] @ "19210000"
+// RTL Simulation : 15 / 81 [100.00%] @ "20570000"
+// RTL Simulation : 16 / 81 [100.00%] @ "21930000"
+// RTL Simulation : 17 / 81 [100.00%] @ "23290000"
+// RTL Simulation : 18 / 81 [100.00%] @ "24650000"
+// RTL Simulation : 19 / 81 [100.00%] @ "26010000"
+// RTL Simulation : 20 / 81 [100.00%] @ "27370000"
+// RTL Simulation : 21 / 81 [100.00%] @ "28730000"
+// RTL Simulation : 22 / 81 [100.00%] @ "30090000"
+// RTL Simulation : 23 / 81 [100.00%] @ "31450000"
+// RTL Simulation : 24 / 81 [100.00%] @ "32810000"
+// RTL Simulation : 25 / 81 [100.00%] @ "34170000"
+// RTL Simulation : 26 / 81 [100.00%] @ "35530000"
+// RTL Simulation : 27 / 81 [100.00%] @ "36890000"
+// RTL Simulation : 28 / 81 [100.00%] @ "38250000"
+// RTL Simulation : 29 / 81 [100.00%] @ "39610000"
+// RTL Simulation : 30 / 81 [100.00%] @ "40970000"
+// RTL Simulation : 31 / 81 [100.00%] @ "42330000"
+// RTL Simulation : 32 / 81 [100.00%] @ "43690000"
+// RTL Simulation : 33 / 81 [100.00%] @ "45050000"
+// RTL Simulation : 34 / 81 [100.00%] @ "46410000"
+// RTL Simulation : 35 / 81 [100.00%] @ "47770000"
+// RTL Simulation : 36 / 81 [100.00%] @ "49130000"
+// RTL Simulation : 37 / 81 [100.00%] @ "50490000"
+// RTL Simulation : 38 / 81 [100.00%] @ "51850000"
+// RTL Simulation : 39 / 81 [100.00%] @ "53210000"
+// RTL Simulation : 40 / 81 [100.00%] @ "54570000"
+// RTL Simulation : 41 / 81 [100.00%] @ "55930000"
+// RTL Simulation : 42 / 81 [100.00%] @ "57290000"
+// RTL Simulation : 43 / 81 [100.00%] @ "58650000"
+// RTL Simulation : 44 / 81 [100.00%] @ "60010000"
+// RTL Simulation : 45 / 81 [100.00%] @ "61370000"
+// RTL Simulation : 46 / 81 [100.00%] @ "62730000"
+// RTL Simulation : 47 / 81 [100.00%] @ "64090000"
+// RTL Simulation : 48 / 81 [100.00%] @ "65450000"
+// RTL Simulation : 49 / 81 [100.00%] @ "66810000"
+// RTL Simulation : 50 / 81 [100.00%] @ "68170000"
+// RTL Simulation : 51 / 81 [100.00%] @ "69530000"
+// RTL Simulation : 52 / 81 [100.00%] @ "70890000"
+// RTL Simulation : 53 / 81 [100.00%] @ "72250000"
+// RTL Simulation : 54 / 81 [100.00%] @ "73610000"
+// RTL Simulation : 55 / 81 [100.00%] @ "74970000"
+// RTL Simulation : 56 / 81 [100.00%] @ "76330000"
+// RTL Simulation : 57 / 81 [100.00%] @ "77690000"
+// RTL Simulation : 58 / 81 [100.00%] @ "79050000"
+// RTL Simulation : 59 / 81 [100.00%] @ "80410000"
+// RTL Simulation : 60 / 81 [100.00%] @ "81770000"
+// RTL Simulation : 61 / 81 [100.00%] @ "83130000"
+// RTL Simulation : 62 / 81 [100.00%] @ "84490000"
+// RTL Simulation : 63 / 81 [100.00%] @ "85850000"
+// RTL Simulation : 64 / 81 [100.00%] @ "87210000"
+// RTL Simulation : 65 / 81 [100.00%] @ "88570000"
+// RTL Simulation : 66 / 81 [100.00%] @ "89930000"
+// RTL Simulation : 67 / 81 [100.00%] @ "91290000"
+// RTL Simulation : 68 / 81 [100.00%] @ "92650000"
+// RTL Simulation : 69 / 81 [100.00%] @ "94010000"
+// RTL Simulation : 70 / 81 [100.00%] @ "95370000"
+// RTL Simulation : 71 / 81 [100.00%] @ "96730000"
+// RTL Simulation : 72 / 81 [100.00%] @ "98090000"
+// RTL Simulation : 73 / 81 [100.00%] @ "99450000"
+// RTL Simulation : 74 / 81 [100.00%] @ "100810000"
+// RTL Simulation : 75 / 81 [100.00%] @ "102170000"
+// RTL Simulation : 76 / 81 [100.00%] @ "103530000"
+// RTL Simulation : 77 / 81 [100.00%] @ "104890000"
+// RTL Simulation : 78 / 81 [100.00%] @ "106250000"
+// RTL Simulation : 79 / 81 [100.00%] @ "107610000"
+// RTL Simulation : 80 / 81 [100.00%] @ "108970000"
+// RTL Simulation : 81 / 81 [100.00%] @ "109010000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 109130 ns : File "D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/sim/verilog/divide_hls.autotb.v" Line 335
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 23:09:40 2026...
+INFO: [COSIM 212-316] Starting C post checking ...
+NUMERIC HLS PASS: integer bounds/remainders, divide-zero, CORDIC vs trig, calibrated dB vs log10, complex covariance sign
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:00:38; Allocated memory: 11.750 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -rtl verilog -vendor drone.self -library compute -version 1.0 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+WARNING: C:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Oct 30 23:09:43 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at 'C'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/solution1_data.json outdir=D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/impl/ip srcdir=D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1 sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/impl/ip/misc
+INFO: Copied 6 verilog file(s) to D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/impl/ip/hdl/verilog
+INFO: Copied 6 vhdl file(s) to D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/impl/ip/hdl/vhdl
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+INFO: Import ports from HDL: D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/impl/ip/hdl/vhdl/divide_hls.vhd (divide_hls)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Add data interface num
+INFO: Add data interface den
+INFO: Add data interface result
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/impl/ip/component.xml
+INFO: Created IP archive D:/xiaobao/2026/fpga_board_work/r18_hls_divide_hls_20261030_230751/core/solution1/impl/ip/drone_self_compute_divide_hls_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 23:09:46 2026...
+INFO: [HLS 200-802] Generated output file core/solution1/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:04; Allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 112.581 seconds; peak allocated memory: 321.199 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 53s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

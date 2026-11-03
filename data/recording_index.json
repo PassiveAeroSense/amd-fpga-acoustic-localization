@@ -1,0 +1,446 @@
+[
+  {
+    "file": "recording_001.smq",
+    "original_path": "data/daq/单个 半径2m高2m/0.smq",
+    "bytes": 21248664,
+    "sha256": "ba1e46c1935023601190de445dcbadb2cca4bdc6b8c6bc3382ea8de925200d7c"
+  },
+  {
+    "file": "recording_002.smq",
+    "original_path": "data/daq/单个 半径2m高2m/120.smq",
+    "bytes": 26368824,
+    "sha256": "5f0341f85233802ce244dadb578b8dbec5b75b6fc2292769032149a745a9ee38"
+  },
+  {
+    "file": "recording_003.smq",
+    "original_path": "data/daq/单个 半径2m高2m/150.smq",
+    "bytes": 26368824,
+    "sha256": "e7fed8077f7f5ae00e99e85ed14801cddab7d501e95deef7abf380f2bad06665"
+  },
+  {
+    "file": "recording_004.smq",
+    "original_path": "data/daq/单个 半径2m高2m/180.smq",
+    "bytes": 25088784,
+    "sha256": "9527860ea56a2eac2e23e90426f9d3bad084c4d5b9466509897afa88be1f9c80"
+  },
+  {
+    "file": "recording_005.smq",
+    "original_path": "data/daq/单个 半径2m高2m/210.smq",
+    "bytes": 23808744,
+    "sha256": "8b1b835c0544957883aabc6e5dfca1ed4a7a2f834c6873beac38ad9b97cbfbf0"
+  },
+  {
+    "file": "recording_006.smq",
+    "original_path": "data/daq/单个 半径2m高2m/240.smq",
+    "bytes": 25344792,
+    "sha256": "5148e25450a0865bc82e60be86ccea80bd7965b0e3485236e6012cf4002ec7b3"
+  },
+  {
+    "file": "recording_007.smq",
+    "original_path": "data/daq/单个 半径2m高2m/270.smq",
+    "bytes": 26880840,
+    "sha256": "30e690dc64eb8d1545451d4d9824c685787cf72c103294e3f6714a0eed0d7a87"
+  },
+  {
+    "file": "recording_008.smq",
+    "original_path": "data/daq/单个 半径2m高2m/285.smq",
+    "bytes": 21248664,
+    "sha256": "9aca2eb515a3087565d403ec57d7e35e1c9231e23bb704649d062096f050dbd0"
+  },
+  {
+    "file": "recording_009.smq",
+    "original_path": "data/daq/单个 半径2m高2m/30.smq",
+    "bytes": 23040720,
+    "sha256": "cb0b4aed37c50c09750fa0794270cbb2acf700c61ffd8f1545d66bc78d17f07e"
+  },
+  {
+    "file": "recording_010.smq",
+    "original_path": "data/daq/单个 半径2m高2m/300.smq",
+    "bytes": 26112816,
+    "sha256": "24ef7021a1383f8b8c5d10f8685ec93777d1435c8b2a8582c0afbfb71eab5913"
+  },
+  {
+    "file": "recording_011.smq",
+    "original_path": "data/daq/单个 半径2m高2m/330.smq",
+    "bytes": 25856808,
+    "sha256": "8c8395a3292278bf7566e78f0aa851ebbd106a4edeedc9742d8f0a6b046288ae"
+  },
+  {
+    "file": "recording_012.smq",
+    "original_path": "data/daq/单个 半径2m高2m/360.smq",
+    "bytes": 20992656,
+    "sha256": "ff5ccdae4c44779dc34400b214d76121c343c49c1e3313bf41ba6f3c25af2828"
+  },
+  {
+    "file": "recording_013.smq",
+    "original_path": "data/daq/单个 半径2m高2m/60.smq",
+    "bytes": 28928904,
+    "sha256": "74fa74d247d23b9d6969f177cd39444bcb5da2945481a8c26e4e2cab751c103b"
+  },
+  {
+    "file": "recording_014.smq",
+    "original_path": "data/daq/单个 半径2m高2m/90.smq",
+    "bytes": 30720960,
+    "sha256": "ee1fea7d3f580ab805d8fd651b288370c64e27d7e430702f92dc23e7393409c0"
+  },
+  {
+    "file": "recording_015.smq",
+    "original_path": "data/daq/单个 环境音/qqq 2026_10_21 22_14_46.smq",
+    "bytes": 21504672,
+    "sha256": "77b71e85901749c74adc2dc99734ee8b530345dbc40c913f20da1c650ec0e8d0"
+  },
+  {
+    "file": "recording_015.smqinf",
+    "original_path": "data/daq/单个 环境音/qqq 2026_10_21 22_14_46.smqinf",
+    "bytes": 371,
+    "sha256": "03286f7897b99c1a6767cf83fee468dd72072c1999908c6a4896fb7577559c5e"
+  },
+  {
+    "file": "recording_016.smq",
+    "original_path": "data/daq/单个 麦克风阵列正上方/10米.smq",
+    "bytes": 21248664,
+    "sha256": "a8b62fb848696ae48718d74b2a5bae26ca6b55f75bd8fc0349ba8a46bb3b722b"
+  },
+  {
+    "file": "recording_017.smq",
+    "original_path": "data/daq/单个 麦克风阵列正上方/15米.smq",
+    "bytes": 26624832,
+    "sha256": "25dcea937eab637660eb5121bba5747146ce89a0b4942d6c4141c78dc01b6204"
+  },
+  {
+    "file": "recording_018.smq",
+    "original_path": "data/daq/单个 麦克风阵列正上方/20米.smq",
+    "bytes": 15104472,
+    "sha256": "5970865fea0926096b61629b93feb0e5c6f94f2a9ad4ee202dcf63c14317db25"
+  },
+  {
+    "file": "recording_019.smq",
+    "original_path": "data/daq/单个 麦克风阵列正上方/5米.smq",
+    "bytes": 24064752,
+    "sha256": "79107057b9ff83aff3173182d4bb155f2bc5f3ceb9e820c508897c64ea92efd3"
+  },
+  {
+    "file": "recording_020.smq",
+    "original_path": "data/daq/单个 麦克风阵列正上方/7.5米.smq",
+    "bytes": 21760680,
+    "sha256": "8762a1a071d4ec441a0dbc2a31ef697f95f3c88eacc507920603f7bb4225230d"
+  },
+  {
+    "file": "recording_021.smq",
+    "original_path": "data/daq/单个-半径1米高1米/0.smq",
+    "bytes": 20224632,
+    "sha256": "24d14b8098abc96540fc619235ae07b7e3b40ef638409c0717611d9f7010c6a0"
+  },
+  {
+    "file": "recording_022.smq",
+    "original_path": "data/daq/单个-半径1米高1米/120.smq",
+    "bytes": 23808744,
+    "sha256": "eaf7f7965767a217d05a0f68426fd4485dc3625384817f3888a6f651a92a95bd"
+  },
+  {
+    "file": "recording_023.smq",
+    "original_path": "data/daq/单个-半径1米高1米/150.smq",
+    "bytes": 21504672,
+    "sha256": "98cd78d3ed5a658884db946d5f27fc0a5c9e6afaaf9a873f5d640bfe96dc087b"
+  },
+  {
+    "file": "recording_024.smq",
+    "original_path": "data/daq/单个-半径1米高1米/180.smq",
+    "bytes": 25600800,
+    "sha256": "ee2fd4f3071306ee96cd31f127b8192da2955d6b3478d51c39aac0c561ce9829"
+  },
+  {
+    "file": "recording_025.smq",
+    "original_path": "data/daq/单个-半径1米高1米/210.smq",
+    "bytes": 22016688,
+    "sha256": "9aac8c542bd64d54c3041a5488b5534e6e4b0b076e04945a008ad5c6fa6c9453"
+  },
+  {
+    "file": "recording_026.smq",
+    "original_path": "data/daq/单个-半径1米高1米/240.smq",
+    "bytes": 21504672,
+    "sha256": "cb7658d4e401c5409dd8fac2903a124e40eaaf60e6cc672e8a69912d20e85dd4"
+  },
+  {
+    "file": "recording_027.smq",
+    "original_path": "data/daq/单个-半径1米高1米/270.smq",
+    "bytes": 17152536,
+    "sha256": "5b06c28c18df2bf6603100f81b0a7db85c6011587d5a50ec00fa90d60b07136a"
+  },
+  {
+    "file": "recording_028.smq",
+    "original_path": "data/daq/单个-半径1米高1米/285.smq",
+    "bytes": 21248664,
+    "sha256": "72bdd7e4645e58cd991d4e7d57b55865a0d3f5618bcb420cc0d7e864cb0ba989"
+  },
+  {
+    "file": "recording_029.smq",
+    "original_path": "data/daq/单个-半径1米高1米/30.smq",
+    "bytes": 21504672,
+    "sha256": "35b7711604b4a6e2fb7a81aed5b63ff6290326ec275a61b2ac4fdc34a741de29"
+  },
+  {
+    "file": "recording_030.smq",
+    "original_path": "data/daq/单个-半径1米高1米/300.smq",
+    "bytes": 20480640,
+    "sha256": "f1c0c99bf145f4d8ef153c7998972e76a32b4c756a43b081d4f55d5b22138ed3"
+  },
+  {
+    "file": "recording_031.smq",
+    "original_path": "data/daq/单个-半径1米高1米/330.smq",
+    "bytes": 21760680,
+    "sha256": "e38d2defdfabf4d7071f87f29d6044b23398c04c70bbae9a628ace38fa6630f0"
+  },
+  {
+    "file": "recording_032.smq",
+    "original_path": "data/daq/单个-半径1米高1米/360.smq",
+    "bytes": 24576768,
+    "sha256": "45fb52b64bf62737f5371c7792435737d0a206224773289b49c9ab35e3184a4a"
+  },
+  {
+    "file": "recording_033.smq",
+    "original_path": "data/daq/单个-半径1米高1米/60.smq",
+    "bytes": 21248664,
+    "sha256": "742c0a3a42321d341cc9415d4ee8f594814033c3f617be5e11e196b6575558b6"
+  },
+  {
+    "file": "recording_034.smq",
+    "original_path": "data/daq/单个-半径1米高1米/90.smq",
+    "bytes": 21248664,
+    "sha256": "f399e64d0d3b6038f324de9c3200bd0512079a3d4979fb5bfda19c4d22b53496"
+  },
+  {
+    "file": "recording_035.smq",
+    "original_path": "data/daq/双阵列-夜间/-200，200，1.smq",
+    "bytes": 34560720,
+    "sha256": "bf1fd0b7226d598f7194e8999b3d9edc8a80b1f55b74132fe00a57c5469b7116"
+  },
+  {
+    "file": "recording_036.smq",
+    "original_path": "data/daq/双阵列-夜间/-200，200，2.smq",
+    "bytes": 32640680,
+    "sha256": "932e578ac25128f9cb4fef7ce5a21fa54218953deef6ff9e46fceb6b693ec7e8"
+  },
+  {
+    "file": "recording_037.smq",
+    "original_path": "data/daq/双阵列-夜间/-200，200，3.smq",
+    "bytes": 31488656,
+    "sha256": "6d76b840b8221802917608906ee1d132b7516f22c7a8d046cbccfde5dc933db6"
+  },
+  {
+    "file": "recording_038.smq",
+    "original_path": "data/daq/双阵列-夜间/-200，200，5.smq",
+    "bytes": 31104648,
+    "sha256": "cb552472a3c9aa24a3414545a929f4a11dd0accce335b19204e1eff7273922c8"
+  },
+  {
+    "file": "recording_039.smq",
+    "original_path": "data/daq/双阵列-夜间/0，-200，1.smq",
+    "bytes": 33024688,
+    "sha256": "ceacfe2576d080719aba48719bb1974422f98bd346af2d1c4e353c5bc5cf1412"
+  },
+  {
+    "file": "recording_040.smq",
+    "original_path": "data/daq/双阵列-夜间/0，-200，2.smq",
+    "bytes": 31488656,
+    "sha256": "c264fbce384e91feb0d240f189f833ef122c73a8955e95b509e268d54d4ecc74"
+  },
+  {
+    "file": "recording_041.smq",
+    "original_path": "data/daq/双阵列-夜间/0，-200，3.smq",
+    "bytes": 33792704,
+    "sha256": "273cf2521a91a08f15b20ac8f9ef0c510d2e952af17934facd9e61df9258f1f1"
+  },
+  {
+    "file": "recording_042.smq",
+    "original_path": "data/daq/双阵列-夜间/0，-200，5.smq",
+    "bytes": 30720640,
+    "sha256": "13a28210e80d5275ed07771fd562c58bcd52f5f67da919b2911a7fe366fcbf80"
+  },
+  {
+    "file": "recording_043.smq",
+    "original_path": "data/daq/双阵列-夜间/0，0，0.5.smq",
+    "bytes": 33792704,
+    "sha256": "27f6f931081a728d0cfc0b79a1c7bfc7eaf3c6d3ed852d9316b01fd672a20c9a"
+  },
+  {
+    "file": "recording_044.smq",
+    "original_path": "data/daq/双阵列-夜间/0，0，10.smq",
+    "bytes": 33792704,
+    "sha256": "b06fd4e3056acfbcc355d3e3ec97e4e8f4b721e0fe01f6dd4f70c4a71a9b3122"
+  },
+  {
+    "file": "recording_044.smqinf",
+    "original_path": "data/daq/双阵列-夜间/0，0，10.smqinf",
+    "bytes": 371,
+    "sha256": "37b2b71f5d215ee2a64a78f2b3a248605769f900bfaf3b14a10d2a8df27d7adb"
+  },
+  {
+    "file": "recording_045.smq",
+    "original_path": "data/daq/双阵列-夜间/0，0，100.smq",
+    "bytes": 31104648,
+    "sha256": "f0072388eca714e8b59c461ae610891cc0e5fce52405fdd3f0239f2e53de5bdc"
+  },
+  {
+    "file": "recording_046.smq",
+    "original_path": "data/daq/双阵列-夜间/0，0，120.smq",
+    "bytes": 39936832,
+    "sha256": "dd263ed744d5d222c5d55626f4ab37f01d53a4d606a9a9d0aa4862982d77e451"
+  },
+  {
+    "file": "recording_047.smq",
+    "original_path": "data/daq/双阵列-夜间/0，0，15.smq",
+    "bytes": 32640680,
+    "sha256": "9a3269935bcf92d92402ae682636f1dd44d1af7852613b7fcf51c6dc6af8edb4"
+  },
+  {
+    "file": "recording_048.smq",
+    "original_path": "data/daq/双阵列-夜间/0，0，20.smq",
+    "bytes": 31488656,
+    "sha256": "8658bdc21b872166d44df9065a8f972e015809e15846bb55d853c0100a228f7b"
+  },
+  {
+    "file": "recording_049.smq",
+    "original_path": "data/daq/双阵列-夜间/0，0，30.smq",
+    "bytes": 31104648,
+    "sha256": "4e27d464572f049056b0ad7097d0318f587ebcd15b6a9e1f515c0623d0b5c0d8"
+  },
+  {
+    "file": "recording_050.smq",
+    "original_path": "data/daq/双阵列-夜间/0，0，40.smq",
+    "bytes": 31488656,
+    "sha256": "f0fed7debcee9cf3dc622623f945d4a71768d01bb050dfabbd1751d6576be879"
+  },
+  {
+    "file": "recording_051.smq",
+    "original_path": "data/daq/双阵列-夜间/0，0，50.smq",
+    "bytes": 31872664,
+    "sha256": "5cd2b0cec3714375825ac77ac185f09a964cf7b44e9b8943aead5840a4784e04"
+  },
+  {
+    "file": "recording_052.smq",
+    "original_path": "data/daq/双阵列-夜间/0，0，60.smq",
+    "bytes": 34560720,
+    "sha256": "8a5da04f60b4e51a8c87646e9634e57bf2905eeea7731a2d823100968c3b99b2"
+  },
+  {
+    "file": "recording_053.smq",
+    "original_path": "data/daq/双阵列-夜间/0，0，70.smq",
+    "bytes": 31488656,
+    "sha256": "3bc845999c12fc64e874dbcebf37510b03d47425f55a961046ad4e6cd5745f30"
+  },
+  {
+    "file": "recording_054.smq",
+    "original_path": "data/daq/双阵列-夜间/0，0，80.smq",
+    "bytes": 32256672,
+    "sha256": "8f844e035133f87f142d922ace6f081be3715a606545d4242fe17cc08acc1d28"
+  },
+  {
+    "file": "recording_055.smq",
+    "original_path": "data/daq/双阵列-夜间/0，0，90.smq",
+    "bytes": 30720640,
+    "sha256": "d3b69357db558d4a4568231011a058db5a851fb798586b24ded02d4f1b407d68"
+  },
+  {
+    "file": "recording_056.smq",
+    "original_path": "data/daq/双阵列-夜间/0，1000，1.smq",
+    "bytes": 31488656,
+    "sha256": "a8ee2f036e250695b33c8f149640dda67bb8a5e84cce81be4da854c497e2dd6f"
+  },
+  {
+    "file": "recording_057.smq",
+    "original_path": "data/daq/双阵列-夜间/0，1000，3.smq",
+    "bytes": 31488656,
+    "sha256": "e9c46e32b1da24461ebe081c9f0c4f304246d6034406b74062196e37c0e44266"
+  },
+  {
+    "file": "recording_057.smqinf",
+    "original_path": "data/daq/双阵列-夜间/0，1000，3.smqinf",
+    "bytes": 371,
+    "sha256": "a6a5f22d197d9f1f4687613d3ed779f52e223d374ad5a62a7a5640674b20c2a0"
+  },
+  {
+    "file": "recording_058.smq",
+    "original_path": "data/daq/双阵列-夜间/0，1000，5.smq",
+    "bytes": 31488656,
+    "sha256": "5f4b9666291ecd014d67920a5185ed6174f47c8ace9d3bab619b7e8745e47805"
+  },
+  {
+    "file": "recording_059.smq",
+    "original_path": "data/daq/双阵列-夜间/0，200，2.smq",
+    "bytes": 30720640,
+    "sha256": "928c6ba3a2d1cbb35796bf6cffab2179db478cab009fcc69855d5648637fd083"
+  },
+  {
+    "file": "recording_060.smq",
+    "original_path": "data/daq/双阵列-夜间/0，200，3.smq",
+    "bytes": 31104648,
+    "sha256": "f04926cd0a842b9f2e98bc14224e38b34b3058d695be06ba00d7d4911ec7a9f4"
+  },
+  {
+    "file": "recording_061.smq",
+    "original_path": "data/daq/双阵列-夜间/0，200，5.smq",
+    "bytes": 32640680,
+    "sha256": "c45a1b24e671d32f7e8f9100ef78d14e8e94598dcbd72c63eb0789b03e1cf7a7"
+  },
+  {
+    "file": "recording_062.smq",
+    "original_path": "data/daq/双阵列-夜间/0，700，1.smq",
+    "bytes": 32640680,
+    "sha256": "46351132f89d2738a85a207b96fd598d793a6774fe279b7c67a30fd605509c9b"
+  },
+  {
+    "file": "recording_063.smq",
+    "original_path": "data/daq/双阵列-夜间/200，-200，1.smq",
+    "bytes": 37632784,
+    "sha256": "64de9677c50ff6e0e1faba4bc95a966fa6c93834fd3e91f724de71b3c32f24c6"
+  },
+  {
+    "file": "recording_064.smq",
+    "original_path": "data/daq/双阵列-夜间/200，-200，2.smq",
+    "bytes": 31872664,
+    "sha256": "dcb4b42c9bd67982a1d1a9693148de1e664ea401a90f9021feadf4987530b498"
+  },
+  {
+    "file": "recording_065.smq",
+    "original_path": "data/daq/双阵列-夜间/200，-200，3.smq",
+    "bytes": 31872664,
+    "sha256": "e93b3dfaf1bb3337f3b605038ba0e3b0590f4e2e6ba8753764570c579da697b1"
+  },
+  {
+    "file": "recording_066.smq",
+    "original_path": "data/daq/双阵列-夜间/200，-200，5.smq",
+    "bytes": 38784808,
+    "sha256": "ba3afa8517925dd8c41aa76ee3c3df60de008e5c09210e8f53008042dec378d2"
+  },
+  {
+    "file": "recording_067.smq",
+    "original_path": "data/daq/双阵列-夜间/未知，未知，60.smq",
+    "bytes": 26496552,
+    "sha256": "c6f8326a08672a0f8820a246617195d4fb14ec0d7271517e7404bb160a166297"
+  },
+  {
+    "file": "recording_067.smqinf",
+    "original_path": "data/daq/双阵列-夜间/未知，未知，60.smqinf",
+    "bytes": 371,
+    "sha256": "29ef9f23bfef91c67555b286f15b2c5f5d116010b8e22681c4e2b464da6e35c3"
+  },
+  {
+    "file": "recording_068.smq",
+    "original_path": "data/daq/双阵列-夜间/环境噪音.smq",
+    "bytes": 71041480,
+    "sha256": "845635559a967dbc2f1db9cad992b0125c7467d1a977875dfe44dd2f49413f4d"
+  },
+  {
+    "file": "recording_069.smq",
+    "original_path": "data/daq/双阵列-夜间/（0，200，1）.smq",
+    "bytes": 33408696,
+    "sha256": "85101d476475e61633fe241b662352c525f03c0c39e9ac8dbc7add2db5b3f478"
+  },
+  {
+    "file": "recording_070.m4a",
+    "original_path": "data/daq/白日屋中音.m4a",
+    "bytes": 1232483,
+    "sha256": "11cad0ac82890d05063d4cca72bcebe7579bae18ca873fb30c6cc1135f71e075"
+  }
+]

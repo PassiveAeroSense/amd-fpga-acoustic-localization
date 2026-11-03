@@ -1,0 +1,655 @@
+<profile>
+    <ReportVersion>
+        <Version>2024.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>artix7</ProductFamily>
+        <Part>xc7a200t-fbg484-2</Part>
+        <TopModelName>cordic_hls</TopModelName>
+        <TargetClockPeriod>20.00</TargetClockPeriod>
+        <ClockUncertainty>5.40</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>8.635</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>37</Best-caseLatency>
+            <Average-caseLatency>37</Average-caseLatency>
+            <Worst-caseLatency>37</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.740 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.740 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.740 us</Worst-caseRealTimeLatency>
+            <Interval-min>38</Interval-min>
+            <Interval-max>38</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>src/kernels.cpp:83</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>6</DSP>
+            <FF>464</FF>
+            <LUT>1352</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>730</BRAM_18K>
+            <DSP>740</DSP>
+            <FF>269200</FF>
+            <LUT>134600</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>cordic_hls</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>cordic_hls</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>cordic_hls</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>cordic_hls</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>cordic_hls</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>cordic_hls</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>mode</name>
+            <Object>mode</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>vx</name>
+            <Object>vx</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>40</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>vy</name>
+            <Object>vy</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>40</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>angle</name>
+            <Object>angle</Object>
+            <Type>scalar</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>result</name>
+            <Object>result</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>136</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="4">
+            <ModuleName>cordic_hls</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_cordic_fu_69</InstName>
+                    <ModuleName>cordic</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>69</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_cordic_Pipeline_VITIS_LOOP_31_1_fu_116</InstName>
+                            <ModuleName>cordic_Pipeline_VITIS_LOOP_31_1</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>116</ID>
+                            <BindInstances>icmp_ln31_fu_195_p2 add_ln31_fu_201_p2 ashr_ln35_fu_239_p2 xor_ln34_fu_257_p2 xor_ln35_fu_271_p2 ashr_ln35_1_fu_277_p2 shr_i42325_fu_283_p2 x_4_fu_356_p2 y_2_fu_295_p2 z_2_fu_301_p2 x_2_fu_307_p2 y_3_fu_313_p2 z_3_fu_319_p2 x_4_fu_356_p8 and_ln34_fu_331_p2 and_ln35_fu_336_p2 and_ln34_1_fu_341_p2 sparsemux_9_3_44_1_1_U1 sparsemux_9_3_44_1_1_U2 sparsemux_9_3_33_1_1_U3 r18_CORDIC_ATAN_U</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>icmp_ln30_fu_152_p2 xx_ph_fu_315_p2 yy_ph_fu_294_p2 z_4_ph_fu_261_p2 z_4_ph_fu_261_p6 icmp_ln30_1_fu_192_p2 z_5_fu_198_p2 xx_ph_fu_315_p8 z_4_ph_fu_261_p8 and_ln29_fu_220_p2 xor_ln29_fu_226_p2 and_ln29_1_fu_232_p2 xor_ln25_fu_238_p2 and_ln30_fu_245_p2 sparsemux_9_3_32_1_1_U16 sparsemux_7_2_41_1_1_U17 sparsemux_9_3_41_1_1_U18 mul_44s_31ns_70_1_1_U15</BindInstances>
+                </Instance>
+            </InstancesList>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>cordic_Pipeline_VITIS_LOOP_31_1</Name>
+            <Loops>
+                <VITIS_LOOP_31_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>20.00</TargetClockPeriod>
+                    <ClockUncertainty>5.40</ClockUncertainty>
+                    <EstimatedClockPeriod>8.635</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>34</Best-caseLatency>
+                    <Average-caseLatency>34</Average-caseLatency>
+                    <Worst-caseLatency>34</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.680 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.680 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.680 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>32</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_31_1>
+                        <Name>VITIS_LOOP_31_1</Name>
+                        <Slack>14.60</Slack>
+                        <TripCount>31</TripCount>
+                        <Latency>32</Latency>
+                        <AbsoluteTimeLatency>0.640 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_31_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>src/numeric.hpp:28</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_31_1>
+                            <Name>VITIS_LOOP_31_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>src/numeric.hpp:31</SourceLocation>
+                        </VITIS_LOOP_31_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>730</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <FF>165</FF>
+                    <AVAIL_FF>269200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>913</LUT>
+                    <AVAIL_LUT>134600</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>740</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln31_fu_195_p2" SOURCE="src/numeric.hpp:31" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln31" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln31_fu_201_p2" SOURCE="src/numeric.hpp:31" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln31" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ashr" DSP="0" ID="" IMPL="auto_pipe" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="ashr" PRAGMA="" RTLNAME="ashr_ln35_fu_239_p2" SOURCE="src/numeric.hpp:35" STORAGESUBTYPE="" URAM="0" VARIABLE="ashr_ln35" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln34_fu_257_p2" SOURCE="src/numeric.hpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln34" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln35_fu_271_p2" SOURCE="src/numeric.hpp:35" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln35" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ashr" DSP="0" ID="" IMPL="auto_pipe" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="ashr" PRAGMA="" RTLNAME="ashr_ln35_1_fu_277_p2" SOURCE="src/numeric.hpp:35" STORAGESUBTYPE="" URAM="0" VARIABLE="ashr_ln35_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op lshr" DSP="0" ID="" IMPL="auto_pipe" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="lshr" PRAGMA="" RTLNAME="shr_i42325_fu_283_p2" SOURCE="src/numeric.hpp:31" STORAGESUBTYPE="" URAM="0" VARIABLE="shr_i42325" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="add" PRAGMA="" RTLNAME="x_4_fu_356_p2" SOURCE="src/numeric.hpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="x_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="sub" PRAGMA="" RTLNAME="y_2_fu_295_p2" SOURCE="src/numeric.hpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="y_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="add" PRAGMA="" RTLNAME="z_2_fu_301_p2" SOURCE="src/numeric.hpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="z_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="sub" PRAGMA="" RTLNAME="x_2_fu_307_p2" SOURCE="src/numeric.hpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="x_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="add" PRAGMA="" RTLNAME="y_3_fu_313_p2" SOURCE="src/numeric.hpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="y_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="sub" PRAGMA="" RTLNAME="z_3_fu_319_p2" SOURCE="src/numeric.hpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="z_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="add" PRAGMA="" RTLNAME="x_4_fu_356_p8" SOURCE="src/numeric.hpp:35" STORAGESUBTYPE="" URAM="0" VARIABLE="x_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="and" PRAGMA="" RTLNAME="and_ln34_fu_331_p2" SOURCE="src/numeric.hpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln34" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="and" PRAGMA="" RTLNAME="and_ln35_fu_336_p2" SOURCE="src/numeric.hpp:35" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln35" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="and" PRAGMA="" RTLNAME="and_ln34_1_fu_341_p2" SOURCE="src/numeric.hpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln34_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_44_1_1_U1" SOURCE="src/numeric.hpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="x_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_44_1_1_U2" SOURCE="src/numeric.hpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="y_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="VITIS_LOOP_31_1" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_33_1_1_U3" SOURCE="src/numeric.hpp:34" STORAGESUBTYPE="" URAM="0" VARIABLE="z_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="r18_CORDIC_ATAN_U" SOURCE="" STORAGESIZE="29 31 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="r18_CORDIC_ATAN" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>cordic</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>20.00</TargetClockPeriod>
+                    <ClockUncertainty>5.40</ClockUncertainty>
+                    <EstimatedClockPeriod>8.635</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>36</Best-caseLatency>
+                    <Average-caseLatency>36</Average-caseLatency>
+                    <Worst-caseLatency>36</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.720 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.720 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.720 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>36</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>src/numeric.hpp:29</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>730</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>6</DSP>
+                    <AVAIL_DSP>740</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>348</FF>
+                    <AVAIL_FF>269200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1339</LUT>
+                    <AVAIL_LUT>134600</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln30_fu_152_p2" SOURCE="src/numeric.hpp:30" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln30" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="xx_ph_fu_315_p2" SOURCE="src/numeric.hpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="x" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="yy_ph_fu_294_p2" SOURCE="src/numeric.hpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="y" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="z_4_ph_fu_261_p2" SOURCE="src/numeric.hpp:28" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln28" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="z_4_ph_fu_261_p6" SOURCE="src/numeric.hpp:30" STORAGESUBTYPE="" URAM="0" VARIABLE="z" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln30_1_fu_192_p2" SOURCE="src/numeric.hpp:30" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln30_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="z_5_fu_198_p2" SOURCE="src/numeric.hpp:30" STORAGESUBTYPE="" URAM="0" VARIABLE="z_5" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="xx_ph_fu_315_p8" SOURCE="src/numeric.hpp:30" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln30" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="z_4_ph_fu_261_p8" SOURCE="src/numeric.hpp:30" STORAGESUBTYPE="" URAM="0" VARIABLE="z_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln29_fu_220_p2" SOURCE="src/numeric.hpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln29" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln29_fu_226_p2" SOURCE="src/numeric.hpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln29" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln29_1_fu_232_p2" SOURCE="src/numeric.hpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln29_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln25_fu_238_p2" SOURCE="src/numeric.hpp:25" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln25" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln30_fu_245_p2" SOURCE="src/numeric.hpp:30" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln30" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_32_1_1_U16" SOURCE="src/numeric.hpp:28" STORAGESUBTYPE="" URAM="0" VARIABLE="z_4_ph" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_7_2_41_1_1_U17" SOURCE="src/numeric.hpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="yy_ph" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_9_3_41_1_1_U18" SOURCE="src/numeric.hpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="xx_ph" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="6" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_44s_31ns_70_1_1_U15" SOURCE="src/numeric.hpp:37" STORAGESUBTYPE="" URAM="0" VARIABLE="product" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>cordic_hls</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>20.00</TargetClockPeriod>
+                    <ClockUncertainty>5.40</ClockUncertainty>
+                    <EstimatedClockPeriod>8.635</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>37</Best-caseLatency>
+                    <Average-caseLatency>37</Average-caseLatency>
+                    <Worst-caseLatency>37</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.740 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.740 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.740 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>38</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>src/kernels.cpp:83</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>730</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>6</DSP>
+                    <AVAIL_DSP>740</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>464</FF>
+                    <AVAIL_FF>269200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1352</LUT>
+                    <AVAIL_LUT>134600</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_rtl reset_level="low"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="mode" index="0" direction="in" srcType="ap_uint&lt;1&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="mode" name="mode" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="vx" index="1" direction="in" srcType="ap_int&lt;40&gt;" srcSize="64">
+            <hwRefs>
+                <hwRef type="port" interface="vx" name="vx" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="vy" index="2" direction="in" srcType="ap_int&lt;40&gt;" srcSize="64">
+            <hwRefs>
+                <hwRef type="port" interface="vy" name="vy" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="angle" index="3" direction="in" srcType="ap_int&lt;32&gt;" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="angle" name="angle" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="result" index="4" direction="out" srcType="ap_uint&lt;136&gt;&amp;" srcSize="256">
+            <hwRefs>
+                <hwRef type="port" interface="result" name="result" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="mode" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="mode">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>mode</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="mode"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="vx" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="40">
+            <portMaps>
+                <portMap portMapName="vx">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>vx</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="vx"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="vy" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="40">
+            <portMaps>
+                <portMap portMapName="vy">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>vy</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="vy"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="angle" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="angle">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>angle</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="angle"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="result" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="136">
+            <portMaps>
+                <portMap portMapName="result">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>result</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="result"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="angle">ap_none, in, 32</column>
+                    <column name="mode">ap_none, in, 1</column>
+                    <column name="result">ap_none, out, 136</column>
+                    <column name="vx">ap_none, in, 40</column>
+                    <column name="vy">ap_none, in, 40</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="mode">in, ap_uint&lt;1&gt;</column>
+                    <column name="vx">in, ap_int&lt;40&gt;</column>
+                    <column name="vy">in, ap_int&lt;40&gt;</column>
+                    <column name="angle">in, ap_int&lt;32&gt;</column>
+                    <column name="result">out, ap_uint&lt;136&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="mode">mode, port</column>
+                    <column name="vx">vx, port</column>
+                    <column name="vy">vy, port</column>
+                    <column name="angle">angle, port</column>
+                    <column name="result">result, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="interface" location="src/detector.cpp:5" status="valid" parentFunction="detector_hls" variable="bands" isDirective="0" options="ap_memory port=bands storage_type=rom_1p latency=1"/>
+        <Pragma type="interface" location="src/detector.cpp:6" status="valid" parentFunction="detector_hls" variable="valid" isDirective="0" options="ap_none port=valid"/>
+        <Pragma type="interface" location="src/detector.cpp:7" status="valid" parentFunction="detector_hls" variable="new_sequence" isDirective="0" options="ap_none port=new_sequence"/>
+        <Pragma type="interface" location="src/detector.cpp:8" status="valid" parentFunction="detector_hls" variable="array_id" isDirective="0" options="ap_none port=array_id"/>
+        <Pragma type="interface" location="src/detector.cpp:9" status="valid" parentFunction="detector_hls" variable="result" isDirective="0" options="ap_none port=result"/>
+        <Pragma type="array_partition" location="src/detector.cpp:11" status="valid" parentFunction="detector_hls" variable="history" isDirective="0" options="variable=history complete"/>
+        <Pragma type="array_partition" location="src/detector.cpp:12" status="valid" parentFunction="detector_hls" variable="sums" isDirective="0" options="variable=sums complete"/>
+        <Pragma type="array_partition" location="src/detector.cpp:13" status="valid" parentFunction="detector_hls" variable="counts" isDirective="0" options="variable=counts complete"/>
+        <Pragma type="array_partition" location="src/detector.cpp:14" status="valid" parentFunction="detector_hls" variable="ptr" isDirective="0" options="variable=ptr complete"/>
+        <Pragma type="reset" location="src/detector.cpp:15" status="valid" parentFunction="detector_hls" variable="counts" isDirective="0" options="variable=counts"/>
+        <Pragma type="reset" location="src/detector.cpp:16" status="valid" parentFunction="detector_hls" variable="sums" isDirective="0" options="variable=sums"/>
+        <Pragma type="reset" location="src/detector.cpp:17" status="valid" parentFunction="detector_hls" variable="ptr" isDirective="0" options="variable=ptr"/>
+        <Pragma type="pipeline" location="src/detector.cpp:23" status="valid" parentFunction="detector_hls" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="src/detector.cpp:34" status="valid" parentFunction="detector_hls" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="inline" location="src/joint_search.cpp:6" status="valid" parentFunction="candidate_score" variable="" isDirective="0" options="off"/>
+        <Pragma type="array_partition" location="src/joint_search.cpp:8" status="valid" parentFunction="candidate_score" variable="distance" isDirective="0" options="variable=distance complete"/>
+        <Pragma type="array_partition" location="src/joint_search.cpp:15" status="valid" parentFunction="candidate_score" variable="real" isDirective="0" options="variable=real complete"/>
+        <Pragma type="array_partition" location="src/joint_search.cpp:16" status="valid" parentFunction="candidate_score" variable="imag" isDirective="0" options="variable=imag complete"/>
+        <Pragma type="unroll" location="src/joint_search.cpp:18" status="valid" parentFunction="candidate_score" variable="" isDirective="0" options=""/>
+        <Pragma type="loop_tripcount" location="src/joint_search.cpp:22" status="valid" parentFunction="candidate_score" variable="" isDirective="0" options="min=24 max=1440 avg=1200"/>
+        <Pragma type="pipeline" location="src/joint_search.cpp:23" status="valid" parentFunction="candidate_score" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="interface" location="src/joint_search.cpp:35" status="valid" parentFunction="joint_search_hls" variable="covariance" isDirective="0" options="ap_memory port=covariance storage_type=rom_1p latency=2"/>
+        <Pragma type="interface" location="src/joint_search.cpp:36" status="valid" parentFunction="joint_search_hls" variable="result" isDirective="0" options="ap_none port=result"/>
+        <Pragma type="aggregate" location="src/joint_search.cpp:39" status="valid" parentFunction="joint_search_hls" variable="obs" isDirective="0" options="variable=obs compact=bit"/>
+        <Pragma type="bind_storage" location="src/joint_search.cpp:40" status="valid" parentFunction="joint_search_hls" variable="obs" isDirective="0" options="variable=obs type=ram_1p impl=bram"/>
+        <Pragma type="pipeline" location="src/joint_search.cpp:44" status="valid" parentFunction="joint_search_hls" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="src/joint_search.cpp:55" status="valid" parentFunction="joint_search_hls" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="loop_tripcount" location="src/joint_search.cpp:86" status="valid" parentFunction="joint_search_hls" variable="" isDirective="0" options="min=343 max=11025 avg=2123"/>
+        <Pragma type="interface" location="src/kernels.cpp:6" status="valid" parentFunction="fft4096_hls" variable="data" isDirective="0" options="ap_memory port=data storage_type=ram_t2p latency=1"/>
+        <Pragma type="interface" location="src/kernels.cpp:7" status="valid" parentFunction="fft4096_hls" variable="overflow" isDirective="0" options="ap_none port=overflow"/>
+        <Pragma type="pipeline" location="src/kernels.cpp:12" status="valid" parentFunction="fft4096_hls" variable="" isDirective="0" options="II=2"/>
+        <Pragma type="dependence" location="src/kernels.cpp:13" status="valid" parentFunction="fft4096_hls" variable="data" isDirective="0" options="variable=data inter false"/>
+        <Pragma type="inline" location="src/kernels.cpp:29" status="valid" parentFunction="fir" variable="" isDirective="0" options=""/>
+        <Pragma type="bind_storage" location="src/kernels.cpp:31" status="valid" parentFunction="fir" variable="history" isDirective="0" options="variable=history type=ram_s2p impl=bram"/>
+        <Pragma type="reset" location="src/kernels.cpp:33" status="valid" parentFunction="fir" variable="wr" isDirective="0" options="variable=wr"/>
+        <Pragma type="reset" location="src/kernels.cpp:34" status="valid" parentFunction="fir" variable="count" isDirective="0" options="variable=count"/>
+        <Pragma type="reset" location="src/kernels.cpp:35" status="valid" parentFunction="fir" variable="next" isDirective="0" options="variable=next"/>
+        <Pragma type="reset" location="src/kernels.cpp:36" status="valid" parentFunction="fir" variable="phase" isDirective="0" options="variable=phase"/>
+        <Pragma type="array_partition" location="src/kernels.cpp:40" status="valid" parentFunction="fir" variable="acc" isDirective="0" options="variable=acc complete"/>
+        <Pragma type="unroll" location="src/kernels.cpp:42" status="valid" parentFunction="fir" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="src/kernels.cpp:46" status="valid" parentFunction="fir" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="src/kernels.cpp:49" status="valid" parentFunction="fir" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="src/kernels.cpp:54" status="valid" parentFunction="fir" variable="" isDirective="0" options=""/>
+        <Pragma type="interface" location="src/kernels.cpp:63" status="valid" parentFunction="fir_loc_hls" variable="samples" isDirective="0" options="ap_none port=samples"/>
+        <Pragma type="interface" location="src/kernels.cpp:64" status="valid" parentFunction="fir_loc_hls" variable="result" isDirective="0" options="ap_none port=result"/>
+        <Pragma type="interface" location="src/kernels.cpp:68" status="valid" parentFunction="fir_det_hls" variable="samples" isDirective="0" options="ap_none port=samples"/>
+        <Pragma type="interface" location="src/kernels.cpp:69" status="valid" parentFunction="fir_det_hls" variable="result" isDirective="0" options="ap_none port=result"/>
+        <Pragma type="interface" location="src/kernels.cpp:73" status="valid" parentFunction="sqrt_hls" variable="value" isDirective="0" options="ap_none port=value"/>
+        <Pragma type="interface" location="src/kernels.cpp:74" status="valid" parentFunction="sqrt_hls" variable="result" isDirective="0" options="ap_none port=result"/>
+        <Pragma type="interface" location="src/kernels.cpp:78" status="valid" parentFunction="divide_hls" variable="num" isDirective="0" options="ap_none port=num"/>
+        <Pragma type="interface" location="src/kernels.cpp:79" status="valid" parentFunction="divide_hls" variable="den" isDirective="0" options="ap_none port=den"/>
+        <Pragma type="interface" location="src/kernels.cpp:80" status="valid" parentFunction="divide_hls" variable="result" isDirective="0" options="ap_none port=result"/>
+        <Pragma type="interface" location="src/kernels.cpp:84" status="valid" parentFunction="cordic_hls" variable="mode" isDirective="0" options="ap_none port=mode"/>
+        <Pragma type="interface" location="src/kernels.cpp:85" status="valid" parentFunction="cordic_hls" variable="vx" isDirective="0" options="ap_none port=vx"/>
+        <Pragma type="interface" location="src/kernels.cpp:86" status="valid" parentFunction="cordic_hls" variable="vy" isDirective="0" options="ap_none port=vy"/>
+        <Pragma type="interface" location="src/kernels.cpp:87" status="valid" parentFunction="cordic_hls" variable="angle" isDirective="0" options="ap_none port=angle"/>
+        <Pragma type="interface" location="src/kernels.cpp:88" status="valid" parentFunction="cordic_hls" variable="result" isDirective="0" options="ap_none port=result"/>
+        <Pragma type="interface" location="src/kernels.cpp:92" status="valid" parentFunction="power_db_hls" variable="value" isDirective="0" options="ap_none port=value"/>
+        <Pragma type="interface" location="src/kernels.cpp:93" status="valid" parentFunction="power_db_hls" variable="exponent" isDirective="0" options="ap_none port=exponent"/>
+        <Pragma type="interface" location="src/kernels.cpp:94" status="valid" parentFunction="power_db_hls" variable="result" isDirective="0" options="ap_none port=result"/>
+        <Pragma type="interface" location="src/kernels.cpp:98" status="valid" parentFunction="covariance_hls" variable="ar" isDirective="0" options="ap_none port=ar"/>
+        <Pragma type="interface" location="src/kernels.cpp:99" status="valid" parentFunction="covariance_hls" variable="ai" isDirective="0" options="ap_none port=ai"/>
+        <Pragma type="interface" location="src/kernels.cpp:100" status="valid" parentFunction="covariance_hls" variable="br" isDirective="0" options="ap_none port=br"/>
+        <Pragma type="interface" location="src/kernels.cpp:101" status="valid" parentFunction="covariance_hls" variable="bi" isDirective="0" options="ap_none port=bi"/>
+        <Pragma type="interface" location="src/kernels.cpp:102" status="valid" parentFunction="covariance_hls" variable="oldr" isDirective="0" options="ap_none port=oldr"/>
+        <Pragma type="interface" location="src/kernels.cpp:103" status="valid" parentFunction="covariance_hls" variable="oldi" isDirective="0" options="ap_none port=oldi"/>
+        <Pragma type="interface" location="src/kernels.cpp:104" status="valid" parentFunction="covariance_hls" variable="shift_old" isDirective="0" options="ap_none port=shift_old"/>
+        <Pragma type="interface" location="src/kernels.cpp:105" status="valid" parentFunction="covariance_hls" variable="next_exp" isDirective="0" options="ap_none port=next_exp"/>
+        <Pragma type="interface" location="src/kernels.cpp:106" status="valid" parentFunction="covariance_hls" variable="result" isDirective="0" options="ap_none port=result"/>
+        <Pragma type="inline" location="src/numeric.hpp:5" status="valid" parentFunction="isqrt" variable="" isDirective="0" options="off"/>
+        <Pragma type="pipeline" location="src/numeric.hpp:8" status="valid" parentFunction="isqrt" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="inline" location="src/numeric.hpp:16" status="valid" parentFunction="udiv" variable="" isDirective="0" options="off"/>
+        <Pragma type="pipeline" location="src/numeric.hpp:20" status="valid" parentFunction="udiv" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="inline" location="src/numeric.hpp:26" status="valid" parentFunction="cordic" variable="" isDirective="0" options="off"/>
+        <Pragma type="pipeline" location="src/numeric.hpp:32" status="valid" parentFunction="cordic" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="inline" location="src/numeric.hpp:43" status="valid" parentFunction="power_db" variable="" isDirective="0" options="off"/>
+    </PragmaReport>
+</profile>
+

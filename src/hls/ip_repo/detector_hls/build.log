@@ -1,0 +1,529 @@
+
+****** vitis-run v2024.2 (64-bit)
+  **** SW Build 5238363 on 2024-11-10-08:15:25
+  **** Start of session at: Fri Oct 30 23:07:20 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2024.2 5238294
+Sourcing Tcl script 'D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/build.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset core 
+INFO: [HLS 200-10] Creating and opening project 'D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core'.
+INFO: [HLS 200-1510] Running: set_top detector_hls 
+INFO: [HLS 200-1510] Running: add_files src/detector.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding design file 'src/detector.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/joint_search.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding design file 'src/joint_search.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/kernels.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding design file 'src/kernels.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb test_detector.cpp -cflags -Isrc -std=c++14 
+INFO: [HLS 200-10] Adding test bench file 'test_detector.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution 'D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7a200tfbg484-2 
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-fbg484-2'
+INFO: [HLS 200-1510] Running: create_clock -period 20 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1510] Running: config_rtl -reset_level low -reset control 
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../test_detector.cpp in debug mode
+   Compiling ../../../../src/kernels.cpp in debug mode
+   Compiling ../../../../src/joint_search.cpp in debug mode
+   Compiling ../../../../src/detector.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../test_detector.cpp:1:
+In file included from ../../../../src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../src/kernels.cpp:1:
+In file included from ../../../.././src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../src/joint_search.cpp:1:
+In file included from ../../../.././src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../src/detector.cpp:1:
+In file included from ../../../.././src/kernels.hpp:2:
+In file included from C:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from C:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+DETECTOR HLS PASS:97bands/218features/120trees match independent Python integer oracle; rolling history,gap reset,array separation
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-2161] Finished Command csim_design Elapsed time: 00:00:18; Allocated memory: 1.176 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.087 seconds; current allocated memory: 260.219 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/kernels.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'src/joint_search.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'src/detector.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 34.187 seconds; current allocated memory: 264.457 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 4,660 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 550 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 400 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 395 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 387 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 429 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 399 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 399 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 399 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 416 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 408 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 384 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 403 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 399 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 401 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 430 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-248] Applying array_partition to '_ZZ12detector_hlsPK6ap_intILi48EE7ap_uintILi1EES4_S4_RS3_ILi104EEE3ptr': Complete partitioning on dimension 1. (src/detector.cpp:10:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ12detector_hlsPK6ap_intILi48EE7ap_uintILi1EES4_S4_RS3_ILi104EEE6counts': Complete partitioning on dimension 1. (src/detector.cpp:10:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ12detector_hlsPK6ap_intILi48EE7ap_uintILi1EES4_S4_RS3_ILi104EEE4sums': Complete partitioning on dimension 1. (src/detector.cpp:10:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ12detector_hlsPK6ap_intILi48EE7ap_uintILi1EES4_S4_RS3_ILi104EEE7history': Complete partitioning on dimension 1. (src/detector.cpp:10:0)
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (src/detector.cpp:18:13)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_28_3> at src/detector.cpp:28:41 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_42_7> at src/detector.cpp:42:26 
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_27_2'. (src/detector.cpp:27:22)
+INFO: [HLS 214-421] Automatically partitioning small array '_ZZ12detector_hlsPK6ap_intILi48EE7ap_uintILi1EES4_S4_RS3_ILi104EEE7history_0' completely based on array size.
+INFO: [HLS 214-421] Automatically partitioning small array '_ZZ12detector_hlsPK6ap_intILi48EE7ap_uintILi1EES4_S4_RS3_ILi104EEE7history_1' completely based on array size.
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'detector_hls(ap_int<48> const*, ap_uint<1>, ap_uint<1>, ap_uint<1>, ap_uint<104>&)::history' due to pipeline pragma
+INFO: [HLS 214-248] Applying array_partition to '_ZZ12detector_hlsPK6ap_intILi48EE7ap_uintILi1EES4_S4_RS3_ILi104EEE7history_1': Complete partitioning on dimension 1.
+INFO: [HLS 214-248] Applying array_partition to '_ZZ12detector_hlsPK6ap_intILi48EE7ap_uintILi1EES4_S4_RS3_ILi104EEE7history_0': Complete partitioning on dimension 1.
+WARNING: [HLS 214-358] Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations. (src/detector.cpp:52:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.945 seconds; current allocated memory: 266.000 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 266.004 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.047 seconds; current allocated memory: 272.961 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] src/numeric.hpp:21: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.069 seconds; current allocated memory: 275.938 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/numeric.hpp:20:9) to (src/numeric.hpp:19:22) in function 'r18::udiv'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/detector.cpp:4:16) to (src/detector.cpp:20:8) in function 'detector_hls'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/detector.cpp:51:28) to (src/detector.cpp:52:23) in function 'detector_hls'... converting 7 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.186 seconds; current allocated memory: 299.074 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_32_4'(src/detector.cpp:32:22) and 'VITIS_LOOP_33_5'(src/detector.cpp:33:43) in function 'detector_hls' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_32_4' (src/detector.cpp:32:22) in function 'detector_hls'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_40_6' (src/detector.cpp:40:22) in function 'detector_hls' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 337.938 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'detector_hls' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'detector_hls_Pipeline_VITIS_LOOP_22_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_22_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_22_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.498 seconds; current allocated memory: 341.273 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 342.348 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'udiv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_19_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_19_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.152 seconds; current allocated memory: 342.461 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 342.488 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'detector_hls_Pipeline_VITIS_LOOP_28_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_28_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.123 seconds; current allocated memory: 342.504 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 342.504 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'detector_hls_Pipeline_VITIS_LOOP_32_4_VITIS_LOOP_33_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln35) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_32_4_VITIS_LOOP_33_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'VITIS_LOOP_32_4_VITIS_LOOP_33_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.138 seconds; current allocated memory: 342.707 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.205 seconds; current allocated memory: 342.734 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'detector_hls_Pipeline_VITIS_LOOP_42_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_42_7'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('load' operation 1 bit ('r18_NODE_LEAF_load', src/detector.cpp:43) on array 'r18_NODE_LEAF') in the first pipeline iteration (II = 1 cycles).
+Resolution: For help on HLS 200-878 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-878.html
+WARNING: [HLS 200-880] The II Violation in module 'detector_hls_Pipeline_VITIS_LOOP_42_7' (loop 'VITIS_LOOP_42_7'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'select' operation 11 bit ('select_ln46', src/detector.cpp:46) and 'zext' operation 64 bit ('zext_ln43', src/detector.cpp:43).
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 4, loop 'VITIS_LOOP_42_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.109 seconds; current allocated memory: 342.898 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 342.996 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'detector_hls' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 345.238 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.172 seconds; current allocated memory: 345.473 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'detector_hls_Pipeline_VITIS_LOOP_22_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'detector_hls_Pipeline_VITIS_LOOP_22_1' pipeline 'VITIS_LOOP_22_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'detector_hls_Pipeline_VITIS_LOOP_22_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 347.098 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'udiv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'udiv' pipeline 'VITIS_LOOP_19_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_64ns_32ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'bitset_64ns_64ns_32ns_1s_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'udiv'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.239 seconds; current allocated memory: 348.711 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'detector_hls_Pipeline_VITIS_LOOP_28_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'detector_hls_Pipeline_VITIS_LOOP_28_3' pipeline 'VITIS_LOOP_28_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'detector_hls_Pipeline_VITIS_LOOP_28_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.123 seconds; current allocated memory: 349.531 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'detector_hls_Pipeline_VITIS_LOOP_32_4_VITIS_LOOP_33_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'detector_hls_Pipeline_VITIS_LOOP_32_4_VITIS_LOOP_33_5' pipeline 'VITIS_LOOP_32_4_VITIS_LOOP_33_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_7ns_5ns_7ns_12_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_48s_29s_76_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'detector_hls_Pipeline_VITIS_LOOP_32_4_VITIS_LOOP_33_5'.
+INFO: [RTMG 210-279] Implementing memory 'detector_hls_detector_hls_Pipeline_VITIS_LOOP_32_4_VITIS_LOOP_33_5_r18_DCT_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.234 seconds; current allocated memory: 351.641 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'detector_hls_Pipeline_VITIS_LOOP_42_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'detector_hls_Pipeline_VITIS_LOOP_42_7'.
+INFO: [RTMG 210-279] Implementing memory 'detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_LEAF_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_FEAT_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_LEFT_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_RIGHT_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_THR_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.271 seconds; current allocated memory: 353.020 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'detector_hls' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'detector_hls/bands' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'detector_hls/valid' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'detector_hls/new_sequence' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'detector_hls/array_id' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'detector_hls/result' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'result' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'detector_hls' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_1_ap_uint_104_counts_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'detector_hls_ap_int_const_ap_uint_ap_uint_1_ap_uint_1_ap_uint_104_sums_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'detector_hls_ap_int_const_ap_uint_ap_uint_1_ap_uint_1_ap_uint_104_ptr_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'detector_hls_ap_int_const_ap_uint_ap_uint_ap_uint_1_ap_uint_104_counts' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'detector_hls_ap_int_const_ap_uint_ap_uint_1_ap_uint_1_ap_uint_104_sums' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'detector_hls_ap_int_const_ap_uint_ap_uint_1_ap_uint_1_ap_uint_104_ptr' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12detector_hlsPK6ap_intILi48EE7ap_uintILi1EES4_S4_RS3_ILi104EEE7history_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12detector_hlsPK6ap_intILi48EE7ap_uintILi1EES4_S4_RS3_ILi104EEE7history_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12detector_hlsPK6ap_intILi48EE7ap_uintILi1EES4_S4_RS3_ILi104EEE7history_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12detector_hlsPK6ap_intILi48EE7ap_uintILi1EES4_S4_RS3_ILi104EEE7history_1_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12detector_hlsPK6ap_intILi48EE7ap_uintILi1EES4_S4_RS3_ILi104EEE7history_1_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ12detector_hlsPK6ap_intILi48EE7ap_uintILi1EES4_S4_RS3_ILi104EEE7history_1_2' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'detector_hls'.
+INFO: [RTMG 210-279] Implementing memory 'detector_hls_r18_ROOTS_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'detector_hls_r18_NODE_VALUE_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'detector_hls_raw_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'detector_hls_features_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.554 seconds; current allocated memory: 355.727 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.305 seconds; current allocated memory: 361.773 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.934 seconds; current allocated memory: 366.242 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for detector_hls.
+INFO: [VLOG 209-307] Generating Verilog RTL for detector_hls.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 70.19 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:56; Allocated memory: 106.754 MB.
+INFO: [HLS 200-1510] Running: cosim_design -rtl verilog -tool xsim 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling apatb_detector_hls.cpp
+   Compiling detector.cpp_pre.cpp.tb.cpp
+   Compiling kernels.cpp_pre.cpp.tb.cpp
+   Compiling joint_search.cpp_pre.cpp.tb.cpp
+   Compiling test_detector.cpp_pre.cpp.tb.cpp
+   Compiling apatb_detector_hls_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+DETECTOR HLS PASS:97bands/218features/120trees match independent Python integer oracle; rolling history,gap reset,array separation
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+D:\xiaobao\2026\fpga_board_work\r18_hls_detector_hls_20261030_230719\core\solution1\sim\verilog>set PATH= 
+
+D:\xiaobao\2026\fpga_board_work\r18_hls_detector_hls_20261030_230719\core\solution1\sim\verilog>call C:/Xilinx/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_detector_hls_top glbl -Oenable_linking_all_libraries  -prj detector_hls.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s detector_hls  
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_detector_hls_top glbl -Oenable_linking_all_libraries -prj detector_hls.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s detector_hls 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/AESL_automem_bands.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_bands
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_detector_hls_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_bitselect_1ns_64ns_32ns_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_bitselect_1ns_64ns_32ns_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_bitset_64ns_64ns_32ns_1s_64_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_bitset_64ns_64ns_32ns_1s_64_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_detector_hls_Pipeline_VITIS_LOOP_22_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_detector_hls_Pipeline_VITIS_LOOP_22_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_detector_hls_Pipeline_VITIS_LOOP_28_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_detector_hls_Pipeline_VITIS_LOOP_28_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_detector_hls_Pipeline_VITIS_LOOP_32_4_VITIS_LOOP_33_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_detector_hls_Pipeline_VITIS_LOOP_32_4_VITIS_LOOP_33_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_detector_hls_Pipeline_VITIS_LOOP_32_4_VITIS_LOOP_33_5_r18_DCT_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_detector_hls_Pipeline_VITIS_LOOP_32_4_VITIS_LOOP_33_5_r18_DCT_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_FEAT_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_FEAT_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_LEAF_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_LEAF_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_LEFT_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_LEFT_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_RIGHT_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_RIGHT_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_THR_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_detector_hls_Pipeline_VITIS_LOOP_42_7_r18_NODE_THR_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_features_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_features_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_mac_muladd_7ns_5ns_7ns_12_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_mac_muladd_7ns_5ns_7ns_12_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module detector_hls_mac_muladd_7ns_5ns_7ns_12_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_mul_48s_29s_76_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_mul_48s_29s_76_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_r18_NODE_VALUE_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_r18_NODE_VALUE_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_r18_ROOTS_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_r18_ROOTS_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_raw_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_raw_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_sparsemux_7_2_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_sparsemux_7_2_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls_udiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module detector_hls_udiv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.detector_hls_r18_ROOTS_ROM_AUTO_...
+Compiling module xil_defaultlib.detector_hls_r18_NODE_VALUE_ROM_...
+Compiling module xil_defaultlib.detector_hls_raw_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.detector_hls_features_RAM_AUTO_1...
+Compiling module xil_defaultlib.detector_hls_flow_control_loop_p...
+Compiling module xil_defaultlib.detector_hls_detector_hls_Pipeli...
+Compiling module xil_defaultlib.detector_hls_bitselect_1ns_64ns_...
+Compiling module xil_defaultlib.detector_hls_bitset_64ns_64ns_32...
+Compiling module xil_defaultlib.detector_hls_udiv
+Compiling module xil_defaultlib.detector_hls_detector_hls_Pipeli...
+Compiling module xil_defaultlib.detector_hls_detector_hls_Pipeli...
+Compiling module xil_defaultlib.detector_hls_mul_48s_29s_76_1_1(...
+Compiling module xil_defaultlib.detector_hls_mac_muladd_7ns_5ns_...
+Compiling module xil_defaultlib.detector_hls_mac_muladd_7ns_5ns_...
+Compiling module xil_defaultlib.detector_hls_detector_hls_Pipeli...
+Compiling module xil_defaultlib.detector_hls_detector_hls_Pipeli...
+Compiling module xil_defaultlib.detector_hls_detector_hls_Pipeli...
+Compiling module xil_defaultlib.detector_hls_detector_hls_Pipeli...
+Compiling module xil_defaultlib.detector_hls_detector_hls_Pipeli...
+Compiling module xil_defaultlib.detector_hls_detector_hls_Pipeli...
+Compiling module xil_defaultlib.detector_hls_detector_hls_Pipeli...
+Compiling module xil_defaultlib.detector_hls_sparsemux_7_2_32_1_...
+Compiling module xil_defaultlib.detector_hls
+Compiling module xil_defaultlib.AESL_automem_bands
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.pp_loop_intf(FSM_WIDTH=6)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=17)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_detector_hls_top
+Compiling module work.glbl
+Built simulation snapshot detector_hls
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Oct 30 23:09:16 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/detector_hls/xsim_script.tcl
+# xsim {detector_hls} -autoloadwcfg -tclbatch {detector_hls.tcl}
+Time resolution is 1 ps
+source detector_hls.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 9 [0.00%] @ "150000"
+// RTL Simulation : 1 / 9 [100.00%] @ "248130000"
+// RTL Simulation : 2 / 9 [100.00%] @ "495190000"
+// RTL Simulation : 3 / 9 [100.00%] @ "745730000"
+// RTL Simulation : 4 / 9 [100.00%] @ "998190000"
+// RTL Simulation : 5 / 9 [100.00%] @ "1247410000"
+// RTL Simulation : 6 / 9 [100.00%] @ "1497050000"
+// RTL Simulation : 7 / 9 [100.00%] @ "1497090000"
+// RTL Simulation : 8 / 9 [100.00%] @ "1746730000"
+// RTL Simulation : 9 / 9 [100.00%] @ "1996370000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1996490 ns : File "D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/sim/verilog/detector_hls.autotb.v" Line 444
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 30 23:09:19 2026...
+INFO: [COSIM 212-316] Starting C post checking ...
+DETECTOR HLS PASS:97bands/218features/120trees match independent Python integer oracle; rolling history,gap reset,array separation
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-2161] Finished Command cosim_design Elapsed time: 00:00:42; Allocated memory: 10.430 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -rtl verilog -vendor drone.self -library compute -version 1.0 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+WARNING: C:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Oct 30 23:09:22 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at 'C'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/solution1_data.json outdir=D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/impl/ip srcdir=D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1 sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/impl/ip/misc
+INFO: Copied 30 verilog file(s) to D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/impl/ip/hdl/verilog
+INFO: Copied 22 vhdl file(s) to D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/impl/ip/hdl/vhdl
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+INFO: Import ports from HDL: D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/impl/ip/hdl/vhdl/detector_hls.vhd (detector_hls)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Add data interface bands_address0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: Add data interface bands_q0
+INFO: Add data interface valid
+INFO: Add data interface new_sequence
+INFO: Add data interface array_id
+INFO: Add data interface result
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/impl/ip/component.xml
+INFO: Created IP archive D:/xiaobao/2026/fpga_board_work/r18_hls_detector_hls_20261030_230719/core/solution1/impl/ip/drone_self_compute_detector_hls_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 23:09:26 2026...
+INFO: [HLS 200-802] Generated output file core/solution1/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:05; Allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 125.04 seconds; peak allocated memory: 377.066 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 2m 6s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

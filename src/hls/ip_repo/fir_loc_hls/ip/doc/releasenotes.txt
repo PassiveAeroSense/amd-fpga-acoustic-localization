@@ -1,0 +1,6 @@
+
+Family       : artix7
+Device       : xc7a200t
+Package      : -fbg484
+Speed Grade  : -2
+Clock Period : 10
