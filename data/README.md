@@ -1,6 +1,6 @@
 # 数据与参考结果
 
-`measured_localization/localization_360_points.pdf` 为用户更正提供的《无人机三维定位_360点数据.pdf》原件副本（12 页、360 条），对应设计报告第 3.3.4 节的实验。此前误传的 PDF 已替换，配套 JSON 和主 README 统计已按更正文件重新生成。`localization_360_points.json` 按原表顺序保存全部记录与来源页码；`reference_*` 表示参考值、`array_*` 表示阵列输出、`reported_*` 表示原表误差列，距离单位为米、角度单位为度。方位角误差以字符串保留 `<0.01` 等原始表示。
+`measured_localization/localization_360_points.pdf`（12 页、360 条），对应设计报告第 3.3.4 节的实验。配套 JSON 和主 README 统计已按更正文件重新生成。`localization_360_points.json` 按原表顺序保存全部记录与来源页码；`reference_*` 表示参考值、`array_*` 表示阵列输出、`reported_*` 表示原表误差列，距离单位为米、角度单位为度。方位角误差以字符串保留 `<0.01` 等原始表示。
 
 在仓库根目录运行 `python sim/analysis/check_measured_localization.py`，检查行号、分组与坐标重算误差，并输出全样本统计。汇总及测量方法见[主 README](../README.md#360-点双阵列三维定位实测)。全部点保留，不做异常点剔除；本数据为现场位置对照，独立于下述录音包和离线冻结结果。PDF 未列出采集时间及位流摘要。
 
